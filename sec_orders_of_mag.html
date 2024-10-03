@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Orders of Magnitude</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-problem-solving.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-numbers.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_water_footprint.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_orders_of_mag"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Orders of Magnitude</span>
+</h2>
+<article class="objectives goal-like" id="sec_orders_of_mag-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc"><li id="sec_orders_of_mag-2-1-1"><div class="para" id="p-derived-sec_orders_of_mag-2-1-1">Demonstrate an understanding of the magnitude of real numbers represented in many forms (fractions, decimals, scientific notation, square roots of numbers) by ordering and comparing them in mathematical and real-world contexts.</div></li></ul></article><section class="introduction" id="sec_orders_of_mag-3"><div class="para" id="sec_orders_of_mag-3-1">A large economic and political concern is the federal deficit, the amount of money spent by the federal government in excess of revenue collected annually.  The federal budget deficit for 2015 was approximately $435 billion.  The federal debt is the accumulated deficits from all years, and in 2015 was about $18.1 trillion.</div> <div class="para" id="sec_orders_of_mag-3-2">It is difficult to understand just how big a billion or a trillion is. Here is a way to help you think about it.</div> <figure class="table table-like" id="million-billion-trillion"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r2 l2 t2 lines">1 million</td>
+<td class="l m b2 r2 l0 t2 lines">= 1,000 <span class="process-math">\(\times\)</span> 1,000</td>
+<td class="l m b2 r2 l0 t2 lines">= 1,000,000</td>
+<td class="l m b2 r2 l0 t2 lines"><span class="process-math">\(=10^6\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">1 billion</td>
+<td class="l m b2 r2 l0 t0 lines">= 1,000 <span class="process-math">\(\times\)</span> 1,000 <span class="process-math">\(\times\)</span> 1,000</td>
+<td class="l m b2 r2 l0 t0 lines">= 1,000,000,000</td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(=10^9\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">1 trillion</td>
+<td class="l m b2 r2 l0 t0 lines">= 1,000 <span class="process-math">\(\times\)</span> 1,000 <span class="process-math">\(\times\)</span> 1,000 <span class="process-math">\(\times\)</span> 1,000</td>
+<td class="l m b2 r2 l0 t0 lines">= 1,000,000,000,000</td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(=10^{12}\)</span></td>
+</tr>
+</table></div></figure> <figure class="figure figure-like" id="figure-national-debt"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/debt.jpg" class="contained" alt="described in detail following the image" aria-describedby="figure-national-debt-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="figure-national-debt-2-description">Source: <details class="ptx-footnote" aria-live="polite" id="figure-national-debt-2-1-1"><summary class="ptx-footnote__number" title="Footnote 1.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="figure-national-debt-2-1-1">US Department of the Treasury. (September 30, 2021). Public debt of the United States from 1990 to 2021 (in billion U.S. dollars) [Graph]. In Statista. Retrieved April 18, 2022, from <a class="external" href="https://www.statista.com/statistics/187867/public-debt-of-the-united-states-since-1990/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.statista.com/statistics/187867/public-debt-of-the-united-states-since-1990/</code></a>
+</div></details>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.2.2<span class="period">.</span></span><span class="space"> </span>U.S. National Debt from 1990-2020.</figcaption></figure></section><article class="activity project-like" id="sec_orders_of_mag-4"><h6 class="heading">
+<span class="type">Activity</span>  <span class="title">Thousand, Million, Billion, and Trillion.</span>
+</h6> <div class="para logical" id="sec_orders_of_mag-4-2"><ol class="lower-alpha">
+<li id="sec_orders_of_mag-4-2-1-1"><div class="para" id="sec_orders_of_mag-4-2-1-1-1">What is a simpler way to express 2000 billion dollars?</div></li>
+<li id="activity-million"><div class="para" id="activity-million-1">Imagine a stack of 1,000 one-dollar bills, which is about 4.3 inches tall. Imagine combining 1,000 stacks of 1,000 one-dollar bills. How much money is in the stack, and how tall (in feet) would it be?</div></li>
+<li id="sec_orders_of_mag-4-2-1-3"><div class="para" id="sec_orders_of_mag-4-2-1-3-1">Try to come up with a well-known or common thing that is basically the same height or length as your answer to <a href="sec_orders_of_mag.html#activity-million" class="xref" data-knowl="./knowl/xref/activity-million.html" data-reveal-label="Reveal" data-close-label="Close" title="Item b">Item b</a>.  Feel free to use the internet.</div></li>
+<li id="activity-billion"><div class="para" id="activity-billion-1">Now imagine combining 1000 stacks like the one above in <a href="sec_orders_of_mag.html#activity-million" class="xref" data-knowl="./knowl/xref/activity-million.html" data-reveal-label="Reveal" data-close-label="Close" title="Item b">Item b</a>. How much money is in the stack, and how tall (in miles) would it be?</div></li>
+<li id="sec_orders_of_mag-4-2-1-5"><div class="para" id="sec_orders_of_mag-4-2-1-5-1">Try to come up with a well-known or common thing that is basically the same height or length as your answer to <a href="sec_orders_of_mag.html#activity-billion" class="xref" data-knowl="./knowl/xref/activity-billion.html" data-reveal-label="Reveal" data-close-label="Close" title="Item d">Item d</a>.  Feel free to use the internet.</div></li>
+<li id="activity-trillion"><div class="para" id="activity-trillion-1">Now imagine combining 1000 stacks like the one above in <a href="sec_orders_of_mag.html#activity-billion" class="xref" data-knowl="./knowl/xref/activity-billion.html" data-reveal-label="Reveal" data-close-label="Close" title="Item d">Item d</a>. How much money is in the stack, and how tall (in miles) would it be?</div></li>
+<li id="sec_orders_of_mag-4-2-1-7"><div class="para" id="sec_orders_of_mag-4-2-1-7-1">Since the circumference of the earth is a litte less then 25,000 miles, how many times would this stack from <a href="sec_orders_of_mag.html#activity-trillion" class="xref" data-knowl="./knowl/xref/activity-trillion.html" data-reveal-label="Reveal" data-close-label="Close" title="Item f">Item f</a> go around the world?</div></li>
+<li id="sec_orders_of_mag-4-2-1-8"><div class="para" id="sec_orders_of_mag-4-2-1-8-1">Your friends are discussing an entertainment strike (actor’s guild, baseball, hockey, whatever your friends care about most) where the professionals, who are generally millionaires, are against the owners, who are generaly billionaires.  Try to to explain the difference between a million and a billion in a simple but also insightful way to your friends.</div></li>
+</ol></div></article><article class="activity project-like" id="sec_orders_of_mag-5"><h6 class="heading">
+<span class="type">Activity</span>  <span class="title">Scientific Notation.</span>
+</h6>
+<div class="para" id="sec_orders_of_mag-5-2-1">You saw that 1 billion can be written as 1,000,000,000 or represented as <span class="process-math">\(10^9\text{.}\)</span> How would 2 billion be represented?  Since 2 billion is 2 times 1 billion, then 2 billion can be written as <span class="process-math">\(2 \times 10^9\text{.}\)</span>  Writing numbers in this way is called scientific notation.  Scientific notation is used primarily for writing very large numbers and very small numbers.  In this lesson, we will focus on large numbers.</div> <div class="para" id="sec_orders_of_mag-5-2-2">The form for <dfn class="terminology">scientific notation</dfn> is <span class="process-math">\(M \times 10^n\)</span> where <span class="process-math">\(1\leq M &lt; 10\text{.}\)</span> The exponent equals the number of decimal places between the location of the decimal in the number as written in standard notation and the number written in scientific notation.</div> <div class="para" id="sec_orders_of_mag-5-2-3">For example, if the number 500 were to be written in scientific notation, it could be thought of as <span class="process-math">\(5 \times 100\)</span> or <span class="process-math">\(5 \times 10 \times 10\)</span> which is equal to <span class="process-math">\(5 \times 10^2\text{.}\)</span> The decimal point has been moved 2 places which corresponds to the exponent of 2.</div> <div class="para" id="sec_orders_of_mag-5-2-4">Likewise, if the number 4300 were to be written in scientific  notation, it could be thought of as <span class="process-math">\(4.3 \times 1000\)</span> or <span class="process-math">\(4.3 \times 10 \times 10 \times 10\)</span> which is equal to <span class="process-math">\(4.3 \times 10^3\text{.}\)</span>  The decimal point has been moved 3 places (between 4300. and 4.3) which corresponds to the exponent of 3.</div> <div class="para logical" id="sec_orders_of_mag-5-2-5"><ol class="lower-alpha">
+<li id="sec_orders_of_mag-5-2-5-1-1">
+<div class="para" id="sec_orders_of_mag-5-2-5-1-1-1">Write the numbers below in both standard notation and scientific notation.</div>
+<div class="para" id="sec_orders_of_mag-5-2-5-1-1-2"><figure class="table table-like" id="sec_orders_of_mag-5-2-5-1-1-2-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r2 l2 t2 lines">Words</td>
+<td class="l m b2 r2 l0 t2 lines">Standard Notation</td>
+<td class="l m b2 r2 l0 t2 lines">Scientific Notation</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">four hundred</td>
+<td class="l m b2 r2 l0 t0 lines">
+<span class="process-math">\(\hspace{2in}\)</span><br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<span class="process-math">\(\hspace{2in}\)</span><br><br>
+</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">twenty three thousand</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">7.2 million</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+</tr>
+</table></div></figure></div>
+</li>
+<li id="sec_orders_of_mag-5-2-5-1-2">
+<div class="para" id="sec_orders_of_mag-5-2-5-1-2-1">The table below contains the national deficit and national debt for various years.  Write the number in both standard notation and scientific notation.</div>
+<div class="para" id="sec_orders_of_mag-5-2-5-1-2-2"><figure class="table table-like" id="table-national-debt-by-year"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.2.4<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r2 l2 t2 lines">Words</td>
+<td class="l m b2 r2 l0 t2 lines">Standard Notation</td>
+<td class="l m b2 r2 l0 t2 lines">Scientific Notation</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">1965 deficit:  $1.41 billion</td>
+<td class="l m b2 r2 l0 t0 lines">
+<span class="process-math">\(\hspace{2in}\)</span><br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<span class="process-math">\(\hspace{2in}\)</span><br><br>
+</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">2009 deficit:  $1412.69 billion</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">2014 deficit:  $484.6 billion</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines">2014 debt:     $18.2 trillion</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+<td class="l m b2 r2 l0 t0 lines">
+<br><br>
+</td>
+</tr>
+</table></div></figure></div>
+</li>
+</ol></div></article><article class="activity project-like" id="sec_orders_of_mag-6"><h6 class="heading">
+<span class="type">Activity</span>  <span class="title">Comparing the Sizes of Numbers.</span>
+</h6>
+<div class="para" id="sec_orders_of_mag-6-2-1">One of the skills you will learn in this course is how to write quantitative information. A writing principle that you will use throughout the course is given below followed by the questions below, which give you examples of how to use this principle.</div> <div class="para" id="sec_orders_of_mag-6-2-2">
+<dfn class="terminology">Writing Principle:</dfn> Use specific and complete information. The reader should understand what you are trying to say even if they have not read the question or writing prompt. This includes</div> <div class="para logical" id="sec_orders_of_mag-6-2-3"><ul class="disc">
+<li id="sec_orders_of_mag-6-2-3-1-1"><div class="para" id="p-derived-sec_orders_of_mag-6-2-3-1-1">information about context, and</div></li>
+<li id="sec_orders_of_mag-6-2-3-1-2"><div class="para" id="p-derived-sec_orders_of_mag-6-2-3-1-2">quantitative information</div></li>
+</ul></div> <div class="para logical" id="sec_orders_of_mag-6-2-4"><ol class="lower-alpha">
+<li id="sec_orders_of_mag-6-2-4-1-1"><div class="para logical" id="sec_orders_of_mag-6-2-4-1-1-1">
+<div class="para">A <a class="external" href="http://www.tallahassee.com/story/news/2014/06/03/scott-vetoes-million-billion-state-budget/9901117/" target="_blank">headline in 2014</a><details class="ptx-footnote" aria-live="polite" id="sec_orders_of_mag-6-2-4-1-1-1-2"><summary class="ptx-footnote__number" title="Footnote 1.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="sec_orders_of_mag-6-2-4-1-1-1-2"><code class="code-inline tex2jax_ignore">www.tallahassee.com/story/news/2014/06/03/scott-vetoes-million-billion-state-budget/9901117/</code></div></details> read “Scott vetoes $69 million in $77-billion state budget”.  Is the $69 million a small or large portion of the total state budget?  The following four statements are all correct. Which statement provides the best description, based on the writing principle?</div>
+<ol class="lower-roman">
+<li id="sec_orders_of_mag-6-2-4-1-1-1-3-1"><div class="para" id="p-derived-sec_orders_of_mag-6-2-4-1-1-1-3-1">The portion vetoed is a very small part of the entire state budget.</div></li>
+<li id="sec_orders_of_mag-6-2-4-1-1-1-3-2"><div class="para" id="p-derived-sec_orders_of_mag-6-2-4-1-1-1-3-2">$69 million is about a thousandth of $77 billion.</div></li>
+<li id="sec_orders_of_mag-6-2-4-1-1-1-3-3"><div class="para" id="p-derived-sec_orders_of_mag-6-2-4-1-1-1-3-3">The $69 million vetoed is a very small part of the entire state budget of $77 billion.</div></li>
+<li id="sec_orders_of_mag-6-2-4-1-1-1-3-4"><div class="para" id="p-derived-sec_orders_of_mag-6-2-4-1-1-1-3-4">The $69 million that was vetoed is about one tenth of one percent of the total $77 billion state budget.</div></li>
+</ol>
+</div></li>
+<li id="sec_orders_of_mag-6-2-4-1-2"><div class="para" id="sec_orders_of_mag-6-2-4-1-2-1">The federal budget in 2012 included $471 billion for Medicare and $47 billion for International Affairs.  Complete the statement below that compares the two quantities. <blockquote class="blockquote" id="sec_orders_of_mag-6-2-4-1-2-1-1"><div class="para" id="sec_orders_of_mag-6-2-4-1-2-1-1-1">The budget of $471 billion for Medicare is about <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> times larger than the $47 billion budget for International Affairs.</div></blockquote>
+</div></li>
+<li id="sec_orders_of_mag-6-2-4-1-3"><div class="para" id="sec_orders_of_mag-6-2-4-1-3-1">Using the writing principle above, in a full sentence compare the 2009 deficit and the 2014 deficit from exercise 9.</div></li>
+</ol></div></article><article class="activity project-like" id="sec_orders_of_mag-7"><h6 class="heading">
+<span class="type">Activity</span>  <span class="title">Estimate, then Calculate.</span>
+</h6>
+<div class="para" id="sec_orders_of_mag-7-2-1">For each situation below, describe your estimation strategy for each situation. Then estimate <em class="emphasis">without a calculator</em>. Then <em class="emphasis">and only then</em> go back use a calculator to refine your estimate.</div> <div class="para logical" id="sec_orders_of_mag-7-2-2"><ol class="lower-alpha">
+<li id="sec_orders_of_mag-7-2-2-1-1"><div class="para" id="sec_orders_of_mag-7-2-2-1-1-1">About 3 million working people in the U.S. make at or below the federal minimum wage of $7.25 per hour.  Estimate the amount of money needed per year to raise their wages to $15 per hour.</div></li>
+<li id="sec_orders_of_mag-7-2-2-1-2"><div class="para" id="sec_orders_of_mag-7-2-2-1-2-1">The amount of money needed to buy everyone in your state a box of Girl Scout cookies.</div></li>
+<li id="activity-all-college"><div class="para" id="activity-all-college-1">The amount of money needed to send all graduating high school seniors in the United States to college for four years.</div></li>
+<li id="sec_orders_of_mag-7-2-2-1-4"><div class="para" id="sec_orders_of_mag-7-2-2-1-4-1">If the U.S. national debt was $22 trillion in 2019, and was evenly divided among the people living in the United States, how much would each person’s share be?</div></li>
+<li id="sec_orders_of_mag-7-2-2-1-5"><div class="para" id="sec_orders_of_mag-7-2-2-1-5-1">If the U.S. budget is about $4.1 trillion, estimate the percentage of the budget which would be needed to pay for your estimate in <a href="sec_orders_of_mag.html#activity-all-college" class="xref" data-knowl="./knowl/xref/activity-all-college.html" data-reveal-label="Reveal" data-close-label="Close" title="Item c">Item c</a> above.</div></li>
+</ol></div></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-problem-solving.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_water_footprint.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

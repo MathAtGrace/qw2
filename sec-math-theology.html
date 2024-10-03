@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>God and Math</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-mindset.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-introduction.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-numbers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-math-theology"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">0.3</span><span class="space"> </span><span class="title">God and Math</span>
+</h2>
+<article class="objectives goal-like" id="god-math-objectives"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="god-math-objectives-1-1"><div class="para" id="p-derived-god-math-objectives-1-1">Interact with different philosophical and theological views of mathematics</div></li>
+<li id="god-math-objectives-1-2"><div class="para" id="p-derived-god-math-objectives-1-2">Discuss philosophical and theological view of mathematics with peers</div></li>
+</ul></article><section class="introduction" id="sec-math-theology-3"><div class="para" id="sec-math-theology-3-1">This section is based on a lesson created by the Kuyers Institute.</div> <div class="para" id="sec-math-theology-3-2">For this set of activities you must work in a group of three or four people. Find your group now.</div> <div class="para" id="sec-math-theology-3-3">In the first part, we will consider what people from history have said about math, and we try to consider math from our own Christian perspective.</div></section><article class="activity project-like" id="sec-math-theology-4"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para" id="sec-math-theology-4-1-1">Why did God give people the capacity to do mathematics?  Before reading any further, write a couple of sentences giving your answer to this question. If all you can think of is “I have no idea!”, take your best guess, even if it seems silly to you.</div></article><div class="para" id="sec-math-theology-5">The following statements have been made during the past 4,000 years.  They suggest possible answers to the question of why we should study math.  Most are by famous and influential people.  As you read each one, fill in the first column of the table linked below, “What reason for studying math does this suggest?”  These quotes are rich and many good things could be said about them, so aim for one good point for each. You will work in groups to fill in the rest of each row; we’ve done one as an example. Note the column “Is this a good reason?” Some quotes provide reasons that are partly good and partly bad.</div>
+<article class="example example-like" id="sec-math-theology-6"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">0.3.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="sec-math-theology-6-1"><blockquote class="blockquote" id="sec-math-theology-6-1-1">
+<div class="para" id="sec-math-theology-6-1-1-1">“Whatever way [the geometer] may go, through exercise will he be lifted from the physical to the divine teachings, which are little accessible because of the difficulty to understand their meaning…and because of the circumstance that not everybody is able to have a conception of them, especially not the one who turns away from the art of demonstration.”</div> <cite class="attribution">―<div class="para" id="sec-math-theology-6-1-1-2-1">Muhammad ibn Ahmad al-Biruni (al bee-ROO-nee), Uzbekistan, c. 1030 A.D.</div> <div class="para" id="sec-math-theology-6-1-1-2-2">Preface to the Book on Finding the Chords in the Circle</div></cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-6-2-1-1">Why did al-Biruni think math was important?</div>
+<div class="solutions"><details id="sec-math-theology-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-math-theology-6-2-2-1">Al-Biruni seems to be saying that understanding math can help us understand our creator.</div></div></details></div></article><article class="task exercise-like" id="sec-math-theology-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-6-3-1-1">Do you agree with al-Biruni?  Why or why not?</div>
+<div class="solutions"><details id="sec-math-theology-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-math-theology-6-3-2-1">On one hand, al-Biruni was Muslim, so his idea of “creator” was different from ours.</div> <div class="para" id="sec-math-theology-6-3-2-2">But on the other hand, if we interpret his words from a Christian perspective, we can agree that God wants us to know him. Understanding the order and beauty of God’s world can also help us understand God’s order and beauty.</div>
+</div></details></div></article></article><article class="activity project-like" id="sec-math-theology-7"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-7-1"><blockquote class="blockquote" id="sec-math-theology-7-1-1">
+<div class="para" id="sec-math-theology-7-1-1-1">“Accurate reckoning. The entrance into the knowledge of all existing things and all obscure secrets.”</div> <cite class="attribution">―Introduction to the Rhind Mathematical Papyrus, written in Egypt around 1850 B.C.</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-7-2-1-1">Why did Rhind Mathematical Papyrus think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-7-3-1-1">Do you agree with what the Rhind Mathematical Papyrus is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-8"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-8-1"><blockquote class="blockquote" id="sec-math-theology-8-1-1">
+<div class="para" id="sec-math-theology-8-1-1-1">“You [God] have arranged all things by measure and number and weight.”</div> <div class="para" id="sec-math-theology-8-1-1-2">“...Wherever you turn, Wisdom speaks to you through the imprint it has stamped upon its works.... Look at the sky, the earth, and the sea, and at whatever in them shines from above or crawls, flies, or swims below. These have form because they have number.”</div> <cite class="attribution">―Augustine, North Africa, c. 400 AD De Genesi Contra Manichaeos, I (first line is quoting from the Wisdom of Solomon)</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-8-2-1-1">Why did Augustine think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-8-3-1-1">Do you agree with what Augustine is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-9"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-9-1"><blockquote class="blockquote" id="sec-math-theology-9-1-1">
+<div class="para" id="sec-math-theology-9-1-1-1">“In all those transactions which relate to worldly… (or)  religious affairs, calculation is of use.  In the science of love, in the science of wealth, in music and in the drama, in the art of cooking, and similarly in medicine and in things like the knowledge of architecture; in prose, in poetics and poetry, in logic and grammar and such other things,...the science of computation is held in high esteem.  In relation to the movements  of the sun and other heavenly bodies, in connection with eclipses and conjunction of the planets...it is utilized.  The number, the diameter, and the  perimeter of islands, oceans, and mountains; the extensive dimensions of the rows of habitations and halls belonging to the inhabitants of the world...all of these are made out by means of computation.”</div> <cite class="attribution">―Mahavira’s (mah-hah-VEE-rah) Ganitasarasangraha, India, 9th century A.D.</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-9-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-9-2-1-1">Why did Mahavira think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-9-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-9-3-1-1">Do you agree with what Mahavira is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-10"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-10-1"><blockquote class="blockquote" id="sec-math-theology-10-1-1">
+<div class="para" id="sec-math-theology-10-1-1-1">“Now the science of mathematics is very important.  This book ...therefore will be of great benefit to the people of the world.  The knowledge for investigation, the development of intellectual power, the way of controlling the kingdom and of ruling even  the whole world, can be obtained by those who are able to make good use of this book.  Ought not those who have great desire to be learned take this with them and study it with great care?”</div> <cite class="attribution">―Zhu Shijie (JOO shoor-jieh), China, 1303.  The introduction to Precious Mirror of the Four Elements</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-10-2-1-1">Why did Zhu Shijie think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-10-3-1-1">Do you agree with what Zhu Shijie is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-11"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-11-1"><blockquote class="blockquote" id="sec-math-theology-11-1-1">
+<div class="para" id="sec-math-theology-11-1-1-1">“Since geometry is co-eternal with the divine mind before the birth of things, God himself served as his own model in creating the world (for what is there in God which is not God?), and he with his own image reached down to humanity.”</div> <cite class="attribution">―Johannes Kepler, 1619.  The Harmony of the World</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-11-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-11-2-1-1">Why did Kepler think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-11-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-11-3-1-1">Do you agree with what Kepler is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-12"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-12-1"><blockquote class="blockquote" id="sec-math-theology-12-1-1">
+<div class="para" id="sec-math-theology-12-1-1-1">“Philosophy is written in this grand book, the universe, which  stands continually open to our gaze.  But the book cannot be understood unless one first learns to comprehend the language and read the letters in which it is composed. It is written in the language of mathematics, and its characters triangles, circles, and other geometric figures with out which it is humanly impossible to understand a single  word of it; without these, one wanders about in a dark labyrinth.”</div> <cite class="attribution">―Galileo Galilei, 1623. II Saggiatore</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-12-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-12-2-1-1">Why did Galileo think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-12-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-12-3-1-1">Do you agree with what Galileo is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-13"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-13-1"><blockquote class="blockquote" id="sec-math-theology-13-1-1">
+<div class="para" id="sec-math-theology-13-1-1-1">“The long chains of simple and easy reasonings by means of which geometers are accustomed to reach the conclusions of their most difficult demonstrations led me to imagine that all things, to the knowledge of which man is competent, are mutually connected in the same way, and that there is nothing so far removed from us as to be beyond our reach, or so hidden that we cannot discover it, providing only that we abstain from accepting the false for the true, and always preserve in our thoughts the order necessary for the deduction of one truth from another.”</div> <cite class="attribution">―Rene Descartes (day-KART), France, 1637. Discourse on Method</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-13-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-13-2-1-1">Why did Descartes think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-13-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-13-3-1-1">Do you agree with what Descartes is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-14"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-14-1"><blockquote class="blockquote" id="sec-math-theology-14-1-1">
+<div class="para" id="sec-math-theology-14-1-1-1">“Mathematics, rightly viewed, possesses not only truth, but supreme beauty—a beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of paintings or music, yet sublimely pure and capable of a stern perfection such as only the greatest art can show.  The true spirit of delight, the exaltation, the sense of being more than man, which is the touchstone of the highest excellence, is to be found in mathematics as surely as in poetry.”</div> <cite class="attribution">―Bertrand Russell, England, 1967.  The Study of Mathematics: Philosophical Essays</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-14-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-14-2-1-1">Why did Russell think math was important?</div></article><article class="task exercise-like" id="sec-math-theology-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-14-3-1-1">Do you agree with what Russell is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-15"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-15-1"><blockquote class="blockquote" id="sec-math-theology-15-1-1">
+<div class="para" id="sec-math-theology-15-1-1-1">“...the most urgent social issue affecting poor people and people of color is economic access.  In today’s world, economic access and full citizenship depend crucially on math and science literacy.  I believe that the absence of math literacy in urban and rural communities throughout this country is an issue as urgent as the lack of registered Black voters in Mississippi was in 1961.”</div> <cite class="attribution">―Robert P Moses, United States, 2001. Radical Equations: Math Literacy and Civil Rights</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-15-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-15-2-1-1">Why did Robert Moses think math was important?</div>
+<div class="solutions"><details id="sec-math-theology-15-2-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-math-theology-15-2-2-1">By “economic access” he means the ability to get a good job.  Some students’ answers in the past have been distracted by the abstract economy and failed to mention the real people Robert Moses was referring to.</div></div></details></div></article><article class="task exercise-like" id="sec-math-theology-15-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-15-3-1-1">Do you agree with what Robert Moses is saying?  Why or why not?</div></article></article><article class="activity project-like" id="sec-math-theology-16"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-16-1"><blockquote class="blockquote" id="sec-math-theology-16-1-1">
+<div class="para" id="sec-math-theology-16-1-1-1">“So God created man in his own image, in the image of God he created him; male and female he created them.  And God blessed them and God said to them, “Be fruitful and multiply, and fill the earth and subdue it, and have dominion over the fish of the sea and over the birds of the air and over every living thing that moves upon the earth”</div> <cite class="attribution">―Genesis 1:27-28</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-16-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-16-2-1-1">What are the main ideas of this passage?</div></article><article class="task exercise-like" id="sec-math-theology-16-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-16-3-1-1">What might this statement have to do with how we think about math?</div>
+<div class="solutions"><details id="sec-math-theology-16-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-math-theology-16-3-2-1">If you are focussing on the word “multiply,” then you missed the point.</div></div></details></div></article></article><article class="activity project-like" id="sec-math-theology-17"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-17-1"><article class="poem" id="sec-math-theology-17-1-1"><div class="stanza">
+<div class="line left">Blessed are those who find wisdom,</div>
+<div class="line left">
+<span class="tab"></span>those who gain understanding,</div>
+<div class="line left">for she is more profitable than silver</div>
+<div class="line left">
+<span class="tab"></span>and yields better returns than gold.</div>
+<div class="line left">She is more precious than rubies;</div>
+<div class="line left">
+<span class="tab"></span>nothing you desire can compare with her.</div>
+<div class="line left">Long life is in her right hand;</div>
+<div class="line left">
+<span class="tab"></span>in her left hand are riches and honor.</div>
+<div class="line left">Her ways are pleasant ways,</div>
+<div class="line left">
+<span class="tab"></span>and all her paths are peace.</div>
+<div class="line left">She is a tree of life to those who take hold of her;</div>
+<div class="line left">
+<span class="tab"></span>those who hold her fast will be blessed.</div>
+</div>
+<div class="stanza">
+<div class="line left">By wisdom the Lord laid the earth’s foundations,</div>
+<div class="line left">
+<span class="tab"></span>by understanding he set the heavens in place;</div>
+<div class="line left">by his knowledge the watery depths were divided,</div>
+<div class="line left">
+<span class="tab"></span>and the clouds let drop the dew.</div>
+</div>
+<div class="author left">Proverbs 3:13-20</div></article></div>
+<article class="task exercise-like" id="sec-math-theology-17-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-17-2-1-1">What are the main ideas of this passage?</div></article><article class="task exercise-like" id="sec-math-theology-17-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-17-3-1-1">What might this statement have to do with how we think about math?</div>
+<div class="solutions"><details id="sec-math-theology-17-3-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-math-theology-17-3-2-1">If you are focussing on the word “divided”, then you missed the point.</div></div></details></div></article></article><article class="activity project-like" id="sec-math-theology-18"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-math-theology-18-1"><blockquote class="blockquote" id="sec-math-theology-18-1-1">
+<div class="para" id="sec-math-theology-18-1-1-1">“He [Christ] is the image of the invisible God, the first-born of all creation; for in him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or principalities or authorities—all things were created through him and for him.  He is before all things, and in him all things hold together.”</div> <cite class="attribution">―Colossians 1:15-17</cite>
+</blockquote></div>
+<article class="task exercise-like" id="sec-math-theology-18-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-math-theology-18-2-1-1">What are the main ideas of this passage?</div></article><article class="task exercise-like" id="sec-math-theology-18-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-math-theology-18-3-1-1">What might this statement have to do with how we think about math?</div></article></article></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-mindset.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-numbers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

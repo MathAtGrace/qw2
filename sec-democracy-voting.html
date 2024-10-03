@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Voting Methods</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-democracy-apportionment.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="democracy.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-democracy-popular-vote.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-democracy-voting"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Voting Methods</span>
+</h2>
+<article class="objectives goal-like" id="sec-democracy-voting-2"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 5.2</span>
+</h3>
+<div class="introduction" id="sec-democracy-voting-2-2"><div class="para" id="sec-democracy-voting-2-2-1">Students will be able to:</div></div>
+<ul class="disc">
+<li id="sec-democracy-voting-2-3-1"><div class="para" id="sec-democracy-voting-2-3-1-1">Read a voter preference schedule for ranked choice voting</div></li>
+<li id="sec-democracy-voting-2-3-2"><div class="para" id="sec-democracy-voting-2-3-2-1">Calculate the minimum number of votes to win a majority</div></li>
+<li id="sec-democracy-voting-2-3-3"><div class="para" id="sec-democracy-voting-2-3-3-1">Find the winner of an election using the plurality method</div></li>
+<li id="sec-democracy-voting-2-3-4"><div class="para" id="sec-democracy-voting-2-3-4-1">Find the winner of an election using the instant runoff method</div></li>
+<li id="sec-democracy-voting-2-3-5"><div class="para" id="sec-democracy-voting-2-3-5-1">Find the winner of an election using the Borda count method</div></li>
+<li id="sec-democracy-voting-2-3-6"><div class="para" id="sec-democracy-voting-2-3-6-1">Find the winner of an election using the pairwise (Condorcet) method</div></li>
+</ul></article><section class="subsection" id="sec-democracy-voting-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Voting Rights</span>
+</h3>
+<div class="para" id="sec-democracy-voting-3-2">Now that we have studied how to apportion the number of representatives for each state, along with a brief history of the U.S. government, we want to look at how representatives and other public officials are elected. There are also many other situations where a group consensus is needed, and some type of voting occurs. You may be most familiar with systems where you get one vote and the candidate with the most votes wins. However, there are many other ways of determining a winner. We will look at several voting methods in this section.</div>
+<div class="para" id="sec-democracy-voting-3-3">For an election using any of these methods to be fair, each person must have an equal right to vote and an equal ability to exercise that right. The <em class="alert">Voting Rights Act of 1965</em> prohibited any election practice that denies the right to vote based on race, but key portions of the law have been invalidated since then. <em class="alert">Voter suppression</em> continues today in different forms such as purging voter rolls, eliminating polling places and voter identification laws, which can also affect transgender people.</div>
+<div class="para" id="sec-democracy-voting-3-4">
+<em class="alert">The John Lewis Voting Rights Advancement Act</em> was passed in the U.S. House of Representatives in 2019 to restore elements of the Voting Rights Act and make it possible to enforce the law. It has not been taken up in the Senate, though. Follow this link if you would like to read a more detailed timeline of voting rights<details class="ptx-footnote" aria-live="polite" id="sec-democracy-voting-3-4-2"><summary class="ptx-footnote__number" title="Footnote 5.5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="sec-democracy-voting-3-4-2"><a class="external" href="https://www.aclu.org/voting-rights-act-major-dates-history" target="_blank"><code class="code-inline tex2jax_ignore">https://www.aclu.org/voting-rights-act-major-dates-history</code></a></div></details>.</div></section><section class="subsection" id="sec-democracy-voting-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Ranked Choice Ballots</span>
+</h3>
+<div class="para" id="sec-democracy-voting-4-2">To use some of the methods we are going to study, we need to know more than just each person’s first choice. We also need to know their 2nd and 3rd choices, and so on. A ballot where each person ranks all of the choices in order of their preference is called a <em class="alert">ranked choice ballot</em>.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:47%;"><div class="para" id="sec-democracy-voting-4-3-1">The image to the right shows an example of a ranked choice ballot<details class="ptx-footnote" aria-live="polite" id="sec-democracy-voting-4-3-1-1"><summary class="ptx-footnote__number" title="Footnote 5.6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="sec-democracy-voting-4-3-1-1">
+<a class="external" href="https://www.rankedchoicevoting.org/mark_rcv_ballot" target="_blank">"Ranked Choice Ballot"</a>, <a class="external" href="https://www.rankedchoicevoting.org/" target="_blank">Copyright 2020 Ranked Choice Voting Resource Center</a> is licensed under <a class="external" href="http://creativecommons.org/licenses/by-sa/3.0" target="_blank">CC BY-SA 3.0</a>
+</div></details>. Ranked choice ballots can be used in elections by mail or in person at polling places. Let’s see how to tally the results from a ranked choice election.</div></div>
+<div class="sbspanel middle" style="width:47%;"><img src="external/democracy/5_2/voter_card.png" class="contained" alt="A ranked choice ballot with three candidates for favorite flavor of ice cream: strawberry, chocolate and vanilla. There is a grid for voters to select their first, second and third choice."></div>
+</div></div>
+<article class="example example-like" id="sec-democracy-voting-4-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-4-4-1-1">Students are voting for their class president and the candidates are Omar (O), Ana (A), and Helena (H). They have ranked the candidates according to their preference.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines"></th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Vien</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Ana</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Marv</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Tasha</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Eve</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Omar</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Lupe</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Dave</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Helena</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Jimmy</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+</table></div></div></div></article></section><section class="subsection" id="sec-democracy-voting-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Preference Schedule</span>
+</h3>
+<div class="para" id="sec-democracy-voting-5-2">To simplify this data, we create a <em class="alert">preference schedule</em> which combines all the people who voted with the exact same ranking. For example, Tasha, Lupe, and Helena, all voted in the same way, HAO. So, we will list that combination once, with the number 3 at the top of that column. Three students also voted for AHO, and OHA. One student voted for the ranking AOH. Below is the preference schedule.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel fixed-width middle" style="width:47%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+</table></div>
+<div class="sbspanel middle" style="width:47%;"><div class="para" id="sec-democracy-voting-5-3-2">Notice that by totaling the vote counts across the top of the preference schedule we can see the total number of votes cast: <span class="process-math">\(1+3+3+3 = 10\)</span> total votes.</div></div>
+</div></div></section><section class="subsection" id="sec-democracy-voting-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Plurality Method</span>
+</h3>
+<div class="para" id="sec-democracy-voting-6-2">The voting method you may be most familiar with in the United States is the <em class="alert">plurality method</em>. In the plurality method, the candidate with the most first-choice votes is declared the winner.</div>
+<div class="para" id="sec-democracy-voting-6-3">There is a difference between a <em class="alert">majority</em> and a plurality. For a majority, a candidate must have over 50% of the votes. There are some states that require a majority in order to win an election. In more cases, though, only a plurality is required, which means having more votes than any other candidate. If a tie occurs without using ranked choice voting, then a new run-off election would be required.</div>
+<article class="example example-like" id="example_2"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="example_2-1-1">In our election from above, we had this preference table:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+</table></div></div></div> <div class="para logical" id="example_2-1-3">
+<div class="para">For the plurality method, we only look at the 1st choice row. Totaling them up:</div>
+<ul class="disc">
+<li id="example_2-1-3-1-1"><div class="para" id="example_2-1-3-1-1-1">Ana: <span class="process-math">\(1+3 = 4\)</span> votes</div></li>
+<li id="example_2-1-3-1-2"><div class="para" id="example_2-1-3-1-2-1">Omar: <span class="process-math">\(3\)</span> votes</div></li>
+<li id="example_2-1-3-1-3"><div class="para" id="example_2-1-3-1-3-1">Helena: <span class="process-math">\(3\)</span> votes</div></li>
+</ul>
+</div> <div class="para" id="example_2-1-4">Ana is the winner using the plurality voting method.</div> <div class="para" id="example_2-1-5">Notice that Ana won with 4 out of 10 votes, or 40% of the votes, which is a plurality of the votes, but not a majority.</div></article></section><section class="subsection" id="sec-democracy-voting-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">How Many Votes are Needed to Win?</span>
+</h3>
+<div class="para" id="sec-democracy-voting-7-2">If we know how many voters there are, we can calculate the minimum number of votes needed for a majority win.</div>
+<div class="para" id="sec-democracy-voting-7-3">Continuing <a href="sec-democracy-voting.html#example_2" class="xref" data-knowl="./knowl/xref/example_2.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.2">Example 5.2.2</a> from above, there are 10 voters, so we divide that by 2 or multiply by 0.5 to find 50%. Then we round up to the next whole number to get just over 50%.</div>
+<div class="para" id="sec-democracy-voting-7-4">
+<span class="process-math">\(10 \div 2=5\text{.}\)</span> Then we round up to 6 votes.</div>
+<div class="para" id="sec-democracy-voting-7-5">Exactly half of the votes would be a tie, so we round up to the next whole number. A candidate would need 6 out of 10 votes to win a majority. If there was an odd number of voters we would divide by 2 and get a decimal. Let’s say there were 13 voters:</div>
+<div class="para" id="sec-democracy-voting-7-6">
+<span class="process-math">\(13 \div 2=6.5\text{.}\)</span> Then we round up to 7 votes.</div>
+<div class="para" id="sec-democracy-voting-7-7">Then we round up to the next whole number, which is 7 votes. A candidate can win a plurality with fewer votes than the majority, as long as they have more than any other candidate.</div></section><section class="subsection" id="sec-democracy-voting-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Insincere Voting</span>
+</h3>
+<div class="para" id="sec-democracy-voting-8-2">In a system with only two major political parties like the United States, it can be nearly impossible for third-party candidates to break through. You may feel like you would be wasting your vote if you voted for a third-party candidate. Consider this example.</div>
+<article class="example example-like" id="sec-democracy-voting-8-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-8-3-1-1">Here is a two-party election with preferences shown below. It is a close race, but candidate B would win.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">96</td>
+<td class="c m b1 r1 l0 t1 lines">100</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-8-3-1-3">Suppose a third candidate, C, entered the race, and a segment of voters sincerely want to vote for that third candidate. Here is the new preference schedule.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">96</td>
+<td class="c m b1 r1 l0 t1 lines">90</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-8-3-1-5">The ten people who prefer candidate C are in a bind because if they vote for C, then A will win, but they prefer B over A. It is likely that they will vote for B, their second choice, to keep A from winning.</div></article><div class="para" id="sec-democracy-voting-8-4">Situations like this can lead to insincere voting. <em class="alert">Insincere voting</em> is when a person doesn’t vote according to their actual preference for strategic purposes. In the case above, a person who wants to vote for a third-party candidate realizes it would take a vote away from their major party candidate. Not wanting to see their party lose the election, they vote for the major party candidate.</div></section><section class="subsection" id="sec-democracy-voting-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Instant Runoff Method</span>
+</h3>
+<div class="para" id="sec-democracy-voting-9-2">The <em class="alert">Instant Runoff Method</em> is a modification of the plurality method that attempts to address the issue of insincere voting.</div>
+<div class="para" id="sec-democracy-voting-9-3">The voting is done with ranked choice ballots and a preference schedule is generated. Then we tally all the first-choice votes. The candidate with the <em class="emphasis">least</em> first-place votes is eliminated, but any votes for that candidate are transferred to the voters’ next choice. The process continues until one candidate has a majority. We will show you how it works with an example.</div>
+<article class="example example-like" id="sec-democracy-voting-9-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-9-4-1-1">Consider the preference schedule below, in which a committee is choosing a chairperson. The candidates are labeled A, B, C, D, and E for simplicity. Here is the preference schedule:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">7</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5th choice</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-9-4-1-3">Let’s start by tallying the first-choices.</div>   <div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-4-1">A: <span class="process-math">\(2\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-4-2">B: <span class="process-math">\(3+5=8\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-4-3">C: <span class="process-math">\(5+1=6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-4-4">D: <span class="process-math">\(7\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-4-5">E: <span class="process-math">\(1\)</span>
+</div></div>
+</div></div> <div class="para" id="sec-democracy-voting-9-4-1-5">If this was a plurality election, B would be the winner with 8 first-choice votes.</div> <div class="para" id="sec-democracy-voting-9-4-1-6"></div> <section class="paragraphs" id="sec-democracy-voting-9-4-1-7"><h5 class="heading"><span class="title">Round 1.</span></h5> <div class="para" id="sec-democracy-voting-9-4-1-7-2">We make our first elimination. Choice E has the fewest first-place votes, so we eliminate E from the election. To transfer the 1 vote, we look at the person who voted for E in the last column. Their second choice was D, so we transfer that one vote to D, who will now have 8 votes:</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-7-3-1">A: <span class="process-math">\(2\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-7-3-2">B: <span class="process-math">\(8\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-7-3-3">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-7-3-4">D: <span class="process-math">\(7+1 = 8\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-7-3-5"><del class="delete">E: <span class="process-math">\(1\)</span></del></div></div>
+</div></div></section> <section class="paragraphs" id="sec-democracy-voting-9-4-1-8"><h5 class="heading"><span class="title">Round 2.</span></h5> <div class="para" id="sec-democracy-voting-9-4-1-8-2">There are 24 votes in total, so a majority would be 13 votes. Since no candidate has the majority, we eliminate the next candidate with the fewest votes, which is A. We look at the column for the two people who chose A. Their second choice was E, who is already eliminated. Their third choice is B, so their 2 votes are transferred to B, for a total of 10:</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-8-3-1"><del class="delete">A: <span class="process-math">\(2\)</span></del></div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-8-3-2">B: <span class="process-math">\(8+2=10\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-8-3-3">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-8-3-4">D: <span class="process-math">\(8\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-8-3-5"><del class="delete">E: <span class="process-math">\(1\)</span></del></div></div>
+</div></div></section> <section class="paragraphs" id="sec-democracy-voting-9-4-1-9"><h5 class="heading"><span class="title">Round 3.</span></h5> <div class="para" id="sec-democracy-voting-9-4-1-9-2">Now C has the fewest votes, and there are two columns for C in the preference schedule. Five people who voted for C chose A second, then E (who have already been eliminated), then D. So, we transfer their 5 votes to D. One person who voted for C selected B as their second choice, so their one vote goes to B. Then we tally the votes for each remaining candidate.</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:0.5%;margin-right:0.5%;">
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-1"><del class="delete">A: <span class="process-math">\(2\)</span></del></div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-2">B: <span class="process-math">\(10+1=11\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-3"><del class="delete">C: <span class="process-math">\(6\)</span></del></div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-4">D: <span class="process-math">\(8+5=13\)</span>
+</div></div>
+<div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-5"><del class="delete">E: <span class="process-math">\(1\)</span></del></div></div>
+</div></div> <div class="para" id="sec-democracy-voting-9-4-1-9-4">Now we can see that D is the winner of the instant runoff method with 13 votes. We can stop this method earlier if a candidate reaches a majority.</div></section></article><div class="para" id="sec-democracy-voting-9-5">The Instant Runoff Method is similar to the idea of holding runoff elections, but since every voter’s order of preference is recorded on the ballot, the runoff can be computed quickly without requiring a second costly election. It also makes it safe to vote for a third-party candidate knowing that your vote will go to your second choice if your first choice can’t win.</div>
+<div class="para" id="sec-democracy-voting-9-6">This voting method is used in several places around the world, including the election of members of the Australian House of Representatives, statewide elections in Maine, and local elections in Benton County, Oregon (Ranked Choice Voting Resource Center, 2020).</div></section><section class="subsection" id="sec-democracy-voting-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Borda Count (Point System)</span>
+</h3>
+<div class="para" id="sec-democracy-voting-10-2">Borda Count is another voting method, named for Jean-Charles de Borda, who developed the system in 1770. In this method, points are assigned to each candidate based on their ranking; 1 point for last choice, 2 points for second-to-last choice, and so on. The point values are totaled, and the candidate with the largest point total is the winner. We’ll show you how to do it in the next example.</div>
+<article class="example example-like" id="sec-democracy-voting-10-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-10-3-1-1">A group of PCC students are getting together for a student leadership conference and they need to decide where to meet. Their members are from four campuses: Sylvania, Rock Creek, Cascade and Southeast. The votes for where to hold the conference were:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">31</td>
+<td class="c m b1 r1 l0 t1 lines">25</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-10-3-1-3">Now we will add a column on the left side of the table for the points. Then we multiply the points by the number of voters who put each candidate in that rank,</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Points</td>
+<td class="c m b1 r1 l0 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">31</td>
+<td class="c m b1 r1 l0 t1 lines">25</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">Cascade</td>
+<td class="c m b1 r1 l0 t0 lines">Southeast</td>
+<td class="c m b1 r1 l0 t0 lines">Rock Creek</td>
+<td class="c m b1 r1 l0 t0 lines">Sylvania</td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-10-3-1-5">We will start with Sylvania in the bottom row and move up. They have one point times 14 voters, 2 points times 25 + 10 voters, 3 points times zero, and 4 points times 31 voters. Multiplying and then adding gives us a total of 208 points for Sylvania. You can see the calculation below and we will do the same thing for each campus:</div> <div class="para logical" id="sec-democracy-voting-10-3-1-6"><ul class="disc">
+<li id="sec-democracy-voting-10-3-1-6-1-1"><div class="para" id="sec-democracy-voting-10-3-1-6-1-1-1">Sylvania: <span class="process-math">\(1 \cdot 14 + 2 \cdot 35 + 3 \cdot 0 + 4 \cdot 31=208 \)</span> points</div></li>
+<li id="sec-democracy-voting-10-3-1-6-1-2"><div class="para" id="sec-democracy-voting-10-3-1-6-1-2-1">Rock Creek: <span class="process-math">\(1 \cdot 10 + 2 \cdot 31 + 3 \cdot 14 + 4 \cdot 25= 214\)</span> points</div></li>
+<li id="sec-democracy-voting-10-3-1-6-1-3"><div class="para" id="sec-democracy-voting-10-3-1-6-1-3-1">Cascade: <span class="process-math">\(1 \cdot 31 + 2 \cdot 0 + 3 \cdot 35 + 4 \cdot 14= 192\)</span> points</div></li>
+<li id="sec-democracy-voting-10-3-1-6-1-4"><div class="para" id="sec-democracy-voting-10-3-1-6-1-4-1">Southwest: <span class="process-math">\(1 \cdot 25 + 2 \cdot 14 + 3 \cdot 31 + 4 \cdot 10 = 186\)</span> points</div></li>
+</ul></div> <div class="para" id="sec-democracy-voting-10-3-1-7">Using the Borda count method, Rock Creek is the winning location.</div></article><div class="para" id="sec-democracy-voting-10-4">Note that Sylvania would have won with the plurality method. Borda count is sometimes described as a consensus-based voting system, since it can be used to choose a more broadly acceptable option over the one with the most first-choice support. This is a different approach than plurality and instant runoff voting that focus on first-choice votes; Borda Count considers every voter’s entire ranking to determine the outcome.</div>
+<div class="para" id="sec-democracy-voting-10-5">Because of this consensus behavior, Borda Count, or some variation of it, is commonly used in awarding sports awards. Variations are used to determine the Most Valuable Player in baseball, to rank teams in NCAA sports, and to award the Heisman trophy.</div></section><section class="subsection" id="sec-democracy-voting-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Pairwise Comparison: Copeland’s Method</span>
+</h3>
+<div class="para" id="sec-democracy-voting-11-2">Another method, called <em class="alert">pairwise comparison</em>, the <em class="alert">Condorcet method</em> or <em class="alert">Copeland’s method</em>, attempts to be fair by looking at each pair of candidates separately.</div>
+<div class="para" id="sec-democracy-voting-11-3">In this method, we look at each pair as if they were the only two candidates running and determine which of the two is more preferred. In Copeland’s method, the more preferred candidate is awarded 1 point. If there is a tie, each candidate is awarded <span class="process-math">\(\frac{1}{2}\)</span> point. After all the pairwise comparisons are made, the candidate with the most points, and hence the most pairwise wins, is declared the winner.</div>
+<div class="para" id="sec-democracy-voting-11-4">Variations of Copeland’s Method are used in many professional organizations, including election of the Board of Trustees for the Wikimedia Foundation that runs Wikipedia.</div>
+<article class="example example-like" id="sec-democracy-voting-11-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-11-5-1-1">Consider our class president example from the beginning of the chapter. Determine the winner using Copeland’s Method.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+</table></div></div></div> <div class="para logical" id="sec-democracy-voting-11-5-1-3">
+<div class="para">We need to look at each pair of candidates to see which would win in a one-to-one comparison. First, we will systematically list all of the pairs of candidates:</div>
+<ul class="disc">
+<li id="sec-democracy-voting-11-5-1-3-1-1"><div class="para" id="sec-democracy-voting-11-5-1-3-1-1-1">Helena vs. Omar</div></li>
+<li id="sec-democracy-voting-11-5-1-3-1-2"><div class="para" id="sec-democracy-voting-11-5-1-3-1-2-1">Helena vs. Ana</div></li>
+<li id="sec-democracy-voting-11-5-1-3-1-3"><div class="para" id="sec-democracy-voting-11-5-1-3-1-3-1">Ana vs. Omar</div></li>
+</ul>
+</div> <div class="para" id="sec-democracy-voting-11-5-1-4">Next, comparing Helena with Omar, we see that 6 voters, those marked in bold in the table below, would prefer Helena over Omar. Note that Helena doesn’t have to be the voter’s first choice – we’re imagining that Ana wasn’t in the race. The other 4 people chose Omar over Helena.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines"><em class="alert">3</em></td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines"><em class="alert">3</em></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines"><em class="alert">H</em></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines"><em class="alert">H</em></td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines"><em class="alert">O</em></td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines"><em class="alert">O</em></td>
+</tr>
+</table></div></div></div> <div class="para" id="sec-democracy-voting-11-5-1-6">Based on this comparison of Helena vs. Omar, Helena wins 1 point.</div> <div class="para" id="sec-democracy-voting-11-5-1-7">Next, comparing Helena with Ana, the 6 voters in the last two columns prefer Helena to Ana, so Helena gets one point. Lastly, we compare Ana with Omar. The 1 voter in the first column prefers Ana, as do the 3 voters in the second column. The 3 voters in the third column prefer Omar, but the 3 voters in the last column would choose Ana. So, altogether <span class="process-math">\(1+3+3=7\)</span> voters prefer Ana over Omar. Ana gets 1 point.</div> <div class="para logical" id="sec-democracy-voting-11-5-1-8">
+<div class="para">To summarize, we write how many voters prefer each candidate ignoring all other candidates:</div>
+<ul class="disc">
+<li id="sec-democracy-voting-11-5-1-8-1-1"><div class="para" id="sec-democracy-voting-11-5-1-8-1-1-1">Helena-6 vs Omar-4 (Helena gets 1 point)</div></li>
+<li id="sec-democracy-voting-11-5-1-8-1-2"><div class="para" id="sec-democracy-voting-11-5-1-8-1-2-1">Helena-6 vs Ana-4 (Helena gets 1 point)</div></li>
+<li id="sec-democracy-voting-11-5-1-8-1-3"><div class="para" id="sec-democracy-voting-11-5-1-8-1-3-1">Ana-7 vs Omar-3 (Ana gets 1 point)</div></li>
+</ul>
+</div> <div class="para" id="sec-democracy-voting-11-5-1-9">Ana has a total of 1 point and Helena has 2 points, so Helena is the winner under Copeland’s Method. This method gave us a different winner than the plurality method where Ana won, because more people preferred Helena to Ana, even though they didn’t choose Helena for their first choice.</div></article><div class="para" id="sec-democracy-voting-11-6">Now that we’ve seen an example of each voting method, let’s run through each method for the same scenario.</div>
+<article class="example example-like" id="sec-democracy-voting-11-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-democracy-voting-11-7-1-1">Consider an advertising team voting to choose one of four different slogans, labeled A, B, C and D. Determine the winner using each method we have learned.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-11-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-democracy-voting-11-7-2-1">
+<em class="alert">Plurality Method:</em> We tally the first-place votes:</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-2-1">A: <span class="process-math">\(3+2=5\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-2-2">B: <span class="process-math">\(4\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-2-3">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-2-4">D: <span class="process-math">\(5\)</span>
+</div></div>
+</div></div> <div class="para" id="sec-democracy-voting-11-7-2-3">C wins the plurality method.</div> <div class="para" id="sec-democracy-voting-11-7-2-4">
+<em class="alert">Instant Runoff Method:</em> We start with the plurality tallies. Then we look for the slogan with the least first-choice votes, and that is B. Looking in the preference schedule at the 4 people who voted for B, we see their second choice is D. So we transfer those 4 votes to D, which now has 9.</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-5-1">A: <span class="process-math">\(5\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-5-2"><del class="delete">B: <span class="process-math">\(4\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-5-3">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-5-4">D: <span class="process-math">\(5+4=9\)</span>
+</div></div>
+</div></div> <div class="para" id="sec-democracy-voting-11-7-2-6">Now A has the least number of votes with 5, so we look at the voters who chose A for their first choice. There are two columns, so three of those votes will be transferred to C and 2 will be transferred to D.</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-7-1"><del class="delete">A: <span class="process-math">\(5\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-7-2"><del class="delete">B: <span class="process-math">\(4\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-7-3">C: <span class="process-math">\(6+3=9\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para" id="sec-democracy-voting-11-7-2-7-4">D: <span class="process-math">\(9+2=11\)</span>
+</div></div>
+</div></div> <div class="para" id="sec-democracy-voting-11-7-2-8">D is the winner of the instant runoff method.</div> <div class="para" id="sec-democracy-voting-11-7-2-9">
+<em class="alert">Borda Count:</em> We add a column on the left for the points, starting with 1 point for last place and counting up. Then we multiply the points by the number of votes and add them all up.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Points</td>
+<td class="c m b1 r1 l0 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+</table></div></div></div> <div class="para logical" id="sec-democracy-voting-11-7-2-11"><ul class="disc">
+<li id="sec-democracy-voting-11-7-2-11-1-1"><div class="para" id="sec-democracy-voting-11-7-2-11-1-1-1">A: <span class="process-math">\(1 \cdot 0 + 2 \cdot 10 + 3 \cdot 5 + 4 \cdot 5 = 55\)</span> points</div></li>
+<li id="sec-democracy-voting-11-7-2-11-1-2"><div class="para" id="sec-democracy-voting-11-7-2-11-1-2-1">B: <span class="process-math">\(1 \cdot 7 + 2 \cdot 3 + 3 \cdot 6 + 4 \cdot 4 = 47\)</span> points</div></li>
+<li id="sec-democracy-voting-11-7-2-11-1-3"><div class="para" id="sec-democracy-voting-11-7-2-11-1-3-1">C: <span class="process-math">\(1 \cdot 4 + 2 \cdot 7 + 3 \cdot 3 + 4 \cdot 6 = 51\)</span> points</div></li>
+<li id="sec-democracy-voting-11-7-2-11-1-4"><div class="para" id="sec-democracy-voting-11-7-2-11-1-4-1">D: <span class="process-math">\(1 \cdot 9 + 2 \cdot 0 + 3 \cdot 6 + 4 \cdot 5 = 47\)</span> points</div></li>
+</ul></div> <div class="para" id="sec-democracy-voting-11-7-2-12">A is the winner of the Borda count method.</div> <div class="para" id="sec-democracy-voting-11-7-2-13"><em class="alert">Pairwise Comparison:</em></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="sec-democracy-voting-11-7-2-14-1">
+<div class="para">First we list all the possible pairs:</div>
+<ul class="disc">
+<li id="sec-democracy-voting-11-7-2-14-1-1-1"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-1-1">A vs B</div></li>
+<li id="sec-democracy-voting-11-7-2-14-1-1-2"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-2-1">A vs C</div></li>
+<li id="sec-democracy-voting-11-7-2-14-1-1-3"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-3-1">A vs D</div></li>
+<li id="sec-democracy-voting-11-7-2-14-1-1-4"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-4-1">B vs C</div></li>
+<li id="sec-democracy-voting-11-7-2-14-1-1-5"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-5-1">B vs D</div></li>
+<li id="sec-democracy-voting-11-7-2-14-1-1-6"><div class="para" id="sec-democracy-voting-11-7-2-14-1-1-6-1">C vs D</div></li>
+</ul>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="sec-democracy-voting-11-7-2-14-2">
+<div class="para">Then we count the number of voters who would choose each candidate if they were the only two in the race.</div>
+<ul class="disc">
+<li id="sec-democracy-voting-11-7-2-14-2-1-1"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-1-1">A-10 vs B-10</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-2"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-2-1">A-14 vs C-6</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-3"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-3-1">A-11 vs D-9</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-4"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-4-1">B-4 vs C-16</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-5"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-5-1">B-13 vs D-7</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-6"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-6-1">C-9 vs D-11</div></li>
+</ul>
+</div></div>
+</div></div> <div class="para logical" id="sec-democracy-voting-11-7-2-15">
+<div class="para">Totaling one point for each win and half a point for each tie gives us:</div>
+<ul class="disc">
+<li id="sec-democracy-voting-11-7-2-15-1-1"><div class="para" id="sec-democracy-voting-11-7-2-15-1-1-1">A has 2.5 points</div></li>
+<li id="sec-democracy-voting-11-7-2-15-1-2"><div class="para" id="sec-democracy-voting-11-7-2-15-1-2-1">B has 1.5 points</div></li>
+<li id="sec-democracy-voting-11-7-2-15-1-3"><div class="para" id="sec-democracy-voting-11-7-2-15-1-3-1">C has 1 point</div></li>
+<li id="sec-democracy-voting-11-7-2-15-1-4"><div class="para" id="sec-democracy-voting-11-7-2-15-1-4-1">D has 1 point</div></li>
+</ul>
+</div> <div class="para" id="sec-democracy-voting-11-7-2-16">A is the winner of the pairwise comparison method.</div>
+</div></details></div></article></section><section class="subsection" id="sec-democracy-voting-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Which Method is the Most Fair?</span>
+</h3>
+<div class="para" id="sec-democracy-voting-12-2">To see a very simple example of how difficult voting can be, consider the election below:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+</table></div></div></div>
+<div class="para" id="sec-democracy-voting-12-4">Notice that in this election: 10 people prefer A to B, 10 people prefer B to C, and 10 people prefer C to A.</div>
+<div class="para" id="sec-democracy-voting-12-5">No matter whom we choose as the winner, <span class="process-math">\(\frac{2}{3}\)</span> of voters would prefer someone else! This scenario is called <em class="alert">Condorcet’s Voting Paradox</em>. In this situation, there is no fair resolution. There are many additional paradoxes and fairness criteria that are explained in David Lippman’s original version of <em class="emphasis">Math in Society</em><details class="ptx-footnote" aria-live="polite" id="sec-democracy-voting-12-5-4"><summary class="ptx-footnote__number" title="Footnote 5.7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="sec-democracy-voting-12-5-4">
+<a class="external" href="http://www.opentextbookstore.com/mathinsociety/index.html" target="_blank">Math in Society: Voting Theory</a>, by David Lippman</div></details>.</div>
+<div class="para" id="sec-democracy-voting-12-6">Since it is not possible to have one method that is fair in every situation, it is important to decide which method is the most fair for any given situation.</div></section><section class="subsection" id="sec-democracy-voting-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Primaries and Sequential Voting</span>
+</h3>
+<div class="para" id="sec-democracy-voting-13-2">For many public offices in the U.S., a sequence of two public votes is held: a primary election and the general election. For non-partisan offices like sheriff and judge, in which political party affiliation is not declared, the primary election is usually used to narrow the field of candidates.</div>
+<div class="para" id="sec-democracy-voting-13-3">For partisan positions, typically, either the top two candidates receiving the most votes move forward, or the top candidate from each party will move forward. This is called <em class="alert">sequential voting</em> - a process in which voters cast totally new ballots after each round of eliminations. Sequential voting has become quite common in television, where it is used in reality shows like <em class="emphasis">The Voice</em>.</div>
+<div class="para" id="sec-democracy-voting-13-4">In some states a <em class="alert">closed primary</em> is used, in which only voters of each party can vote for that party’s candidates. In other states, an <em class="alert">open primary</em> is used, where voters can pick the party whose primary they want to vote in. In other states, <em class="alert">caucuses</em> are used, which are meetings of the political parties, only open to party members. Closed primaries are often disliked by independent voters, who like the flexibility to change which party they are voting in. Open primaries have the disadvantage of raiding, though, where a voter could vote in their non-preferred party’s primary with the intent of selecting a weaker opponent for their preferred party’s candidate.</div>
+<div class="para" id="sec-democracy-voting-13-5">Regardless of the primary type, the general election is the main election. While rules vary state-to-state, for an independent or minor party candidate to get listed on the ballot, they typically have to gather a certain number of signatures to petition for inclusion.</div>
+<div class="para" id="sec-democracy-voting-13-6">In the next section we will look at a different type of election for the President of the United States.</div></section><section class="exercises" id="sec-democracy-voting-14"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="sec-democracy-voting-14-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="sec-democracy-voting-14-2-1-1">To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-2-1-2">ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC</div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="sec-democracy-voting-14-3-1-1">To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-3-1-2">CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC</div></article><div class="exercisegroup" id="sec-democracy-voting-14-4">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="sec-democracy-voting-14-4-1"><div class="para logical" id="sec-democracy-voting-14-4-1-1">
+<div class="para">In exercises 3-18, complete the following:</div>
+<ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-1-1-1-1"><div class="para" id="sec-democracy-voting-14-4-1-1-1-1-1">How many voters voted in this election?</div></li>
+<li id="sec-democracy-voting-14-4-1-1-1-2"><div class="para" id="sec-democracy-voting-14-4-1-1-1-2-1">How many votes are needed for a majority?</div></li>
+<li id="sec-democracy-voting-14-4-1-1-1-3"><div class="para" id="sec-democracy-voting-14-4-1-1-1-3-1">Find the winner under the plurality method.</div></li>
+<li id="sec-democracy-voting-14-4-1-1-1-4"><div class="para" id="sec-democracy-voting-14-4-1-1-1-4-1">Find the winner under the Instant Runoff Voting method.</div></li>
+<li id="sec-democracy-voting-14-4-1-1-1-5"><div class="para" id="sec-democracy-voting-14-4-1-1-1-5-1">Find the winner under the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-1-1-1-6"><div class="para" id="sec-democracy-voting-14-4-1-1-1-6-1">Find the winner under Copeland’s method.</div></li>
+</ol>
+</div></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="sec-democracy-voting-14-4-2"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-2-1-1">The planning committee for a renewable energy trade show is trying to decide where to hold their next trade show in. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+<td class="c m b1 r1 l0 t1 lines">19</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">8</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Buffalo</td>
+<td class="c m b1 r1 l0 t0 lines">Atlanta</td>
+<td class="c m b1 r1 l0 t0 lines">Chicago</td>
+<td class="c m b1 r1 l0 t0 lines">Buffalo</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Atlanta</td>
+<td class="c m b1 r1 l0 t0 lines">Buffalo</td>
+<td class="c m b1 r1 l0 t0 lines">Buffalo</td>
+<td class="c m b1 r1 l0 t0 lines">Chicago</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Chigaco</td>
+<td class="c m b1 r1 l0 t0 lines">Chicago</td>
+<td class="c m b1 r1 l0 t0 lines">Atlanta</td>
+<td class="c m b1 r1 l0 t0 lines">Atlanta</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-3"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-3-1-1">A non-profit agency is electing a new chair of the board. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Abdulla</td>
+<td class="c m b1 r1 l0 t0 lines">Cantos</td>
+<td class="c m b1 r1 l0 t0 lines">Beck</td>
+<td class="c m b1 r1 l0 t0 lines">Cantos</td>
+<td class="c m b1 r1 l0 t0 lines">Abdulla</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Cantos</td>
+<td class="c m b1 r1 l0 t0 lines">Beck</td>
+<td class="c m b1 r1 l0 t0 lines">Cantos</td>
+<td class="c m b1 r1 l0 t0 lines">Abdulla</td>
+<td class="c m b1 r1 l0 t0 lines">Beck</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Beck</td>
+<td class="c m b1 r1 l0 t0 lines">Abdulla</td>
+<td class="c m b1 r1 l0 t0 lines">Abdulla</td>
+<td class="c m b1 r1 l0 t0 lines">Beck</td>
+<td class="c m b1 r1 l0 t0 lines">Cantos</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-4"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-4-1-1">A group of students is deciding which class to take together. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+<td class="c m b1 r1 l0 t0 lines">Calculus</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+<td class="c m b1 r1 l0 t0 lines">Biology</td>
+<td class="c m b1 r1 l0 t0 lines">Art</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-5"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-5-1-1">A professional psychology association is deciding where to hold their next conference. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">7</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+<td class="c m b1 r1 l0 t0 lines">California</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+<td class="c m b1 r1 l0 t0 lines">Barbados</td>
+<td class="c m b1 r1 l0 t0 lines">Alaska</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-6"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-6-1-1">The Hillsboro City Council has an election with three candidates, D, E, F. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">7</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-7"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-7-1-1">The Vancouver mayor’s race has three candidates, G, H, I. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">ast choice</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-8"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-8-1-1">The Beaverton City Council has an election for one open position. There are four candidates (labeled A, B, C, and D for convenience). The preference schedule for the election is:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">120</td>
+<td class="c m b1 r1 l0 t1 lines">50</td>
+<td class="c m b1 r1 l0 t1 lines">40</td>
+<td class="c m b1 r1 l0 t1 lines">90</td>
+<td class="c m b1 r1 l0 t1 lines">60</td>
+<td class="c m b1 r1 l0 t1 lines">100</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-9"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-9-1-1">Portland City Council has an election for one open position. There are four candidates (labeled E, F, G, H for convenience). The preference schedule for the election is:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">8</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-10"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-10-1-1">The Portland mayor’s race has four candidates, I, J, K, L. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">21</td>
+<td class="c m b1 r1 l0 t1 lines">18</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-11"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-11-1-1">A Reynolds School Board position has four candidates, M, N, O, P. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">34</td>
+<td class="c m b1 r1 l0 t1 lines">22</td>
+<td class="c m b1 r1 l0 t1 lines">32</td>
+<td class="c m b1 r1 l0 t1 lines">13</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-12"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-12-1-1">The Gresham mayor’s race has four candidates, Q, R, S, T. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">18</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">13</td>
+<td class="c m b1 r1 l0 t1 lines">10</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-13"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-13-1-1">The Parkrose School Board has an election for an open position with four candidates, U, V, W, X. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">21</td>
+<td class="c m b1 r1 l0 t1 lines">15</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+<td class="c m b1 r1 l0 t1 lines">8</td>
+<td class="c m b1 r1 l0 t1 lines">22</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">V</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">U</td>
+<td class="c m b1 r1 l0 t0 lines">W</td>
+<td class="c m b1 r1 l0 t0 lines">X</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-14"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-14-1-1">A Multnomah county commissioner’s race has five candidates, A, B, C, D, E. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">21</td>
+<td class="c m b1 r1 l0 t1 lines">18</td>
+<td class="c m b1 r1 l0 t1 lines">19</td>
+<td class="c m b1 r1 l0 t1 lines">23</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5th choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">E</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-15"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-15-1-1">The Oregon State governor’s race has five candidates, F, G, H, I, J. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+<td class="c m b1 r1 l0 t1 lines">9</td>
+<td class="c m b1 r1 l0 t1 lines">21</td>
+<td class="c m b1 r1 l0 t1 lines">17</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5th choice</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+<td class="c m b1 r1 l0 t0 lines">F</td>
+<td class="c m b1 r1 l0 t0 lines">G</td>
+<td class="c m b1 r1 l0 t0 lines">J</td>
+<td class="c m b1 r1 l0 t0 lines">H</td>
+<td class="c m b1 r1 l0 t0 lines">I</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-16"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-16-1-1">A Washington county commissioner’s race has five candidates, K, L, M, N, O. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">22</td>
+<td class="c m b1 r1 l0 t1 lines">19</td>
+<td class="c m b1 r1 l0 t1 lines">13</td>
+<td class="c m b1 r1 l0 t1 lines">26</td>
+<td class="c m b1 r1 l0 t1 lines">14</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">17</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5th choice</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">K</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">M</td>
+<td class="c m b1 r1 l0 t0 lines">O</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+<td class="c m b1 r1 l0 t0 lines">L</td>
+<td class="c m b1 r1 l0 t0 lines">N</td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-17"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="sec-democracy-voting-14-4-17-1-1">A Clackamas county commissioner’s race has five candidates, P, Q, R, S, T. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">31</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">29</td>
+<td class="c m b1 r1 l0 t1 lines">52</td>
+<td class="c m b1 r1 l0 t1 lines">16</td>
+<td class="c m b1 r1 l0 t1 lines">18</td>
+<td class="c m b1 r1 l0 t1 lines">11</td>
+<td class="c m b1 r1 l0 t1 lines">13</td>
+<td class="c m b1 r1 l0 t1 lines">12</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">T</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5th choice</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">S</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">R</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+<td class="c m b1 r1 l0 t0 lines">P</td>
+<td class="c m b1 r1 l0 t0 lines">Q</td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-democracy-apportionment.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-democracy-popular-vote.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

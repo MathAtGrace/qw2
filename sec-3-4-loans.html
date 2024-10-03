@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loan Payments</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-finance-savings-plan.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="financial_math.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_two_income_taxes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-3-4-loans"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">Loan Payments</span>
+</h2>
+<article class="objectives goal-like" id="sec-3-4-loans-2"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 2.4 Loan Payments</span>
+</h3>
+<div class="introduction" id="sec-3-4-loans-2-2"><div class="para" id="sec-3-4-loans-2-2-1">Students will be able to:</div></div>
+<ul class="disc">
+<li id="sec-3-4-loans-2-3-1"><div class="para" id="sec-3-4-loans-2-3-1-1">Use a spreadsheet and/or formula to calculate the payment amount for student loans, car loans, paying off credit cards and mortgage loans</div></li>
+<li id="sec-3-4-loans-2-3-2"><div class="para" id="sec-3-4-loans-2-3-2-1">Calculate the total paid over the life of a loan, amount of interest paid, and the percentage of the total amount paid in interest</div></li>
+<li id="sec-3-4-loans-2-3-3"><div class="para" id="sec-3-4-loans-2-3-3-1">Determine when to use each formula in the financial math chapter</div></li>
+</ul></article><section class="introduction" id="sec-3-4-loans-3"><div class="para" id="sec-3-4-loans-3-1">In the last section, you learned about savings plans. In this section, you will learn about conventional loans (also called amortized loans or installment loans). Examples include student loans, car loans and home mortgages. These techniques do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. In this section we will also briefly cover credit cards. There is a more thorough chapter on credit cards available as an optional chapter.</div> </section><section class="subsection" id="sec-3-4-loans-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Installment Loans</span>
+</h3>
+<div class="para" id="sec-3-4-loans-4-2">Installment loans are also called <em class="alert">amortized loans</em>. They are designed so that the payment amount remains the same over the life (term) of the loan. In order for that amount to remain constant, the amount of money going towards paying the <em class="alert">principal</em> (amount owed) and towards the <em class="alert">interest</em> will vary. At the beginning of the loan, the amount owed is the largest. So, at the beginning the amount of interest charged will also be the largest. As the loan gets repaid the amount owed is reduced and therefore the interest is reduced. Therefore, at the beginning of an installment loan payments go mostly towards the interest, towards the end the payments are going mostly towards the principal.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_4/interest_principal.png" class="contained" alt="A graph that shows how most of the payment goes to interest at the beginning of the loan and that decreases over time until the end of the loan when most of the payment goes toward the principal."></div></div></div>
+<div class="para" id="sec-3-4-loans-4-4">This is a graph of the interest and principal paid on a loan of $34,000 at 10% APR. Each year $5391.72 was paid in total. In the first year, $3,3305.92 was applied to the interest and $2085.80 was applied to the principal. In the last year of the loan, only $281.04 was applied to the interest and $5,110.68 was applied to the principal. Over 5 years, a total of $53,917.2 was paid for a loan of $34,000.</div></section><section class="subsection" id="sec-3-4-loans-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Loan Formulas</span>
+</h3>
+<div class="para" id="sec-3-4-loans-5-2">In a savings plan, you start with nothing, put money into an account once or on a regular basis, and have a larger balance at the end. Loans work in reverse. You start with a balance owed, make payments and the future value is zero when the loan is paid off.</div>
+<div class="para" id="sec-3-4-loans-5-3">We will continue to use the same spreadsheet formulas. The ones that are most useful for loans are <code class="code-inline tex2jax_ignore">=PV</code> and <code class="code-inline tex2jax_ignore">=PMT</code>. We will look at how the inputs change for a loan.</div>
+<article class="assemblage assemblage-like" id="sec-3-4-loans-5-4"><h4 class="heading"><span class="title">Spreadsheet Formulas.</span></h4>
+<div class="para logical" id="sec-3-4-loans-5-4-2"><pre class="code-display tex2jax_ignore">=PV(rate per period, number of periods, payment amount, future value)</pre></div>
+<div class="para logical" id="sec-3-4-loans-5-4-3"><pre class="code-display tex2jax_ignore">=PMT(rate per period, number of periods, present value, future value)</pre></div>
+<div class="para logical" id="sec-3-4-loans-5-4-4"><dl class="description-list narrow">
+<dt id="sec-3-4-loans-5-4-4-1-1">rate per period</dt>
+<dd><div class="para" id="sec-3-4-loans-5-4-4-1-1-2">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-5-4-4-1-2">number of periods</dt>
+<dd><div class="para" id="sec-3-4-loans-5-4-4-1-2-2">is the total number of periods, <span class="process-math">\(n*t\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-5-4-4-1-3">payment amount</dt>
+<dd><div class="para" id="sec-3-4-loans-5-4-4-1-3-2">is the amount of regular payments, <span class="process-math">\(d\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-5-4-4-1-4">present value</dt>
+<dd><div class="para" id="sec-3-4-loans-5-4-4-1-4-2">is the amount deposited or principal, <span class="process-math">\(P\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-5-4-4-1-5">future value</dt>
+<dd><div class="para" id="sec-3-4-loans-5-4-4-1-5-2">is the amount you want in the future, 0 for a loan</div></dd>
+</dl></div></article><div class="para" id="sec-3-4-loans-5-5">These two formulas correspond to the formulas below. The formula for loans is derived in a similar way that we did for savings plans, but notice they have negative exponents. The details are omitted here.</div>
+<article class="assemblage assemblage-like" id="sec-3-4-loans-5-6"><h4 class="heading"><span class="title">Loan Formulas.</span></h4>
+<div class="para logical" id="sec-3-4-loans-5-6-2"><div class="displaymath process-math">
+\begin{equation*}
+P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\left(\frac{r}{n}\right)} \text{  or  } d=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}
+\end{equation*}
+</div></div>
+<div class="para logical" id="sec-3-4-loans-5-6-3"><dl class="description-list narrow">
+<dt id="sec-3-4-loans-5-6-3-1-1"><span class="process-math">\(P\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-5-6-3-1-1-2">is the balance in the account at the beginning (the principal, or amount of the loan).</div></dd>
+<dt id="sec-3-4-loans-5-6-3-1-2"><span class="process-math">\(d\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-5-6-3-1-2-2">is your loan payment (your monthly payment, annual payment, etc.)</div></dd>
+<dt id="sec-3-4-loans-5-6-3-1-3"><span class="process-math">\(r\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-5-6-3-1-3-2">is the annual interest rate in decimal form</div></dd>
+<dt id="sec-3-4-loans-5-6-3-1-4"><span class="process-math">\(n\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-5-6-3-1-4-2">is the number of compounding periods in one year</div></dd>
+<dt id="sec-3-4-loans-5-6-3-1-5"><span class="process-math">\(t\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-5-6-3-1-5-2">is the length of the loan, in years</div></dd>
+</dl></div>
+<div class="para" id="sec-3-4-loans-5-6-4">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments</div></article><article class="example example-like" id="sec-3-4-loans-5-7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
+</h4>Teresa wants to buy a car that costs $15,000. She has $3,000 saved for the car and plans to finance the rest. She found a 3-year loan at 2.75% APR and a 5-year loan at 4% APR. How much will her monthly car payment be for each loan and how do these loans compare to each other.<div class="solutions"><details id="sec-3-4-loans-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-3-4-loans-5-7-2-1">To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</div> <div class="para" id="sec-3-4-loans-5-7-2-2"><span class="process-math">\(\$15,000 - \$3,000 = \$12,000\)</span></div> <div class="para" id="sec-3-4-loans-5-7-2-3">Her loan amount is $12,000. For the <ins class="insert">3-year</ins> loan at 2.75% APR, we enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical" id="sec-3-4-loans-5-7-2-4-1-1"><pre class="code-display tex2jax_ignore">=PMT(0.0275/12, 12*3, 12000, 0)</pre></div>
+<div class="para" id="sec-3-4-loans-5-7-2-4-1-2">and get a result of $347.65.</div>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para" id="sec-3-4-loans-5-7-2-5">For the formula, we use the one solved for <span class="process-math">\(d\text{:}\)</span>
+</div> <div class="para" id="sec-3-4-loans-5-7-2-6">
+<span class="process-math">\(r=.0275\text{,}\)</span> for 2.75% annual rate</div> <div class="para" id="sec-3-4-loans-5-7-2-7">
+<span class="process-math">\(n=12\text{,}\)</span> monthly payments</div> <div class="para" id="sec-3-4-loans-5-7-2-8">
+<span class="process-math">\(t=3\text{,}\)</span> for 3 years</div> <div class="para" id="sec-3-4-loans-5-7-2-9">
+<span class="process-math">\(P=12000\text{,}\)</span> since she can pay $3,000 of the $15,000</div> <div class="para logical" id="sec-3-4-loans-5-7-2-10"><div class="displaymath process-math" id="sec-3-4-loans-5-7-2-10-1">
+\begin{align*}
+d \amp =\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp =\frac{12000\left(\frac{0.0275}{12}\right)}{\left(1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}\right)}\\
+\amp \approx\$347.65
+\end{align*}
+</div></div> <div class="para" id="sec-3-4-loans-5-7-2-11">Teresa’s car payment would be $347.65.</div> <div class="para" id="sec-3-4-loans-5-7-2-12">Now for the <ins class="insert">5-year loan</ins> at 4% APR, we enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical" id="sec-3-4-loans-5-7-2-13-1-1"><pre class="code-display tex2jax_ignore">=PMT(0.04/12, 12*5, 12000, 0)</pre></div>
+<div class="para" id="sec-3-4-loans-5-7-2-13-1-2">and we get $221.00.</div>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para" id="sec-3-4-loans-5-7-2-14">To use the formula, we have:</div> <div class="para" id="sec-3-4-loans-5-7-2-15">
+<span class="process-math">\(r=.04\text{,}\)</span> for 4% annual rate</div> <div class="para" id="sec-3-4-loans-5-7-2-16">
+<span class="process-math">\(n=12\text{,}\)</span> monthly payments</div> <div class="para" id="sec-3-4-loans-5-7-2-17">
+<span class="process-math">\(t=5\text{,}\)</span> for 5 years</div> <div class="para" id="sec-3-4-loans-5-7-2-18">
+<span class="process-math">\(P=12000\text{,}\)</span> the loan amount</div> <div class="para logical" id="sec-3-4-loans-5-7-2-19"><div class="displaymath process-math" id="sec-3-4-loans-5-7-2-19-1">
+\begin{align*}
+d \amp =\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp =\frac{12000\left(\frac{0.04}{12}\right)}{\left(1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 3}\right)}\\
+\amp \approx\$221.00
+\end{align*}
+</div></div> <div class="para" id="sec-3-4-loans-5-7-2-20">Now let’s compare the loans by finding out how much Teresa would pay in interest for each loan.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:46%;">
+<div class="para" id="sec-3-4-loans-5-7-2-21-1-1">For the <ins class="insert">3-year loan</ins> at 2.75% APR, her payments would total:</div>
+<div class="para" id="sec-3-4-loans-5-7-2-21-1-2">
+<span class="process-math">\(\$347.65(12)(3)=\$12,515.40\text{.}\)</span> Her interest would be $515.40.</div>
+</div>
+<div class="sbspanel top" style="width:46%;">
+<div class="para" id="sec-3-4-loans-5-7-2-21-2-1">For the <ins class="insert">5-year loan</ins> at 4% APR, her payments would total:</div>
+<div class="para" id="sec-3-4-loans-5-7-2-21-2-2">
+<span class="process-math">\(\$221.00(12)(5)=\$13,260.00\text{.}\)</span> Her interest would be $1,260.00.</div>
+</div>
+</div></div> <div class="para" id="sec-3-4-loans-5-7-2-22">There are two main differences between these two loans: the monthly payments and the total paid over the life of the loans. The first loan has a higher monthly payment by $126.65 per month. However, she would pay $744.60 less in interest.</div>
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-5-8"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para logical" id="sec-3-4-loans-5-8-1-1"><ol class="lower-alpha">
+<li id="sec-3-4-loans-5-8-1-1-1-1"><div class="para" id="sec-3-4-loans-5-8-1-1-1-1-1">Sam has a student loan of $30,000 at a fixed APR of 4.45%. If he wants to pay it off in 15 years, how much would he pay per month?</div></li>
+<li id="sec-3-4-loans-5-8-1-1-1-2"><div class="para" id="sec-3-4-loans-5-8-1-1-1-2-1">How much would Sam pay in total?</div></li>
+<li id="sec-3-4-loans-5-8-1-1-1-3"><div class="para" id="sec-3-4-loans-5-8-1-1-1-3-1">What percentage of the total was paid toward the loan amount of $30,000 and what percentage was paid toward interest?</div></li>
+</ol></div></article><div class="para" id="sec-3-4-loans-5-9">In addition to loan payments, we can calculate the amount of loan we can afford given a monthly payment. Let’s look at that in the next example.</div>
+<article class="example example-like" id="sec-3-4-loans-5-10"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-3-4-loans-5-10-1-1">You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</div>
+<div class="solutions"><details id="sec-3-4-loans-5-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-3-4-loans-5-10-2-1">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know the present value, which is the value of the loan right now. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;"><div class="para logical" id="sec-3-4-loans-5-10-2-2-1">
+<pre class="code-display tex2jax_ignore">=PV(0.03/12, 12*5, 200,0)</pre>
+<div class="para">which gives $11,130.47.</div>
+</div></div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para" id="sec-3-4-loans-5-10-2-3">To use a formula, we are looking for <span class="process-math">\(P\text{,}\)</span> the starting amount of the loan.</div> <div class="para" id="sec-3-4-loans-5-10-2-4">
+<span class="process-math">\(d=\$200\text{,}\)</span> the monthly loan payment</div> <div class="para" id="sec-3-4-loans-5-10-2-5">
+<span class="process-math">\(r=0.03\text{,}\)</span> 3% annual rate</div> <div class="para" id="sec-3-4-loans-5-10-2-6">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="sec-3-4-loans-5-10-2-7">
+<span class="process-math">\(t=5\text{,}\)</span> since we’re making monthly payments for 5 years</div> <div class="para logical" id="sec-3-4-loans-5-10-2-8"><div class="displaymath process-math" id="sec-3-4-loans-5-10-2-8-1">
+\begin{align*}
+P \amp =\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}\\
+\amp =\frac{200\left(1-\left(1+\frac{0.03}{12}\right)^{-12\cdot 5}\right)}{\frac{0.03}{12}}\\
+\amp =\frac{200(1-(1.0025)^{-60})}{0.0025}\\
+\amp \approx\$11,130.47
+\end{align*}
+</div></div> <div class="para" id="sec-3-4-loans-5-10-2-9">You can afford a maximum loan of $11,130.47. If you have a down payment you can add that to get the value of the car you can buy. If there are any closing costs for the loan you also need to take that into consideration.</div> <div class="para" id="sec-3-4-loans-5-10-2-10">To find the amount of interest you will pay for this loan, calculate the total of all your payments.</div> <div class="para" id="sec-3-4-loans-5-10-2-11"><span class="process-math">\(\$200(5)(12)=\$12,000\)</span></div> <div class="para" id="sec-3-4-loans-5-10-2-12">Then take the difference between the total payments and the loan amount.</div> <div class="para" id="sec-3-4-loans-5-10-2-13"><span class="process-math">\(\$12,000-\$11,130.47=\$869.53\)</span></div> <div class="para" id="sec-3-4-loans-5-10-2-14">In this case, you would be paying $869.53 in interest.</div>
+</div></details></div></article><div class="para" id="sec-3-4-loans-5-11">So far, we have looked at car loans. Student loans and home mortgages are calculated in the same way. Here is an example of a mortgage payment.</div>
+<article class="example example-like" id="sec-3-4-loans-5-12"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-3-4-loans-5-12-1-1">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go towards interest?</div>
+<div class="solutions"><details id="sec-3-4-loans-5-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-3-4-loans-5-12-2-1">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula because we want to know the payment amount. The amount of the loan is the present value and to pay off the loan the future value is 0. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;"><div class="para logical" id="sec-3-4-loans-5-12-2-2-1">
+<pre class="code-display tex2jax_ignore">=PMT(0.06/12, 12*30, 140000,0)</pre>
+<div class="para">which gives us $839.37.</div>
+</div></div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para" id="sec-3-4-loans-5-12-2-3">To use the formula, we have:</div> <div class="para" id="sec-3-4-loans-5-12-2-4">
+<span class="process-math">\(r=0.06\text{,}\)</span> 6% annual rate</div> <div class="para" id="sec-3-4-loans-5-12-2-5">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re paying monthly</div> <div class="para" id="sec-3-4-loans-5-12-2-6">
+<span class="process-math">\(t=30\text{,}\)</span> 30 years</div> <div class="para" id="sec-3-4-loans-5-12-2-7">
+<span class="process-math">\(P=\$140,000\text{,}\)</span> the starting loan amount</div> <div class="para" id="sec-3-4-loans-5-12-2-8">In this case, we’re going to use the equation that is solved for <span class="process-math">\(d\text{.}\)</span>
+</div> <div class="para logical" id="sec-3-4-loans-5-12-2-9"><div class="displaymath process-math" id="sec-3-4-loans-5-12-2-9-1">
+\begin{align*}
+d \amp =\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp =\frac{140000\left(\frac{0.06}{12}\right)}{\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}\right)}\\
+\amp =\frac{700}{(1-(1.005)^{-360})}\\
+\amp \approx\$839.37
+\end{align*}
+</div></div> <div class="para" id="sec-3-4-loans-5-12-2-10">You would make payments of $839.37 per month for 30 years. To find out what percentage of the total will go towards interest, we need to total up all of the payments.</div> <div class="para logical" id="sec-3-4-loans-5-12-2-11"><div class="displaymath process-math">
+\begin{equation*}
+\$839.37(30)(12)=\$302,173.20
+\end{equation*}
+</div></div> <div class="para" id="sec-3-4-loans-5-12-2-12">Then take the difference between the total payments and the loan amount.</div> <div class="para logical" id="sec-3-4-loans-5-12-2-13"><div class="displaymath process-math">
+\begin{equation*}
+\$302,173.20-\$140,000=\$162,173.20
+\end{equation*}
+</div></div> <div class="para" id="sec-3-4-loans-5-12-2-14">In this case, you would be paying $162,173.20 in interest over the life of the loan. To find the percentage, we divide the interest by the total amount paid.</div> <div class="para logical" id="sec-3-4-loans-5-12-2-15"><div class="displaymath process-math">
+\begin{equation*}
+\frac{\$162,173.20}{\$302,173.20} \approx 0.5367
+\end{equation*}
+</div></div> <div class="para" id="sec-3-4-loans-5-12-2-16">About 53.7% of the total is being paid towards interest.</div>
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-5-13"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para logical" id="sec-3-4-loans-5-13-1-1"><ol class="lower-alpha">
+<li id="sec-3-4-loans-5-13-1-1-1-1"><div class="para" id="sec-3-4-loans-5-13-1-1-1-1-1">You want to buy a $350,000 home. You plan to put 10% down and take out a 30-year fixed mortgage on the rest. What will the loan amount be?</div></li>
+<li id="activity-mortgage-payment"><div class="para" id="activity-mortgage-payment-1">What will your monthly payment be on your home mortgage if the interest rate is 4.5%?</div></li>
+<li id="sec-3-4-loans-5-13-1-1-1-3"><div class="para" id="sec-3-4-loans-5-13-1-1-1-3-1">If you make all the payments on your home mortgage for 30 years, how much would you have paid for the house in total?</div></li>
+<li id="sec-3-4-loans-5-13-1-1-1-4"><div class="para" id="sec-3-4-loans-5-13-1-1-1-4-1">In <a href="sec-3-4-loans.html#activity-mortgage-payment" class="xref" data-knowl="./knowl/xref/activity-mortgage-payment.html" data-reveal-label="Reveal" data-close-label="Close" title="Item b">Item b</a> above, what number would you get if you switch the 0 and the 315,000? Why are the answers so different? Explain the difference between these two scenarios.</div></li>
+</ol></div></article></section><section class="subsection" id="sec-3-4-loans-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Remaining Loan Balance</span>
+</h3>
+<div class="para" id="sec-3-4-loans-6-2">With loans, it is often desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.</div>
+<div class="para" id="sec-3-4-loans-6-3">To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don’t already know it. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will <em class="emphasis">not</em> have paid off $12,000 of the loan balance.</div>
+<div class="para" id="sec-3-4-loans-6-4">To determine the remaining loan balance, we can think “how much loan will these loan payments be able to pay off in the remaining time on the loan?”</div>
+<article class="example example-like" id="sec-3-4-loans-6-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-3-4-loans-6-5-1-1">If a 30-year mortgage at an interest rate of 6% APR has payments of $1,000 a month, what will the loan balance be in 5 years?</div>
+<div class="solutions"><details id="sec-3-4-loans-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-3-4-loans-6-5-2-1">To determine this, we need to think backwards. We are looking for the amount of the loan that can be paid off by $1,000 per month in the remaining 25 years. In other words, we’re looking for <span class="process-math">\(P\)</span> when:</div> <div class="para" id="sec-3-4-loans-6-5-2-2">
+<span class="process-math">\(d=\$1,000\text{,}\)</span> for the monthly loan payment</div> <div class="para" id="sec-3-4-loans-6-5-2-3">
+<span class="process-math">\(r=0.06\text{,}\)</span> for 6% annual rate</div> <div class="para" id="sec-3-4-loans-6-5-2-4">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para" id="sec-3-4-loans-6-5-2-5">
+<span class="process-math">\(t=25\text{,}\)</span> since we’d be making monthly payments for 25 more years</div> <div class="para" id="sec-3-4-loans-6-5-2-6">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know what the present value would be at the time you want to sell in 5 years. We enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;"><div class="para logical" id="sec-3-4-loans-6-5-2-7-1">
+<pre class="code-display tex2jax_ignore">=PV(0.06/12, 12*25, 1000,0)</pre>
+<div class="para">which gives us $155,206.86.</div>
+</div></div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/remaining_balance.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para" id="sec-3-4-loans-6-5-2-8">To check this with the formula we have:</div> <div class="para logical" id="sec-3-4-loans-6-5-2-9"><div class="displaymath process-math" id="sec-3-4-loans-6-5-2-9-1">
+\begin{align*}
+P \amp =\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\frac{0.06}{12}}\\
+\amp =\frac{1000(1-(1.005)^{-300})}{0.005}\\
+\amp \approx\$155,206.86
+\end{align*}
+</div></div> <div class="para" id="sec-3-4-loans-6-5-2-10">The loan balance with 25 years remaining on the loan will be $155,206.86</div>
+</div></details></div></article><div class="para logical" id="sec-3-4-loans-6-6">
+<div class="para">Sometimes answering remaining balance questions requires two steps, both of which we have done in this section:</div>
+<ol class="decimal">
+<li id="sec-3-4-loans-6-6-1-1"><div class="para" id="sec-3-4-loans-6-6-1-1-1">Calculate the monthly payment on the loan</div></li>
+<li id="sec-3-4-loans-6-6-1-2"><div class="para" id="sec-3-4-loans-6-6-1-2-1">Calculate the remaining loan balance based on the <em class="emphasis">remaining time</em> on the loan</div></li>
+</ol>
+</div></section><section class="subsection" id="sec-3-4-loans-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Credit Cards</span>
+</h3>
+<div class="para" id="sec-3-4-loans-7-2">Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.</div>
+<div class="para" id="sec-3-4-loans-7-3">Credit cards are a common source of loan money, and therefore a common source of debt which must be repaid.  There are much fewer and lower barriers to obtaining and using a credit card than there are to obtaining, for example, a mortgage.  As such, there are some drawbacks both in terms of typically higher interest rates, as well as some structural differences.</div>
+<article class="example example-like" id="sec-3-4-loans-7-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-3-4-loans-7-4-1-1">Bilqis gets a credit card, with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance after applying the APR; or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?</div>
+<div class="solutions"><details id="sec-3-4-loans-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-3-4-loans-7-4-2-1">First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:</div> <div class="para logical" id="sec-3-4-loans-7-4-2-2"><div class="displaymath process-math">
+\begin{equation*}
+900\left(1+\frac{0.1799}{365}\right)^{35} \approx 915.66
+\end{equation*}
+</div></div> <div class="para logical" id="sec-3-4-loans-7-4-2-3">
+<div class="para">The spreadsheet formula for this computation is</div>
+<pre class="code-display tex2jax_ignore">=FV(0.1799/365,35,0,900)</pre>
+</div> <div class="para" id="sec-3-4-loans-7-4-2-4">With interest, Bilqis now owes $915.66.</div> <div class="para logical" id="sec-3-4-loans-7-4-2-5">
+<div class="para">Now we will find one percent of the new balance which is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\$915.66(0.01) \approx \$9.16\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="sec-3-4-loans-7-4-2-6">$25 is larger than $9.16, so her first payment must be at least $25. If she makes the minimum payment we can subtract to find her new balance:</div> <div class="para logical" id="sec-3-4-loans-7-4-2-7"><div class="displaymath process-math">
+\begin{equation*}
+\$915.66-\$25 = \$890.66\text{.}
+\end{equation*}
+</div></div> <div class="para" id="sec-3-4-loans-7-4-2-8">Her new balance will be $890.66.</div>
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-7-5"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="introduction" id="sec-3-4-loans-7-5-1">
+<div class="para" id="sec-3-4-loans-7-5-1-1">In this activity you will get a chance to let a computer do most of the math for you.  It will be your job to interpret what is going on.</div> <div class="para" id="sec-3-4-loans-7-5-1-2">In this figure below, we have sliders to change the original principle of the loan <code class="code-inline tex2jax_ignore">P</code>, the annual percentage rate <code class="code-inline tex2jax_ignore">r</code>, the number of years of the loan <code class="code-inline tex2jax_ignore">Y</code>, and the property tax <code class="code-inline tex2jax_ignore">p_tax</code>.  The blue horizontal line is the amount of each monthly payment needed.  The red line is the amount of each of those payments going toward interest.  Thus, the blue area is the total payments towards principle, and the red area is the total payments towards interest.  The orange area represents escrow payments for property taxes and insurance.</div> <figure class="figure figure-like" id="sec-3-4-loans-7-5-1-3"><iframe src="https://www.desmos.com/calculator/1d0bkp9jh7" id="sec-3-4-loans-7-5-1-3-1" width="600" height="900"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.6<span class="period">.</span></span><span class="space"> </span>If the embedded Desmos page above is too small, you can go to the <a class="external" href="https://www.desmos.com/calculator/1d0bkp9jh7" target="_blank">Desmos page</a><details class="ptx-footnote" aria-live="polite" id="sec-3-4-loans-7-5-1-3-2-2"><summary class="ptx-footnote__number" title="Footnote 2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-3-4-loans-7-5-1-3-2-2"><code class="code-inline tex2jax_ignore">www.desmos.com/calculator/1d0bkp9jh7</code></div></details>.</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-mortgage-lab-blue-area"><h5 class="heading"><span class="codenumber">(a)</span></h5>Set <code class="code-inline tex2jax_ignore">P</code> equal to $130,000.  What number does the area of the blue region correspond to?</article><article class="task exercise-like" id="task-mortgage-lab-area-change"><h5 class="heading"><span class="codenumber">(b)</span></h5>Try moving the <code class="code-inline tex2jax_ignore">r</code> and <code class="code-inline tex2jax_ignore">Y</code> sliders around.  Does the area of the blue region tend to stay the same, get larger, or get smaller as you make these changes?</article><article class="task exercise-like" id="task-mortgage-lab-area-why"><h5 class="heading"><span class="codenumber">(c)</span></h5>Given what you know about how loans work, why would this be the case?</article><article class="task exercise-like" id="task-mortgage-lab-budget-700"><h5 class="heading"><span class="codenumber">(d)</span></h5>Suppose you have a budget for $700 a month for a home.  Also suppose that you can get an interest rate of 4%, and that you are looking for a 30 year loan.  Move the Principle <code class="code-inline tex2jax_ignore">P</code> around to find the maximum house price you can afford.  What is it?  For this question, you will get full credit as long as you are close enough.  In order to get full credit, you need to be within $1,000 of the correct answer.  Make sure that you factor in that you will have to make escrow payments.</article><article class="task exercise-like" id="task-mortgage-lab-budget-700-percent-interest"><h5 class="heading"><span class="codenumber">(e)</span></h5>In the situation from the last part, what percentage of your money goes towards interest over the life of the loan?</article><article class="task exercise-like" id="task-mortgage-lab-budget-15-year"><h5 class="heading"><span class="codenumber">(f)</span></h5>Use the same information from <a href="sec-3-4-loans.html#task-mortgage-lab-budget-700" class="xref" data-knowl="./knowl/xref/task-mortgage-lab-budget-700.html" data-reveal-label="Reveal" data-close-label="Close" title="Task 2.11.d">part d</a>, but change the length of the loan to 15 years.  Now what is the maximum house price you can afford?  What now is the percentage of your money going towards interest?</article><article class="task exercise-like" id="task-mortgage-lab-difference-15-30"><h5 class="heading"><span class="codenumber">(g)</span></h5>Given your answer to the task above, how would you explain to someone that a 15-year loan has less than twice the monthly payments of a 30 year loan?</article><article class="task exercise-like" id="task-mortgage-lab-rising-interest"><h5 class="heading"><span class="codenumber">(h)</span></h5>Keeping everything else constant, change the annual percentage rate <code class="code-inline tex2jax_ignore">r</code>.  Explain how a rising interest rate could be considered to make all home buyers a little poorer.</article><article class="task exercise-like" id="task-mortgage-lab-credit-card-1"><h5 class="heading"><span class="codenumber">(i)</span></h5>Imagine that you have $4,000 in credit card debt, and you’d like to pay it off in 10 years.  Your credit card company charges 20% on your debt.  How much per month will you have to pay?  (For this problem and problem 7 ignore the escrow payments).</article><article class="task exercise-like" id="task-mortgage-lab-credit-card-2"><h5 class="heading"><span class="codenumber">(j)</span></h5>Given the credit card situation from the last part, how much will you have to pay if you try to pay it off in 5 years?</article><article class="task exercise-like" id="task-mortgage-lab-credit-card-3"><h5 class="heading"><span class="codenumber">(k)</span></h5>Given your answer to the last two parts, explain to your friend why it is important to pay credit card debt off as soon as possible.</article></article></section><section class="subsection" id="sec-3-4-loans-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Summary of Spreadsheet Formulas</span>
+</h3>
+<div class="para" id="sec-3-4-loans-8-2">Here are all the spreadsheet formulas from this chapter so far together so you can see the similarities and differences.</div>
+<article class="assemblage assemblage-like" id="sec-3-4-loans-8-3"><h4 class="heading"><span class="title">Spreadsheet Formulas.</span></h4>
+<div class="para logical" id="sec-3-4-loans-8-3-2"><pre class="code-display tex2jax_ignore">=principal+principal*rate*time</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-3"><pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-4"><pre class="code-display tex2jax_ignore">=principal*EXP(yearly rate*years)</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-5"><pre class="code-display tex2jax_ignore">=PV(rate per period, number of periods, payment amount, future value)</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-6"><pre class="code-display tex2jax_ignore">=PMT(rate per period, number of periods, present value, future value)</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-7"><pre class="code-display tex2jax_ignore">=EFFECT(stated rate, number of compounding periods per year)</pre></div>
+<div class="para logical" id="sec-3-4-loans-8-3-8"><dl class="description-list narrow">
+<dt id="sec-3-4-loans-8-3-8-1-1">rate per period</dt>
+<dd><div class="para" id="sec-3-4-loans-8-3-8-1-1-2">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-8-3-8-1-2">number of periods</dt>
+<dd><div class="para" id="sec-3-4-loans-8-3-8-1-2-2">is the total number of periods, <span class="process-math">\(n*t\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-8-3-8-1-3">payment amount</dt>
+<dd><div class="para" id="sec-3-4-loans-8-3-8-1-3-2">is the amount of regular payments, <span class="process-math">\(d\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-8-3-8-1-4">present value</dt>
+<dd><div class="para" id="sec-3-4-loans-8-3-8-1-4-2">is the amount deposited or principal, <span class="process-math">\(P\)</span>
+</div></dd>
+<dt id="sec-3-4-loans-8-3-8-1-5">future value</dt>
+<dd><div class="para" id="sec-3-4-loans-8-3-8-1-5-2">is the amount you want in the future, <span class="process-math">\(0\)</span> <em class="emphasis">for a loan</em>
+</div></dd>
+</dl></div></article></section><section class="subsection" id="sec-3-4-loans-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">When to use the formulas: What is the question asking?</span>
+</h3>
+<div class="para logical" id="sec-3-4-loans-9-2"><ul class="disc">
+<li id="sec-3-4-loans-9-2-1-1"><div class="para" id="sec-3-4-loans-9-2-1-1-1">Find a payment: <code class="code-inline tex2jax_ignore">=PMT</code>
+</div></li>
+<li id="sec-3-4-loans-9-2-1-2"><div class="para" id="sec-3-4-loans-9-2-1-2-1">Find the effective rate or compare accounts: <code class="code-inline tex2jax_ignore">=EFFECT</code>
+</div></li>
+<li id="sec-3-4-loans-9-2-1-3"><div class="para" id="sec-3-4-loans-9-2-1-3-1">How much do you need to deposit now, what loan amount can you afford, or remaining loan balance: <code class="code-inline tex2jax_ignore">=PV</code>
+</div></li>
+<li id="sec-3-4-loans-9-2-1-4"><div class="para logical" id="sec-3-4-loans-9-2-1-4-1">
+<div class="para">What will the account balance be in the future?</div>
+<ul class="circle">
+<li id="sec-3-4-loans-9-2-1-4-1-1-1"><div class="para" id="sec-3-4-loans-9-2-1-4-1-1-1-1">Simple interest: <code class="code-inline tex2jax_ignore">=principal+principal*rate*time</code>
+</div></li>
+<li id="sec-3-4-loans-9-2-1-4-1-1-2"><div class="para" id="sec-3-4-loans-9-2-1-4-1-1-2-1">Compound interest (except continuous): <code class="code-inline tex2jax_ignore">=FV</code>
+</div></li>
+<li id="sec-3-4-loans-9-2-1-4-1-1-3"><div class="para" id="sec-3-4-loans-9-2-1-4-1-1-3-1">Continuously compounded interest: <code class="code-inline tex2jax_ignore">principal*EXP(rate*years)</code>
+</div></li>
+</ul>
+</div></li>
+</ul></div></section><section class="subsection" id="sec-3-4-loans-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Summary of Mathematical Formulas</span>
+</h3>
+<article class="assemblage assemblage-like" id="sec-3-4-loans-10-2"><h4 class="heading"><span class="title">Mathematical Formulas.</span></h4>
+<div class="para" id="sec-3-4-loans-10-2-2">Simple Interest</div>
+<div class="para logical" id="sec-3-4-loans-10-2-3"><div class="displaymath process-math">
+\begin{equation*}
+I=Prt \text{     or     } A=P+Prt
+\end{equation*}
+</div></div>
+<div class="para" id="sec-3-4-loans-10-2-4">Compound Interest</div>
+<div class="para logical" id="sec-3-4-loans-10-2-5"><div class="displaymath process-math">
+\begin{equation*}
+A=P\left(1+\frac{r}{n}\right)^{nt} \text{ or } P=\frac{A}{\left(1+\frac{r}{n}\right)^{nt}}
+\end{equation*}
+</div></div>
+<div class="para" id="sec-3-4-loans-10-2-6">Continuously Compounded</div>
+<div class="para logical" id="sec-3-4-loans-10-2-7"><div class="displaymath process-math">
+\begin{equation*}
+A=Pe^{rt} \text{  or  }P=\frac{A}{e^{rt}}
+\end{equation*}
+</div></div>
+<div class="para" id="sec-3-4-loans-10-2-8">Savings Plans</div>
+<div class="para logical" id="sec-3-4-loans-10-2-9"><div class="displaymath process-math">
+\begin{equation*}
+A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right)} \text{  or  } d=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}
+\end{equation*}
+</div></div>
+<div class="para" id="sec-3-4-loans-10-2-10">Loans</div>
+<div class="para logical" id="sec-3-4-loans-10-2-11"><div class="displaymath process-math">
+\begin{equation*}
+P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}} \text{  or  } d=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}
+\end{equation*}
+</div></div>
+<div class="para logical" id="sec-3-4-loans-10-2-12"><dl class="description-list narrow">
+<dt id="sec-3-4-loans-10-2-12-1-1"><span class="process-math">\(P\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-1-2">is the principal, starting amount, or present value</div></dd>
+<dt id="sec-3-4-loans-10-2-12-1-2"><span class="process-math">\(d\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-2-2">is your loan payment (your monthly payment, annual payment, etc.)</div></dd>
+<dt id="sec-3-4-loans-10-2-12-1-3"><span class="process-math">\(r\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-3-2">is the annual intrest rate in decimal form</div></dd>
+<dt id="sec-3-4-loans-10-2-12-1-4"><span class="process-math">\(n\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-4-2">is the number of compounding periods in one year</div></dd>
+<dt id="sec-3-4-loans-10-2-12-1-5"><span class="process-math">\(t\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-5-2">is the length of the loan, in years</div></dd>
+<dt id="sec-3-4-loans-10-2-12-1-6"><span class="process-math">\(A\)</span></dt>
+<dd><div class="para" id="sec-3-4-loans-10-2-12-1-6-2">is the end amunt or future value</div></dd>
+</dl></div>
+<div class="para" id="sec-3-4-loans-10-2-13">If the compounding frequency is not always explicitly given, it is determined by how often you make payments</div></article></section><section class="subsection" id="sec-3-4-loans-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">When to use the formulas: What is the question asking?</span>
+</h3>
+<div class="para logical" id="sec-3-4-loans-11-2"><ul class="disc">
+<li id="sec-3-4-loans-11-2-1-1"><div class="para logical" id="sec-3-4-loans-11-2-1-1-1">
+<div class="para">Find a payment</div>
+<ul class="circle">
+<li id="sec-3-4-loans-11-2-1-1-1-1-1"><div class="para" id="sec-3-4-loans-11-2-1-1-1-1-1-1">Savings payment: savings plan equation (positive exponent) solved for <span class="process-math">\(d\)</span>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-1-1-1-2"><div class="para" id="sec-3-4-loans-11-2-1-1-1-1-2-1">Loan payment: loan equation (negative exponent) solved for <span class="process-math">\(d\)</span>
+</div></li>
+</ul>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-2"><div class="para logical" id="sec-3-4-loans-11-2-1-2-1">
+<div class="para">How much do you need to deposit now?</div>
+<ul class="circle">
+<li id="sec-3-4-loans-11-2-1-2-1-1-1"><div class="para" id="sec-3-4-loans-11-2-1-2-1-1-1-1">Compound interest (except continuous): compound interest formulas solved for <span class="process-math">\(P\)</span>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-2-1-1-2"><div class="para" id="sec-3-4-loans-11-2-1-2-1-1-2-1">Continuously compounded: the formula with e solved for <span class="process-math">\(P\)</span>
+</div></li>
+</ul>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-3"><div class="para" id="sec-3-4-loans-11-2-1-3-1">What loan amount can you afford, or remaining loan balance: loan formula solved for <span class="process-math">\(P\)</span>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-4"><div class="para logical" id="sec-3-4-loans-11-2-1-4-1">
+<div class="para">What will the account balance be in the future?</div>
+<ul class="circle">
+<li id="sec-3-4-loans-11-2-1-4-1-1-1"><div class="para logical" id="sec-3-4-loans-11-2-1-4-1-1-1-1">
+<div class="para">One-time deposit:</div>
+<ul class="square">
+<li id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-1"><div class="para" id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-1-1">Simple interest: simple interest formula</div></li>
+<li id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-2"><div class="para" id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-2-1">Compound interest (except continuous): compound interest formula solved for <span class="process-math">\(A\)</span>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-3"><div class="para" id="sec-3-4-loans-11-2-1-4-1-1-1-1-1-3-1">Continuously compounded interest: the formula with <span class="process-math">\(e\)</span> in it, solved for <span class="process-math">\(A\)</span>
+</div></li>
+</ul>
+</div></li>
+<li id="sec-3-4-loans-11-2-1-4-1-1-2"><div class="para" id="sec-3-4-loans-11-2-1-4-1-1-2-1">Regular payments: Savings plan formula solved for <span class="process-math">\(A\)</span>
+</div></li>
+</ul>
+</div></li>
+</ul></div>
+<div class="para" id="sec-3-4-loans-11-3">Remember, the most important part of answering any kind of question, money or otherwise, is first to correctly identify what the question is really asking, and to determine what approach will best allow you to solve the problem. After practicing with the exercises from this section, you can test yourself on which formula to use with exercises 14-21.</div></section><section class="exercises" id="sec-3-4-loans-12"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="sec-3-4-loans-12-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-2-1-1">You can afford a $700 per month mortgage payment. You’ve found a 30-year loan at 5.5% APR.</div> <div class="para logical" id="sec-3-4-loans-12-2-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-2-1-2-1-1"><div class="para" id="sec-3-4-loans-12-2-1-2-1-1-1">How big of a loan can you afford?</div></li>
+<li id="sec-3-4-loans-12-2-1-2-1-2"><div class="para" id="sec-3-4-loans-12-2-1-2-1-2-1">How much total money will you pay the loan company?</div></li>
+<li id="sec-3-4-loans-12-2-1-2-1-3"><div class="para" id="sec-3-4-loans-12-2-1-2-1-3-1">How much of that money is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-3-1-1">Marie can afford a $250 per month car payment. She’s found a 5-year loan at 7% APR.</div> <div class="para logical" id="sec-3-4-loans-12-3-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-3-1-2-1-1"><div class="para" id="sec-3-4-loans-12-3-1-2-1-1-1">How expensive of a car can she afford?</div></li>
+<li id="sec-3-4-loans-12-3-1-2-1-2"><div class="para" id="sec-3-4-loans-12-3-1-2-1-2-1">How much total money will she pay the loan company?</div></li>
+<li id="sec-3-4-loans-12-3-1-2-1-3"><div class="para" id="sec-3-4-loans-12-3-1-2-1-3-1">How much of that money is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-4-1-1">You want to buy a $25,000 car. The company is offering an interest rate of 2% APR for 48 months (4 years). What will your monthly payments be?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-5-1-1">You decide to finance a $12,000 car at 3% APR compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-6-1-1">You want to buy a $200,000 home. You plan to pay 10% as a down payment and take out a 30-year loan for the rest.</div> <div class="para logical" id="sec-3-4-loans-12-6-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-6-1-2-1-1"><div class="para" id="sec-3-4-loans-12-6-1-2-1-1-1">How much is the loan amount going to be?</div></li>
+<li id="sec-3-4-loans-12-6-1-2-1-2"><div class="para" id="sec-3-4-loans-12-6-1-2-1-2-1">What will your monthly payments be if the interest rate is 5%?</div></li>
+<li id="sec-3-4-loans-12-6-1-2-1-3"><div class="para" id="sec-3-4-loans-12-6-1-2-1-3-1">What will your monthly payments be if the interest rate is 6%?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-7-1-1">Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6.5% APR for 30 years.</div> <div class="para logical" id="sec-3-4-loans-12-7-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-7-1-2-1-1"><div class="para" id="sec-3-4-loans-12-7-1-2-1-1-1">Find her monthly payments.</div></li>
+<li id="sec-3-4-loans-12-7-1-2-1-2"><div class="para" id="sec-3-4-loans-12-7-1-2-1-2-1">How much interest will she pay over the life of the loan?</div></li>
+<li id="sec-3-4-loans-12-7-1-2-1-3"><div class="para" id="sec-3-4-loans-12-7-1-2-1-3-1">What percentage of her total payment was interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-8-1-1">Emile bought a car for $24,000 three years ago. The loan had a 5-year term at 3% APR. How much does he still owe on the car?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-9-1-1">A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% APR for 30 years. How much does she still owe on the mortgage?</div></article><div class="exercisegroup" id="sec-3-4-loans-12-10">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="sec-3-4-loans-12-10-1"><div class="para" id="sec-3-4-loans-12-10-1-1">Use a spreadsheet (not formulas) to answer problems 9 through 13 below.</div></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="sec-3-4-loans-12-10-2"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-2-1-1">Imagine you have $20,000 saved as a down payment on a house. You wish to take out a fixed-rate 30-year mortgage loan at 4% APR (remember that mortgage rates usually assume monthly compounding). If the maximum mortgage payment you can afford is $950 per month, then what is the maximum house price that you can afford?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-3"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-3-1-1">Suppose another mortgage lender offers you a fixed-rate 15-year mortgage at 2.95% APR. You have $20,000 saved as a down payment, and you can afford a maximum mortgage payment of $950 per month. You are interested in a certain house for sale, with firm selling price of $200,000.</div> <div class="para logical" id="sec-3-4-loans-12-10-3-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-10-3-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-3-1-2-1-1-1">Find the monthly payment for this house. Can you afford it, under the terms of this lender?</div></li>
+<li id="sec-3-4-loans-12-10-3-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-3-1-2-1-2-1">(Challenge): Suppose this same lender offers to increase the APR by only 0.05%, for each additional year added to the loan period beyond 15 years (so that a 16-year loan would have 3.00% APR, and a 17-year loan would have 3.05% APR, and so on), up to a maximum loan period of 25 years. Given these terms, does any combination of APR and loan period exist that would let you afford the house?  If so, state the <em class="emphasis">minimum</em> number of additional years needed, the total resulting loan period, the resulting APR, and the resulting monthly payment.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-4"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-4-1-1">An annuity firm pays 5% APR compounded yearly, and offers an investor the following: Deposit $100,000 with them today, and then starting one year from today, you will receive ten equal annual payments, with zero balance remaining afterward in the account. If an investor accepts their offer, then find the following:</div> <div class="para logical" id="sec-3-4-loans-12-10-4-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-10-4-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-4-1-2-1-1-1">What will be the payment amount for each of the ten equal payments?</div></li>
+<li id="sec-3-4-loans-12-10-4-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-4-1-2-1-2-1">After ten years, how much interest will the investor have received, and what percentage of the total payment sum will represent interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-5"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-5-1-1">For twelve full years, and into an account that pays 3.5% APR compounded quarterly: Yanhong will either pay $1500 at the end of each calendar quarter, or, deposit a single lump sum that will give the same future value amount.</div> <div class="para logical" id="sec-3-4-loans-12-10-5-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-10-5-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-1-1">If Yanhong chooses the single lump sum option, then how much will Yanhong need to deposit?</div></li>
+<li id="sec-3-4-loans-12-10-5-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-2-1">If Yanhong needs to have earned $100,000 in this account at the end of the twelve years, then the quarterly deposit amount will need to be increased. What would the new quarterly deposit amount need to be?</div></li>
+<li id="sec-3-4-loans-12-10-5-1-2-1-3"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-3-1">(Challenge): If Yanhong will make quarterly deposits into this account for the twelve years, but also has $8,000 to additionally deposit into this account right away: What would the new quarterly deposit amount need to be, so that the total balance after twelve years is $100,000?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-6"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-6-1-1">Assume you take out a 30-year mortgage loan for $250,000 at a fixed 4.5% APR.</div> <div class="para logical" id="sec-3-4-loans-12-10-6-1-2"><ol class="lower-alpha">
+<li id="sec-3-4-loans-12-10-6-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-1-1">What will be the amount of your monthly payment?</div></li>
+<li id="sec-3-4-loans-12-10-6-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-2-1">After the first ten years of payments, how much will remain on your loan balance?</div></li>
+<li id="sec-3-4-loans-12-10-6-1-2-1-3"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-3-1">After the first twenty years of payments, how much will remain on your loan balance?</div></li>
+<li id="sec-3-4-loans-12-10-6-1-2-1-4"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-4-1">Notice that the amount of the loan balance reduction during the second ten years, was very considerably bigger than the amount of the loan balance reduction during the first ten years. Why does the loan balance decrease at a faster and faster pace, the longer that the loan has been in repayment?</div></li>
+</ol></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="sec-3-4-loans-12-11">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="sec-3-4-loans-12-11-1"><div class="para" id="sec-3-4-loans-12-11-1-1">For each of the following scenarios, determine which formula from sections 3.2-3.4 to use and solve the problem.</div></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="sec-3-4-loans-12-11-2"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-2-1-1">Keisha received an inheritance of $20,000 and invested it at 6.9% APR, compounded continuously. How much will she have for college in 8 years?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-3"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-3-1-1">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3.5% APR compounded monthly. How much will he have saved up after 3 years?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-4"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-4-1-1">Sol is managing investments for a non-profit company. They want to invest some money in an account earning 5% APR compounded annually with the goal to have $30,000 in the account in 6 years. How much should Sol deposit into the account?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-5"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-5-1-1">Miao is going to finance new office equipment at 2.8% APR over a 4-year term. If she can afford monthly payments of $100, how much equipment can she buy?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-6"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-6-1-1">How much would you need to save every month in an account earning 4.1% APR to have $5,000 saved up in two years.</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-7"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-7-1-1">Terry and Jess are buying a house for $405,000 and they can afford to put 10% down. Their interest rate is 4.3% APR for 30 years. What will their monthly mortgage payment be?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-8"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-8-1-1">You loan your sister $500 for two years and she agrees to pay you back with 3% simple interest per year. How much will she pay you back</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-9"><h5 class="heading"><span class="codenumber">21<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-9-1-1">Zahid starts saving $150 per month in an account that pays 4.8% APR compounded monthly. If he continues for 20 years, how much will he have? If he waited 10 years instead and put in $300 per month for 10 years with the same interest, how much would he have?</div></article>
+</div>
+</div></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-finance-savings-plan.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap_two_income_taxes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

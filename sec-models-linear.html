@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Function Notation and Linear Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-models.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-models.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-models-exponential.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-models-linear"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">Function Notation and Linear Functions</span>
+</h2>
+<article class="objectives goal-like" id="sec-models-linear-2"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Student Learning Outcomes</span>
+</h3>
+<div class="introduction" id="sec-models-linear-2-2"><div class="para" id="sec-models-linear-2-2-1">After completing this activity you will be able to:</div></div>
+<ol class="decimal">
+<li id="sec-models-linear-2-3-1"><div class="para" id="p-derived-sec-models-linear-2-3-1">Interpret the meaning of function notation.</div></li>
+<li id="sec-models-linear-2-3-2"><div class="para" id="p-derived-sec-models-linear-2-3-2">Use function notation to describe an event.</div></li>
+<li id="sec-models-linear-2-3-3"><div class="para" id="p-derived-sec-models-linear-2-3-3">Evaluate a function and solve an equation using function notation.</div></li>
+<li id="sec-models-linear-2-3-4"><div class="para" id="p-derived-sec-models-linear-2-3-4">Perform calculations using function notation including Average Rate of Change.</div></li>
+<li id="sec-models-linear-2-3-5"><div class="para" id="p-derived-sec-models-linear-2-3-5">Translate problems from a variety of contexts into mathematical representation and vice versa (linear, exponential, simple quadratics).</div></li>
+<li id="sec-models-linear-2-3-6"><div class="para" id="p-derived-sec-models-linear-2-3-6">Identify when a linear model is reasonable for a given situation and, when appropriate, formulate a linear model. In the context of the situation interpret the slope and intercepts and determine the reasonable domain and range.</div></li>
+<li id="sec-models-linear-2-3-7"><div class="para" id="p-derived-sec-models-linear-2-3-7">Use functional models to make predictions and solve problems.</div></li>
+</ol></article><section class="introduction" id="sec-models-linear-3"><div class="para" id="sec-models-linear-3-1">In this activity we define a function and develop an understanding of function notation by comparing statements we already understand in English to equivalent statements written in “math” language.</div> <div class="para" id="sec-models-linear-3-2">The prerequisites for this lesson are knowing how to read a graph or a table of values and how to use a formula to make a calculation.</div> </section><section class="subsection" id="sec-models-linear-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">What is a Function?</span>
+</h3>
+<div class="para" id="sec-models-linear-4-2">The mathematical concept of a function can be extremely complicated. It took thousands of years to come up with it, define it and formalize it. For example, just look at this definition from <a class="external" href="https://en.wikipedia.org/wiki/Function_(mathematics)" target="_blank">Wikipedia</a><details class="ptx-footnote" aria-live="polite" id="sec-models-linear-4-2-2"><summary class="ptx-footnote__number" title="Footnote 4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-models-linear-4-2-2"><code class="code-inline tex2jax_ignore">en.wikipedia.org/wiki/Function_(mathematics)</code></div></details> (do not spend too much time on it.)</div>
+<div class="para" id="sec-models-linear-4-3">You could spend your whole life learning about what a function is and never get to the rest of this book! For this reason we will keep things simple and informal in order to attain a quick and accessible understanding of topics, including functions. Students continuing in mathematics will add to their knowledge of functions as needed and as part of a life-long process.</div>
+<div class="para" id="sec-models-linear-4-4">Start by remembering this: one input, one output.</div>
+<div class="para" id="sec-models-linear-4-5">A <dfn class="terminology">function</dfn>  is a rule that takes a piece of “usable” information that you choose (input) and gives you some kind of result (output). By “usable” we mean information that has meaning for the function.</div>
+<div class="para" id="sec-models-linear-4-6">Think of a function as a sort of machine. Using some input, the machine does something to the input and then out pops a result. In this course our inputs will be mostly numbers and the process will yield numbers as results.</div>
+<article class="activity project-like" id="sec-models-linear-4-7"><h6 class="heading">
+<span class="type">Activity</span>  <span class="title">Temperature Converter.</span>
+</h6>
+<div class="para" id="sec-models-linear-4-7-2-1">A simple example of a function is a temperature converter. It converts a temperature from degrees Fahrenheit to degrees Celsius.</div> <div class="para" id="sec-models-linear-4-7-2-2">The function is the rule or process used to convert from one unit of temperature to the other.</div> <div class="para" id="sec-models-linear-4-7-2-3">Our function is a graph, but it could have been a table of values or a formula.</div> <div class="para" id="sec-models-linear-4-7-2-4">The graph illustrates that the temperature in degrees Celsius is a <dfn class="terminology">function</dfn> of the temperature in degrees Fahrenheit.</div> <div class="para" id="sec-models-linear-4-7-2-5">The temperature in degrees Fahrenheit, <span class="process-math">\(F\text{,}\)</span> is the input while the temperature in degrees Celsius, <span class="process-math">\(C\text{,}\)</span> is the output.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/temperature.png" class="contained"></div></div></div> <div class="para logical" id="sec-models-linear-4-7-2-7">
+<div class="para">Use the graph to estimate your answers below:</div>
+<ol class="decimal">
+<li id="sec-models-linear-4-7-2-7-1-1"><div class="para" id="sec-models-linear-4-7-2-7-1-1-1">The temperature of <span class="process-math">\(77\)</span> degrees Fahrenheit to degrees Celsius</div></li>
+<li id="sec-models-linear-4-7-2-7-1-2"><div class="para" id="sec-models-linear-4-7-2-7-1-2-1">What temperature in Fahrenheit is the same as <span class="process-math">\(-20\)</span> degrees Celsius?</div></li>
+<li id="sec-models-linear-4-7-2-7-1-3"><div class="para" id="sec-models-linear-4-7-2-7-1-3-1">The temperature of <span class="process-math">\(32\)</span> degrees Fahrenheit to degrees Celsius</div></li>
+<li id="sec-models-linear-4-7-2-7-1-4"><div class="para" id="sec-models-linear-4-7-2-7-1-4-1">What temperature in Fahrenheit is the same as <span class="process-math">\(10\)</span> degrees Celsius?</div></li>
+</ol>
+</div></article><div class="para" id="sec-models-linear-4-8">This brings up some good questions:</div>
+<div class="para logical" id="sec-models-linear-4-9"><ul class="disc">
+<li id="sec-models-linear-4-9-1-1"><div class="para" id="sec-models-linear-4-9-1-1-1">How do we communicate that we have a function? There has to be a simple or quick way to communicate we have a function.</div></li>
+<li id="sec-models-linear-4-9-1-2"><div class="para" id="sec-models-linear-4-9-1-2-1">What kinds of inputs can the function use? The temperature function in the previous exercise could only accept temperatures between <span class="process-math">\(-60\)</span> and <span class="process-math">\(110\)</span> degrees Fahrenheit. The input of <span class="process-math">\(150\)</span> degrees <span class="process-math">\(F\)</span> is not usable because it is not available to choose.</div></li>
+<li id="sec-models-linear-4-9-1-3"><div class="para" id="sec-models-linear-4-9-1-3-1">What are the possible output temperatures in degrees Celsius? Is any temperature possible or is there a window of reasonable temperature expectations?</div></li>
+<li id="sec-models-linear-4-9-1-4"><div class="para" id="sec-models-linear-4-9-1-4-1">How are the two temperature units related? If you increase degrees F, does the temperature in degrees <span class="process-math">\(C\)</span> also increase?</div></li>
+</ul></div>
+<div class="para" id="sec-models-linear-4-10">We start with notation. We don’t want to keep writing the word, F U N C T I O N, all the time. That’s just way too many letters.</div></section><section class="subsection" id="sec-models-linear-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Math as a Language</span>
+</h3>
+<div class="para" id="sec-models-linear-5-2">Math is just another language. We use it to communicate measurements, changes in value and how things are related to or affect one another. Almost everything you say or describe in Math, you can say or describe in English.</div>
+<div class="para" id="sec-models-linear-5-3">In this next exercise we learn to communicate the position of a train as time passes and develop the notation to express where the train is at different times. We will assume that this train runs on time, every day and the conditions every day are the same. You know, an alternate universe called “example land”.</div>
+<article class="activity project-like" id="sec-models-linear-5-4"><h6 class="heading">
+<span class="type">Activity</span> </h6>Consider the graph below. The dot on the graph represents the position of a train at a particular time. The cross-hairs represent the time. Notice that the train’s distance, in miles, from downtown depends on the time, in hours, after 8 a.m. <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> How far from downtown is the train at 10 a.m.?</article><div class="para" id="sec-models-linear-5-5">In English you can communicate information about time and position in a simple sentence like</div>
+<blockquote class="blockquote" id="sec-models-linear-5-6"><div class="para" id="sec-models-linear-5-6-1">
+<span class="process-math">\(2\)</span> hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr> the train is <span class="process-math">\(30\)</span> miles from downtown.</div></blockquote>
+<div class="para" id="sec-models-linear-5-7">Here is what that same sentence looks like in Spanish.</div>
+<blockquote class="blockquote" id="sec-models-linear-5-8"><div class="para" id="sec-models-linear-5-8-1">
+<span class="process-math">\(2\)</span> horas despues de las 8 de la mañana el tren esta 30 millas lejos del centro.</div></blockquote>
+<div class="para" id="sec-models-linear-5-9">Here is what that same sentence could look like in “math”.</div>
+<blockquote class="blockquote" id="sec-models-linear-5-10"><div class="para" id="sec-models-linear-5-10-1"><span class="process-math">\(f(2) = 30\)</span></div></blockquote></section><section class="subsection" id="sec-models-linear-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">The Grammar of Function Notation</span>
+</h3>
+<div class="para" id="sec-models-linear-6-2">The math “sentence” above is actually an equation and it uses <dfn class="terminology">function notation</dfn>  to express the information about the train’s position at a particular time.</div>
+<div class="para" id="sec-models-linear-6-3">In math we don’t really have subjects or verbs or objects. Instead we have input values (numbers) and we have output values. The function is the “machine” or the rule that tells us how to use the input to make an output.</div>
+<div class="para" id="sec-models-linear-6-4">
+<dfn class="terminology">Variables</dfn> are used to represent values we don’t know or that may change. For a function, the input is called the <dfn class="terminology">independent variable</dfn>, and the output is called the <dfn class="terminology">dependent variable</dfn>. This is because the output depends on the input.</div>
+<div class="para" id="sec-models-linear-6-5">The distance from downtown is constantly changing with time, so we can let the dependent variable <span class="process-math">\(D\)</span> represent the “Train’s distance in miles from downtown”. Similarly, we can use the independent variable <span class="process-math">\(t\)</span> to represent the “number of hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>”.</div>
+<div class="para" id="sec-models-linear-6-6">Typically, we use variables that have something to do with the context of the problem, but sometimes we generalize an expression or equation with <span class="process-math">\(x\)</span>’s and <span class="process-math">\(y\)</span>’s when we have nothing specific in mind.</div>
+<section class="paragraphs" id="sec-models-linear-6-7"><h4 class="heading"><span class="title">Variables have units.</span></h4> <div class="para" id="sec-models-linear-6-7-2">If the variables represent actual things or events, we must define them to include the <dfn class="terminology">units</dfn>  we used to measure the event. This allows us to extract meaning from the values or expressions.</div> <div class="para" id="sec-models-linear-6-7-3">If you know Spanish you can <em class="emphasis">interpret</em> the meaning of a Spanish article you read by translating it into English. Likewise, if you know “math”, you can interpret the meaning of function notation by translating it into English, provided you know what the variables in the notation mean or what they are measuring.</div> <blockquote class="blockquote" id="sec-models-linear-6-7-4"><div class="para" id="sec-models-linear-6-7-4-1">If <span class="process-math">\(D\)</span> represents distance, you must define the units in which the distance is measured: miles, inches, centimeters, light years, etc.</div></blockquote> <blockquote class="blockquote" id="sec-models-linear-6-7-5"><div class="para" id="sec-models-linear-6-7-5-1">If <span class="process-math">\(t\)</span> represents time, will it be measured with units of seconds, hours or years?</div></blockquote></section><div class="para" id="sec-models-linear-6-8">Since the position of the train depends on the amount of time that has passed, we say “the distance depends on time”. More specifically, we say that the distance of the train from downtown is a <dfn class="terminology">function of time</dfn>.</div>
+<div class="para" id="sec-models-linear-6-9">Function notation allows us to communicate that distance is a function of time by simply writing <span class="process-math">\(D = f(t)\text{.}\)</span> The notation <span class="process-math">\(f(t)\)</span> is read as, “<span class="process-math">\(f\)</span> of <span class="process-math">\(t\)</span>”.</div>
+<div class="para" id="sec-models-linear-6-10">Remember <span class="process-math">\(t\)</span> is a value. The function uses <span class="process-math">\(t\)</span> to create the value <span class="process-math">\(D\text{.}\)</span>
+</div>
+<div class="para" id="sec-models-linear-6-11">Also, don’t confuse the notation with multiplication! The expression <span class="process-math">\(f(t)\)</span> does <em class="alert">not</em> mean <span class="process-math">\(f\)</span> times <span class="process-math">\(t\text{.}\)</span>
+</div>
+<article class="note remark-like" id="sec-models-linear-6-12"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-models-linear-6-12-1">The word “function” usually refers to the actual <em class="emphasis">rule</em> which turns the input into the output. Sometimes, however, we will use it to describe the output of the relationship.</div></article><article class="activity project-like" id="sec-models-linear-6-13"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para" id="sec-models-linear-6-13-1-1">How would you say the function notation in each statement below?</div> <ol class="decimal">
+<li id="sec-models-linear-6-13-1-2-1">
+<div class="para" id="sec-models-linear-6-13-1-2-1-1">Tarzan(the jungle)</div>
+<ol class="lower-alpha cols2">
+<li id="sec-models-linear-6-13-1-2-1-2-1"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-1-2-1">Tarzan times the jungle</div></li>
+<li id="sec-models-linear-6-13-1-2-1-2-2"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-1-2-2">Tarzan jungle</div></li>
+<li id="sec-models-linear-6-13-1-2-1-2-3"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-1-2-3">Tarzan of the jungle</div></li>
+<li id="sec-models-linear-6-13-1-2-1-2-4"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-1-2-4">Jungle after Tarzan</div></li>
+</ol>
+</li>
+<li id="sec-models-linear-6-13-1-2-2">
+<div class="para" id="sec-models-linear-6-13-1-2-2-1">Helen(Troy)</div>
+<ol class="lower-alpha cols2">
+<li id="sec-models-linear-6-13-1-2-2-2-1"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-2-2-1">Helen loves Troy</div></li>
+<li id="sec-models-linear-6-13-1-2-2-2-2"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-2-2-2">Helen multiplied by Troy</div></li>
+<li id="sec-models-linear-6-13-1-2-2-2-3"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-2-2-3">Helen next to Troy</div></li>
+<li id="sec-models-linear-6-13-1-2-2-2-4"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-2-2-4">Helen of Troy</div></li>
+</ol>
+</li>
+<li id="sec-models-linear-6-13-1-2-3"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-3">
+<span class="process-math">\(f(x)\)</span><ol class="lower-alpha cols2">
+<li id="sec-models-linear-6-13-1-2-3-2-1"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-3-2-1">f of x</div></li>
+<li id="sec-models-linear-6-13-1-2-3-2-2"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-3-2-2">f times x</div></li>
+<li id="sec-models-linear-6-13-1-2-3-2-3"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-3-2-3">f parentheses x</div></li>
+<li id="sec-models-linear-6-13-1-2-3-2-4"><div class="para" id="p-derived-sec-models-linear-6-13-1-2-3-2-4">f x</div></li>
+</ol>
+</div></li>
+</ol></article><div class="para" id="sec-models-linear-6-14">Function notation like <span class="process-math">\(f(t)\)</span> or <span class="process-math">\(f(x)\)</span> or <span class="process-math">\(f(\text{anything})\)</span> implies there is some kind of relation, some kind of rule, that takes a piece of information and returns a response or result. The format of function notation works on the basic principle of input and output and we often use the notation when we refer to things we don’t yet know.</div>
+<div class="para" id="sec-models-linear-6-15">For instance, if you work as a health assistant, you probably earn some hourly salary and you probably work some number of hours each week. I have no idea how many hours a week you work and no idea how much you earn. But I do know your weekly salary is related to the number of hours you work. In fact, your weekly salary is a function of the number of hours you work.</div>
+<div class="para" id="sec-models-linear-6-16">If <span class="process-math">\(t\)</span> is the number of hours you work and <span class="process-math">\(S\)</span> is your weekly salary, I can use function notation to say <span class="process-math">\(S = f(t)\text{,}\)</span> where <span class="process-math">\(f\)</span> is the function, the instructions, that calculates your weekly salary. If you work <span class="process-math">\(12\)</span> hours, then <span class="process-math">\(t = 12\text{,}\)</span> so <span class="process-math">\(f(12)\)</span> is your weekly salary for working <span class="process-math">\(12\)</span> hours.</div>
+<div class="para" id="sec-models-linear-6-17">Notice I still don’t know what the salary actually is, but I can use function notation to talk about it. The expression <span class="process-math">\(f(12)\)</span> literally means, “whatever you earn when you work <span class="process-math">\(12\)</span> hours.”</div>
+<div class="para logical" id="sec-models-linear-6-18">
+<div class="para">In our train example we chose some input, a time, and the function gave us an output of distance. The notation tells the reader what the input is by showing it in the parentheses:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(\text{input}) = \mathit{output}
+\end{equation*}
+</div>
+<div class="para">The function notation <span class="process-math">\(f(0)\)</span> is telling us the input is <span class="process-math">\(0\text{.}\)</span> That means, “<span class="process-math">\(0\)</span> hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>” In other words, it’s <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>
+</div>
+</div>
+<div class="para" id="sec-models-linear-6-19">On the other hand, <span class="process-math">\(f(0)\)</span> represents an output. It is “the train’s distance from downtown, <span class="process-math">\(0\)</span> hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>” But we don’t know what that distance actually is yet. In this case, the notation <span class="process-math">\(f(0)\)</span> means “Whatever the distance is at t = 0”.</div>
+<div class="para" id="sec-models-linear-6-20">Nonetheless, the input and output create an <dfn class="terminology">ordered pair</dfn>  <span class="process-math">\((0, f(0))\text{.}\)</span> On a graph the ordered pair is a <dfn class="terminology">point</dfn>. </div>
+<article class="activity project-like" id="sec-models-linear-6-21"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para" id="sec-models-linear-6-21-1-1">The graph below is a function that illustrates a train’s distance from downtown, in miles, as a function of time in hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr> When using a graph the best you can do is estimate. Since <span class="process-math">\(f(0)\)</span> represents a distance at <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>, we can use the graph to find what the distance is.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> <ul class="disc">
+<li id="sec-models-linear-6-21-1-3-1"><div class="para" id="p-derived-sec-models-linear-6-21-1-3-1">What is <span class="process-math">\(f(0) \)</span> approximately equal to?</div></li>
+<li id="sec-models-linear-6-21-1-3-2"><div class="para" id="p-derived-sec-models-linear-6-21-1-3-2">What time is <span class="process-math">\(f(0)\)</span> referring to?</div></li>
+<li id="sec-models-linear-6-21-1-3-3"><div class="para" id="p-derived-sec-models-linear-6-21-1-3-3">The notation <span class="process-math">\(f(0)\)</span> is read as “<span class="process-math">\(f\)</span> of zero.”  What do you think <span class="process-math">\(f(0)\)</span> means in the context of this train story?</div></li>
+<li id="sec-models-linear-6-21-1-3-4"><div class="para" id="p-derived-sec-models-linear-6-21-1-3-4">How would you represent the statement “train’s distance at 10 a.m.” using function notation?</div></li>
+</ul></article><div class="para" id="sec-models-linear-6-22">Here is another example to further explore the use function notation.</div>
+<article class="activity project-like" id="sec-models-linear-6-23"><h6 class="heading">
+<span class="type">Activity</span> </h6>Let <span class="process-math">\(V = f(A)\)</span> be a function in which the input is the area of a house (measured in square feet), and the output is the value of the house in dollars. Consider the equation <span class="process-math">\(f(900)=209700\)</span> The notation gives us information about the house. Given <span class="process-math">\(f(900)=209700\text{,}\)</span> <ul class="disc">
+<li id="sec-models-linear-6-23-1-4-1"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-1">What is the area of the house?</div></li>
+<li id="sec-models-linear-6-23-1-4-2"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-2">What is the value of the house?</div></li>
+<li id="sec-models-linear-6-23-1-4-3"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-3">Interpret the meaning of <span class="process-math">\(f(900)=209700\)</span> in English.</div></li>
+</ul></article></section><section class="subsection" id="sec-models-linear-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Average Rate of Change, Inuitive Knowledge</span>
+</h3>
+<section class="introduction" id="sec-models-linear-7-2"><div class="para" id="sec-models-linear-7-2-1">In this activity we introduce the Greek letter <span class="process-math">\(\Delta\)</span> that represents change, and we develop the concept of <dfn class="terminology">average rate of change</dfn>.</div> <div class="para" id="sec-models-linear-7-2-2">The prerequisites for this lesson are knowing how to calculate the slope of a line and understanding the meaning of slope.</div> <div class="para" id="sec-models-linear-7-2-3">Let’s start by realizing you already understand the concept of average rate of change, but maybe you have never heard the phrase before.</div></section><div class="para" id="sec-models-linear-7-3">It turns out, <dfn class="terminology">average rate of change</dfn> is just another way to talk about slope. As the name implies, it measures how quickly things change, on average.</div>
+<div class="para" id="sec-models-linear-7-4">Common examples of average rate of change:</div>
+<div class="para logical" id="sec-models-linear-7-5"><ul class="disc">
+<li id="sec-models-linear-7-5-1-1"><div class="para" id="sec-models-linear-7-5-1-1-1">Traveling from Portland, OR to Seattle, WA (about <span class="process-math">\(200\)</span> miles) in <span class="process-math">\(4\)</span> hours is an average speed of <span class="quantity">50 mph</span>.</div></li>
+<li id="sec-models-linear-7-5-1-2"><div class="para" id="sec-models-linear-7-5-1-2-1">Pressure at the surface of the ocean is about <span class="quantity">14.6 <sup>lb</sup>⁄<sub>in<sup>2</sup></sub></span> (pounds per square inch). If you dive under water <span class="process-math">\(20\)</span> feet the pressure is about <span class="quantity">23.6 <sup>lb</sup>⁄<sub>in<sup>2</sup></sub></span>. That’s an average rate of pressure increase of about <span class="quantity">0.45 <sup>lb</sup>⁄<sub>in<sup>2</sup></sub></span> pounds per square inch, per foot underwater.</div></li>
+<li id="sec-models-linear-7-5-1-3"><div class="para" id="sec-models-linear-7-5-1-3-1">Earning <span class="process-math">\(\$108\)</span> for <span class="process-math">\(6\)</span> hours of work is an average hourly pay rate of <span class="process-math">\(18\)</span> dollars per hour.</div></li>
+</ul></div>
+<div class="para" id="sec-models-linear-7-6">In each example there is a function that relates an input with an output. When the input changes by some amount, the output will also change (though usually by some other amount).</div>
+<div class="para" id="sec-models-linear-7-7">The change in the output divided by the change in the input is called an <dfn class="terminology">average rate of change</dfn>  of the function.</div>
+<div class="para" id="sec-models-linear-7-8">Be careful to remember that we are only talking about an <em class="emphasis">average</em>. For instance, no one can drive from Portland to Seattle at a constant speed. There is always stop and go traffic, variations in speed limits, etc.</div>
+<article class="activity project-like" id="sec-models-linear-7-9"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> <div class="para" id="sec-models-linear-7-9-2-2">As the time changes along the horizontal axis the result is the changing position of the train measured on the vertical axis. The key word here is “change”</div> <ol class="lower-alpha">
+<li id="sec-models-linear-7-9-2-3-1"><div class="para" id="sec-models-linear-7-9-2-3-1-1">Use the graph to find the change in distance between the <span class="process-math">\(9{:}00\)</span> and <span class="process-math">\(11{:}00\)</span> <abbr class="initialism">A.M.</abbr>.</div></li>
+<li id="sec-models-linear-7-9-2-3-2"><div class="para" id="sec-models-linear-7-9-2-3-2-1">What is the change in time between the <span class="process-math">\(9{:}00\)</span> and <span class="process-math">\(11{:}00\)</span> <abbr class="initialism">A.M.</abbr>?</div></li>
+<li id="sec-models-linear-7-9-2-3-3"><div class="para" id="sec-models-linear-7-9-2-3-3-1">What is the average speed (rate of change) between <span class="process-math">\(9{:}00\)</span> and <span class="process-math">\(11{:}00\)</span> <abbr class="initialism">A.M.</abbr>?</div></li>
+<li id="sec-models-linear-7-9-2-3-4"><div class="para" id="sec-models-linear-7-9-2-3-4-1">Use function notation (as in part a) to write an expression that represents the <em class="emphasis">change in distance</em> between the <span class="process-math">\(10{:}00\)</span> <abbr class="initialism">A.M.</abbr> and <span class="process-math">\(1{:}00\)</span> <abbr class="initialism">P.M.</abbr>.</div></li>
+</ol></article><div class="para" id="sec-models-linear-7-10">In math we use the Greek letter <span class="process-math">\(\Delta\)</span> to mean “change in”. Change between two values is typically measured by subtracting an old value from a new value.</div>
+<div class="para" id="sec-models-linear-7-11">In our train story where <span class="process-math">\(D = f(t)\text{,}\)</span> the expression <span class="process-math">\(\Delta f\)</span> means “change in miles from downtown”. As the train travels away from downtown, the distance from downtown increases. New distance is greater than old distance, so traveling away from downtown is a positive change in distance.</div>
+<div class="para" id="sec-models-linear-7-12">However, the distance from downtown decreases as the train travels towards downtown. New distance is less than old distance, therefore traveling toward downtown is a negative change in distance.</div>
+<article class="activity project-like" id="sec-models-linear-7-13"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> <div class="para" id="sec-models-linear-7-13-1-2">Use the graph to find the value of <span class="process-math">\(\Delta f\)</span> during the first <span class="process-math">\(2\)</span> hours of the trip</div> <div class="para logical" id="sec-models-linear-7-13-1-3">
+<div class="para">What is the meaning of the expression <span class="process-math">\(\Delta t\)</span> in the context of the train story?</div>
+<ol class="decimal cols2">
+<li id="sec-models-linear-7-13-1-3-2-1"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-1">Change in hours since 8 a.m.</div></li>
+<li id="sec-models-linear-7-13-1-3-2-2"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-2">Delta t</div></li>
+<li id="sec-models-linear-7-13-1-3-2-3"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-3">Delta times t</div></li>
+<li id="sec-models-linear-7-13-1-3-2-4"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-4">There is no meaning to this expression</div></li>
+</ol>
+</div></article></section><section class="subsection" id="sec-models-linear-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Three Representations of a Relationship</span>
+</h3>
+<div class="para" id="sec-models-linear-8-2">In 2002, the poverty rate of each state in the United States of America (plus D.C. and Puerto Rico) were recorded, as well as the number of births performed by teenage mothers ages 15-17.  The data is plotted below, along with a trend line of best fit.</div>
+<div class="image-box" style="width: 95%; margin-left: 2.5%; margin-right: 2.5%;"><img src="external/teen_preg.jpg" class="contained"></div>
+<div class="para" id="sec-models-linear-8-4">The units for the <span class="process-math">\(x\)</span>-axis are people below the poverty line per 100 people in each state or territory.  The <span class="process-math">\(y\)</span>-axis is measured in births per 1000 girls ages 15-17 for each state or territory.</div>
+<div class="para" id="sec-models-linear-8-5">A <em class="emphasis">graph</em> provides a visual representation of the situation. It helps you see how the variables are related to each other and make predictions about future values or values in between those in your table. The horizontal and vertical axis of the graph should be labeled, including units.</div>
+<div class="para" id="sec-models-linear-8-6">The equation for the red line is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T = 1.3733 \times P + 4.2673
+\end{equation*}
+</div>
+<div class="para" id="sec-models-linear-8-8">This is an <em class="emphasis">equation for a model</em>.  This equation is useful because it can be used to calculate the expected teen pregnancy rate given a state’s poverty rate.  Equations are useful for communicating complex relationships. In writing equations, it is always important to define what the variables represent, including units.  For example, in the equation above, <span class="process-math">\(T \)</span> is in births per 1000 girls ages 15-17,  and <span class="process-math">\(P\)</span> is in people living in a household below the poverty line per 100 people.</div>
+<div class="para" id="sec-models-linear-8-9">Another way that you could have represented this relationship is in a <em class="emphasis">table</em> that shows values of t and B as ordered pairs. An ordered pair is two values that are matched together in a given relationship.  You used a table in the last lesson.  Tables are helpful for recognizing patterns and general relationships or for giving information about specific values. A table should always have labels for each column. The labels should include units when appropriate.</div>
+<figure class="table table-like" id="table-linear-teen-preg-predicted"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Location</td>
+<td class="l m b0 r0 l0 t0 lines">PovPct</td>
+<td class="l m b0 r0 l0 t0 lines">Model-Brth15to17</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Illinois</td>
+<td class="l m b0 r0 l0 t0 lines">12.4</td>
+<td class="l m b0 r0 l0 t0 lines">21.3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Indiana</td>
+<td class="l m b0 r0 l0 t0 lines">9.6</td>
+<td class="l m b0 r0 l0 t0 lines">17.5</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Kentucky</td>
+<td class="l m b0 r0 l0 t0 lines">14.7</td>
+<td class="l m b0 r0 l0 t0 lines">24.5</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Michigan</td>
+<td class="l m b0 r0 l0 t0 lines">12.2</td>
+<td class="l m b0 r0 l0 t0 lines">21.0</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ohio</td>
+<td class="l m b0 r0 l0 t0 lines">11.5</td>
+<td class="l m b0 r0 l0 t0 lines">20.1</td>
+</tr>
+</table></div></figure><div class="para" id="sec-models-linear-8-11">The values of “Model-Brth15to17” are not the actual values, but instead, they are the predicted values using our equation above.  We can compare our predicted values with the actual values by including that column.</div>
+<figure class="table table-like" id="table-linear-teen-preg-actual"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Location</td>
+<td class="l m b0 r0 l0 t0 lines">PovPct</td>
+<td class="l m b0 r0 l0 t0 lines">Actual-Brth15to17</td>
+<td class="l m b0 r0 l0 t0 lines">Model-Brth15to17</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Illinois</td>
+<td class="l m b0 r0 l0 t0 lines">12.4</td>
+<td class="l m b0 r0 l0 t0 lines">23.4</td>
+<td class="l m b0 r0 l0 t0 lines">21.3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Indiana</td>
+<td class="l m b0 r0 l0 t0 lines">9.6</td>
+<td class="l m b0 r0 l0 t0 lines">22.6</td>
+<td class="l m b0 r0 l0 t0 lines">17.5</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Kentucky</td>
+<td class="l m b0 r0 l0 t0 lines">14.7</td>
+<td class="l m b0 r0 l0 t0 lines">26.5</td>
+<td class="l m b0 r0 l0 t0 lines">24.5</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Michigan</td>
+<td class="l m b0 r0 l0 t0 lines">12.2</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">21.0</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ohio</td>
+<td class="l m b0 r0 l0 t0 lines">11.5</td>
+<td class="l m b0 r0 l0 t0 lines">20.1</td>
+<td class="l m b0 r0 l0 t0 lines">20.1</td>
+</tr>
+</table></div></figure><div class="para" id="sec-models-linear-8-13">In the table above, the last column represents points of our equation (the red line) while the second to last column are the actual numbers (corresponding to blue dots).</div></section><section class="subsection" id="sec-models-linear-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Linear Equations and Slope</span>
+</h3>
+<div class="para" id="sec-models-linear-9-2">The type of equation we looked at for poverty and teen pregnany is a linear equation, or a linear model.  Recall that the graph of a linear equation is a line.  The primary characteristic of a linear equation is that it has a constant rate of change, meaning that each time the input increases by one, the output changes by a fixed amount.  In the example above, if one state as 1 more person per 100 below the poverty line than another state, then we expect the first state to have 1.3733 more pregnancies per 1000 girls 15-17 years old.  This constant rate of change is also called slope.</div>
+<article class="example example-like" id="sec-models-linear-9-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="sec-models-linear-9-3-1-1">If I were walking at a constant speed, my distance would change 6 miles in 2 hours. We could compute the slope or rate of change as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{6 \text{ miles}}{2 \text{ hours}} = \frac{3 \text{ miles}}{1 \text{ hour}}
+\end{equation*}
+</div>
+<div class="para" id="sec-models-linear-9-3-1-3">In general, we can compute slope as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\text{change of output}}{\text{change of input}}
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
+<div class="sbspanel top" style="width:25.6410256410256%;"><div class="para" id="sec-models-linear-9-3-1-5-1">In the graph shown, we can see that the graph is a line, so the equation is linear.  We can compute the slope using any two pairs of points by counting how much the input and output change, and divide them.  Notice that we get the same slope regardless of which points we use.</div></div>
+<div class="sbspanel top" style="width:71.7948717948718%;"><img src="external/M96-L3-2-g2.svg" role="img" class="contained"></div>
+</div></div> <div class="para" id="sec-models-linear-9-3-1-6">If the output increases as the input increases, we consider that a positive change.  If the output decreases as the input increases, that is a negative change, and the slope will be negative.</div></article><div class="para" id="sec-models-linear-9-4">Some people call the calculation of slope <em class="emphasis">"rise over run"</em>, where "rise" refers to the vertical change in output, and "run" refers to the horizontal change of input.</div>
+<div class="para" id="sec-models-linear-9-5">The units on slope will be a rate based on the units of the output and input variables.  It will have units of "output units per input units".  For example,</div>
+<ul class="disc">
+<li id="sec-models-linear-9-6-1"><div class="para" id="p-derived-sec-models-linear-9-6-1">Input: hours.  Output:  miles.   Slope:  miles per hour</div></li>
+<li id="sec-models-linear-9-6-2"><div class="para" id="p-derived-sec-models-linear-9-6-2">Input: number of cats.  Output:  pounds of litter.    Slope:  pounds of litter per cat</div></li>
+</ul></section><section class="subsection" id="sec-models-linear-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Slope Intercept Equation of a Line</span>
+</h3>
+<div class="para" id="sec-models-linear-10-2">The slope-intercept form of a line, the most common way you’ll see linear equations written, is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = mx + b
+\end{equation*}
+</div>
+<div class="para" id="sec-models-linear-10-4">where <span class="process-math">\(m\)</span> is the slope, and <span class="process-math">\(b\)</span> is the vertical intercept (called y intercept when the output variable is <span class="process-math">\(y\)</span>).  In the equation, <span class="process-math">\(x\)</span> is the input variable, and <span class="process-math">\(y\)</span> is the output variable.</div>
+<div class="para" id="sec-models-linear-10-5">Notice our equation from earlier,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T = 1.3733 \times P + 4.2673
+\end{equation*}
+</div>
+<div class="para" id="sec-models-linear-10-7">fits this form where the slope is 1.3733 and the vertical intercept is 4.2673.   The input variable is <span class="process-math">\(P\)</span> and the output variable is <span class="process-math">\(T\text{.}\)</span>
+</div>
+<article class="activity project-like" id="sec-models-linear-10-8"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para logical" id="sec-models-linear-10-8-1-1">
+<div class="para">From the equation of our model</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T = 1.3733 \times P + 4.2673
+\end{equation*}
+</div>
+<div class="para">What units are the numbers 4.2673 and 1.3733 in?  Describe what each number means in terms of the model.</div>
+</div></article></section><section class="exercises" id="sec-models-linear-11"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="subexercises" id="sec-models-linear-11-1"><h4 class="heading"><span class="title">Evaluate, apply and interpret function notation, including the notation for inverse functions and composition of Functions</span></h4>
+<article class="exercise exercise-like" id="sec-models-linear-11-1-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<div class="para" id="sec-models-linear-11-1-2-1-1">The function W(h) represents the average weight (measured in pounds) of 60 year old American men as a function of their height (measured in centimeters). Suppose <span class="process-math">\(W^{-1}(181)=180\text{.}\)</span> Explain what this means in a complete sentence.</div></article><article class="exercise exercise-like" id="sec-models-linear-11-1-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div class="para" id="sec-models-linear-11-1-3-1-1">Suppose the function <span class="process-math">\(p=f(t)\)</span> represents the population of a certain town, where <span class="process-math">\(p\)</span> represents the population and <span class="process-math">\(t\)</span> represents the year.</div> <div class="para" id="sec-models-linear-11-1-3-1-2">Choose the equation that means, “There were <span class="process-math">\(2015\)</span> people in the town in <span class="process-math">\(2010\text{.}\)</span>”</div> <div class="para logical" id="sec-models-linear-11-1-3-1-3"><ul class="disc">
+<li id="sec-models-linear-11-1-3-1-3-1-1"><div class="para" id="sec-models-linear-11-1-3-1-3-1-1-1"><span class="process-math">\(\displaystyle f(2010)=2015\)</span></div></li>
+<li id="sec-models-linear-11-1-3-1-3-1-2"><div class="para" id="sec-models-linear-11-1-3-1-3-1-2-1"><span class="process-math">\(\displaystyle f(2015)=2010\)</span></div></li>
+</ul></div></article><article class="exercise exercise-like" id="sec-models-linear-11-1-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para" id="sec-models-linear-11-1-4-1-1">Let <span class="process-math">\(I=f(T)\)</span> and <span class="process-math">\(H=g(T)\)</span> be two functions that return <span class="process-math">\(I\text{,}\)</span> the number of ice cream bars you sell at your food cart in one day, and <span class="process-math">\(H\text{,}\)</span>the number of hot coffee drinks you sell at your food cart in one day. Let <span class="process-math">\(T\)</span> be the average temperature outside in degrees Fahrenheit.</div> <div class="para logical" id="sec-models-linear-11-1-4-1-2"><ol class="lower-alpha">
+<li id="sec-models-linear-11-1-4-1-2-1-1"><div class="para" id="sec-models-linear-11-1-4-1-2-1-1-1">Do you expect the function <span class="process-math">\(f\)</span> should be increasing or decreasing? Explain your answer.</div></li>
+<li id="sec-models-linear-11-1-4-1-2-1-2"><div class="para" id="sec-models-linear-11-1-4-1-2-1-2-1">Do you expect the function <span class="process-math">\(g\)</span> should be increasing or decreasing? Explain your answer.</div></li>
+<li id="sec-models-linear-11-1-4-1-2-1-3"><div class="para" id="sec-models-linear-11-1-4-1-2-1-3-1">If you charge <span class="process-math">\(\$2.50\)</span> for an ice cream bar and <span class="process-math">\(\$1.75\)</span> for a hot coffee drink, write an expression (using function notation) that represents the total amount of money you will make from coffee and ice cream in one day, if the average temperature outside is <span class="process-math">\(80\)</span> degrees.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-models-linear-11-1-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para" id="sec-models-linear-11-1-5-1-1">Suppose the function <span class="process-math">\(f(w)\)</span> represents the hours of labor it will take for <span class="process-math">\(w\)</span> workers to paint a particular house.</div> <div class="para logical" id="sec-models-linear-11-1-5-1-2"><ol class="lower-alpha">
+<li id="sec-models-linear-11-1-5-1-2-1-1"><div class="para" id="sec-models-linear-11-1-5-1-2-1-1-1">What is the best interpretation of the statement <span class="process-math">\(f(3)=120?\)</span>
+</div></li>
+<li id="sec-models-linear-11-1-5-1-2-1-2"><div class="para" id="sec-models-linear-11-1-5-1-2-1-2-1">Interpret the meaning of the statement “evaluate <span class="process-math">\(f(4)\)</span>”.</div></li>
+<li id="sec-models-linear-11-1-5-1-2-1-3"><div class="para" id="sec-models-linear-11-1-5-1-2-1-3-1">Interpret the meaning of the statement “solve <span class="process-math">\(f(w)=100\)</span>”.</div></li>
+<li id="sec-models-linear-11-1-5-1-2-1-4"><div class="para" id="sec-models-linear-11-1-5-1-2-1-4-1">Should <span class="process-math">\(f(w)\)</span> be an increasing or decreasing function or both? Explain how you made your conclusion.</div></li>
+<li id="sec-models-linear-11-1-5-1-2-1-5"><div class="para logical" id="sec-models-linear-11-1-5-1-2-1-5-1">
+<div class="para">Interpret the meaning of the statement</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\Delta f}{\Delta w}=40 \, \text{on the interval} \, 1 \leq w \leq 6
+\end{equation*}
+</div>
+</div></li>
+</ol></div></article><article class="exercise exercise-like" id="sec-models-linear-11-1-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para" id="sec-models-linear-11-1-6-1-1">Let <span class="process-math">\(g(x)\)</span> be a linear function such that <span class="process-math">\(\frac{g(5)-g(2)}{3}=4\text{.}\)</span>
+</div> <div class="para logical" id="sec-models-linear-11-1-6-1-2"><ol class="lower-alpha">
+<li id="sec-models-linear-11-1-6-1-2-1-1"><div class="para" id="sec-models-linear-11-1-6-1-2-1-1-1">Is it necessarily true that <span class="process-math">\(g(1)=4\text{?}\)</span> Explain your answer.</div></li>
+<li id="sec-models-linear-11-1-6-1-2-1-2"><div class="para" id="sec-models-linear-11-1-6-1-2-1-2-1">Suppose we know <span class="process-math">\(g(0)=2\text{.}\)</span> What is the value of <span class="process-math">\(g(3)\text{?}\)</span>
+</div></li>
+<li id="sec-models-linear-11-1-6-1-2-1-3"><div class="para" id="sec-models-linear-11-1-6-1-2-1-3-1">Sketch an example of another function <span class="process-math">\(f(x)\)</span> that has the same average rate of change on the interval <span class="process-math">\(2 \leq x \leq 5\)</span> such that <span class="process-math">\(f(1) \neq 4\)</span>
+</div></li>
+</ol></div></article></article><article class="subexercises" id="sec-models-linear-11-2"><h4 class="heading"><span class="title">Linear Functions</span></h4>
+<div class="exercisegroup" id="sec-models-linear-11-2-2">
+<h5 class="heading"><span class="title">Fundraiser.</span></h5>
+<div class="introduction" id="sec-models-linear-11-2-2-2">A sports team is planning a fundraiser to help pay for equipment. Their plan is to sell team T-shirts to friends and family, and they hope to raise $500. Their local screen printing shop will charge them a $75 setup fee, plus $6 per shirt, and they plan to sell the shirts for $15 each.</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="sec-models-linear-11-2-2-3"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>Explore their profit (the amount they bring in from sales minus costs) using graphs and/or tables. Use these to estimate how many shirts the team will have to sell to reach their goal.</article><article class="exercise exercise-like" id="sec-models-linear-11-2-2-4"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>How much profit does the team make for each shirt they sell?</article><article class="exercise exercise-like" id="sec-models-linear-11-2-2-5"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>Create an equation for the linear model for their profit in terms of the number of shirts they sell.</article><article class="exercise exercise-like" id="sec-models-linear-11-2-2-6"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>How much money will they raise if they can sell 30 shirts?</article><article class="exercise exercise-like" id="sec-models-linear-11-2-2-7"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>How many shirts will they have to sell to avoid losing money?</article><article class="exercise exercise-like" id="sec-models-linear-11-2-2-8"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>How many shirts will they have to sell to raise their goal of $500?</article>
+</div>
+</div>
+<article class="exercise exercise-like" id="sec-models-linear-11-2-3"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>Suppose you and your roommates need to move, so you look into renting a moving truck for the day. U-Haul (www.uhaul.com) charges the following amounts for three different trucks. The dimensions for the trucks are given in length x width x height. <ol class="lower-alpha">
+<li id="sec-models-linear-11-2-3-1-1-1"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-1">$19.95 plus $0.79 per mile for a cargo van with inside dimensions: 9’2" x 5’7-1/2" x 4’5"</div></li>
+<li id="sec-models-linear-11-2-3-1-1-2"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-2">$29.95 plus $0.99 per mile for a 14’ truck with inside dimensions: 14’6" x 7’8" x 7’2"</div></li>
+<li id="sec-models-linear-11-2-3-1-1-3"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-3">$39.95 plus $0.99 per mile for a 20’ truck with inside dimensions: 19’6" x 7’8" x 7’2"</div></li>
+</ol> You estimate that you and your roommates have three rooms full of furniture and boxes, equivalent to about 1,000 cubic feet. Your new apartment is about 10 miles (one way) from your old apartment. As a group, decide which vehicle size is a better deal to rent. Provide work to support your answer.</article></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch-models.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-models-exponential.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Income Taxes</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_oscarlevin.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
+</head>
+<body id="qw2" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-3-4-loans.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="financial_math.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="finance-final-project.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="2" data-max-levels="3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-introduction.html" class="internal"><span class="codenumber">0</span> <span class="title">Introduction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="time.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="title">Rule of 60</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="title">Master Calendar</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-Schedule" class="internal"><span class="title">Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="time.html#subsec-" class="internal"><span class="title">20 Tips for Managing Your Time</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mindset.html" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec-mindset.html#god-math-worksheet" class="internal"><span class="codenumber">0.2</span> <span class="title">God and Math Worksheet</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-math-theology.html" class="internal"><span class="codenumber">0.3</span> <span class="title">God and Math</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">1</span> <span class="title">Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="unit-conversion.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-4" class="internal"><span class="title">Equivalences Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-5" class="internal"><span class="title">Metric Prefixes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-6" class="internal"><span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="unit-conversion.html#unit-conversion-7" class="internal"><span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="cost-of-driving.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="home-improvements.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Percentages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="financial_math.html" class="internal"><span class="codenumber">2</span> <span class="title">Finance</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-4" class="internal"><span class="title">Basic Calculations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-5" class="internal"><span class="title">Cell References</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-6" class="internal"><span class="title">Cell Formatting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-7" class="internal"><span class="title">Fill-Down Feature</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-8" class="internal"><span class="title">Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#subsec-budget" class="internal"><span class="title">Using a Spreadsheet for a Personal Budget</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-intro-spreadsheet.html#sec-finance-intro-spreadsheet-10" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-4" class="internal"><span class="title">Simple Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-5" class="internal"><span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-6" class="internal"><span class="title">Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-7" class="internal"><span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-8" class="internal"><span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-9" class="internal"><span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-10" class="internal"><span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-11" class="internal"><span class="title">Continuously Compounded Interest</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-12" class="internal"><span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-13" class="internal"><span class="title">Effective Rate</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-simple-compound.html#sec-finance-simple-compound-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="title">Warmup</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-5" class="internal"><span class="title">Savings Plan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-6" class="internal"><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-7" class="internal"><span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-8" class="internal"><span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-finance-savings-plan.html#sec-finance-savings-plan-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-4" class="internal"><span class="title">Installment Loans</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-5" class="internal"><span class="title">Loan Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-6" class="internal"><span class="title">Remaining Loan Balance</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-7" class="internal"><span class="title">Credit Cards</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-8" class="internal"><span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-9" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-10" class="internal"><span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-11" class="internal"><span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-loans.html#sec-3-4-loans-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-4" class="internal"><span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-5" class="internal"><span class="title">Types of Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-6" class="internal"><span class="title">Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-7" class="internal"><span class="title">State Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-8" class="internal"><span class="title">Municipal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-9" class="internal"><span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-10" class="internal"><span class="title">Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-11" class="internal"><span class="title">Adjusted Gross Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-12" class="internal"><span class="title">Taxable Income</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-13" class="internal"><span class="title">Filing Status</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-14" class="internal"><span class="title">Tax Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-15" class="internal"><span class="title">Tax Credits</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-16" class="internal"><span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="chap_two_income_taxes.html#chap_two_income_taxes-17" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="finance-final-project.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Planning and Budget Project</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-4" class="internal"><span class="title">Details</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-5" class="internal"><span class="title">Assignment</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="finance-final-project.html#finance-final-project-6" class="internal"><span class="title">Grading Break Down</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="data.html" class="internal"><span class="codenumber">3</span> <span class="title">Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-4" class="internal"><span class="title">Statistical Process</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-5" class="internal"><span class="title">Population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-6" class="internal"><span class="title">Parameter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-7" class="internal"><span class="title">Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-8" class="internal"><span class="title">Statistic</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-9" class="internal"><span class="title">Sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-10" class="internal"><span class="title">Sampling Methods</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-11" class="internal"><span class="title">Simple random sample (SRS)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-12" class="internal"><span class="title">Stratified sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-13" class="internal"><span class="title">Systematic sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-14" class="internal"><span class="title">Convenience sampling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-15" class="internal"><span class="title">Statistical Bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-16" class="internal"><span class="title">Types of bias</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-17" class="internal"><span class="title">Observational Studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-18" class="internal"><span class="title">Experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-19" class="internal"><span class="title">Confounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-20" class="internal"><span class="title">Control group</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-21" class="internal"><span class="title">Placebo effect</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-22" class="internal"><span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-23" class="internal"><span class="title">Blind studies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-24" class="internal"><span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-statistical-process.html#sec-4-1-statistical-process-25" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-4" class="internal"><span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-5" class="internal"><span class="title">Presenting Categorical Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-6" class="internal"><span class="title">Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-7" class="internal"><span class="title">Relative Frequency Tables</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-8" class="internal"><span class="title">Bar graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-9" class="internal"><span class="title">Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-10" class="internal"><span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-11" class="internal"><span class="title">Misleading Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-12" class="internal"><span class="title">Perceptual Distortion</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-13" class="internal"><span class="title">Misleading Scale</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-14" class="internal"><span class="title">Stacked Bar Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-15" class="internal"><span class="title">Presenting Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-16" class="internal"><span class="title">Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-17" class="internal"><span class="title">Class Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-18" class="internal"><span class="title">Histograms Using Technology</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-19" class="internal"><span class="title">The Shape of a Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-20" class="internal"><span class="title">Modality</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-21" class="internal"><span class="title">Symmetry</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-22" class="internal"><span class="title">Skewness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-23" class="internal"><span class="title">Skewed to the Left</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-24" class="internal"><span class="title">Skewed to the Right</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-25" class="internal"><span class="title">The Normal Distribution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-26" class="internal"><span class="title">Outlier</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-describing-data.html#sec-4-2-describing-data-27" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-3" class="internal"><span class="title">Calculating Summary Statistics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-4" class="internal"><span class="title">Measures of Center</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-5" class="internal"><span class="title">Mode</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-6" class="internal"><span class="title">Mean</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-7" class="internal"><span class="title">Median</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-8" class="internal"><span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-measure-of-center.html#sec-4-3-measure-of-center-9" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-3" class="internal"><span class="title">Measures of Variation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-4" class="internal"><span class="title">Standard Deviation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-5" class="internal"><span class="title">Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-6" class="internal"><span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-7" class="internal"><span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-8" class="internal"><span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-9" class="internal"><span class="title">Percentiles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-10" class="internal"><span class="title">Comparing Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-11" class="internal"><span class="title">Z-Scores</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-measure-of-variation.html#sec-4-4-measure-of-variation-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">4</span> <span class="title">Math Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-linear.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-4" class="internal"><span class="title">What is a Function?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-5" class="internal"><span class="title">Math as a Language</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-6" class="internal"><span class="title">The Grammar of Function Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-7" class="internal"><span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-8" class="internal"><span class="title">Three Representations of a Relationship</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-9" class="internal"><span class="title">Linear Equations and Slope</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-10" class="internal"><span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-linear.html#sec-models-linear-11" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-3" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-4" class="internal"><span class="title">Growth Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-5" class="internal"><span class="title">Percent Increase</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-6" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-7" class="internal"><span class="title">Decay Factors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-models-exponential-8" class="internal"><span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-2" class="internal"><span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-3" class="internal"><span class="title">Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-models-exponential-2.html#sec-models-exponential-2-4" class="internal"><span class="title">Half-Life</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-carbon.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Carbon Dioxide Lab</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-carbon.html#sec-5-5-carbon-ex" class="internal"><span class="codenumber">4.5</span> <span class="title"></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="democracy.html" class="internal"><span class="codenumber">5</span> <span class="title">Democracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-3" class="internal"><span class="title">Historical Context for This Chapter</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-4" class="internal"><span class="title">What is Apportionment?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-5" class="internal"><span class="title">Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-6" class="internal"><span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-7" class="internal"><span class="title">Jefferson’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-8" class="internal"><span class="title">Webster’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-9" class="internal"><span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-10" class="internal"><span class="title">Huntington-Hill Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-11" class="internal"><span class="title">What is the Geometric Mean?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-apportionment.html#sec-democracy-apportionment-12" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-3" class="internal"><span class="title">Voting Rights</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-4" class="internal"><span class="title">Ranked Choice Ballots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-5" class="internal"><span class="title">Preference Schedule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-6" class="internal"><span class="title">Plurality Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-7" class="internal"><span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-8" class="internal"><span class="title">Insincere Voting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-9" class="internal"><span class="title">Instant Runoff Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-10" class="internal"><span class="title">Borda Count (Point System)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-11" class="internal"><span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-12" class="internal"><span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-13" class="internal"><span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-voting.html#sec-democracy-voting-14" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-3" class="internal"><span class="title">Choosing the U.S. President</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-4" class="internal"><span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-5" class="internal"><span class="title">Electoral Power</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-popular-vote.html#sec-democracy-popular-vote-6" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-3" class="internal"><span class="title">Forming State Legislative Districts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-4" class="internal"><span class="title">Proportionality and Fairness</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-5" class="internal"><span class="title">How to Gerrymander</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-6" class="internal"><span class="title">The Efficiency Gap</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-democracy-gerrymandering.html#sec-democracy-gerrymandering-7" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="chap_two_income_taxes"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Income Taxes</span>
+</h2>
+<article class="objectives goal-like" id="chap_two_income_taxes-2"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Income Taxes 2.5</span>
+</h3>
+<div class="introduction" id="chap_two_income_taxes-2-2"><div class="para" id="chap_two_income_taxes-2-2-1">Students will be able to:</div></div>
+<ul class="disc">
+<li id="chap_two_income_taxes-2-3-1"><div class="para" id="chap_two_income_taxes-2-3-1-1">Calculate gross income and adjusted gross income (AGI)</div></li>
+<li id="chap_two_income_taxes-2-3-2"><div class="para" id="chap_two_income_taxes-2-3-2-1">Determine the standard deduction according to filing status</div></li>
+<li id="chap_two_income_taxes-2-3-3"><div class="para" id="chap_two_income_taxes-2-3-3-1">Determine whether to use the standard or itemized deductions and calculate taxable income</div></li>
+<li id="chap_two_income_taxes-2-3-4"><div class="para" id="chap_two_income_taxes-2-3-4-1">Calculate income tax from tables</div></li>
+<li id="chap_two_income_taxes-2-3-5"><div class="para" id="chap_two_income_taxes-2-3-5-1">Compare taxes owed to withholdings to determine whether a refund is due or a payment is required</div></li>
+</ul></article><section class="introduction" id="chap_two_income_taxes-3"></section><section class="subsection" id="chap_two_income_taxes-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">A Very Brief History of Taxes</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-4-2">Although Benjamin Franklin famously claimed in 1789 that “in this world nothing can be said to be certain, except death and taxes”, it wasn’t until 1913 that the 16th amendment was ratified, and income tax was legalized. Prior to this, taxes were primarily collected through tariffs on imported goods, poll taxes, and property taxes. A <em class="alert">poll tax</em>, also referred to as a head tax, was a fixed amount every liable individual had to pay. Payment of the poll tax was often required before a person could register to vote or be issued a hunting or fishing license.</div>
+<div class="para" id="chap_two_income_taxes-4-3">Tax policy in the United States is a politically divisive issue. There is even debate as to the current length of the tax code! Some claim that the code is over 70,000 pages while others insist it is just over 2,000. Nevertheless, there is at least one thing everyone can agree with - you don’t want to be on the wrong side of the Internal Revenue Service (IRS)!</div></section><section class="subsection" id="chap_two_income_taxes-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Types of Income Tax</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-5-2">
+<em class="alert">Income tax</em> is a tax that is levied on earned income or profit. Income taxes are collected by the federal government, states, and even some municipalities. Income taxes are an important source of funding, and are used to finance social programs, maintain and expand infrastructure, and provide foreign aid, among other things.</div></section><section class="subsection" id="chap_two_income_taxes-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Federal Income Tax</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-6-2">Anyone who earns income over a certain amount (approximately $10,000 for an individual) must file a federal tax return and have taxes collected on their behalf. The amount of federal tax owed is determined by your <em class="alert">filing status</em> and <em class="alert">taxable income</em>.</div></section><section class="subsection" id="chap_two_income_taxes-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">State Income Tax</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-7-2">Forty-one states and the District of Columbia collect taxes on income from wages and investment. Seven states - Washington, Nevada, South Dakota, Wyoming, Alaska, Texas, and Florida – do not collect tax on wage or investment income, and two states – New Hampshire and Tennessee – only collect tax on investment income. The amount of tax collected varies by state, with each state averaging between $500 and $3000 per person.</div></section><section class="subsection" id="chap_two_income_taxes-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Municipal Income Tax</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-8-2">Some municipalities (urban districts) also collect income taxes. For example, business owners in Multnomah County pay a municipal tax on their business income, and workers in the Tri-met district (area served by Tri-met) have their wages taxed at 0.7537%.</div></section><section class="subsection" id="chap_two_income_taxes-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Calculating Federal Income Tax</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-9-2">Not all income is taxed, and not all income that gets taxed is taxed at the same rate. The general process of calculating the amount of federal income tax you owe is outlined in the chart below.</div>
+<figure class="figure figure-like" id="chap_two_income_taxes-9-3"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/financial_math/2_5/calculating_federal.png" class="contained" alt="Five rectangles showing the steps: 1. Calculate gross income by adding all income; 2. Calculate adjusted gross income (AGI) by subtracting any pre-tax adjustments; 3. Calculate taxable income by subtracting deductions (itemized or standard); 4. Calculate tax using tax table for your filing status; 5. Calculate refund or amount owed by subtracting credits and withholdings. If the amount is negative you get a refund; if the amount is positive you owe money."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.1<span class="period">.</span></span><span class="space"> </span>Steps to Calculate Federal Income Tax</figcaption></figure></section><section class="subsection" id="chap_two_income_taxes-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Gross Income</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-10-2">
+<em class="alert">Gross income</em> includes all wages, tips, earned interest, dividends, rents and royalties, alimony, property gains, income tax refunds, etc. Keep in mind that ALL income means ALL income. Even income earned from a crime must be reported!</div></section><section class="subsection" id="chap_two_income_taxes-11"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Adjusted Gross Income</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-11-2">
+<em class="alert">Adjustments</em> are eligible expenses used to reduce your gross income. Adjustments are tax-exempt and thus reduce the amount owed in taxes. Eligible expenses include contributions to tax deferred savings plans (401k, Individual Retirement Plan (IRA)), school tuition, student loan interest, moving expenses, business expenses, flexible spending accounts and health savings account contributions.</div></section><section class="subsection" id="chap_two_income_taxes-12"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Taxable Income</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-12-2">
+<em class="alert">Taxable income</em> is determined by subtracting your <em class="alert">deductions</em> from your adjusted gross income. You may choose to take <em class="emphasis">either</em> a <em class="alert">standard deduction</em>, which is determined by your filing status, or you may choose to <em class="alert">itemize</em> your deductions. Itemized deductions may include state and local income taxes, property taxes, medical expenses, mortgage interest, and charitable donations.</div>
+<div class="para" id="chap_two_income_taxes-12-3">Prior to the 2018 tax year, you could also claim <em class="alert">personal exemptions</em>. Exemptions of $4,050 for each member of the household were subtracted from the adjusted gross income along with either the standard or itemized deduction to determine taxable income. Starting in 2018, however, the standard deduction was doubled, and personal exemptions were eliminated.</div>
+<div class="para" id="chap_two_income_taxes-12-4">Let’s look at an example of how to calculate gross income and adjusted gross income (AGI).</div>
+<article class="example example-like" id="chap_two_income_taxes-12-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-12-5-1">Sasha received $45,000 in wages and earned $1,300 in interest from his savings plan. He paid $1,400 in student loan interest, and put $4,000 into his Individual Retirement Account (IRA). Determine Sasha’s adjusted gross income.</div> <div class="para" id="chap_two_income_taxes-12-5-2">To calculate Sasha’s adjusted gross income, we need to first determine his gross income. His gross income includes his wages and earned interest:</div> <div class="para" id="chap_two_income_taxes-12-5-3">Gross Income <span class="process-math">\(=\$45,000+\$1,300=\$46,300\)</span>
+</div> <div class="para" id="chap_two_income_taxes-12-5-4">To find his adjusted gross income, we need to subtract eligible adjustments from his gross income. His eligible adjustments include the interest paid on his student loans, and his contributions to his IRA:</div> <div class="para" id="chap_two_income_taxes-12-5-5">Adjusted Gross Income <span class="process-math">\(=\$46,300-\$1,400-\$4,000=\$40,900\)</span>
+</div></article></section><section class="subsection" id="chap_two_income_taxes-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Filing Status</span>
+</h3>
+<div class="para logical" id="chap_two_income_taxes-13-2">
+<div class="para">Your <em class="alert">filing status</em> is determined by your family situation. Are you married, widowed, divorced, caring for a family member? It is possible to fall into more than one category, but you may choose the one that is most beneficial for you.</div>
+<ul class="disc">
+<li id="chap_two_income_taxes-13-2-2-1"><div class="para" id="chap_two_income_taxes-13-2-2-1-1">
+<em class="alert">Single:</em> If you are unmarried, legally separated from your spouse, or divorced on the last day of the year.</div></li>
+<li id="chap_two_income_taxes-13-2-2-2"><div class="para" id="chap_two_income_taxes-13-2-2-2-1">
+<em class="alert">Married Filing Jointly:</em> If you are married and both you and your spouse agree to file a joint return. (On a joint return, you report your combined income and deduct your combined allowable expenses.)</div></li>
+<li id="chap_two_income_taxes-13-2-2-3"><div class="para" id="chap_two_income_taxes-13-2-2-3-1">
+<em class="alert">Married Filing Separately:</em> If you are married and you want to be responsible only for your own tax, or if this status results in less tax than a joint return.</div></li>
+<li id="chap_two_income_taxes-13-2-2-4"><div class="para" id="chap_two_income_taxes-13-2-2-4-1">
+<em class="alert">Head of Household (with qualifying person):</em> If you are 1) unmarried or considered unmarried on the last day of the year, 2) paid more than half the cost of keeping up a home for the year, and 3) have a qualifying dependent living with you for more than half the year (except temporary absences, such as school).</div></li>
+<li id="chap_two_income_taxes-13-2-2-5"><div class="para" id="chap_two_income_taxes-13-2-2-5-1">
+<em class="alert">Qualifying Widow/Widower (with dependent child):</em> This status is available for the two years following the death of your spouse.</div></li>
+</ul>
+</div>
+<div class="para" id="chap_two_income_taxes-13-3">Your filing status determines your standard deduction and tax liability. The standard deduction for each filing status for the tax year 2022 is given in the table below.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Filing Status</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Standard Deduction for Tax Year 2022</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Single</td>
+<td class="c m b1 r1 l0 t0 lines">$12,950.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Married Filing Jointly</td>
+<td class="c m b1 r1 l0 t0 lines">$25,900</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Married Filing Separately</td>
+<td class="c m b1 r1 l0 t0 lines">$12,950</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Head of Household</td>
+<td class="c m b1 r1 l0 t0 lines">$19,400</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Qualifying Widow</td>
+<td class="c m b1 r1 l0 t0 lines">$25,900</td>
+</tr>
+</table></div></div></div>
+<div class="para" id="chap_two_income_taxes-13-5">Here is an example where we calculate adjusted gross income and taxable income.</div>
+<article class="example example-like" id="chap_two_income_taxes-13-6"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-13-6-1-1">Maria earned wages of $32,400 from her job as a server. She also earned $8,300 in tips, and received $95 in interest from a savings account. In trying to save for retirement, Maria has put $3,500 into a 401K tax deferred savings plan. She is unmarried and lives with her six year old daughter. Determine Maria’s gross income, adjusted gross income, and taxable income.</div>
+<div class="solutions"><details id="chap_two_income_taxes-13-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="chap_two_income_taxes-13-6-2-1">Maria’s gross income includes her wages, tips, and earned interest.</div> <div class="para" id="chap_two_income_taxes-13-6-2-2">Gross Income = $32,400 + $8,300 + $95 = $40,795</div> <div class="para" id="chap_two_income_taxes-13-6-2-3">Maria can use her 401k contribution as an adjustment.</div> <div class="para" id="chap_two_income_taxes-13-6-2-4">Adjusted Gross Income = $40,795 - $3,500 = $37,295</div> <div class="para" id="chap_two_income_taxes-13-6-2-5">Since Maria is unmarried and is the primary caregiver for her daughter, she can file as the head of household and take the standard deduction of $19,400.</div> <div class="para" id="chap_two_income_taxes-13-6-2-6">Taxable Income = $37,295 - $19,400 = $17,895</div>
+</div></details></div></article><article class="activity project-like" id="act-gracie-lancel-1"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para" id="act-gracie-lancel-1-1-1">Gracie and Lancel are a couple.  Below is a list of relevant information regarding their income taxes.</div> <div class="para logical" id="act-gracie-lancel-1-1-2"><ul class="disc">
+<li id="act-gracie-lancel-1-1-2-1-1"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-1">Gracie and Lancel are married with no kids, filing jointly.  No one can claim either as a dependent.</div></li>
+<li id="act-gracie-lancel-1-1-2-1-2"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-2">Together, they earned $106,900 of wage income</div></li>
+<li id="act-gracie-lancel-1-1-2-1-3"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-3">They did <em class="emphasis">not</em> earn anything from interest, dividends, distributions, annuities, benefits, capital gains, or anything else.</div></li>
+<li id="act-gracie-lancel-1-1-2-1-4"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-4">They plan to take the standard deduction.</div></li>
+<li id="act-gracie-lancel-1-1-2-1-5"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-5">They contributed more than $600 to their church (According to instructions from the IRS, for a couple filing jointly who take the standard deduction, the maximum amount they can claim is $600).</div></li>
+<li id="act-gracie-lancel-1-1-2-1-6"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-6">They had no qualified business income</div></li>
+<li id="act-gracie-lancel-1-1-2-1-7"><div class="para" id="p-derived-act-gracie-lancel-1-1-2-1-7">They can claim $2250 in adjustments to income because Gracie is an elementary teacher who can mark $250 for educator expenses and they can claim $2000 because of their payments toward the interest of their student loans.</div></li>
+</ul></div> <div class="para logical" id="act-gracie-lancel-1-1-3"><ol class="lower-alpha">
+<li id="act-gracie-lancel-1-1-3-1-1"><div class="para" id="act-gracie-lancel-1-1-3-1-1-1">Fill out boxes 1-15 the form to find the couple’s taxable income <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/1040.jpg" class="contained"></div>
+</div></li>
+<li id="act-gracie-lancel-1-1-3-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical" id="act-gracie-lancel-1-1-3-1-2-1-1">
+<div class="para">Usually tax owed is looked up from a tax table. You would use the first line of the table if the taxable income from line 6  is at least 78,000 but less than 78,050.</div>
+<ol class="lower-alpha">
+<li id="act-gracie-lancel-1-1-3-1-2-1-1-1-1"><div class="para" id="p-derived-act-gracie-lancel-1-1-3-1-2-1-1-1-1">Write this as a compound inequality, using <span class="process-math">\(t\)</span> to represent the income from line 6.</div></li>
+<li id="act-gracie-lancel-1-1-3-1-2-1-1-1-2"><div class="para" id="p-derived-act-gracie-lancel-1-1-3-1-2-1-1-1-2">Then use the table provided to determine the tax the couple owes.</div></li>
+</ol>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/tax-table-78.PNG" class="contained"></div>
+</div></div></li>
+</ol></div></article></section><section class="subsection" id="chap_two_income_taxes-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Tax Tables</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-14-2">The United States has a <em class="alert">progressive</em> federal income tax system which means the more income you have, the more you generally pay in taxes. There are <em class="alert">marginal tax rates</em> that go up according to our income, but we don’t pay the same rate on all of our income. The ranges of income are called <em class="alert">tax brackets</em> and the buckets in the illustration below can help us visualize the brackets.</div>
+<div class="para" id="chap_two_income_taxes-14-3">The cutoff values in the figure are for a married couple filing jointly, but the percentages are the same for everyone as you’ll see in the table on the next page. We pay 10% of any taxable income in the first bucket. If the first bucket is full, we move to the second bucket and we pay 12% of that income. This couple is in the 22% tax bracket because the 3rd bucket is partially filled. They will pay 22% of the income in that bucket, but they are not paying 22% of their entire income.</div>
+<figure class="figure figure-like" id="tax_buckets"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/financial_math/2_5/tax_tables.png" class="contained" alt="A drawing that shows the tax brackets as buckets being filled from a hose labeled taxable income; the first bucket for the 10% tax bracket is full and has the range of $0-19,050; the second bucket for the 12% tax bracket is also full and has the range of $19051-77,400; the third bucket for the 22% bracket is partially full and has the range of $77,401-165,000; there are buckets for the 24%, 32%, 35% and 37% tax brackets which are empty. The cutoff values for all of these brackets are given in the next table."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.4<span class="period">.</span></span><span class="space"> </span>Tax Buckets by John Chesbrough, licensed under <a class="external" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC-BY-ND-NC 4.0</a><details class="ptx-footnote" aria-live="polite" id="tax_buckets-1-2"><summary class="ptx-footnote__number" title="Footnote 2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="tax_buckets-1-2"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-nc-nd/4.0/</code></div></details>.</figcaption></figure><div class="para" id="chap_two_income_taxes-14-5">Here is a table with cutoff values for each filing status. Everyone pays a tax of 10% on any income in the first tax bracket. Then we all pay 12% of the next bracket of income, 22% of the next bracket, and so on. This keeps going up to the 37% tax bracket.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="chap_two_income_taxes-14-6-1"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Marginal Tax Rate<br>On Taxable Income</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Filing Single</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Filing as Head<br>of Household</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Married filing<br>Jointly</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Married filing<br>Separately</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">10%</td>
+<td class="l m b1 r1 l0 t0 lines">First $10,275</td>
+<td class="l m b1 r1 l0 t0 lines">First $14,650</td>
+<td class="l m b1 r1 l0 t0 lines">First $20,550</td>
+<td class="l m b1 r1 l0 t0 lines">First $10,275</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">12%</td>
+<td class="l m b1 r1 l0 t0 lines">$10,276 to $41,775</td>
+<td class="l m b1 r1 l0 t0 lines">$14,651 to $55,900</td>
+<td class="l m b1 r1 l0 t0 lines">$20,551 to $83,550</td>
+<td class="l m b1 r1 l0 t0 lines">$10,276 to $41,775</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">22%</td>
+<td class="l m b1 r1 l0 t0 lines">$41,776 to $89,075</td>
+<td class="l m b1 r1 l0 t0 lines">$55,901 to $89,050.</td>
+<td class="l m b1 r1 l0 t0 lines">$83,551 to $178,150.</td>
+<td class="l m b1 r1 l0 t0 lines">$41,776 to $89,075</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">24%</td>
+<td class="l m b1 r1 l0 t0 lines">$89,076 to $170,050.</td>
+<td class="l m b1 r1 l0 t0 lines">$89,051 to $170,050</td>
+<td class="l m b1 r1 l0 t0 lines">$178,151 to $340,100.</td>
+<td class="l m b1 r1 l0 t0 lines">$89,076 to $170,050.</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">32%</td>
+<td class="l m b1 r1 l0 t0 lines">$170,051 to $215,950</td>
+<td class="l m b1 r1 l0 t0 lines">$170,051 to $215,950</td>
+<td class="l m b1 r1 l0 t0 lines">$340,101 to $431,900</td>
+<td class="l m b1 r1 l0 t0 lines">$170,051 to $215,950</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">35%</td>
+<td class="l m b1 r1 l0 t0 lines">$215,951 to $539,900</td>
+<td class="l m b1 r1 l0 t0 lines">$215,951 to $539,900</td>
+<td class="l m b1 r1 l0 t0 lines">$431,901 to $647,850</td>
+<td class="l m b1 r1 l0 t0 lines">$215,951 to $323,925</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">37%</td>
+<td class="l m b1 r1 l0 t0 lines">$539,901 or more</td>
+<td class="l m b1 r1 l0 t0 lines">$539,901 or more</td>
+<td class="l m b1 r1 l0 t0 lines">$647,851 or more</td>
+<td class="l m b1 r1 l0 t0 lines">$323,926 or more</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.5.5<span class="period">.</span></span><span class="space"> </span>2022 Tax Year Marginal Tax Rates</figcaption></figure></div></div></div>
+<div class="para" id="chap_two_income_taxes-14-7">Let’s see how to use this table to calculate taxes in an example.</div>
+<article class="example example-like" id="chap_two_income_taxes-14-8"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-14-8-1-1">If Avery is filing single and has $55,100 in taxable income, calculate their tax.</div>
+<div class="solutions"><details id="chap_two_income_taxes-14-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="chap_two_income_taxes-14-8-2-1">We begin with the lowest tax bracket and take 10% of $9,525. Since their income is higher than that, we add 12% of the next amount, found by subtracting the values in that bracket. Avery’s taxable income is in the 22% tax bracket, so we find the amount over $38,700 by subtracting. Here is the full calculation:</div>  <div class="para logical" id="chap_two_income_taxes-14-8-2-2"><div class="displaymath process-math" id="chap_two_income_taxes-14-8-2-2-1">
+\begin{align*}
+0.10(\$10,275)+0.12(\$41,775-\$10,275)+0.22(\$55,100-\$41,775)\\
+\amp =0.10(\$10,275)+0.12(\$31,500)+0.22(\$13,325)\\
+\amp =\$1,027.50+\$3,780+\$2,931.50\\
+\amp =\$7,739
+\end{align*}
+</div></div> <div class="para" id="chap_two_income_taxes-14-8-2-3">Avery would owe $7,739 in taxes. Note that their overall tax rate is somewhere between 10% and 22%. We can calculate the actual rate by dividing their tax owed by their taxable income:</div> <div class="para" id="chap_two_income_taxes-14-8-2-4">
+<span class="process-math">\(\frac{\$7,739}{\$55,100}=0.1405\)</span> or about 14%</div>
+</div></details></div></article><div class="para" id="chap_two_income_taxes-14-9">We could calculate all taxes this way, but you might notice that the first few terms will be the same if the buckets are full. For this reason, we can simplify these tax tables. The tax tables below give the value for all of the lower tax buckets that are full. There is a tax table for each filing status and the cutoffs are regularly adjusted for inflation, so they usually vary from year to year.</div>
+<div class="para" id="chap_two_income_taxes-14-10">The next four tables give the tax calculations for 2022 federal income taxes by filing status.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="chap_two_income_taxes-14-11-1"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">If taxable income is:</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">The tax is:</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$0 to $10,275</td>
+<td class="l m b1 r1 l0 t0 lines">10% of the taxable income</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$10,276 to $41,775</td>
+<td class="l m b1 r1 l0 t0 lines">$1,027.50 plus 12% of the amount over $10,275.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$41,776 to $89,075</td>
+<td class="l m b1 r1 l0 t0 lines">$4,807.50 plus 22% of the amount over $41,775.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$89,076 to $170,050</td>
+<td class="l m b1 r1 l0 t0 lines">$15,213.50 plus 24% of the amount over $89,075.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$170,051 to $215,950</td>
+<td class="l m b1 r1 l0 t0 lines">$34,647.50 plus 32% of the amount over $170,050.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$215,951 to $539,900</td>
+<td class="l m b1 r1 l0 t0 lines">$49,335.50 plus 35% of the amount over $215,950.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$539,901 or more</td>
+<td class="l m b1 r1 l0 t0 lines">$162,718 plus 37% of the amount over $539,900.</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.5.7<span class="period">.</span></span><span class="space"> </span>Filing as Single (Tax Year 2022)</figcaption></figure></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="chap_two_income_taxes-14-12-1"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">If taxable income is:</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">The tax is:</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$0 to $14,650.</td>
+<td class="l m b1 r1 l0 t0 lines">10% of taxable income.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$14,651 to $55,900.</td>
+<td class="l m b1 r1 l0 t0 lines">$1,465 plus 12% of the amount over $14,650.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$55,901 to $89,050.</td>
+<td class="l m b1 r1 l0 t0 lines">$6,415 plus 22% of the amount over $55,900.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$89,051 to $170,050.</td>
+<td class="l m b1 r1 l0 t0 lines">$13,708 plus 24% of the amount over $89,050.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$170,051 to $215,950.</td>
+<td class="l m b1 r1 l0 t0 lines">$33,148 plus 32% of the amount over $170,050.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$215,951 to $539,900.</td>
+<td class="l m b1 r1 l0 t0 lines">$47,836 plus 35% of the amount over $215,950.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$539,901 or more.</td>
+<td class="l m b1 r1 l0 t0 lines">$161,218.50 plus 37% of the amount over $539,900.</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.5.8<span class="period">.</span></span><span class="space"> </span>Filing as Head of Household (Tax Year 2022)</figcaption></figure></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="table-maried-jointly"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">If taxable income is:</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">The tax is:</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$0 to $20,550.</td>
+<td class="l m b1 r1 l0 t0 lines">10% of taxable income.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$20,551 to $83,550.</td>
+<td class="l m b1 r1 l0 t0 lines">$2,055 plus 12% of the amount over $20,550.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$83,551 to $178,150.</td>
+<td class="l m b1 r1 l0 t0 lines">$9,615 plus 22% of the amount over $83,550.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$178,151 to $340,100.</td>
+<td class="l m b1 r1 l0 t0 lines">$30,427 plus 24% of the amount over $178,150.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$340,101 to $431,900.</td>
+<td class="l m b1 r1 l0 t0 lines">$69,295 plus 32% of the amount over $340,100.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$431,901 to $647,850.</td>
+<td class="l m b1 r1 l0 t0 lines">$98,671 plus 35% of the amount over $431,900.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$647,851 or more.</td>
+<td class="l m b1 r1 l0 t0 lines">$174,253.50 plus 37% of the amount over $647,850.</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.5.9<span class="period">.</span></span><span class="space"> </span>Married Filing Jointly (Tax Year 2022)</figcaption></figure></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="chap_two_income_taxes-14-14-1"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">If taxable income is:</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">The tax is:</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$0 to $10,275.</td>
+<td class="l m b1 r1 l0 t0 lines">10% of taxable income.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$10,276 to $41,775.</td>
+<td class="l m b1 r1 l0 t0 lines">$1,027.50 plus 12% of the amount over $10,275.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$41,776 to $89,075.</td>
+<td class="l m b1 r1 l0 t0 lines">$4,807.50 plus 22% of the amount over $41,775.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$89,076 to $170,050.</td>
+<td class="l m b1 r1 l0 t0 lines">$15,213.50 plus 24% of the amount over $89,075.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$170,051 to $215,950.</td>
+<td class="l m b1 r1 l0 t0 lines">$34,647.50 plus 32% of the amount over $170,050.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$215,951 to $323,925.</td>
+<td class="l m b1 r1 l0 t0 lines">$49,335.50 plus 35% of the amount over $215,950.</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">$323,926 or more.</td>
+<td class="l m b1 r1 l0 t0 lines">$87,126.75 plus 37% of the amount over $323,925.</td>
+</tr>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.5.10<span class="period">.</span></span><span class="space"> </span>Married Filing Separately (Tax Year 2022)</figcaption></figure></div></div></div>
+<article class="example example-like" id="chap_two_income_taxes-14-15"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-14-15-1-1">Suppose Adira is filing as head of household and has a taxable income of $96,450. Calculate her taxes using the individual tax brackets and with the simplified table.</div>
+<div class="solutions"><details id="chap_two_income_taxes-14-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="chap_two_income_taxes-14-15-2-1">Using the simplified tax table for single filing status, we see that Adira’s taxable income puts her in the 24% tax bracket. The simplified table tells us that her taxes will be equal to $15,213.50 plus 24% of the amount over $89,075. To find the excess over $89,075, we subtract $89,075 from her taxable income. Thus, her taxes are:</div> <div class="para logical" id="chap_two_income_taxes-14-15-2-2"><div class="displaymath process-math" id="chap_two_income_taxes-14-15-2-2-1">
+\begin{align*}
+\$15,213.50+0.24(\$96,450-\$89,075) \amp =\$15,213.50+0.24(\$7,375)\\
+\amp =\$15,213.50+\$1770\\
+\amp =\$16,983.50
+\end{align*}
+</div></div>
+</div></details></div></article><article class="example example-like" id="phyllis_gladys"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="phyllis_gladys-1-1">Phyl and Gladys are married and filing jointly. Together their taxable income is $112,000. Use the simplified 2022 tax tables from this section to determine how much they owe in taxes.</div>
+<div class="solutions"><details id="phyllis_gladys-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="phyllis_gladys-2-1">Since Phyl and Gladys are married and filing jointly, their taxable income puts them in the 22% tax bracket. Using the simplified 2022 tax table, their taxes are $9,615 plus 22% of the amount over $83,550:</div> <div class="para logical" id="phyllis_gladys-2-2"><div class="displaymath process-math" id="phyllis_gladys-2-2-1">
+\begin{align*}
+\$9,615+0.22(\$112,000-\$83,550) \amp =\$8,907+0.22(\$28,450)\\
+\amp =\$9,615+\$6,259\\
+\amp =\$15,874
+\end{align*}
+</div></div> <div class="para" id="phyllis_gladys-2-3">Phyl and Gladys owe $15,874 in taxes.</div>
+</div></details></div></article><article class="activity project-like" id="chap_two_income_taxes-14-17"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para logical" id="chap_two_income_taxes-14-17-1-1"><ol class="lower-alpha">
+<li id="chap_two_income_taxes-14-17-1-1-1-1"><div class="para" id="chap_two_income_taxes-14-17-1-1-1-1-1">Consider Gracie and Lancel’s taxes from <a href="chap_two_income_taxes.html#act-gracie-lancel-1" class="xref" data-knowl="./knowl/xref/act-gracie-lancel-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.12">Activity 2.12</a>.  Try calculating their income tax based on <a href="chap_two_income_taxes.html#table-maried-jointly" class="xref" data-knowl="./knowl/xref/table-maried-jointly.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.5.9: Married Filing Jointly (Tax Year 2022)">Table 2.5.9</a>.  It ought to be different by a couple cents.  Why do you think that is the case?</div></li>
+<li id="chap_two_income_taxes-14-17-1-1-1-2"><div class="para" id="chap_two_income_taxes-14-17-1-1-1-2-1">A commonly held belief is that marginal tax rate applies to all of a person’s taxable income.  What is 12% of their taxable income, and how does this compare to actual income tax?</div></li>
+<li id="chap_two_income_taxes-14-17-1-1-1-3"><div class="para" id="chap_two_income_taxes-14-17-1-1-1-3-1">What percent of their taxable income are they paying?  This is called the effective or average tax rate.  Round your answer to a tenth of a percentage point.</div></li>
+<li id="chap_two_income_taxes-14-17-1-1-1-4">
+<div class="para" id="chap_two_income_taxes-14-17-1-1-1-4-1">Sometimes people have been hesitant to accept raises, worried that it will push them into a new tax bracket and they’ll end up losing money.</div>
+<div class="para" id="chap_two_income_taxes-14-17-1-1-1-4-2">Suppose the couple got an unexpected $6,000 bonus at the end of the year, pushing them into the 22% marginal rate tax bracket. How much tax will they pay?</div>
+</li>
+<li id="chap_two_income_taxes-14-17-1-1-1-5"><div class="para" id="chap_two_income_taxes-14-17-1-1-1-5-1">What is the difference between their take-home pay with and without the bonus?  Will the couple end up with less take-home pay because the bonus pushed them into a higher tax bracket?</div></li>
+</ol></div></article></section><section class="subsection" id="chap_two_income_taxes-15"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Tax Credits</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-15-2">
+<em class="alert">Tax credits</em> are different from deductions in that they reduce the amount of tax you owe by the full amount of the credit, not just a percentage. This makes credits much more valuable than deductions.</div>
+<div class="para" id="chap_two_income_taxes-15-3">Common tax credits include child tax credits, earned income credits, child and dependent care credits, American opportunity tax credits, lifetime learning credits, and various federal energy credits.</div>
+<article class="example example-like" id="chap_two_income_taxes-15-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-15-4-1-1">Sean is in the 22% tax bracket and itemizes his deductions. How much will his tax bill be reduced if he makes a $1,000 contribution to charity? How much will his bill be reduced if he gets a $1,000 tax credit?</div>
+<div class="solutions"><details id="chap_two_income_taxes-15-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="chap_two_income_taxes-15-4-2-1">The tax credit will reduce his tax bill by the full amount of the credit, so the $1,000 tax credit will reduce his tax bill by $1,000. As a deduction, however, his contribution to charity will only reduce his tax bill by 22% of the $1,000, or 0.22($1,000) = $220. Tax credits are always better than deductions.</div></div></details></div></article></section><section class="subsection" id="chap_two_income_taxes-16"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Calculating a Refund or Payment Due</span>
+</h3>
+<div class="para" id="chap_two_income_taxes-16-2">Employers are required to take out an estimated amount for taxes from each of our paychecks. These withholdings are taken out, so we don’t all have huge tax bills at the end of the year, and so the government has the income it needs to run. When you file your taxes, you compare the amount of tax you actually owe, with the withholdings from your paycheck. If you had more withheld during the year than you owe, you will file for a refund. If your withholdings were less, though, you must pay the difference. Let’s look at a couple of examples with tax credits and withholdings.</div>
+<article class="example example-like" id="chap_two_income_taxes-16-3"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-16-3-1-1">John’s taxes are $4,342.50. He can claim an American opportunity tax credit of $2,300 and he had $4,135 withheld from his paychecks. Determine if John will owe money or get a refund.</div>
+<div class="solutions"><details id="chap_two_income_taxes-16-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="chap_two_income_taxes-16-3-2-1">The first step is to reduce John’s taxes by the full amount of the tax credit.</div> <div class="para" id="chap_two_income_taxes-16-3-2-2"><span class="process-math">\(\$4,342.50-\$2,300=\$3,042.50\)</span></div> <div class="para" id="chap_two_income_taxes-16-3-2-3">Next we subtract the amount withheld from his paychecks by his employer. Since his withholdings are greater than the amount he owes after applying the tax credit, he will receive a refund equal to the difference.</div> <div class="para" id="chap_two_income_taxes-16-3-2-4"><span class="process-math">\(\$3,042.50-\$4,135=-\$1,092.50\)</span></div> <div class="para" id="chap_two_income_taxes-16-3-2-5">John will receive a refund of $1,092.50. Notice that having a negative amount after subtracting credits and withholdings means you will receive a refund, while having a positive amount means you still owe money.</div>
+</div></details></div></article><article class="example example-like" id="chap_two_income_taxes-16-4"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="chap_two_income_taxes-16-4-1-1">As we discovered in <a href="chap_two_income_taxes.html#phyllis_gladys" class="xref" data-knowl="./knowl/xref/phyllis_gladys.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.5.12">Example 2.5.12</a>, Phyl and Gladys owe $15,874 in taxes. Their employers withheld $8,980 and they received a $7,500 credit for their purchase of an electric car. Will they receive a refund, or will they need to make a payment?</div>
+<div class="solutions"><details id="chap_two_income_taxes-16-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="chap_two_income_taxes-16-4-2-1">To determine whether they will receive a refund or if they will still owe money, we will first subtract the full amount of the electric car credit.</div> <div class="para" id="chap_two_income_taxes-16-4-2-2"><span class="process-math">\(\$15,874-\$7,500=\$8,374\)</span></div> <div class="para" id="chap_two_income_taxes-16-4-2-3">We now subtract their withholdings:</div> <div class="para" id="chap_two_income_taxes-16-4-2-4"><span class="process-math">\(\$8,374-\$8,980=-\$606\)</span></div> <div class="para" id="chap_two_income_taxes-16-4-2-5">Since the value is negative, Phyl and Gladys will receive a tax refund of $606.</div>
+</div></details></div></article><article class="activity project-like" id="chap_two_income_taxes-16-5"><h6 class="heading">
+<span class="type">Activity</span> </h6>
+<div class="para" id="chap_two_income_taxes-16-5-1-1">While tax tables and the tax rates work well for calculating tax for a single individual, a business might want to create a spreadsheet that automatically calculates the tax for their employees.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/taxes-company.jpg" class="contained"></div> <div class="para" id="chap_two_income_taxes-16-5-1-3">For simplicity, let’s assume all of the employees are married and filing jointly, and all of their taxable incomes fall between $20,551 and $83,550.  Let’s also assume that they will take the standard deduction, have no other income, make no adjustments to their taxable income, and give nothing to charity.  These assumptions will be close enough for this company’s purposes.</div> <ol class="lower-alpha">
+<li id="chap_two_income_taxes-16-5-1-4-1"><div class="para" id="chap_two_income_taxes-16-5-1-4-1-1">Write an equation for cell C2.  It should be general enough to be copied down the rest of the column.</div></li>
+<li id="chap_two_income_taxes-16-5-1-4-2"><div class="para" id="chap_two_income_taxes-16-5-1-4-2-1">Write an equation for cell D2.  It should be general enough to be copied down the rest of the column.</div></li>
+</ol></article></section><section class="exercises" id="chap_two_income_taxes-17"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="chap_two_income_taxes-17-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-2-1-1">Which decreases your tax bill more, a credit or a deduction?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-3-1-1">You are in the 12% tax bracket and get a credit of $500. How has the amount of taxes owed changed?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-4-1-1">You are in the 12% tax bracket and get a deduction of $500. How has the amount of taxes owed changed?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-5-1-1">Can you take the standard deduction and itemize your deductions?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-6-1-1">Can you make adjustments to your income and take the standard deduction?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-7-1-1">If you decide to take the standard deduction what have you considered?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-8-1-1">Selah has paid $11,500 in mortgage interest which she can take as a deduction and has $1,500 in other deductions that she can take this year. She is filing as single. Should she itemize her deductions or take the standard deduction?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-9-1-1">If you are married do you have to file your taxes together?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-10"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-10-1-1">Fredrick is concerned about the effect of a raise on his taxes. He’s getting a raise of $3,000, putting him into a higher tax bracket by $1,000 dollars. He’s concerned about his entire income being taxed at 22% instead of 12%. Should he be concerned? Why or why not?</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-11"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-11-1-1">A single person with taxable income of $95,000 will have the first $10,275. of that income taxed at what rate? Determine the taxes owed on just the first $10,275..</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-12"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-12-1-1">A single person with taxable income of $185,000 will have the first $10,275 of that income taxed at a different rate than the income between $10,275 and $41,775. Determine the taxes owed on just the second bracket.</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-13"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-13-1-1">Determine the income tax owed for a single person who has $80,000 of taxable income.</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-14"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-14-1-1">Doug and Christina are filing jointly. They owe $16,589 in taxes. Throughout the year they had $13,456 withheld from their paychecks, and they can claim an energy credit of $2,500 for purchasing a hybrid vehicle. Determine the amount they will need to pay or will get refunded.</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-15"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-15-1-1">Heather owes $7,589 in taxes. Throughout the year she had $6,456 withheld from her paychecks and she can claim an education credit of $1,980. Determine the amount she will need to pay or will get refunded.</div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-16"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-16-1-1">Determine the amount of taxes owed or the refund that would result in this situation:</div> <div class="para logical" id="chap_two_income_taxes-17-16-1-2"><ul class="disc">
+<li id="chap_two_income_taxes-17-16-1-2-1-1"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-1-1">Filing Status: Married filing jointly</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-2"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-2-1">Gross Income: $125,000</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-3"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-3-1">Adjustments: $5,600</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-4"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-4-1">Itemized Deductions: $11,400</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-5">
+<div class="para" id="chap_two_income_taxes-17-16-1-2-1-5-1">Credits: $15,000</div>
+<div class="para logical" id="chap_two_income_taxes-17-16-1-2-1-5-2"><ol class="lower-alpha">
+<li id="chap_two_income_taxes-17-16-1-2-1-5-2-1-1"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-5-2-1-1-1">What is their adjusted gross income (AGI)?</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-5-2-1-2"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-5-2-1-2-1">Should they itemize or take the standard deduction?</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-5-2-1-3"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-5-2-1-3-1">Use the simplified 2022 tax tables to determine their taxes.</div></li>
+<li id="chap_two_income_taxes-17-16-1-2-1-5-2-1-4"><div class="para" id="chap_two_income_taxes-17-16-1-2-1-5-2-1-4-1">What is their final tax refund or amount still owed?</div></li>
+</ol></div>
+</li>
+</ul></div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-17"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-17-1-1">Francis and Edward are planning to get married and they want to determine whether there is an advantage or disadvantage to marrying before the end of the year and filing their taxes jointly. Use the information below to calculate the amount they would owe or receive if they each filed as single, and the amount they would owe or receive if they filed jointly as a married couple. Which is the better choice?</div> <div class="para logical" id="chap_two_income_taxes-17-17-1-2"><ul class="disc">
+<li id="chap_two_income_taxes-17-17-1-2-1-1"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-1-1">Filing Status: TBD</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-2"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-2-1">Francis’ Gross Income: $35,000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-3"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-3-1">Edward’s Gross Income: $40,000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-4"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-4-1">Francis’ Adjustments: $7000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-5"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-5-1">Edward’s Adjustments: $3000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-6"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-6-1">Francis’ Withholdings: $14000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-7"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-7-1">Edward’s Withholdings: $5500</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-8"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-8-1">Francis’ Credits: $4000</div></li>
+<li id="chap_two_income_taxes-17-17-1-2-1-9"><div class="para" id="chap_two_income_taxes-17-17-1-2-1-9-1">Edward’s Credits: $5000</div></li>
+</ul></div></article><article class="exercise exercise-like" id="chap_two_income_taxes-17-18"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<div class="para" id="chap_two_income_taxes-17-18-1-1">Janice is unmarried and has two kids. She earned $76,000 in wages last year, received $750 in interest from a savings account, and contributed $25,000 to a tax deferred savings account. Her itemized deductions are $20,600.</div> <div class="para logical" id="chap_two_income_taxes-17-18-1-2"><ol class="lower-alpha">
+<li id="chap_two_income_taxes-17-18-1-2-1-1"><div class="para" id="chap_two_income_taxes-17-18-1-2-1-1-1">Determine Janice’s gross income.</div></li>
+<li id="chap_two_income_taxes-17-18-1-2-1-2"><div class="para" id="chap_two_income_taxes-17-18-1-2-1-2-1">Determine Janice’s adjusted gross income.</div></li>
+<li id="chap_two_income_taxes-17-18-1-2-1-3"><div class="para" id="chap_two_income_taxes-17-18-1-2-1-3-1">Should Janice take the standard deduction or itemize? Explain.</div></li>
+<li id="chap_two_income_taxes-17-18-1-2-1-4"><div class="para" id="chap_two_income_taxes-17-18-1-2-1-4-1">Determine Janice’s taxable income.</div></li>
+<li id="chap_two_income_taxes-17-18-1-2-1-5"><div class="para" id="chap_two_income_taxes-17-18-1-2-1-5-1">If Janice has $4,200 in child tax credits and had $6,300 withheld for taxes from her wages, will Janice owe money, or will she receive a refund? Calculate the amount.</div></li>
+</ol></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-3-4-loans.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="finance-final-project.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:oscar.levin@unco.edu" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-66485406-1"></script><script>  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-66485406-1');
+</script><!--End: Google Global Site Tag code-->
+</body>
+</html>
