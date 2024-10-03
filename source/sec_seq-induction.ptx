@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_seq-induction">
+  <title>Proof by Induction</title>
+  <idx>
+    <h>proof</h>
+    <h>by induction</h>
+  </idx>
+  <idx>
+    <h>induction</h>
+  </idx>
+  <idx>
+    <h>mathematical induction</h>
+    <see>induction</see>
+  </idx>
+  <objectives>
+    <introduction>
+      <p>
+        After completing this section, you should be able to do the following.
+      </p>
+    </introduction>
+    <ol>
+      <li>
+        <p>
+          Identify the parts of a proof by mathematical induction and how they relate to the statement being proved.
+        </p>
+      </li>
+      <li>
+        <p>
+          Prove statements using mathematical induction.
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Explain why a proof by mathematical induction is valid.
+        </p>
+      </li> 
+    </ol>
+  </objectives>
+  
+<subsection xml:id="subsec-induction-preview">
+  <title>Section Preview</title>
+  <investigation>
+    <statement>
+      <p>
+        What is the unit digit (the right-most digit) of <m>6^n</m>?  Does the answer depend on <m>n</m>?  
+      </p>
+    </statement>
+  </investigation>
+    <p>
+      <idx><h>induction</h></idx>
+      <idx><h>mathematical induction</h><see>induction</see></idx>
+      Mathematical induction is a powerful proof technique that can be used to prove statements are true for a <em>sequence</em> of statements, as long as that sequence of statements has some starting place.  For example, if we are trying to say something about the unit digit of <m>6^n</m>, we are making that claim for <m>n=1</m>, and then <m>n = 2</m>, then <m>n = 3</m> and so on.  
+    </p>
+    <p>
+      Induction is closely related to recursive definitions; the main idea in a proof by induction is to explain how you can get from one statement in the sequence to the next.
+    </p>
+
+    <worksheet xml:id="PA-seq-induction">
+      <title>Preview Activity</title>
+      
+      
+      
+    <exercise label="prev-induction-unit-digit-2">
+      <statement>
+        <p>
+          Suppose that <m>6^{472}</m> had a 2 for its unit digit.  That is, suppose <m>6^{472} = 19,381,6\ldots\ldots 2</m>.  What would the unit digit of <m>6^{473}</m> be?
+          <fillin answer="2" component="interactive"/>
+        </p>
+      </statement>
+      <hint>
+        <p>
+          <m>6^{473} = 6 \cdot 6^{472}</m>.
+        </p>
+      </hint>
+    </exercise>
+    <exercise label="prev-induction-unit-digit-6">
+      <statement>
+        <p>
+          What is the unit digit of <m>6^{2}</m>, of <m>6^3</m>, and of <m>6^4</m>?
+        </p>
+        <p component="interactive">
+          The unit's digit of <m>6^2</m> is <fillin answer="6"/>.
+        </p>
+        <p component="interactive">
+          The unit's digit of <m>6^3</m> is <fillin answer="6"/>.
+        </p>
+        <p component="interactive">
+          The unit's digit of <m>6^4</m> is <fillin answer="6"/>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise label="prev-induction-mc">
+      <statement>
+        <p>
+          Which of the following are true?  Select all that apply.
+        </p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              If the unit's digit of <m>6^k</m> is a 6, then the unit's digit of <m>6^{k+1}</m> is a 6.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              If the unit's digit of <m>6^k</m> is a 2, then the unit's digit of <m>6^{k+1}</m> is a 2.
+            </p>
+          </statement>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              The unit's digit of <m>6^{472}</m> is a 2.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The unit's digit of <m>6^{472}</m> is a 6.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </exercise>
+
+    <exercise label="prev-induction-explain.">
+      <statement>
+        <p>
+          Explain your answer to the previous question.  
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+  </worksheet>
+
+  </subsection>
+
+
+  <subsection xml:id="subsec_induction-recursion">
+    <title>Recursive Reasoning</title>
+    <!-- <investigation>
+      <p>
+        You need to mail a package, but don't yet know how much postage you will need.
+        You have a large supply of 8-cent stamps and 5-cent stamps.
+        Which amounts of postage can you make exactly using these stamps?
+        Which amounts are impossible to make?
+      </p>
+    </investigation> -->
+
+    <p>
+      We have seen that describing a sequence recursively can often be easier than describing the sequence with a closed formula.  We will now see how using similar recursive reasoning can help us prove statements using a proof technique called <term>mathematical induction</term>.  This style of proof is especially useful when the different instances of the statement (for different values of <m>n</m>, say) are related recursively.
+    </p>
+
+    <p>
+      For example, suppose we wanted to prove a fact about all the terms in a sequence for which we have a recursive definition.  Consider the sequence <m>(a_n)_{n\ge 0}</m> defined recursively by <m>a_n = 3a_{n-1} - 2</m> with <m>a_0 = 5</m>.  Could we prove that every term in this sequence is odd?
+    </p>
+
+    <p>
+      Let's start by writing out the first few terms of the sequence:
+      <me>
+        5, 13, 37, 109, \ldots
+      </me>.
+      So far, all these numbers look odd.  Will the next number be odd?  Of course, we could just compute it using the recurrence relation.  We would take <m>3\cdot 109 - 2</m>.  We don't actually care <em>which</em> odd number this is, just that it is, in fact, odd.  We know it will be odd because the product of two odd numbers is odd, and subtracting 2 from an odd number results in an odd number.
+    </p>
+
+    <p>
+      Great, so <m>a_4</m> is odd.  Will <m>a_5</m> be odd too?  Yes, use the same argument as above: <m>a_5 = 3  a_4 - 2</m>.  We just convinced ourselves that <m>a_4</m> is odd (without finding its actual value), so <m>3 a_4</m> is odd, and 2 less than it will be odd too.
+    </p>
+
+    <p>
+      What about <m>a_6</m>?  Do the same thing.  In fact, why are we using any particular number as the index?  If it is the same argument each time, we should be able to just give this argument once and say it always works.
+    </p>
+
+    <p>
+      Suppose we have found that <m>a_k</m> is odd (where <m>k</m> is some arbitrary natural number).  From this, we can find that <m>a_{k+1}</m> is odd, since <m>a_{k+1} = 3 a_k - 2</m>, and <m>3</m> times the odd number <m>a_{k}</m> will be odd, and subtracting 2 will result in an odd number.  Yay.  Let's put this all together as a proof.
+    </p>
+
+    <proof>
+      <p>
+        We claim that for any <m>n \ge 0</m>, the number <m>a_n</m> is odd, where <m>a_n = 3a_{n-1} - 2</m> and <m>a_0 = 5</m>.
+      </p>
+
+      <p>
+        When <m>n = 0</m>, the claim is true, since <m>a_0 = 5</m> is an odd number.  
+      </p>
+
+      <p>
+        Further, we can prove that every larger <m>n</m> has <m>a_n</m> odd because as long as <m>a_k</m> is odd, so is <m>a_{k+1}</m> (since <m>a_{k+1} = 3a_{k} - 2</m>, and 3 times an odd number minus 2 is always odd).
+      </p>
+
+      <p>
+        Therefore <m>a_n</m> is odd for all <m>n \ge 0</m>.
+      </p>
+    </proof>
+
+    <p>
+      Soon we will give a more rigid structure for proofs by induction, but the basic idea is exactly what we have above.  
+    </p>
+
+    <!-- <p>
+      Perhaps in investigating the problem above you picked some amounts of postage,
+      and then figured out whether you could make that amount using just 8-cent and 5-cent stamps.
+      Perhaps you did this in order:
+      can you make 1 cent of postage?
+      Can you make 2 cents? 3 cents?
+      And so on.
+      If this is what you did,
+      you were actually answering a <em>sequence</em> of questions.
+      We have methods for dealing with sequences.
+      Let's see if that helps.
+    </p>
+
+    <p>
+      Actually, we will not make a sequence of questions,
+      but rather a sequence of statements.
+      Let <m>P(n)</m>
+
+      <notation>
+        <usage><m>P(n)</m></usage>
+        <description>the <m>n</m>th case we are trying to prove by induction</description>
+      </notation>
+
+      be the statement <q>you can make <m>n</m> cents of postage using just 8-cent and 5-cent stamps.</q>
+      Since for each value of <m>n</m>,
+      <m>P(n)</m> is a statement, it is either true or false.
+      So if we form the sequence of statements
+      <me>
+        P(1), P(2), P(3), P(4), \ldots
+      </me>,
+      the sequence will consist of <m>T</m>'s
+      (for true)
+      and <m>F</m>'s
+      (for false).
+      In our particular case the sequence starts
+      <me>
+        F,F,F,F,T,F,F,T,F,T,F,F,T,\ldots
+      </me>
+      because <m>P(1), P(2), P(3), P(4)</m> are all false
+      (you cannot make 1, 2, 3, or 4 cents of postage)
+      but <m>P(5)</m> is true
+      (use one 5-cent stamp),
+      and so on.
+    </p>
+
+    <p>
+      Let's think a bit about how we could find the value of <m>P(n)</m> for some specific <m>n</m>
+      (the <q>value</q> will be either <m>T</m> or <m>F</m>).
+      How did we find the value of the <m>n</m>th term of a sequence of numbers?
+      How did we find <m>a_n</m>?
+      There were two ways we could do this:
+      either there was a closed formula for <m>a_n</m>,
+      so we could plug in <m>n</m> into the formula and get our output value,
+      or we had a recursive definition for the sequence,
+      so we could use the previous terms of the sequence to compute the <m>n</m>th term.
+      When dealing with sequences of statements,
+      we could use either of these techniques as well.
+      Maybe there is a way to use <m>n</m> itself to determine whether we can make <m>n</m> cents of postage.
+      That would be something like a closed formula.
+      Or instead we could use the previous terms in the sequence
+      (of statements)
+      to determine whether we can make <m>n</m> cents of postage.
+      That is, if we know the value of <m>P(n-1)</m>, can we get from that to
+      the value of <m>P(n)</m>?
+      That would be something like a recursive definition for the sequence.
+      Remember, finding recursive definitions for sequences was often easier than finding closed formulas.
+      The same is true here.
+    </p>
+
+    <p>
+      Suppose I told you that <m>P(43)</m> was true
+      (it is).
+      Can you determine from this fact the value of <m>P(44)</m> (whether it true or false)?
+      Yes you can.
+      Even if we don't know how exactly we made 43 cents out of the 5-cent and 8-cent stamps,
+      we do know that there was some way to do it.  However we accomplished this feat, we can be sure that we used either at least three 5-cent stamps or at least three 8-cent stamps (if not, then we would have at most two of each, which is only 26 cents).
+    </p>
+    
+    <p>
+      What if our total of 43 cents used at least three 5-cent stamps (making 15 cents)?
+      We could replace those three 5-cent stamps with two 8-cent stamps
+      (making 16 cents).
+      The total postage has gone up by 1, so we have a way to make 44 cents,
+      so <m>P(44)</m> is true.
+      On the other hand, if we had at least three 8-cent stamps (making 24 cents), we can replace those three 8-cent stamps with five 5-cent stamps (making 25 cents) then again we have bumped up our total by 1 cent.  So either way, we have a way to make 44 cents, so <m>P(44)</m> is true.
+    </p>
+
+    <p>
+      Notice that we have not said how to make 44 cents,
+      just that we can, on the basis that we can make 43 cents.
+      How do we know we can make 43 cents?
+      Perhaps because we know we can make <m>42</m>
+
+      <notation>
+        <usage><m>42</m></usage>
+        <description>the ultimate answer to life, etc.</description>
+      </notation>
+
+      cents, which we know we can do because we know we can make 41 cents,
+      and so on.
+      It's a recursion!
+      As with a recursive definition of a numerical sequence,
+      we must specify our initial value.
+      In this case, the initial value is
+      <q><m>P(1)</m> is false.</q> That's not good,
+      since our recurrence relation just says that <m>P(k+1)</m> is true <em>if</em>
+      <m>P(k)</m> is also true.
+      We need to start the process with a true <m>P(k)</m>.
+      So instead, we might want to use
+      <q><m>P(28)</m> is true</q>
+      as the initial condition.
+    </p>
+
+    <p>
+      Putting this all together we arrive at the following fact:
+      it is possible to (exactly) make any amount of postage greater than 27 cents using just 5-cent and 8-cent stamps.<fn>
+      This is not claiming that there are no amounts less than 27 cents which can also be made.
+      </fn> In other words, <m>P(k)</m> is true for any <m>k \ge 28</m>.
+      To prove this, we could do the following:
+
+      <ol>
+        <li>
+          <p>
+            Demonstrate that <m>P(28)</m> is true.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Prove that if <m>P(k)</m> is true,
+            then <m>P(k+1)</m> is true
+            (for any <m>k \ge 28</m>).
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Suppose we have done this.
+      Then we know that the 28th term of the sequence above is a <m>T</m>
+      (using step 1, the initial condition or <term>base case</term>),
+      <idx><h>base case</h></idx>
+      <idx><h>induction</h><h>base case</h></idx>
+      and that every term after the 28th is <m>T</m> also
+      (using step 2, the recursive part or
+      <term>inductive case</term>).
+      <idx><h>inductive case</h></idx>
+      <idx><h>induction</h><h>inductive case</h></idx>
+      Here is what the proof would actually look like.
+    </p>
+
+    <proof>
+      <p>
+        Let <m>P(n)</m> be the statement
+        <q>it is possible to make exactly <m>n</m> cents of postage using 5-cent and 8-cent stamps.</q>
+        We will show <m>P(n)</m> is true for all <m>n \ge 28</m>.
+      </p>
+
+      <p>
+        First, we show that <m>P(28)</m> is true:
+        <m>28 = 4 \cdot 5+ 1\cdot 8</m>,
+        so we can make <m>28</m> cents using four 5-cent stamps and one 8-cent stamp.
+      </p>
+
+      <p>
+        Now suppose <m>P(k)</m> is true for some arbitrary <m>k \ge 28</m>.
+        Then it is possible to make <m>k</m> cents using 5-cent and 8-cent stamps.
+        Note that since <m>k \ge 28</m>,
+        it cannot be that we use fewer than three 5-cent stamps <em>and</em>
+        fewer than three 8-cent stamps:
+        using two of each would give only 26 cents.
+        Now if we have made <m>k</m> cents using at least three 5-cent stamps,
+        replace three 5-cent stamps by two 8-cent stamps.
+        This replaces 15 cents of postage with 16 cents,
+        moving from a total of <m>k</m> cents to <m>k+1</m> cents.
+        Thus <m>P(k+1)</m> is true.
+        On the other hand,
+        if we have made <m>k</m> cents using at least three 8-cent stamps,
+        then we can replace three 8-cent stamps with five 5-cent stamps,
+        moving from 24 cents to 25 cents,
+        giving a total of <m>k+1</m> cents of postage.
+        So in this case as well <m>P(k+1)</m> is true.
+      </p>
+
+      <p>
+        Therefore, by the principle of mathematical induction,
+        <m>P(n)</m> is true for all <m>n \ge 28</m>.
+      </p>
+    </proof> -->
+  </subsection>
+
+  <subsection xml:id="subsec_induction-formproofs">
+    <title>Formalizing Proofs</title>
+    <p>
+      Induction can prove many statements that hold for all natural numbers, not just statements about sequences.  
+      In particular,
+      induction should be used when there is some way to go from one case to the next <ndash/> when you can see how to always <q>do one more.</q>  
+    </p>
+
+    <p>
+      Thinking about how we write statements in logical symbols, we will use induction to prove statements of the form
+      <me>
+        \forall n P(n)
+      </me>,
+      where the domain of discourse (the values of <m>n</m> we quantify over) has some least element. Say that domain of discourse is the natural numbers.  We are then proving this <em>sequence</em> of statements:
+      <me>
+        P(0), P(1), P(2), P(3), \ldots
+      </me>.
+      <idx><h>base case</h></idx>
+      <idx><h>inductive case</h></idx>
+      The way we do this with induction is to prove a <term>base case</term>, that <m>P(0)</m> is true (or <m>P(a)</m> where <m>a</m> is the least element of our domain of discourse).  Next, we prove the <term>inductive case</term>, that <m>P(k) \imp P(k+1)</m> for all <m>k \ge 0</m> (or <m>k \ge a</m>).  
+    </p>
+
+    <p>
+      Together, these are enough to prove <m>P(n)</m> is true for all <m>n</m>.  How do we know?  That is, why is this style of proof valid?  Well, let's convince ourselves that <m>P(3)</m> is true.  We know <m>P(0)</m> is true.  And because we know that <m>P(0) \imp P(1)</m>, we then also know that <m>P(1)</m> is true.  Because <m>P(1) \imp P(2)</m>, we then get that <m>P(2)</m> is true.  Finally, because <m>P(2) \imp P(3)</m>, we have that <m>P(3)</m>.  There is nothing special about 3 here.  We could have gone up as far as we like, <alert>to any <m>n</m> value!</alert>
+    </p>
+
+    <p>
+      Think of a row of dominoes set up standing on their edges.
+      We want to argue that in a minute,
+      all the dominoes will have fallen.
+      For this to happen, you will need to push the first domino.
+      That is the base case.
+      It will also have to be that the dominoes are close enough together that when any particular domino falls,
+      it will cause the next domino to fall.
+      That is the inductive case.
+      If both of these conditions are met,
+      you push the first domino over and each domino will cause the next to fall,
+      then all the dominoes will fall.
+    </p>
+
+
+    <p>
+      Induction is powerful!
+      Think how much easier it is to knock over dominoes when you don't have to push over each domino yourself.
+      You just start the chain reaction
+      and then rely on the relative nearness of the dominoes to take care of the rest.
+    </p>
+
+    <p>
+      When writing a proof by induction, we will follow a standard style.  Writing in this style allows us to keep our ideas organized and might even help us formulate the proof.
+    </p>
+
+    <p>
+      Here is the general structure of a proof by mathematical induction:
+    </p>
+
+    <assemblage>
+      <title>Induction Proof Structure</title>
+      <idx><h>induction</h><h>proof structure</h></idx>
+      <idx><h>proof</h><h>by induction</h></idx>
+      <p>
+            <idx><h>induction</h></idx>
+        Start by saying what the statement is that you want to prove: <q>Let <m>P(n)</m> be the statement<ellipsis/></q> To prove that <m>P(n)</m> is true for all <m>n \ge 0</m>, you must prove two facts:
+
+        <ol>
+          <li>
+            <p>
+        <idx><h>base case</h></idx>
+        <idx><h>induction</h><h>base case</h></idx>
+              Base case: Prove that <m>P(0)</m> is true.
+              You do this directly.
+              This is often easy.
+            </p>
+          </li>
+
+          <li>
+            <p>
+        <idx><h>inductive case</h></idx>
+        <idx><h>induction</h><h>inductive case</h></idx>
+              Inductive case: Prove that
+              <m>P(k) \imp P(k+1)</m> for all <m>k \ge 0</m>.
+              That is, prove that for any <m>k \ge 0</m> if <m>P(k)</m> is true,
+              then <m>P(k+1)</m> is true as well.
+              This is the proof of an if
+              <ellipsis/> then
+              <ellipsis/> statement,
+              so you can assume <m>P(k)</m> is true (<m>P(k)</m> is called the
+              <em>inductive hypothesis</em>).
+                <idx><h>inductive hypothesis</h></idx>
+            You must then explain why <m>P(k+1)</m> is also true, given that assumption.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        Assuming you are successful on both parts above,
+        you can conclude,
+        <q>Therefore by the principle of mathematical induction,
+        the statement <m>P(n)</m> is true for all <m>n \ge 0</m>.</q>
+      </p>
+    </assemblage>
+
+    <p>
+      Sometimes the statement <m>P(n)</m> will only be true for values of <m>n \ge 4</m>,
+      for example, or some other value.
+      In such cases, replace all the 0's above with 4's
+      (or the other value).
+    </p>
+
+
+    <p>
+      Before attempting to prove a statement by mathematical induction, first think about <em>why</em> the statement is true using inductive reasoning.
+      Explain why induction is the right thing to do,
+      and roughly why the inductive case will work.
+      Then, sit down and write out a careful,
+      formal proof using the structure above.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec_induction-examples">
+    <title>Examples</title>
+    <p>
+      Here are some examples of proof by mathematical induction.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Prove for each natural number <m>n \ge 1</m> that <m>1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, let's think inductively about this equation.
+          In fact, we know this is true for other reasons
+          (reverse and add comes to mind).
+          But why might induction be applicable?
+          The left-hand side adds up the numbers from 1 to <m>n</m>.
+          If we know how to do that,
+          adding just one more term (<m>n+1</m>) would not be that hard.
+          For example, if <m>n = 100</m>,
+          suppose we know that the sum of the first 100 numbers is <m>5050</m>
+          (so <m>1 + 2 + 3 + \cdots + 100 = 5050</m>, which is true).
+          Now to find the sum of the first 101 numbers,
+          it makes more sense to just add 101 to 5050,
+          instead of computing the entire sum again.
+          We would have <m>1 + 2 + 3 + \cdots + 100 + 101 = 5050 + 101 = 5151</m>.
+          In fact, it would always be easy to add just one more term.
+          This is why we should use induction.
+        </p>
+
+        <p>
+          Now the formal proof:
+        </p>
+
+        <proof>
+          <p>
+            Let <m>P(n)</m> be the statement <m>1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}</m>.
+            We will show that <m>P(n)</m> is true for all natural numbers <m>n \ge 1</m>.
+          </p>
+
+          <p>
+            Base case: <m>P(1)</m> is the statement
+            <m>1 = \frac{1(1+1)}{2}</m> which is clearly true.
+          </p>
+
+          <p>
+            Inductive case: Let <m>k \ge 1</m> be a natural number.
+            Assume (for induction) that <m>P(k)</m> is true.
+            That means <m>1 + 2 + 3 + \cdots + k = \frac{k(k+1)}{2}</m>.
+            We will prove that <m>P(k+1)</m> is true as well.
+            That is, we must prove that <m>1 + 2 + 3 + \cdots + k + (k+1) = \frac{(k+1)(k+2)}{2}</m>.
+            To prove this equation,
+            start by adding <m>k+1</m> to both sides of the inductive hypothesis:
+            <me>
+              1 + 2 + 3 + \cdots + k + (k+1) = \frac{k(k+1)}{2} + (k+1)
+            </me>.
+          </p>
+
+          <p>
+            Now, simplifying the right side we get:
+            <md>
+              <mrow>\frac{k(k+1)}{2} + k+1 \amp = \frac{k(k+1)}{2} + \frac{2(k+1)}{2}</mrow>
+              <mrow>\amp = \frac{k(k+1) + 2(k+1)}{2}</mrow>
+              <mrow>\amp = \frac{(k+2)(k+1)}{2}</mrow>
+            </md>.
+          </p>
+
+          <p>
+            Thus <m>P(k+1)</m> is true,
+            so by the principle of mathematical induction <m>P(n)</m> is true for all natural numbers <m>n \ge 1</m>.
+          </p>
+        </proof>
+
+      </solution>
+    </example>
+
+    <p>
+      Note that in the part of the proof where we proved <m>P(k+1)</m> from <m>P(k)</m>,
+      we used the equation <m>P(k)</m>.
+      This was the inductive hypothesis.
+      <idx><h>inductive hypothesis</h></idx>
+      Seeing how to use the inductive hypotheses is usually straightforward when proving a fact about a sum like this.
+      In other proofs, it can be less obvious where it fits in.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Prove that for all <m>n \in \N</m>,
+          <m>6^n - 1</m> is a multiple of 5.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Again, start by understanding the dynamics of the problem.
+          What does increasing <m>n</m> do?
+          Let's try with a few examples.
+          If <m>n = 1</m>, then yes, <m>6^1 - 1 = 5</m> is a multiple of 5.
+          What does incrementing <m>n</m> to 2 look like?
+          We get <m>6^2 - 1 = 35</m>, which again is a multiple of 5.
+          Next, <m>n = 3</m>: but instead of just finding <m>6^3 - 1</m>,
+          what did the increase in <m>n</m> do?
+          We will still subtract 1, but now we are multiplying by another 6 first.
+          Viewed another way,
+          we are multiplying a number that is one more than a multiple of 5 by 6
+          (because <m>6^2 - 1</m> is a multiple of 5, so <m>6^2</m> is one more than a multiple of 5).
+          What do numbers that are one more than a multiple of 5 look like?
+          They must have last digit 1 or 6.
+          What happens when you multiply such a number by 6?
+          Depends on the number, but in any case,
+          the last digit of the new number must be a 6.
+          And then if you subtract 1, you get last digit 5, so a multiple of 5.
+        </p>
+
+        <p>
+          The point is, every time we multiply by just one more six,
+          we still get a number with last digit 6, so subtracting 1 gives us a multiple of 5.
+          Now the formal proof:
+        </p>
+
+        <proof>
+          <p>
+            Let <m>P(n)</m> be the statement,
+            <q><m>6^n - 1</m> is a multiple of 5.</q>
+            We will prove that <m>P(n)</m> is true for all <m>n \in \N</m>.
+          </p>
+
+          <p>
+            Base case: <m>P(0)</m> is true:
+            <m>6^0 -1 = 0</m>, which is a multiple of 5.
+          </p>
+
+          <p>
+            Inductive case: Let <m>k</m> be an arbitrary natural number.
+            Assume, for induction, that <m>P(k)</m> is true.
+            That is, <m>6^k - 1</m> is a multiple of <m>5</m>.
+            Then <m>6^k - 1 = 5j</m> for some integer <m>j</m>.
+            This means that <m>6^k = 5j + 1</m>.
+            Multiply both sides by <m>6</m>:
+            <me>
+              6^{k+1} = 6(5j+1) = 30j + 6
+            </me>.
+          </p>
+
+          <p>
+            But we want to know about <m>6^{k+1} - 1</m>,
+            so subtract 1 from both sides:
+            <me>
+              6^{k+1} - 1 = 30j + 5
+            </me>.
+          </p>
+
+          <p>
+            Of course <m>30j+5 = 5(6j+1)</m>, so is a multiple of 5.
+          </p>
+
+          <p>
+            Therefore <m>6^{k+1} - 1</m> is a multiple of 5, or in other words,
+            <m>P(k+1)</m> is true.
+            Thus, by the principle of mathematical induction <m>P(n)</m> is true for all <m>n \in \N</m>.
+          </p>
+        </proof>
+
+      </solution>
+    </example>
+
+    <p>
+      We had to be a little bit clever (i.e., use some algebra) to locate the <m>6^k - 1</m> inside of
+      <m>6^{k+1} - 1</m> before we could apply the inductive hypothesis.
+      This is what can make inductive proofs challenging.
+    </p>
+
+    <p>
+      In the two examples above, we started with <m>n = 1</m> or <m>n = 0</m>.
+      We can start later if we need to.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Prove that <m>n^2 \lt 2^n</m> for all integers <m>n \ge 5</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, the idea of the argument.
+          What happens when we increase <m>n</m> by 1?
+          On the left-hand side,
+          we increase the base of the square and go to the next square number.
+          On the right-hand side, we increase the power of 2.
+          This means we double the number.
+          So the question is,
+          how does doubling a number relate to increasing to the next square?
+          Think about what the difference of two consecutive squares looks like.
+          We have <m>(n+1)^2 - n^2</m>.
+          This factors:
+          <me>
+            (n+1)^2 - n^2 = (n+1-n)(n+1+n) = 2n+1
+          </me>.
+        </p>
+
+        <p>
+          But doubling the right-hand side increases it by <m>2^n</m>,
+          since <m>2^{n+1} = 2^n + 2^n</m>.
+          When <m>n</m> is large enough, <m>2^n &gt; 2n + 1</m>.
+        </p>
+
+        <p>
+          What we are saying here is that each time <m>n</m> increases,
+          the left-hand side grows by less than the right-hand side.
+          So if the left-hand side starts smaller
+          (as it does when <m>n = 5</m>),
+          it will never catch up.
+          Now the formal proof:
+        </p>
+
+        <proof>
+          <p>
+            Let <m>P(n)</m> be the statement <m>n^2 \lt 2^n</m>.
+            We will prove <m>P(n)</m> is true for all integers <m>n \ge 5</m>.
+          </p>
+
+          <p>
+            Base case: <m>P(5)</m> is the statement <m>5^2 \lt 2^5</m>.
+            Since <m>5^2 = 25</m> and <m>2^5 = 32</m>,
+            we see that <m>P(5)</m> is indeed true.
+          </p>
+
+          <p>
+            Inductive case: Let <m>k \ge 5</m> be an arbitrary integer.
+            Assume, for induction, that <m>P(k)</m> is true.
+            That is, assume <m>k^2 \lt  2^k</m>.
+            We will prove that <m>P(k+1)</m> is true,
+            i.e., <m>(k+1)^2 \lt  2^{k+1}</m>.
+            To prove such an inequality,
+            start with the left-hand side and work towards the right-hand side:
+            <md>
+              <mrow>(k+1)^2 \amp = k^2 + 2k + 1 \amp</mrow>
+              <mrow>\amp \lt 2^k + 2k + 1 \amp \ldots\text{by the inductive hypothesis.}</mrow>
+              <mrow>\amp \lt 2^k + 2^k \amp \ldots\text{ since } 2k + 1 \lt  2^k \text{ for }k \ge 5.</mrow>
+              <mrow>\amp = 2^{k+1}. \amp</mrow>
+            </md>
+          </p>
+
+          <p>
+            Following the equalities and inequalities through,
+            we get <m>(k+1)^2 \lt 2^{k+1}</m>,
+            in other words, <m>P(k+1)</m>.
+            Therefore by the principle of mathematical induction,
+            <m>P(n)</m> is true for all <m>n \ge 5</m>.
+          </p>
+        </proof>
+
+      </solution>
+    </example>
+
+    <p>
+      The previous example might remind you of the
+      <em>racetrack principle</em> from calculus,
+      <idx><h>racetrack principle</h></idx>
+      which says that if <m>f(a) \lt g(a)</m>,
+      and <m>f'(x) \lt g'(x)</m> for
+      <m>x &gt;
+      a</m>, then <m>f(x) \lt g(x)</m> for <m>x &gt; a</m>.
+      Same idea: the larger function is increasing more than the smaller function,
+      so the larger function will stay larger.
+      In discrete math, we don't have derivatives,
+      so we look at differences.
+      Thus induction is the way to go.
+    </p>
+
+    <paragraphs>
+      <title>A Warning</title>
+      <idx><h>induction</h><h>incorrect use of</h></idx>
+      <p>
+        With great power, comes great responsibility.
+        Induction isn't magic.
+        It seems very powerful to be able to assume <m>P(k)</m> is true.
+        After all, we are trying to prove <m>P(n)</m> is true and the only difference is in the variable:
+        <m>k</m> vs. <m>n</m>.
+        Are we assuming that what we want to prove is true?
+        Not really.
+        We assume <m>P(k)</m> is true only for the sake of proving that <m>P(k+1)</m> is true.
+      </p>
+
+      <p>
+        Still you might start to believe that you can prove anything with induction.
+        Consider this incorrect <q>proof</q> that every Canadian
+            <idx><h>Canadians, set of</h></idx>
+        has the same eye color: Let <m>P(n)</m> be the statement that any <m>n</m> Canadians have the same eye color. <m>P(1)</m> is true,
+        since everyone has the same eye color as themselves.
+        Now assume <m>P(k)</m> is true.
+        That is, assume that in any group of <m>k</m> Canadians,
+        everyone has the same eye color.
+        Now consider an arbitrary group of <m>k+1</m> Canadians.
+        The first <m>k</m> of these must all have the same eye color,
+        since <m>P(k)</m> is true.
+        Also, the last <m>k</m> of these must have the same eye color,
+        since <m>P(k)</m> is true.
+        So in fact, everyone in the group must have the same eye color.
+        Thus <m>P(k+1)</m> is true.
+        So by the principle of mathematical induction,
+        <m>P(n)</m> is true for all <m>n</m>.
+      </p>
+
+      <p>
+        Clearly something went wrong.
+        The problem is that the proof that <m>P(k)</m> implies <m>P(k+1)</m> assumes that <m>k \ge 2</m>.
+        We have only shown <m>P(1)</m> is true.
+        In fact, <m>P(2)</m> is false.  Try this: read through the previous paragraph again, substituting <m>1</m> for each <m>k</m>.  Can you spot the error in that argument?
+      </p>
+    </paragraphs>
+
+  </subsection>
+
+
+  <reading-questions xml:id="rqs-seq-induction">
+    <exercise label="rq-seq-induction-mc">
+      <statement>
+        <p>
+          Suppose you wanted to prove, using mathematical induction, that <m>1+3+5+\cdots+2n-1 = n^2</m> for all values of <m>n \ge 1</m>.  Which of the following would be an appropriate <em>first line</em> of the proof?  Select all that apply.
+        </p>
+      </statement>
+      <choices randomize="yes">
+        <choice correct="yes">
+          <statement>
+            <p>
+              Let <m>P(n)</m> be the statement <q><m>1+3+5+\cdots+2n-1 = n^2</m>.</q>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Correct.  Note in particular, we do not include the <q>for all <m>n \ge 1</m></q> as part of the definition of <m>P(n)</m>.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              For each <m>n \ge 1</m>, let <m>P(n)</m> be the statement, <q>the sum of the first <m>n</m> odd numbers is <m>n^2</m>.</q>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This is correct.  Note that saying that we define <m>P(n)</m> for each <m>n\ge 1</m> is different from saying that <m>P(n)</m> includes <q>...for all <m>n\ge 1</m>.</q>
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Assume <m>1+3+\cdots + 2n-1 = n^2</m> for all <m>n \ge 1</m>.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This is what you are trying to prove, so you cannot assume it.  Later in the proof (in the inductive case) we will assume that <m>P(k)</m> is true for some arbitrary <m>k</m>, but this is not assuming it is true for all <m>n</m> at once.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Let <m>P(n)</m> be the statement, <q><m>1+3+\cdots+2n-1 = n^2</m> for all <m>n \ge 1</m>.</q>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This doesn't make sense: what would <m>P(3)</m> be?  That <m>1 + 3 + 5 = 3^2</m> for all <m>3 \ge 1</m>??
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Since <m>P(1) = 1 = 1^2</m>, the base case is true.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Two problems here: first, you need to say what <m>P(n)</m> is.  Second, <m>P(1)</m> is a statement, so it cannot be equal to the number 1.  
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+    <exercise label="rq-seq-induction-first-line">
+      <statement>
+        <p>
+          Suppose you wanted to prove that <m>P(n,3) \ge \binom{n}{3}</m> for all <m>n \ge 4</m>.  Write the first line of a proof by induction. 
+        </p>
+      </statement>
+      <response/>
+    </exercise>
+    <exercise label="rq-seq-induction-q" component="runestone">
+      <statement>
+        <p> What questions do you have? Write at
+          least one question about the content of this section that you or a classmate might be curious about after reading this section.
+        </p>
+      </statement>
+      <response />
+    </exercise>
+  </reading-questions>
+  <xi:include href="practice/seq-induction.ptx"/>
+  <xi:include href="exercises/seq-induction.ptx"/>
+</section>
