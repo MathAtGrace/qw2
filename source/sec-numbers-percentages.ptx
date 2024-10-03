@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_numbers_percentages" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Percentages</title>
+  <objectives>
+    <ul>
+      <li>Recognize a proportional relationship from verbal, numeric, and visual representations. Link and create verbal, numeric, visual and symbolic representations of the relationship. </li>
+      <li>Compare proportional relationships represented in different ways, considering units when doing so.</li>
+    </ul>
+  </objectives>
+
+  <worksheet xml:id="worksheet-numbers_percentages">
+    <title>Problem Situation: The Language of Percentages</title>
+
+    <page>
+      <introduction>
+        <p>The World Health Organization (www.who.org) is the part of the United Nations that oversees health issues in the world. The WHO leads numerous studies on tobacco use around the world. In its study on Gender and Tobacco, the organization learned that tobacco use among women is increasing. For example, recent research shows that just as many young girls smoke as young boys. The report is filled with information about percentages of women who smoke, percentages of men who smoke, and the percentage of smokers who start smoking by age 10. The language used to describe this information can be difficult to understand. Pay close attention to the language used to describe a percent at the beginning of this lesson. This will help you to understand new findings in the relationship between tobacco use and gender.
+        </p>
+        <p>Consider the following two quantities:</p>
+        <ul>
+          <li>Quantity 1 (Q1): The percentage of women who smoke.</li>
+          <li>Quantity 2 (Q2): The percentage of smokers who are women.</li>
+        </ul>
+      </introduction>
+      <exercise xml:id="exercise-percentages-1" workspace="0.25in">
+        <statement>Are these two quantities necessarily equal?</statement>
+        <solution>No, they may not be equal</solution>
+      </exercise>
+      <exercise xml:id="exercise-percentages-2">
+        <statement>
+          <p>For each quantity, what information would you need to compute these percentages?</p>
+          <p>For Quantity 1 (Q1):  (select all you would need)</p>
+          <ul marker="square">
+            <li>Total number of smokers in the population</li>
+            <li>Total number of women in the population</li>
+            <li>Total number of women smokers in the population</li>
+          </ul>
+          <p>For Quantity 2 (Q2):  (select all you would need)</p>
+          <ul marker="square">
+            <li>Total number of smokers in the population</li>
+            <li>Total number of women in the population</li>
+            <li>Total number of women smokers in the population</li>
+          </ul>
+        </statement>
+        <solution>
+          <p>For Quantity 1 (Q1):</p>
+          <ul marker="square">
+            <li>Total number of women in the population</li>
+            <li>Total number of women smokers in the population</li>
+          </ul>
+          <p>For Quantity 2 (Q2):</p>
+          <ul marker="square">
+            <li>Total number of smokers in the population</li>
+            <li>Total number of women smokers in the population</li>
+          </ul>
+        </solution>
+      </exercise>
+      <exercisegroup xml:id="exercise-group-percentages-1">
+        <introduction>
+          <p>
+            Suppose a study on smoking was conducted at Midland University. The following table indicates the results of the study.  Use this table for the next 3 questions.
+          </p>
+          <table xml:id="table-percentages-1">
+            <tabular>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  Men
+                </cell>
+                <cell>
+                  Women
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Smokers
+                </cell>
+                <cell>
+                  4,572
+                </cell>
+                <cell>
+                  5,362
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Nonsmokers
+                </cell>
+                <cell>
+                  10,284
+                </cell>
+                <cell>
+                  12,736
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </introduction>
+        <exercise xml:id="exercise-percentages-3" workspace="0.25in">
+          <statement>
+            What percentage of women smoke at Midland University (round to the nearest one percent)?
+          </statement>
+          <solution>
+            There are 18,098 women represented on the survey. Of them, 5,362 smoke, which is 5362/18098 ~~ .2963 = about 30%
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-4" workspace="0.25in">
+          <statement>
+            What percentage of smokers at Midland University are women (round to the nearest one percent)?
+          </statement>
+          <solution>
+            There are 9,934 smokers represented on the survey. Of them, 5,362 are women, which is 5362/9934 ~~ .5398 = about 54%
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-5" workspace="0.25in">
+          <statement>
+            How many women would need to stop smoking for the percentage of women who smoke to drop below 20%?
+          </statement>
+          <solution>
+            20% of 18,098 is 3619.6. 5362 (current number of women smokers) minus 3619.6 (20% of all women on campus) = 1742.4. At least 1743 women need to stop smoking in order for the percentage of women smokers at this campus to drop below 20%.
+          </solution>
+        </exercise>
+      </exercisegroup>
+    </page>
+
+    <page>
+      <exercisegroup xml:id="exercise-group-percentages-2">
+        <introduction>
+          <p>
+            Suppose a study on smoking was conducted at Northwest College. The following table indicates the results of the study.  Use this table for the next 4 questions.
+          </p>
+          <table xml:id="table-percentages-2">
+            <tabular>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  Men
+                </cell>
+                <cell>
+                  Women
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Smokers
+                </cell>
+                <cell>
+                  1,256
+                </cell>
+                <cell>
+                  536
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Nonsmokers
+                </cell>
+                <cell>
+                  1,028
+                </cell>
+                <cell>
+                  1,053
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </introduction>
+        <exercise xml:id="exercise-percentages-6" workspace="0.25in">
+          <statement>
+            What percentage of women smoke at Northwest College (round to the nearest one percent)?
+          </statement>
+          <solution>
+            There are 1,589 women represented on the survey. Of them, 536 smoke, which is 536/1589 ~~ .3373 = about 34%
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-7" workspace="0.25in">
+          <statement>
+            What percentage of smokers at Northwest College are women (round to the nearest one percent)?
+          </statement>
+          <solution>
+            There are 1,792 smokers represented on the survey. Of them, 536 are women, which is 536/1792 ~~ .2991 = about 30%
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-8">
+          <statement>
+            <p>Just looking at the data, without making any calculations, which of the following statements is true?</p>
+            <ul>
+              <li>More than 70% of men smoke</li>
+              <li>More than 50% of men smoke</li>
+              <li>Less than 25% of men smoke</li>
+              <li>Less than 50% of men smoke</li>
+            </ul>
+          </statement>
+          <solution>
+            The number of men who smoke is greater than the number of men who do not smoke. The smokers must be more than 50% of the total population of men. But the number is not so large that it would be over 70%
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-9" workspace="0.25in">
+          <statement>
+            Men smokers make up what percentage of the total student body (rounded to the nearest one percent)?
+          </statement>
+          <solution>
+            There are 3,873 total students represented on the survey. Of them, 1,256 are men smokers, which is 1256/3873 ~~ .3243 = about 32%
+          </solution>
+        </exercise>
+      </exercisegroup>
+    </page>
+
+    <page>
+      <exercisegroup xml:id="exercise-group-percentages-3">
+        <introduction>
+          In 2006, the World Health Organization conducted a study about smoking in the United States and China. The organization reports that 3.7% of the adult women in China smoke tobacco products. In the United States, 19% of adult women smoke. Without using a calculator, answer the following questions.
+        </introduction>
+        <exercise xml:id="exercise-percentages-10" workspace=".25in">
+          <statement>
+            Out of 100 adult women in China, about how many are smokers?  (Give a whole number of people)
+          </statement>
+          <solution>
+            3.7% of Chinese women smoke, which means 3.7 out of 100. Since the number of smokers needs to be an integer, you might expect to have about three or four women out of 100 who smoke.
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-11" workspace=".25in">
+          <statement>
+            Out of 1000 adult women in China, about how many are smokers?
+          </statement>
+          <solution>
+            3.7% of Chinese women smoke, which is 3.7 out of 100, or 37 out of 1000
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-12" workspace=".25in">
+          <statement>
+            Out of 100 adult women in the United States, about how many are smokers?
+          </statement>
+          <solution>
+            19% of US women smoke, which is 19 out of 100
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-13" workspace=".25in">
+          <statement>
+            Out of 1000 adult women in the United States, about how many are smokers?
+          </statement>
+          <solution>
+            19% of US women smoke, which is 19 out of 100, or 190 out of 1000
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-14" workspace=".25in">
+          <statement>
+            Are there more women smokers in China or the United States?
+            <ul>
+              <li>More in China</li>
+              <li>More in the United States</li>
+              <li>Not enough information given to tell</li>
+            </ul>
+          </statement>
+          <solution>
+            You cannot tell without knowing the number of women in each country. While the percentage in the United States is much higher, China is a much larger country.
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-15" workspace=".25in">
+          <statement>
+            Suppose you read that 590 out of 1,000 men in China smoke. Based on these data, what percentage of men in China smoke?
+          </statement>
+          <solution>
+            590/1000 = 0.59 = 59%
+          </solution>
+        </exercise>
+      </exercisegroup>
+    </page>
+
+    <page>
+      <exercisegroup xml:id="exercise-group-percentages-4">
+        <introduction>
+          <p>
+            A teacher has collected data on the grades his students received in his two classes. The following tables show two different ways to represent the same data.
+          </p>
+          <table xml:id="table-percentages-3">
+            <title>Table 1</title>
+            <tabular>
+              <row>
+                <cell>
+                </cell>
+                <cell colspan="5">
+                  Grades
+                </cell>
+              </row>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  A
+                </cell>
+                <cell>
+                  B
+                </cell>
+                <cell>
+                  C
+                </cell>
+                <cell>
+                  D
+                </cell>
+                <cell>
+                  F
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Morning Class
+                </cell>
+                <cell>
+                  12.50%
+                </cell>
+                <cell>
+                  25.00%
+                </cell>
+                <cell>
+                  37.50%
+                </cell>
+                <cell>
+                  6.30%
+                </cell>
+                <cell>
+                  18.80%
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Afternoon Class
+                </cell>
+                <cell>
+                  14.30%
+                </cell>
+                <cell>
+                  20.00%
+                </cell>
+                <cell>
+                  37.10%
+                </cell>
+                <cell>
+                  8.60%
+                </cell>
+                <cell>
+                  20.00%
+                </cell>
+              </row>
+            </tabular>
+          </table>
+          <table xml:id="table-percentages-4">
+            <title>Table 2</title>
+            <tabular>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  Grades
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+                <cell>
+                </cell>
+              </row>
+              <row>
+                <cell>
+                </cell>
+                <cell>
+                  A
+                </cell>
+                <cell>
+                  B
+                </cell>
+                <cell>
+                  C
+                </cell>
+                <cell>
+                  D
+                </cell>
+                <cell>
+                  F
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Morning Class
+                </cell>
+                <cell>
+                  44.4%
+                </cell>
+                <cell>
+                  53.3%
+                </cell>
+                <cell>
+                  48.0%
+                </cell>
+                <cell>
+                  40.0%
+                </cell>
+                <cell>
+                  46.2%
+                </cell>
+              </row>
+              <row>
+                <cell>
+                  Afternoon Class
+                </cell>
+                <cell>
+                  55.6%
+                </cell>
+                <cell>
+                  46.7%
+                </cell>
+                <cell>
+                  52.0%
+                </cell>
+                <cell>
+                  60.0%
+                </cell>
+                <cell>
+                  53.8%
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </introduction>
+        <exercise xml:id="exercise-percentages-16">
+          <statement>
+            <p>
+              Which table could be used to answer the following question: <q>What percentage of the students who received an A are in the morning class?</q>
+            </p>
+            <ul>
+              <li>Table 1</li>
+              <li>Table 2</li>
+              <li>Neither table</li>
+            </ul>
+          </statement>
+          <solution>
+            Table 2. You can tell because the columns add to 100%, so the reference value is the grade. This means that 44.4% of the students who got an A were in the morning class.
+          </solution>
+        </exercise>
+        <exercise xml:id="exercise-percentages-17">
+          <statement>
+            <p>
+              Which table could be used to answer the following question: <q>What percentage of the students in the morning class received an A?</q>
+            </p>
+            <ul>
+              <li>Table 1</li>
+              <li>Table 2</li>
+              <li>Neither table</li>
+            </ul>
+          </statement>
+          <solution>
+            Table 1. The rows add up to 100%, so the reference value is the students in each class. 12.5% of the students in the morning class received an A
+          </solution>
+        </exercise>
+      </exercisegroup>
+    </page>
+  </worksheet>
+
+</section>

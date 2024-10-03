@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-problem-solving" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Problem Solving</title>
+  <introduction>
+    The following text and worksheet are based on Pierce College's Math 96, Lesson 1.1, which was based on Quantway 1.0.
+  </introduction>
+
+  <objectives xml:id="qr-objectives">
+    <ul>
+      <li>Solve problems and estimate effectively in groups</li>
+    </ul>
+  </objectives>
+
+
+    <p>
+      Now we'll work together on a couple quantitative reasoning problems to give you a flavor of the course.
+    </p>
+    <activity>
+      <title> The Vacation Puzzle </title>
+      <statement>
+        <p>
+          A woman writes the following question to <em>Ask Marilyn</em>, a newspaper help columnist:<fn>Maryilyn Vos Savant, <q>Sharing the Cost of a Vacation Rental,</q> <em>Parade</em>, May 2, 2016, accessed February 2, 2019, <url>https://parade.com/409251/marilynvossavant/how-should-you-divide-up-a-confusing-rental-cost/</url></fn>
+        </p>
+        <blockquote>
+          Nine members of our family will be renting a vacation property. The total rental fee is $3600 for ten days. People will be staying for a varying number of days. I say the first step in figuring how much each person will owe for his or her share is to divide the fee by nine. My husband says we should start by dividing the fee by ten–the number of days we have the rental. Who is right?
+        </blockquote>
+        <ol marker="a.">
+          <li>
+            <p>
+              Discuss this situation with your group.  Make sure everyone understands the problem.  Investigate the two methods proposed by the husband and wife to determine the monetary implications.
+            </p>
+          </li>
+          <li>
+            <p>
+              Explore different solutions to the Vacation Property Puzzle.  As a group, pick a solution to share with the class.
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </activity>>
+
+    <activity>
+      <title>The Toilet Paper Problem</title>
+      <statement>
+        <p>
+          If you took all of the toilet paper that Americans use in a year and wrapped it around the planet at the equator, how many times would it go around the world?  Work in your groups to find an answer to present to the class.
+          <fn>This problem was orignally posed to the author by Dr. Ben Markham in a QR Faculty Workshop in October, 2018.</fn>
+        </p>
+        <p>Here are some statistics that may or may not be helpful:</p>
+        <ul>
+          <li>3 Years: The average time a person sits on the toilet in a lifetime. Some much longer.</li>
+          <li>384 trees are cut to provide toilet paper for one American's lifetime.</li>
+          <li>810 rolls of toilet paper are produced from one average tree.</li>
+          <li>Worldwide, products made from almost 270,000 trees are sent to landfills every day, Worldwide Fund for Nature reports. Roughly 10 percent of that total is attributable to toilet paper.</li>
+          <li>The average American uses 57 sheets of toilet paper per day.</li>
+          <li>Name brand TP is a preference for only 50% of consumers, while 35% reported that they didn't have a preference, and 15% said they didn't know how to answer the question.</li>
+          <li>7% of American steal toilet paper from hotels. Really? C'mon people.</li>
+          <li>Toilet paper squares are usually 4 inches long.</li>
+          <li>Sales in the United States of what the industry calls "luxury" rolls - anything quilted, lotioned, perfumed or ultra-soft, from two- to four-ply - climbed to $1.4 billion in 2014, says Euromonitor International show. This segment is fastest growing segment of industry.</li>
+          <li>There are approximately 325 million people in the United States of America.</li>
+          <li>The circumference of the earth at the equator is almost 25,000 miles.</li>
+        </ul>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>
+               \amp (\text{325,000,000 Americans})\frac{57 \text{ sheets}}{1 \text{ American}} \frac{4 \text{ in}}{1 \text{ sheet}} \frac{1 \text{ ft}}{12 \text{ in}} \frac{1 \text{ mile}}{5280 \text{ ft}} \frac{1 \text{ wrap around}}{\text{25,000 miles}}
+            </mrow>
+            <mrow>
+               \amp \approx 46.78 \text{ times around the world}
+            </mrow>
+          </md>
+        </p>
+      </solution>
+    </activity>
+
+    <p>
+      In this lesson, you will learn how to evaluate information you see often in society. You will start with the following situation.
+    </p>
+    <activity>
+      <title>Problem Situation: Does This Information Make Sense?</title>
+      <statement>
+        <p>
+          You are traveling down the highway and see a billboard with this message:
+        </p>
+        <table class="gridded" border="1">
+        <tabular top="minor" left="minor">
+          <col right="minor"/>
+            <row bottom="minor">
+              <cell left="minor">
+                <b>Every year since 1950, the number of American children gunned down has doubled.</b>
+              </cell>
+            </row>
+          </tabular>
+        </table>
+        <ol marker="a.">
+          <li>
+            <p>
+              You do not see the name of the organization that put up the billboard. What groups might have wanted to publish this statement? What are some social issues or political ideas that this statement might support?
+            </p>
+          </li>
+        </ol>
+      </statement>
+    </activity>
+
+    <p>
+      This question does not have a "right" answer, or even a numerical answer. The goal here is for you to think about the question, and write up a response. You will earn full credit as long as your answer is reasonable and on-topic.
+    </p>
+    <p>
+      The information in this statement is called <em>quantitative</em>. Quantitative information uses concepts about quantity or number. This can be specific numbers or a pattern based on numerical relationships such as doubling.
+    </p>
+    <p>
+      You hear and see statements using quantitative information every day. People use these statements as evidence to convince you to do things like
+    </p>
+    <ul>
+      <li>vote a certain way</li>
+      <li>donate or give money to a cause</li>
+      <li>understand a health risk</li>
+    </ul>
+    <p>
+      You often do not know whether these statements are true. You may not be able to locate the information, but you can start by asking if the statement is reasonable. This means to ask if the statements make sense. You will be asked if information is <em>reasonable</em> throughout this course. This lesson will help you understand what is meant by this question.
+    </p>
+    
+    <activity>
+      <statement>
+        <p>In 1995, an article published the statement in the Problem Situation. Do you think this was a reasonable statement to make in 1995? (At this point, this should be an unjustified opinion, based on your intuition)</p>
+        <p>You only have the information in the statement. Using only that information, how can you decide if the statement is reasonable? (Focus on quantitative (numerical) approaches)</p>
+      </statement>      
+    </activity>
+
+    <activity>
+        <statement>
+          <ol marker="a.">
+            <li>
+              <p>
+                To keep things simple, suppose the number of children in 1950 was 1 child. We could use any starting point, but this is a very easy number to work with. Using the problem situation statement that the number doubled every year since 1950, determine the number of children the statement claims were gunned down in the next few years after 1950.
+              </p>
+              <table class="gridded" border="0">
+                <tabular top="minor" left="minor">
+                  <col right="minor"/>
+                  <col right="minor"/>
+                  <row bottom="minor">
+                    <cell><b>Year</b></cell>
+                    <cell><b>Number of Children</b></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1950</cell>
+                    <cell>1</cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1951</cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1952</cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1953</cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1954</cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1955</cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                </tabular>
+              </table>
+            </li>
+            <li>
+              <p>
+                Now, determine how many children this predicts for 1960.  Try to figure it out without multiplying by 2 ten times.
+              </p>
+            </li>
+            <li>
+              <p>
+                Earlier, you thought about ways to decide if the problem situation statement was reasonable.  One approach is to pick a starting number and see what the statement predicts.  Complete the following table.
+              </p>
+              <p>
+                In the third column, choose the most appropriate place value and round to the nearest whole value for that place value.  For example, if you had 3,125, you'd round that to <q>3 thousand.</q>
+              </p>     
+              <table class="gridded" border="0">
+                <tabular top="minor" left="minor">
+                  <col right="minor"/>
+                  <col right="minor"/>
+                  <col right="minor"/>
+                  <row bottom="minor">
+                    <cell><b>Year</b></cell>
+                    <cell><b>Number of Children</b></cell>
+                    <cell><b>Rounded (using words)</b></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1950</cell>
+                    <cell>1</cell>
+                    <cell></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1960</cell>
+                    <cell><line></line><line></line></cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1970</cell>
+                    <cell><line></line><line></line></cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1980</cell>
+                    <cell><line></line><line></line></cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1990</cell>
+                    <cell><line></line><line></line></cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                  <row bottom="minor">
+                    <cell>1995</cell>
+                    <cell><line></line><line></line></cell>
+                    <cell><line></line><line></line></cell>
+                  </row>
+                </tabular>
+              </table>
+            </li>
+            <li>
+              <p>
+                Based on your calculations above, does the original statement from the problem situation seem reasonable?
+              </p>
+            </li>
+          </ol>
+        </statement>
+    </activity>
+
+</section>

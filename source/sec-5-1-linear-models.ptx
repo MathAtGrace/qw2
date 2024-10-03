@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-models-linear" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Function Notation and Linear Functions</title>
+  <objectives>
+    <title>Student Learning Outcomes</title>
+    <introduction>
+      <p>
+        After completing this activity you will be able to:
+      </p>
+    </introduction>
+
+    <ol>
+      <li>Interpret the meaning of function notation.</li>
+      <li>Use function notation to describe an event.</li>
+      <li>Evaluate a function and solve an equation using function notation.</li>
+      <li>Perform calculations using function notation including Average Rate of Change.</li>
+      <li> Translate problems from a variety of contexts into mathematical representation and vice versa (linear, exponential, simple quadratics).</li>
+      <li> Identify when a linear model is reasonable for a given situation and, when appropriate, formulate a linear model. In the context of the situation interpret the slope and intercepts and determine the reasonable domain and range.</li>
+      <li> Use functional models to make predictions and solve problems.</li>
+    </ol>
+  </objectives>
+
+  <introduction>
+    <p>
+      In this activity we define a function and develop an understanding of function notation by comparing statements we already understand in English to equivalent statements written in <q>math</q> language.
+    </p>
+
+    <p>
+      The prerequisites for this lesson are knowing how to read a graph or a table of values and how to use a formula to make a calculation.
+    </p>
+
+    <!--<figure>
+      <caption>A Mathematician Excited About Functions</caption>
+    <video youtube="zHU1xH6Ogs4?t=48" />
+  </figure>-->
+  </introduction>
+
+  <subsection>
+    <title>What is a Function?</title>
+    <p>
+      The mathematical concept of a function can be extremely complicated.
+      It took thousands of years to come up with it,
+      define it and formalize it.
+      For example, just look at this definition from
+      <url href="https://en.wikipedia.org/wiki/Function_(mathematics)">Wikipedia</url>
+      (do not spend too much time on it.)
+    </p>
+
+    <p>
+      You could spend your whole life learning about what a function is and never get to the rest of this book!
+      For this reason we will keep things simple and informal in order to attain a quick and accessible understanding of topics,
+      including functions.
+      Students continuing in mathematics will add to their knowledge of functions as needed and as part of a life-long process.
+    </p>
+
+    <p>
+      Start by remembering this: one input, one output.
+    </p>
+
+    <p>
+      A <term>function</term>
+          <idx><h>function</h></idx>
+      is a rule that takes a piece of <q>usable</q>
+      information that you choose (input) and gives you some kind of result
+      (output).
+      By <q>usable</q> we mean information that has meaning for the function.
+    </p>
+
+    <p>
+      Think of a function as a sort of machine.
+      Using some input,
+      the machine does something to the input and then out pops a result.
+      In this course our inputs will be mostly numbers and the process will yield numbers as results.
+    </p>
+
+    <activity>
+      <title>Temperature Converter</title>
+      <statement>
+        <p>
+          A simple example of a function is a temperature converter.
+          It converts a temperature from degrees Fahrenheit to degrees Celsius.
+        </p>
+        <p>
+          The function is the rule or process used to convert from one unit of temperature to the other.
+        </p>
+        <p>
+          Our function is a graph,
+          but it could have been a table of values or a formula.
+        </p>
+        <p>
+          The graph illustrates that the temperature in degrees Celsius is a <term>function</term>
+          of the temperature in degrees Fahrenheit.
+        </p>
+        <p>
+          The temperature in degrees Fahrenheit, <m>F</m>,
+          is the input while the temperature in degrees Celsius,
+          <m>C</m>,
+          is the output.
+        </p>
+        <sidebyside width="85%">
+          <image source="models/temperature.png"/>
+        </sidebyside>
+        <p>
+          Use the graph to estimate your answers below:
+          <ol>
+            <li>
+              <p>
+                The temperature of <m>77</m> degrees Fahrenheit to degrees Celsius
+              </p>
+            </li>
+            <li>
+              <p>
+                What temperature in Fahrenheit is the same as <m>-20</m> degrees Celsius?
+              </p>
+            </li>
+            <li>
+              <p>
+                The temperature of <m>32</m> degrees Fahrenheit to degrees Celsius
+              </p>
+            </li>
+            <li>
+              <p>
+                What temperature in Fahrenheit is the same as <m>10</m> degrees Celsius?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The first two are shown as ordered pairs.  If you recognize that 77 is an input value and -20 is an output value, then you can see that <m>77 \text{degrees Fahrenheit} = 25 \text{degrees Celsius}</m> and <m>-4 \text{degrees Fahrenheit} = -20 \text{degrees Celsius}</m>.
+        </p>
+        <p>
+          For the last two, you must pay attention to the horizontal and vertical axes.  Recognize that the tick-marks go by 2's, so
+          <m>32 \text{degrees Fahrenheit} = 0 \text{degrees Celsius}</m> and <m>50 \text{degrees Fahrenheit} = 10 \text{degrees Celsius}</m>.
+        </p>
+      </solution>
+    </activity>
+
+    <p>
+      This brings up some good questions:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            How do we communicate that we have a function?
+            There has to be a simple or quick way to communicate we have a function.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What kinds of inputs can the function use?
+            The temperature function in the previous exercise could only accept temperatures between <m>-60</m> and <m>110</m> degrees Fahrenheit.
+            The input of <m>150</m> degrees <m>F</m> is not usable because it is not available to choose.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What are the possible output temperatures in degrees Celsius?
+            Is any temperature possible or is there a window of reasonable temperature expectations?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How are the two temperature units related?
+            If you increase degrees F, does the temperature in degrees <m>C</m> also increase?
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      We start with notation.
+      We don't want to keep writing the word, F U N C T I O N, all the time.
+      That's just way too many letters.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Math as a Language</title>
+    <p>
+      Math is just another language.
+      We use it to communicate measurements,
+      changes in value and how things are related to or affect one another.
+      Almost everything you say or describe in Math,
+      you can say or describe in English.
+    </p>
+
+    <p>
+      In this next exercise we learn to communicate the position of a train as time passes and develop the notation to express where the train is at different times.
+      We will assume that this train runs on time,
+      every day and the conditions every day are the same.
+      You know, an alternate universe called <q>example land</q>.
+    </p>
+
+    <activity>
+      <statement>
+        Consider the graph below. The dot on the graph represents the position of a train at a particular time. The cross-hairs represent the time. Notice that the train’s distance, in miles, from downtown depends on the time, in hours, after 8 a.m.
+        <sidebyside width="80%">
+          <image source="models/train.png"/>
+        </sidebyside>
+        How far from downtown is the train at 10 a.m.?
+      </statement>
+      <solution>
+        Since 10 a.m. is 8 a.m. + 2 hours, and we have the point (2,30) labelled on the graph, we see that the train is 30 miles from downtown at 10am.
+      </solution>
+    </activity>
+
+    <p>
+      In English you can communicate information about time and position in a simple sentence like
+    </p>
+
+    <blockquote>
+      <p>
+        <m>2</m> hours after <m>8</m> <init>a.m.</init> the train is <m>30</m> miles from downtown.
+      </p>
+    </blockquote>
+
+    <p>
+      Here is what that same sentence looks like in Spanish.
+    </p>
+
+    <blockquote>
+      <p>
+        <m>2</m> horas despues de las 8 de la mañana el tren esta 30 millas lejos del centro.
+      </p>
+    </blockquote>
+
+    <p>
+      Here is what that same sentence could look like in <q>math</q>.
+    </p>
+
+    <blockquote>
+      <p>
+        <m>f(2) = 30</m>
+      </p>
+    </blockquote>
+  </subsection>
+
+  <subsection>
+    <title>The Grammar of Function Notation</title>
+    <p>
+      The math <q>sentence</q> above is actually an equation and it uses
+      <term>function notation</term>
+          <idx><h>function</h><h>notation</h></idx>
+          <idx><h>notation</h><h>for functions</h></idx>
+      to express the information about the train's position at a particular time.
+    </p>
+
+    <p>
+      In math we don't really have subjects or verbs or objects.
+      Instead we have input values (numbers) and we have output values.
+      The function is the <q>machine</q>
+      or the rule that tells us how to use the input to make an output.
+    </p>
+
+    <p>
+          <idx><h>variable</h></idx><term>Variables</term> are used to represent values we don't know or that may change.
+      For a function, the input is called the
+      <term>independent variable</term>,
+      and the output is called the <term>dependent variable</term>.
+      This is because the output depends on the input.
+    </p>
+
+    <p>
+      The distance from downtown is constantly changing with time,
+      so we can let the dependent variable <m>D</m> represent the
+      <q>Train's distance in miles from downtown</q>.
+      Similarly, we can use the independent variable <m>t</m> to represent the
+      <q>number of hours after <m>8</m> <init>a.m.</init></q>.
+    </p>
+
+    <p>
+      Typically, we use variables that have something to do with the context of the problem,
+      but sometimes we generalize an expression or equation with <m>x</m>'s and <m>y</m>'s when we have nothing specific in mind.
+    </p>
+
+    <paragraphs>
+      <title>Variables have units</title>
+      <p>
+        If the variables represent actual things or events,
+        we must define them to include the <term>units</term>
+            <idx><h>units</h></idx>
+        we used to measure the event.
+        This allows us to extract meaning from the values or expressions.
+      </p>
+
+      <p>
+        If you know Spanish you can <em>interpret</em>
+        the meaning of a Spanish article you read by translating it into English.
+        Likewise, if you know <q>math</q>,
+        you can interpret the meaning of function notation by translating it into English,
+        provided you know what the variables in the notation mean or what they are measuring.
+      </p>
+
+      <blockquote>
+        <p>
+          If <m>D</m> represents distance,
+          you must define the units in which the distance is measured:
+          miles, inches, centimeters, light years, etc.
+        </p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          If <m>t</m> represents time,
+          will it be measured with units of seconds, hours or years?
+        </p>
+      </blockquote>
+    </paragraphs>
+
+    <p>
+      Since the position of the train depends on the amount of time that has passed,
+      we say <q>the distance depends on time</q>.
+      More specifically,
+      we say that the distance of the train from downtown is a
+      <term>function of time</term>.
+    </p>
+
+    <p>
+      Function notation allows us to communicate that distance is a function of time by simply writing <m>D = f(t)</m>.
+      The notation <m>f(t)</m> is read as,
+      <q><m>f</m> of <m>t</m></q>.
+    </p>
+
+    <p>
+      Remember <m>t</m> is a value.
+      The function uses <m>t</m> to create the value <m>D</m>.
+    </p>
+
+    <p>
+      Also, don't confuse the notation with multiplication!
+      The expression <m>f(t)</m> does <alert>not</alert> mean <m>f</m> times <m>t</m>.
+    </p>
+
+    <note>
+      <p>
+        The word <q>function</q> usually refers to the actual <em>rule</em>
+        which turns the input into the output.
+        Sometimes, however,
+        we will use it to describe the output of the relationship.
+      </p>
+    </note>
+
+    <activity>
+      <statement>
+        <p>
+          How would you say the function notation in each statement below?
+        </p>
+        <ol>
+          <li>
+            <p>Tarzan(the jungle)</p>
+            <ol cols="2">
+              <li>Tarzan times the jungle</li>
+              <li>Tarzan jungle</li>
+              <li>Tarzan of the jungle</li>
+              <li>Jungle after Tarzan</li>
+            </ol>
+          </li>
+          <li>
+            <p>Helen(Troy)</p>
+            <ol cols="2">
+              <li>Helen loves Troy</li>
+              <li>Helen multiplied by Troy</li>
+              <li>Helen next to Troy</li>
+              <li>Helen of Troy</li>
+            </ol>
+          </li>
+          <li>
+            <m>f(x)</m>
+            <ol cols="2">
+              <li>f of x</li>
+              <li>f times x</li>
+              <li>f parentheses x</li>
+              <li>f x</li>
+            </ol>
+          </li>
+        </ol>
+      </statement>
+    </activity>
+
+    <p>
+      Function notation like <m>f(t)</m> or <m>f(x)</m> or
+      <m>f(\text{anything})</m> implies there is some kind of relation,
+      some kind of rule,
+      that takes a piece of information and returns a response or result.
+      The format of function notation works on the basic principle of input and output and we often use the notation when we refer to things we don't yet know.
+    </p>
+
+    <p>
+      For instance, if you work as a health assistant,
+      you probably earn some hourly salary and you probably work some number of hours each week.
+      I have no idea how many hours a week you work and no idea how much you earn.
+      But I do know your weekly salary is related to the number of hours you work.
+      In fact, your weekly salary is a function of the number of hours you work.
+    </p>
+
+    <p>
+      If <m>t</m> is the number of hours you work and <m>S</m> is your weekly salary, I can use function notation to say <m>S = f(t)</m>,
+      where <m>f</m> is the function,
+      the instructions, that calculates your weekly salary.
+      If you work <m>12</m> hours, then <m>t = 12</m>,
+      so <m>f(12)</m> is your weekly salary for working <m>12</m> hours.
+    </p>
+
+    <p>
+      Notice I still don't know what the salary actually is,
+      but I can use function notation to talk about it.
+      The expression <m>f(12)</m> literally means,
+      <q>whatever you earn when you work <m>12</m> hours.</q>
+    </p>
+
+    <p>
+      In our train example we chose some input,
+      a time, and the function gave us an output of distance.
+      The notation tells the reader what the input is by showing it in the parentheses:
+      <me>
+        f(\text{input}) = \mathit{output}
+      </me>
+      The function notation <m>f(0)</m> is telling us the input is <m>0</m>.
+      That means, <q><m>0</m> hours after <m>8</m> <init>a.m.</init></q> In other words,
+      it's <m>8</m> <init>a.m.</init>
+    </p>
+
+    <p>
+      On the other hand, <m>f(0)</m> represents an output.
+      It is <q>the train's distance from downtown,
+      <m>0</m> hours after <m>8</m> <init>a.m.</init></q>
+      But we don't know what that distance actually is yet.
+      In this case, the notation <m>f(0)</m> means
+      <q>Whatever the distance is at t = 0</q>.
+    </p>
+
+    <p>
+      Nonetheless,
+      the input and output create an <term>ordered pair</term>
+          <idx><h>ordered pair</h></idx>
+      <m>(0, f(0))</m>.
+      On a graph the ordered pair is a <term>point</term>.
+          <idx><h>point</h></idx>
+    </p>
+
+    <activity>
+      <statement>
+        <p>
+          The graph below is a function that illustrates a train's distance from downtown,
+          in miles,
+          as a function of time in hours after <m>8</m> <init>a.m.</init> When using a graph the best you can do is estimate.
+          Since <m>f(0)</m> represents a distance at <m>8</m> <init>a.m.</init>,
+          we can use the graph to find what the distance is.
+        </p>
+        <sidebyside width="80%">
+          <image source="models/train.png"/>
+        </sidebyside>
+        <ul>
+          <li>What is <m>f(0) </m> approximately equal to?</li>
+          <li>What time is <m>f(0)</m> referring to?</li>
+          <li>The notation <m>f(0)</m> is read as <q><m>f</m> of zero.</q>  What do you think <m>f(0)</m> means in the context of this train story?</li>
+          <li>How would you represent the statement <q>train's distance at 10 a.m.</q> using function notation?</li>
+        </ul>
+      </statement>
+    </activity>
+
+    <p>
+      Here is another example to further explore the use function notation.
+    </p>
+
+    <activity>
+      <statement>
+        Let <m>V = f(A)</m> be a function in which the input is the area of a house (measured in square feet), and the output is the value of the house in dollars. Consider the equation <m>f(900)=209700</m> The notation gives us information about the house. Given <m>f(900)=209700</m>,
+        <ul>
+          <li>What is the area of the house?</li>
+          <li>What is the value of the house?</li>
+          <li>Interpret the meaning of <m>f(900)=209700</m> in English.</li>
+        </ul>
+      </statement>
+      <solution>
+        <ul>
+          <li>900 square feet</li>
+          <li>$209,700</li>
+          <li>A 900 square foot house has a value of $209,700.</li>
+        </ul>
+      </solution>
+    </activity>
+  </subsection>
+
+  <subsection>
+    <title>Average Rate of Change, Inuitive Knowledge</title>
+
+    <introduction>
+      <p>
+        In this activity we introduce the Greek letter <m>\Delta</m> that represents change,
+        and we develop the concept of <term>average rate of change</term>.
+      </p>
+      <p>
+        The prerequisites for this lesson are knowing how to calculate the slope of a line and understanding the meaning of slope.
+      </p>
+      <p>
+        Let's start by realizing you already understand the concept of average rate of change,
+        but maybe you have never heard the phrase before.
+      </p>
+    </introduction>
+
+    <p>
+      It turns out, <term>average rate of change</term>
+      is just another way to talk about slope.
+      As the name implies, it measures how quickly things change,
+      on average.
+    </p>
+
+    <p>
+      Common examples of average rate of change:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Traveling from Portland, OR to Seattle, WA
+            (about <m>200</m> miles)
+            in <m>4</m> hours is an average speed of
+            <quantity>
+              <mag>50</mag><unit base="mileperhour" />
+            </quantity>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Pressure at the surface of the ocean is about
+            <quantity>
+              <mag>14.6</mag><unit base="pound"/><per base="inch" exp="2"/>
+            </quantity>
+            (pounds per square inch).
+            If you dive under water <m>20</m> feet the pressure is about
+            <quantity>
+              <mag>23.6</mag><unit base="pound"/><per base="inch" exp="2"/>
+            </quantity>.
+            That's an average rate of pressure increase of about
+            <quantity>
+              <mag>0.45</mag><unit base="pound"/><per base="inch" exp="2"/>
+            </quantity>
+            pounds per square inch, per foot underwater.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Earning <m>\$108</m> for <m>6</m> hours of work is an average hourly pay rate of <m>18</m> dollars per hour.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In each example there is a function that relates an input with an output.
+      When the input changes by some amount,
+      the output will also change
+      (though usually by some other amount).
+    </p>
+
+    <p>
+      The change in the output divided by the change in the input is called an
+      <term>average rate of change</term>
+          <idx><h>average rate of change</h></idx>
+      of the function.
+    </p>
+
+    <p>
+      Be careful to remember that we are only talking about an <em>average</em>.
+      For instance,
+      no one can drive from Portland to Seattle at a constant speed.
+      There is always stop and go traffic,
+      variations in speed limits, etc.
+    </p>
+
+    <activity>
+      <introduction>
+        <p>
+          The interactive graph below is that of a function <m>D = f(t)</m> where <em>D</em>
+          is the number of miles a train is from downtown at <m>t</m> hours after 8 am.
+        </p>
+      </introduction>
+      <statement>
+        <sidebyside width="100%">
+          <image source="models/train.png"/>
+        </sidebyside>
+        <p>
+          As the time changes along the horizontal axis the result is the changing position of the train measured on the vertical axis.
+          The key word here is <q>change</q>
+        </p>
+        <ol marker="a">
+          <li>
+            <p>
+              Use the graph to find the change in distance between the <m>9{:}00</m> and <m>11{:}00</m> <init>A.M.</init>.
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the change in time between the <m>9{:}00</m> and <m>11{:}00</m> <init>A.M.</init>?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the average speed
+              (rate of change)
+              between <m>9{:}00</m> and <m>11{:}00</m> <init>A.M.</init>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Use function notation
+              (as in part a)
+              to write an expression that represents the
+              <em>change in distance</em>
+              between the <m>10{:}00</m> <init>A.M.</init> and <m>1{:}00</m> <init>P.M.</init>.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a">
+            <li>
+              <p>
+                <m>f(3) - f(1) \approx 34.468</m> miles.
+              </p>
+            </li>
+            <li>
+              <p>
+                The change in time is 2 hour(s).
+              </p>
+            </li>
+            <li>
+              <p>
+                The average speed is <m>17.234</m> miles per hour.
+              </p>
+            </li>
+            <li>
+              <p>
+                The change in distance can be expressed as <m>f(5)-f(2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <p>
+      In math we use the Greek letter <m>\Delta</m> to mean <q>change in</q>.
+      Change between two values is typically measured by subtracting an old value from a new value.
+    </p>
+
+    <p>
+      In our train story where <m>D = f(t)</m>,
+      the expression <m>\Delta f</m> means
+      <q>change in miles from downtown</q>.
+      As the train travels away from downtown,
+      the distance from downtown increases.
+      New distance is greater than old distance,
+      so traveling away from downtown is a positive change in distance.
+    </p>
+
+    <p>
+      However, the distance from downtown decreases as the train travels towards downtown.
+      New distance is less than old distance,
+      therefore traveling toward downtown is a negative change in distance.
+    </p>
+    
+    <activity>
+      <statement>
+        <sidebyside width="100%">
+          <image source="models/train.png"/>
+        </sidebyside>
+        <p>
+          Use the graph to find the value of
+          <m>\Delta f</m> during the first <m>2</m> hours of the trip
+        </p>
+        <p>
+          What is the meaning of the expression
+          <m>\Delta t</m> in the context of the train story?
+          <ol cols="2">
+            <li>Change in hours since 8 a.m.</li>
+            <li>Delta t</li>
+            <li>Delta times t</li>
+            <li>There is no meaning to this expression</li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\Delta f \approx 30</m> miles
+        </p>
+        <p>
+          Change in hours since 8 a.m.
+        </p>
+      </solution>
+    </activity>
+  </subsection>
+
+  <subsection>
+    <title>Three Representations of a Relationship</title>
+    <p>
+      In 2002, the poverty rate of each state in the United States of America (plus D.C. and Puerto Rico) were recorded, as well as the number of births performed by teenage mothers ages 15-17.  The data is plotted below, along with a trend line of best fit.
+    </p>
+    <image source="teen_preg.jpg" width="95%"/>
+    <p>
+      The units for the <m>x</m>-axis are people below the poverty line per 100 people in each state or territory.  The <m>y</m>-axis is measured in births per 1000 girls ages 15-17 for each state or territory.  
+    </p>
+    <p>
+      A <em>graph</em> provides a visual representation of the situation. It helps you see how the variables are related to each other and make predictions about future values or values in between those in your table. The horizontal and vertical axis of the graph should be labeled, including units.
+    </p>
+    <p>
+      The equation for the red line is
+    </p>
+    <me>T = 1.3733 \times P + 4.2673</me>
+    <p>
+      This is an <em>equation for a model</em>.  This equation is useful because it can be used to calculate the expected teen pregnancy rate given a state's poverty rate.  Equations are useful for communicating complex relationships. In writing equations, it is always important to define what the variables represent, including units.  For example, in the equation above, <m>T </m> is in births per 1000 girls ages 15-17,  and <m>P</m> is in people living in a household below the poverty line per 100 people.
+    </p>
+    <p>
+      Another way that you could have represented this relationship is in a <em>table</em> that shows values of t and B as ordered pairs. An ordered pair is two values that are matched together in a given relationship.  You used a table in the last lesson.  Tables are helpful for recognizing patterns and general relationships or for giving information about specific values. A table should always have labels for each column. The labels should include units when appropriate.
+    </p>
+    <table xml:id="table-linear-teen-preg-predicted">
+      <tabular>
+        <row>
+          <cell>
+            Location
+          </cell>
+          <cell>
+            PovPct
+          </cell>
+          <cell>
+            Model-Brth15to17
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Illinois
+          </cell>
+          <cell>
+            12.4
+          </cell>
+          <cell>
+            21.3
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Indiana
+          </cell>
+          <cell>
+            9.6
+          </cell>
+          <cell>
+            17.5
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Kentucky
+          </cell>
+          <cell>
+            14.7
+          </cell>
+          <cell>
+            24.5
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Michigan
+          </cell>
+          <cell>
+            12.2
+          </cell>
+          <cell>
+            21.0
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Ohio
+          </cell>
+          <cell>
+            11.5
+          </cell>
+          <cell>
+            20.1
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      The values of <q>Model-Brth15to17</q> are not the actual values, but instead, they are the predicted values using our equation above.  We can compare our predicted values with the actual values by including that column.
+    </p>
+    <table xml:id="table-linear-teen-preg-actual">
+      <tabular>
+        <row>
+          <cell>
+            Location
+          </cell>
+          <cell>
+            PovPct
+          </cell>
+          <cell>
+            Actual-Brth15to17
+          </cell>
+          <cell>
+            Model-Brth15to17
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Illinois
+          </cell>
+          <cell>
+            12.4
+          </cell>
+          <cell>
+            23.4
+          </cell>
+          <cell>
+            21.3
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Indiana
+          </cell>
+          <cell>
+            9.6
+          </cell>
+          <cell>
+            22.6
+          </cell>
+          <cell>
+            17.5
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Kentucky
+          </cell>
+          <cell>
+            14.7
+          </cell>
+          <cell>
+            26.5
+          </cell>
+          <cell>
+            24.5
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Michigan
+          </cell>
+          <cell>
+            12.2
+          </cell>
+          <cell>
+            18
+          </cell>
+          <cell>
+            21.0
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Ohio
+          </cell>
+          <cell>
+            11.5
+          </cell>
+          <cell>
+            20.1
+          </cell>
+          <cell>
+            20.1
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      In the table above, the last column represents points of our equation (the red line) while the second to last column are the actual numbers (corresponding to blue dots).
+    </p>
+  </subsection>
+  <subsection>
+    <title>Linear Equations and Slope</title>
+    <p>
+      The type of equation we looked at for poverty and teen pregnany is a linear equation, or a linear model.  Recall that the graph of a linear equation is a line.  The primary characteristic of a linear equation is that it has a constant rate of change, meaning that each time the input increases by one, the output changes by a fixed amount.  In the example above, if one state as 1 more person per 100 below the poverty line than another state, then we expect the first state to have 1.3733 more pregnancies per 1000 girls 15-17 years old.  This constant rate of change is also called slope.
+    </p>
+    <example>
+      <statement>
+        <p>
+         If I were walking at a constant speed, my distance would change 6 miles in 2 hours. We could compute the slope or rate of change as
+        </p>
+        <me> \frac{6 \text{ miles}}{2 \text{ hours}} = \frac{3 \text{ miles}}{1 \text{ hour}}</me>
+        <p>
+         In general, we can compute slope as
+        </p>
+        <me> \frac{\text{change of output}}{\text{change of input}}</me>
+         <sidebyside widths="25% 70%">
+          <p>
+            In the graph shown, we can see that the graph is a line, so the equation is linear.  We can compute the slope using any two pairs of points by counting how much the input and output change, and divide them.  Notice that we get the same slope regardless of which points we use.
+          </p>
+          <image source="M96-L3-2-g2" width = "100%" margins="auto" valign="top"/>
+        </sidebyside>
+        <p>
+          If the output increases as the input increases, we consider that a positive change.  If the output decreases as the input increases, that is a negative change, and the slope will be negative.
+        </p>
+      </statement>
+    </example>
+    <p>
+      Some people call the calculation of slope <em>"rise over run"</em>, where "rise" refers to the vertical change in output, and "run" refers to the horizontal change of input.
+    </p>
+    <p>
+      The units on slope will be a rate based on the units of the output and input variables.  It will have units of "output units per input units".  For example,
+    </p>
+    <ul>
+      <li>Input: hours.  Output:  miles.   Slope:  miles per hour</li>
+      <li>Input: number of cats.  Output:  pounds of litter.    Slope:  pounds of litter per cat</li>
+    </ul>
+  </subsection>
+  <subsection>
+    <title>Slope Intercept Equation of a Line</title>
+    <p>
+      The slope-intercept form of a line, the most common way you'll see linear equations written, is
+    </p>
+    <me> y = mx + b</me>
+    <p>
+      where <m>m</m> is the slope, and <m>b</m> is the vertical intercept (called y intercept when the output variable is <m>y</m>).  In the equation, <m>x</m> is the input variable, and <m>y</m> is the output variable.
+    </p>
+    <p>
+      Notice our equation from earlier,
+    </p>
+      <me>T = 1.3733 \times P + 4.2673</me>
+    <p>
+      fits this form where the slope is 1.3733 and the vertical intercept is 4.2673.   The input variable is <m>P</m> and the output variable is <m>T</m>.
+    </p>
+      <activity>
+        <statement>
+          <p>
+            From the equation of our model
+            <me>
+              T = 1.3733 \times P + 4.2673
+            </me>
+            What units are the numbers 4.2673 and 1.3733 in?  Describe what each number means in terms of the model.
+          </p>
+        </statement>
+        <solution>          
+          <p>
+            According to our model, we would expect a state with no poverty to have a pregnancy rate among 1000 girls 15-17 at about 4.2673.  And for any state whose poverty rate increases by 1 person per 100, the pregnancy rate for 1000 girls ages 15-17 is expected to go up 1.3733.  So we could verbally describe the relationship as:  A state's expected pregnancy rate per 1000 girls ages 15-17 is 4.2673 plus 1.3733 for every person per 100 living in a household below the poverty line.
+          </p>
+        </solution>
+      </activity>
+  </subsection>
+
+  
+    <exercises>
+    <subexercises>
+      <title>Evaluate, apply and interpret function notation, including the notation for inverse functions and composition of Functions</title>
+
+      <exercise>
+        <statement>
+          <p>
+            The function W(h) represents the average weight (measured in pounds) of 60 year old American men as a function of their height (measured in centimeters). Suppose <m>W^{-1}(181)=180</m>. Explain what this means in a complete sentence.
+          </p>
+        </statement>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose the function <m>p=f(t)</m> represents the population of a certain town,
+            where <m>p</m> represents the population and <m>t</m> represents the year.
+          </p>
+          <p>
+            Choose the equation that means, <q>There were <m>2015</m>
+            people in the town in <m>2010</m>.</q>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <m>f(2010)=2015</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f(2015)=2010</m>
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>I=f(T)</m> and <m>H=g(T)</m> be two functions that return <m>I</m>,
+            the number of ice cream bars you sell at your food cart in one day,
+            and <m>H</m>,the number of hot coffee drinks you sell at your food cart
+            in one day. Let <m>T</m> be the average temperature outside in degrees
+            Fahrenheit.
+          </p>
+
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  Do you expect the function <m>f</m> should be increasing or decreasing?
+                  Explain your answer.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Do you expect the function <m>g</m> should be increasing or decreasing?
+                  Explain your answer.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If you charge <m>\$2.50</m> for an ice cream bar and <m>\$1.75</m>
+                  for a hot coffee drink, write an expression (using function notation)
+                  that represents the total amount of money you will make from
+                  coffee and ice cream in one day, if the average temperature
+                  outside is <m>80</m> degrees.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+            Suppose the function <m>f(w)</m> represents the hours of labor it
+            will take for <m>w</m> workers to paint a particular house.
+          </p>
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  What is the best interpretation of the statement <m>f(3)=120?</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Interpret the meaning of the statement <q>evaluate <m>f(4)</m></q>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Interpret the meaning of the statement <q>solve <m>f(w)=100</m></q>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Should <m>f(w)</m> be an increasing or decreasing function or
+                  both? Explain how you made your conclusion.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Interpret the meaning of the statement
+                  <me>\frac{\Delta f}{\Delta w}=40 \, \text{on the interval} \, 1 \leq w \leq 6</me>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Let <m>g(x)</m> be a linear function such that <m>\frac{g(5)-g(2)}{3}=4</m>.
+          </p>
+
+          <p>
+            <ol marker="a">
+              <li>
+                <p>
+                  Is it necessarily true that <m>g(1)=4</m>? Explain your answer.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Suppose we know <m>g(0)=2</m>. What is the value of <m>g(3)</m>?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Sketch an example of another function <m>f(x)</m> that has the
+                  same average rate of change on the interval <m>2 \leq x \leq 5</m>
+                  such that <m>f(1) \neq 4</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+
+    </subexercises>
+
+    <subexercises>
+      <title>Linear Functions</title>
+      <exercisegroup>
+        <title>Fundraiser</title>
+        <introduction>
+          A sports team is planning a fundraiser to help pay for equipment. Their plan is to sell team T-shirts to friends and family, and they hope to raise $500. Their local screen printing shop will charge them a $75 setup fee, plus $6 per shirt, and they plan to sell the shirts for $15 each.
+        </introduction>
+        <exercise>
+          <statement>
+            Explore their profit (the amount they bring in from sales minus costs) using graphs and/or tables. Use these to estimate how many shirts the team will have to sell to reach their goal.
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            How much profit does the team make for each shirt they sell?
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            Create an equation for the linear model for their profit in terms of the number of shirts they sell.
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            How much money will they raise if they can sell 30 shirts?
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            How many shirts will they have to sell to avoid losing money?
+          </statement>
+        </exercise>
+        <exercise>
+          <statement>
+            How many shirts will they have to sell to raise their goal of $500?
+          </statement>
+        </exercise>
+      </exercisegroup>
+
+      <exercise>
+        <statement>
+           Suppose you and your roommates need to move, so you look into renting a moving truck for the day. U-Haul (www.uhaul.com) charges the following amounts for three different trucks. The dimensions for the trucks are given in length x width x height.
+           <ol>
+            <li>$19.95 plus $0.79 per mile for a cargo van with inside dimensions: 9'2" x 5'7-1/2" x 4'5"</li>
+            <li>$29.95 plus $0.99 per mile for a 14' truck with inside dimensions: 14'6" x 7'8" x 7'2"</li>
+            <li>$39.95 plus $0.99 per mile for a 20' truck with inside dimensions: 19'6" x 7'8" x 7'2"</li>
+          </ol>
+          You estimate that you and your roommates have three rooms full of furniture and boxes, equivalent to about 1,000 cubic feet. Your new apartment is about 10 miles (one way) from your old apartment. As a group, decide which vehicle size is a better deal to rent. Provide work to support your answer.
+        </statement>
+      </exercise>
+    </subexercises>
+  </exercises>
+</section>

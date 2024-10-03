@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="cost-of-driving" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Cost of Driving</title>
+  <objectives>
+    <ul>
+      <li>Use dimensional analysis to convert units, rates, and ratios from any given units to other units. Include conversions among and between U.S. and metric units using a variety of metric prefixes.</li>
+      <li>Extract relevant information from complex scenarios. Obtain any necessary additional information from outside sources. Synthesize the information in order to solve problems and make decisions.</li>
+    </ul>
+  </objectives>
+
+  <activity>
+    <title>Cost of Driving - Getting Started</title>
+    <statement>
+      <p>
+        Jenna's job requires her to travel. She owns a 2006 Toyota 4Runner, but she also has the option 
+        to rent a car for her travel. In either case, her employer will reimburse her the same amount 
+        for the mileage driven using the rate set by the Internal Revenue Service. In 2015, that rate 
+        was 57.5 cents/mile. In this lesson you will explore the question of whether it would be better 
+        for Jenna to drive her own car or to rent a car.
+      </p>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              Before you start: what numbers do you need to know to calculate the cost of Jenna driving her own car?
+            </p>
+          </li>
+          <li>
+            <p>
+              Similarly, what do you need to know to calculate the cost of Jenna renting a car?
+            </p>
+          </li>
+          <li>
+            <p>
+              Gas mileage is rated for either city driving or highway driving. Most of Jenna's travel will take 
+              place on the highway. For her next trip she needs to drive 193 miles from home, and then return.  
+              The price of gas is $3.50/gallon. Her 4Runner gets 22 miles/gallon. If Jenna rents, she can request 
+              a small, fuel-efficient car such as the Hyundai Elantra, which gets 40 miles/gallon. What is the 
+              cost of the gas for each vehicle? (Round to the nearest cent)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              TODO
+            </p>
+          </li>
+          <li>
+            <p>
+              TODO
+            </p>
+          </li>
+          <li>
+            <p>
+              Cost of gas for the 4Runner:
+              <me>150 \text{ miles} \cdot \frac{1\text{ gallon}}{22\text{ miles}} \cdot \frac{\$ 3.67}{1\text{ gallon}} = \$ 25.02</me>
+              Cost of gas for the Elantra:
+              <me>150 \text{ miles} \cdot \frac{1\text{ gallon}}{40\text{ miles}} \cdot \frac{\$ 3.67}{1\text{ gallon}} = \$ 13.76</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </activity>
+
+  <activity>
+    <title>Dimension Analysis Review</title>
+    <statement>
+      <p>
+        In the last lesson, you learned about Dimensional Analysis.  We will be needing those techniques again in this lesson.  To warm up, consider this question:
+        <blockquote>
+          It takes me 20 minutes to walk the loop around the lake near work.   I normally walk 3 miles per hour.  How many miles will I travel if I walk around the lake 4 times?
+        </blockquote>
+      </p>
+      <p>
+        Which of the following is the correct setup to answer this question using dimensional analysis?
+          <ol>
+            <li>
+              <me>
+                \frac{1}{4\text{ loops around lake}} \cdot \frac{1 \text{ loop around lake}}{20\text{ minutes}} \cdot \frac{60 \text{ minutes}}{1\text{ hour}} \cdot \frac{1\text{ hour}}{3\text{ miles}}
+              </me>
+            </li>
+            <li>
+              <me>
+                \frac{4\text{ loops around lake}}{1} \cdot \frac{1 \text{ loop around lake}}{20\text{ minutes}} \cdot \frac{60 \text{ minutes}}{1\text{ hour}} \cdot \frac{1\text{ hour}}{3\text{ miles}}
+              </me>
+            </li>
+            <li>
+              <me>
+                \frac{4\text{ loops around lake}}{1} \cdot \frac{20\text{ minutes}}{1 \text{ loop around lake}} \cdot \frac{60 \text{ minutes}}{1\text{ hour}} \cdot \frac{1\text{ hour}}{3\text{ miles}}
+              </me>
+            </li>
+            <li>
+              <me>
+                \frac{4\text{ loops around lake}}{1} \cdot \frac{20\text{ minutes}}{1 \text{ loop around lake}} \cdot \frac{1\text{ hour}}{60 \text{ minutes}} \cdot \frac{3\text{ miles}}{1\text{ hour}}
+              </me>
+            </li>
+          </ol>
+          Then calculate the correct answer and give it below.
+      </p>
+    </statement>
+    <solution>
+      The correct setup is exression (d), and the correct calculation is 4 miles.
+    </solution>
+  </activity>
+
+  <activity>
+    <title>Total Cost of Renting</title>
+    <statement>
+      <p>
+        Using the information below, calculate Jenna's total cost of driving a rental car for a round trip.
+        <ul>
+          <li>Price of gas: $3.50/gallon</li>
+          <li>Length of trip (one way): 193 miles</li>
+          <li>Gas mileage of rental car: 40 miles/gallon</li>
+          <li>Price of the rental car: $98.98 plus 15.3% tax (Gas is not included in the rental price. The car starts with a full tank of gas when rented and must be returned to the rental agency with a full tank)</li>
+        </ul>
+        Try the problem on your own first. If you are having trouble after 2 tries, we will break it down.
+      </p>
+    </statement>
+    <solution>
+      The trip is 193 miles each way, so  <m>193 \times 2 = 386</m> miles roundtrip.  Gas will cost
+      <me>386 \text{ miles} \cdot \frac{1\text{ gallon}}{40\text{ miles}} \cdot \frac{\$3.50}{1\text{ gallon}} = \$33.775 \approx \$33.78</me>
+      After tax, the rental will cost $98.98 + 0.153($98.98) = $114.12 to the nearest cent.  Thus, the total cost: $33.78 + $114.12 = $147.90
+    </solution>
+  </activity>
+
+  <activity>
+    <title>Total Cost of Personal Vehicle</title>
+    <statement>
+      <p>
+        Using the information below, calculate Jenna's total cost of driving her own car for a round trip.
+        <ul>
+          <li>Price of gas: $3.50/gallon</li>
+          <li>Length of trip (one way): 193 miles</li>
+          <li>Gas mileage of her car: 22 miles/gallon</li>
+        </ul>
+        You'll also want to incorporate these costs (we're not including every cost we could have included). What do I do with these?
+        <ul>
+          <li><em>General maintenance</em> (oil and fluid changes): $40 every 3,000 miles</li>
+          <li><em>Tires:</em> Tires for Jenna's car cost $920; they are supposed to be replaced every 50,000 miles</li>
+          <li><em>Repairs:</em> The website Edmonds.com estimates that repairs on a three-year-old 2009 4Runner will be approximately $328 per year; this is based on driving 15,000 miles</li>
+        </ul>
+        Try the problem on your own first. If you are having trouble after 2 tries, we will break it down.
+      </p>
+    </statement>
+    <hint>
+      You shouldn't include the entire $40 maintenance cost because the trip is less than 3,000 miles.  Same for tires and repairs.
+    </hint>
+    <solution>
+      The trip is 193 miles each way, so  <m>193 \times 2 = 386</m> miles roundtrip.  Gas will cost
+      <me>386 \text{ miles} \cdot \frac{1\text{ gallon}}{22\text{ miles}} \cdot \frac{\$ 3.50}{1\text{ gallon}} \approx \$ 61.41</me>
+      Maintenance will cost
+      <me>386 \text{ miles} \cdot \frac{\$ 40}{3000\text{ miles}} \approx \$ 5.15.</me>
+      Tires will cost
+      <me>386 \text{ miles} \cdot \frac{\$ 920}{\text{50,000 miles}} \approx \$ 7.10.</me>
+      and Repairs will cost
+      <me>386 \text{ miles} \cdot \frac{\$ 328}{\text{15,000 miles}} = \$ 8.44.</me>-->
+      Total cost: $61.41 + $5.15 + $7.10 + $8.44 = $82.10
+    </solution>
+  </activity>
+</section>

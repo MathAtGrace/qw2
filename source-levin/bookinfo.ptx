@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+  <brandlogo url="http://discrete.openmathbooks.org/dmoi4.html" source="images/cover4.png" />
+
+  <document-id>dmoi-4</document-id>
+
+  <blurb shelf="Mathematics">
+    The 4th edition of Levin's Discrete Mathematics: an Open Introduction, released in August 2024.  The new edition includes a better arrangement of topics, many more exercises, and much more interactivity.  There are sections on relations, probability, and a stronger emphasis on discrete structures.
+  </blurb>
+
+  <macros> 
+    \usepackage{cancel}
+    \def\d{\displaystyle} 
+    \def\N{\mathbb N} 
+    \def\B{\mathbf B} 
+    \def\Z{\mathbb Z} 
+    \def\Q{\mathbb Q} 
+    \def\R{\mathbb R} 
+    \def\C{\mathbb C} 
+    \def\U{\mathcal U} 
+    \def\x{\mathbf{x}}
+    \def\y{\mathbf{y}}
+    \def\X{\mathcal{X}}
+    \def\Y{\mathcal{Y}}
+    \def\pow{\mathcal P} 
+    \def\inv{^{-1}} 
+    \def\st{:} 
+    \def\iff{\leftrightarrow} 
+    \def\Iff{\Leftrightarrow} 
+    \def\imp{\rightarrow} 
+    \def\Imp{\Rightarrow} 
+    \def\isom{\cong} 
+    
+    \def\bar{\overline} 
+    \def\card#1{\left| #1 \right|} 
+    \def\twoline#1#2{\begin{pmatrix}#1 \\ #2 \end{pmatrix}} 
+
+    \def\mchoose#1#2{
+      \left.\mathchoice
+        {\left(\kern-0.48em\binom{#1}{#2}\kern-0.48em\right)}
+        {\big(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\big)}
+        {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+        {\left(\kern-0.30em\binom{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+      \right.}
+    \def\o{\circ}
+
+  </macros>
+
+  <latex-image-preamble> 
+  	\usepackage{adjustbox}
+    \usepackage{tikz} 
+    \usepackage{pgfplots}
+    \usepackage{skak} <!-- for chess -->
+    \pgfplotsset{
+        every axis/.append style={
+            axis lines=middle,
+            xlabel={\(x\)},
+            ylabel={\(y\)},
+            grid = both,
+        }
+    }
+    \usetikzlibrary{positioning,matrix,arrows} 
+    \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} 
+    \usetikzlibrary{decorations.markings} 
+    \usetikzlibrary{calc}
+    \newcommand{\vtx}[2]{node[fill,circle,inner sep=0pt, minimum size=4pt,label=#1:#2]{}} 
+    \newcommand{\va}[1]{\vtx{above}{#1}} 
+    \newcommand{\vb}[1]{\vtx{below}{#1}} 
+    \newcommand{\vr}[1]{\vtx{right}{#1}} 
+    \newcommand{\vl}[1]{\vtx{left}{#1}} 
+    \renewcommand{\v}{\vtx{above}{}} 
+    \def\vo{node[circle, color=black, fill=white, inner sep=2pt, minimum size = 17pt, draw]{}}
+    <xi:include href="assets/tikz-defs.tex" parse="text"/>
+  </latex-image-preamble>
+
+
+  <rename element="investigation" xml:lang="en-US">Investigate!</rename>
+  <rename element="assemblage" xml:lang="en-US">Summary</rename>
+  <rename element="inlineexercise" xml:lang="en-US">Try it</rename>
+  <rename element="aside" xml:lang="en-US">By the way...</rename>
+  <!-- <rename element="example" xml:lang="en-US">Example!</rename> -->
+  <cross-references text="type-global" />
+
+
+  <!-- Various third-party add-ons need some sort of token -->
+  <!-- Using an element here serves two purposes -->
+  <!-- (1) it is a flag to enable the addon -->
+  <!-- (2) it holds the token and MBX supplies generic code -->
+  <!-- This is for the Google Custom Search Engine in HTML -->
+
+  <!-- Moved to custom-html.xsl 5/29/19 -->
+  <!-- <search> <google> <cx>000445521324161818100:qhc2ahxtur8</cx> </google> </search> <analytics> <google> <tracking>UA-66485406-1</tracking> </google> </analytics> -->
+</docinfo>
+

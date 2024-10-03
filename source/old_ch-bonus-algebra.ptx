@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch-bonus-algebra" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Optional: More Algebra Models</title>
+  <introduction>
+    <p>This is an optional chapter with supplemental algebra content, specifically about linear functions.</p>
+  </introduction>
+
+  <xi:include href="./sec-6-1-bonus-linear-1.ptx"/>
+  <xi:include href="./sec-6-2-bonus-linear-2.ptx"/>
+  <xi:include href="./sec-6-3-bonus-linear-3.ptx"/>
+</chapter>

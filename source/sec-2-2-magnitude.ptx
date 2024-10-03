@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_orders_of_mag" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Orders of Magnitude</title>
+  <objectives>
+    <ul>
+      <li>Demonstrate an understanding of the magnitude of real numbers represented in many forms (fractions, decimals, scientific notation, square roots of numbers) by ordering and comparing them in mathematical and real-world contexts. </li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <p>A large economic and political concern is the federal deficit, the amount of money spent by the 
+      federal government in excess of revenue collected annually.  The federal budget deficit for 2015 
+      was approximately $435 billion.  The federal debt is the accumulated deficits from all years, 
+      and in 2015 was about $18.1 trillion.</p>
+    <p>It is difficult to understand just how big a billion or a trillion is. Here is a way to 
+      help you think about it.</p>
+    <table xml:id="million-billion-trillion">
+      <tabular top="medium" left="medium">
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            1 million
+          </cell>
+          <cell right="medium">
+            = 1,000 <m>\times</m> 1,000
+          </cell>
+          <cell right="medium">
+            = 1,000,000
+          </cell>
+          <cell right="medium">
+            <m>=10^6</m>
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            1 billion
+          </cell>
+          <cell right="medium">
+            = 1,000 <m>\times</m> 1,000 <m>\times</m> 1,000
+          </cell>
+          <cell right="medium">
+            = 1,000,000,000
+          </cell>
+          <cell right="medium">
+            <m>=10^9</m>
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            1 trillion
+          </cell>
+          <cell right="medium">
+            = 1,000 <m>\times</m> 1,000 <m>\times</m> 1,000 <m>\times</m> 1,000
+          </cell>
+          <cell right="medium">
+            = 1,000,000,000,000
+          </cell>
+          <cell right="medium">
+            <m>=10^{12}</m>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <figure xml:id="figure-national-debt">
+      <caption>U.S. National Debt from 1990-2020.</caption>
+      <image source="debt.jpg" width="80%">
+        <description>Source: <fn>US Department of the Treasury. (September 30, 2021). Public debt of the United States from 1990 to 2021 (in billion U.S. dollars) [Graph]. In Statista. Retrieved April 18, 2022, from <url href="https://www.statista.com/statistics/187867/public-debt-of-the-united-states-since-1990/"/></fn>
+        </description>
+      </image>
+    </figure>
+  </introduction>
+
+  <activity>
+    <title>Thousand, Million, Billion, and Trillion</title>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            What is a simpler way to express 2000 billion dollars?
+          </p>
+        </li>
+        <li xml:id="activity-million">
+          <p>
+            Imagine a stack of 1,000 one-dollar bills, which is about 4.3 inches tall. Imagine combining
+            1,000 stacks of 1,000 one-dollar bills. How much money is in the stack, and how tall (in feet) would it be?
+          </p>
+        </li>
+        <li>
+          <p>
+            Try to come up with a well-known or common thing that is basically the same height or length as your answer
+            to <xref ref="activity-million"/>.  Feel free to use the internet.
+          </p>
+        </li>
+        <li xml:id="activity-billion">
+          <p>
+            Now imagine combining 1000 stacks like the one above in <xref ref="activity-million"/>.
+            How much money is in the stack, and how tall (in miles) would it be?
+          </p>
+        </li>
+        <li>
+          <p>
+            Try to come up with a well-known or common thing that is basically the same height or length as your answer
+            to <xref ref="activity-billion"/>.  Feel free to use the internet.
+          </p>
+        </li>
+        <li xml:id="activity-trillion">
+          <p>
+            Now imagine combining 1000 stacks like the one above in <xref ref="activity-billion"/>.
+            How much money is in the stack, and how tall (in miles) would it be?
+          </p>
+        </li>
+        <li>
+          <p>
+            Since the circumference of the earth is a litte less then 25,000 miles, how many times would this stack
+            from <xref ref="activity-trillion"/> go around the world?
+          </p>
+        </li>
+        <li>
+          <p>
+            Your friends are discussing an entertainment strike (actor's guild, baseball, hockey, whatever your friends care about most)
+            where the professionals, who are generally millionaires, are against the owners, who are generaly billionaires.  Try to
+            to explain the difference between a million and a billion in a simple but also insightful way to your friends.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </activity>
+
+  <activity>
+    <title>Scientific Notation</title>
+    
+    <statement>
+      <p>You saw that 1 billion can be written as 1,000,000,000 or represented as <m>10^9</m>.  
+        How would 2 billion be represented?  Since 2 billion is 2 times 1 billion, then 2 billion 
+        can be written as <m>2 \times 10^9</m>.  Writing numbers in this way is called scientific 
+        notation.  Scientific notation is used primarily for writing very large numbers and very 
+        small numbers.  In this lesson, we will focus on large numbers.</p>
+      <p>The form for <term>scientific notation</term> is <m>M \times 10^n</m> where <m>1\leq M &lt; 10</m>.  
+        The exponent equals the number of decimal places between the location of the decimal in the 
+        number as written in standard notation and the number written in scientific notation.</p>
+      <p>For example, if the number 500 were to be written in scientific notation, it could be thought 
+        of as <m>5 \times 100</m> or <m>5 \times 10 \times 10</m> which is equal to <m>5 \times 10^2</m>.  
+        The decimal point has been moved 2 places which corresponds to the exponent of 2.</p>
+      <p>Likewise, if the number 4300 were to be written in scientific  notation, it could be thought 
+        of as <m>4.3 \times 1000</m> or <m>4.3 \times 10 \times 10 \times 10</m> which is equal to 
+        <m>4.3 \times 10^3</m>.  The decimal point has been moved 3 places (between 4300. and 4.3) 
+        which corresponds to the exponent of 3.</p>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Write the numbers below in both standard notation and scientific notation.
+              </p>
+              <p>
+                <table>
+                  <tabular top="medium" left="medium">
+                    <row bottom="medium">
+                      <cell right="medium">
+                        Words
+                      </cell>
+                      <cell right="medium">
+                        Standard Notation
+                      </cell>
+                      <cell right="medium">
+                        Scientific Notation
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        four hundred
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line><m>\hspace{2in}</m></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line><m>\hspace{2in}</m></line><line></line><line></line>
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        twenty three thousand
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        7.2 million
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                    </row>
+                  </tabular>
+                </table>
+              </p>
+            </li>
+            <li>
+              <p>
+                The table below contains the national deficit and national debt for various years.  Write the 
+                number in both standard notation and scientific notation.
+              </p>
+              <p>
+                <table xml:id="table-national-debt-by-year">
+                  <tabular top="medium" left="medium">
+                    <row bottom="medium">
+                      <cell right="medium">
+                        Words
+                      </cell>
+                      <cell right="medium">
+                        Standard Notation
+                      </cell>
+                      <cell right="medium">
+                        Scientific Notation
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        1965 deficit:  $1.41 billion
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line><m>\hspace{2in}</m></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line><m>\hspace{2in}</m></line><line></line><line></line>
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        2009 deficit:  $1412.69 billion
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        2014 deficit:  $484.6 billion
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                    </row>
+                    <row bottom="medium">
+                      <cell left="medium" right="medium">
+                        2014 debt:     $18.2 trillion
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                      <cell left="medium" right="medium">
+                        <line></line><line></line><line></line>
+                      </cell>
+                    </row>
+                  </tabular>
+                </table>
+              </p>
+            </li>
+          </ol>
+        </p>
+    </statement>
+  </activity>
+
+  <activity>
+    <title>Comparing the Sizes of Numbers</title>
+    <statement>
+      <p>
+        One of the skills you will learn in this course is how to write quantitative information. 
+        A writing principle that you will use throughout the course is given below followed by 
+        the questions below, which give you examples of how to use this principle.
+      </p>
+      <p>
+        <term>Writing Principle:</term> Use specific and complete information. The reader should understand 
+        what you are trying to say even if they have not read the question or writing prompt. This includes
+      </p>
+      <p>
+        <ul>
+          <li>information about context, and</li>
+          <li>quantitative information</li>
+        </ul>
+      </p>
+      <p>
+        <ol marker="a.">
+          <li>
+            <p>
+              A <url href="http://www.tallahassee.com/story/news/2014/06/03/scott-vetoes-million-billion-state-budget/9901117/">
+                headline in 2014</url> read “Scott vetoes $69 million in $77-billion state budget”.  Is the $69 million a 
+                small or large portion of the total state budget?  The following four statements are all correct. Which 
+                statement provides the best description, based on the writing principle?
+              <ol marker="i.">
+                <li>The portion vetoed is a very small part of the entire state budget.</li>
+                <li>$69 million is about a thousandth of $77 billion.</li>
+                <li>The $69 million vetoed is a very small part of the entire state budget of $77 billion.</li>
+                <li>The $69 million that was vetoed is about one tenth of one percent of the total $77 billion state budget.</li>
+              </ol>
+            </p>
+          </li>
+          <li>
+            <p>
+              The federal budget in 2012 included $471 billion for Medicare and $47 billion for International Affairs.  Complete the statement below that compares the two quantities.
+              <blockquote>
+                <p>
+                  The budget of $471 billion for Medicare is about <fillin characters="5"/> times larger than the $47 billion budget for International Affairs.
+                </p>
+              </blockquote>
+            </p>
+          </li>
+          <li>
+            <p>
+              Using the writing principle above, in a full sentence compare the 2009 deficit and the 2014 deficit from exercise 9.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </activity>
+
+  <activity>
+    <title>Estimate, then Calculate</title>
+    <statement>
+      <p>
+        For each situation below, describe your estimation strategy for each situation. Then estimate
+        <em>without a calculator</em>. 
+        Then <em>and only then</em> go back use a calculator to refine your estimate.
+      </p>
+      <p>
+        <ol marker="a.">
+          <li>
+            <p>
+              About 3 million working people in the U.S. make at or below the federal minimum wage of 
+              $7.25 per hour.  Estimate the amount of money needed per year to raise their wages to $15 per hour.
+            </p>
+          </li>
+          <li>
+            <p>
+              The amount of money needed to buy everyone in your state a box of Girl Scout cookies.
+            </p>
+          </li>
+          <li xml:id="activity-all-college">
+            <p>
+              The amount of money needed to send all graduating high school seniors in 
+              the United States to college for four years.
+            </p>
+          </li>
+          <li>
+            <p>
+              If the U.S. national debt was $22 trillion in 2019, and was evenly divided among the people 
+              living in the United States, how much would each person's share be?
+            </p>
+          </li>
+          <li>
+            <p>
+              If the U.S. budget is about $4.1 trillion, estimate the percentage of the budget 
+              which would be needed to pay for your estimate in <xref ref="activity-all-college"/> above.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </activity>
+
+</section>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="bookinfo.ptx" />
+  
+  <book xml:id="qw">
+    <title> Quantitative Wisdom </title>
+    <subtitle> Numerical literacy from the perspective of Biblical wisdom </subtitle>
+
+    <xi:include href="./frontmatter.ptx" />
+
+    <xi:include href="./ch-1-intro.ptx" />
+    <xi:include href="./ch-2-numbers.ptx" />
+    <xi:include href="./ch-3-finance.ptx" />
+    <xi:include href="./ch-4-data.ptx" />
+    <xi:include href="./ch-5-models.ptx" />
+    <xi:include href="./ch-6-democracy.ptx" />
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+</pretext>

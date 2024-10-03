@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_water_footprint" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Proportional Reasoning</title>
+  <objectives>
+    <ul>
+      <li>Demonstrate an understanding of the magnitude of real numbers represented in many forms (fractions, decimals, scientific notation, square roots of numbers) by ordering and comparing them in mathematical and real-world contexts. </li>
+      <li>Apply quantitative reasoning strategies to solve real-world problems with proportional relationships using whole numbers, fractions, decimals, and percents as appropriate.</li>
+    </ul>
+  </objectives>
+
+  <p>
+    One of the most important natural resources that humans need for survival is water. An influential United Nations report published in 2003 predicted that severe water shortages will affect 4 billion people by 2050. This report also said that 40 percent of the world's population did not have access to adequate sanitation facilities in 2003. Humans need clean water not just for drinking, but for necessary tasks such as sanitation, growing food, and producing goods.
+  </p>
+  <p>
+    You will use a measure of water consumption called a “water footprint” that includes all of the ways that people use fresh water. According to Waterwiki.net, “The water footprint of an individual, business, or nation is defined as the total volume of freshwater that is used to produce the goods and services consumed by the individual, business, or nation.” Goods are physical products such as food, clothes, books, or cars. Services are types of work done by other people. Examples of services are having your hair cut, having a mechanic fix your car, or having someone provide day care for your children. Fresh water is often used to make goods and to provide you with services.
+  </p>
+  <p>
+    In this lesson, you are going to compare the populations of China, the United States, and India. You will go on to look at the water footprint for each nation as a whole and per person (“per capita”) to make some comparisons
+  </p>
+
+  <worksheet xml:id="worksheet-water-footprint">
+    <title>Problem Situation: How Big is a Billion?</title>
+    <page>
+      <exercisegroup>
+        <title>Problem Situation 1: Comparing Populations</title>
+        <introduction>
+          You will begin by thinking of various ways you can compare different countries' populations. Scientific notation will be a useful tool because it is a way to write large numbers. Recall that a number in scientific notation is written in the form: <m>M \times 10^n</m> where <m>1 \leq M &lt; 10</m> and <m>n</m> is an integer.
+        </introduction>
+        <exercise xml:id="review-scientific-notation" workspace="1in">
+          <statement>
+            In 2014, the population of the United States was about 317 million, and Earth's population was about 7.2 billion. Write these numbers in scientific notation.
+          </statement>
+        </exercise>
+        <exercise xml:id="compare-us-to-world" workspace="1in">
+          <statement>
+            Write a ratio comparing the U.S. population to the world's population using a fraction.  Use a full sentence, and try to round to a reasonable amount.  Write a second sentence using a percentage instead.
+          </statement>
+        </exercise>
+        <exercise xml:id="compare-us-to-world-2" workspace=".5in">
+          <statement>
+            Circle the statement that describes your result from the exercise above.
+            <ul>
+              <li>The world population is <fillin characters="7"/>% larger than the U.S. population</li>
+              <li>The U.S. population is <fillin characters="7"/>% of the world population</li>
+              <li>The U.S. population is <fillin characters="7"/>% smaller than the world population</li>
+              <li>The world population is <fillin characters="7"/>% of the U.S. population</li>
+            </ul>
+          </statement>
+        </exercise>
+        <exercise xml:id="compare-china-to-world" workspace="1in">
+          <statement>
+            In 2014, the population of China was 1.39 billion. Compare China's 2014 population to the world population with a ratio. Using full sentences, write your answer as a fraction, and as a percent.
+          </statement>
+        </exercise>
+        <exercise xml:id="compare-us-to-china" workspace=".5in">
+          <statement>
+            Determine the ratio needed to complete this statement.  Below, explain why you rounded the way that you did.
+            <blockquote>
+              The population of China is <fillin characters="7"/> times the population of the United States.
+            </blockquote>
+          </statement>
+        </exercise>
+      </exercisegroup>
+    </page>
+
+    <page>
+      <exercisegroup>
+        <title>Problem Situation 2: Comparing Water Footprints</title>
+        <introduction>
+          <p>
+            The population of the United States is the third largest in the world, exceeded only by China and India.  Which country uses the most water?  Which country uses the most water per person?  We'll now explore this.
+          </p>
+          <p>
+            The table below gives the population and water footprints of China, India, and the United States for 2011.  Notice the units used, given in the column labels.
+          </p>
+          <table>
+            <tabular left="medium" right="medium" top="medium">
+              <col left="medimum"/>
+              <col left="medium"/>
+              <col left="medium"/>
+              <row bottom="medium">
+                <cell>
+                  Country
+                </cell>
+                <cell>
+                  Population in 2011 (in millions)
+                </cell>
+                <cell>
+                  <line>Total Water Footprint in 2011</line>
+                  <line>(in <m>10^9</m> cubic meters per year)</line>
+                </cell>
+              </row>
+              <row bottom="medium">
+                <cell>
+                  China
+                </cell>
+                <cell>
+                  1,344
+                </cell>
+                <cell>
+                  1,368
+                </cell>
+              </row>
+              <row bottom="medium">
+                <cell>
+                  India
+                </cell>
+                <cell>
+                  1,250
+                </cell>
+                <cell>
+                  1,144
+                </cell>
+              </row>
+              <row bottom="medium">
+                <cell>
+                  United States
+                </cell>
+                <cell>
+                  312
+                </cell>
+                <cell>
+                  821
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </introduction>
+        <exercise xml:id="scientific-notation-table" workspace="1.5in">
+          <statement>
+            Re-write the information from the table above in standard notation and in scientific notation in complete sentences.  For example,
+            <blockquote>
+              The population of China in 2011 was aproximately 1,344,000,000 (<m>1.344 \times 10^9</m>) people.
+            </blockquote>
+          </statement>
+        </exercise>
+        <exercise xml:id="water-footprint-1" workspace="1in">
+          <statement>
+            We are interested in the amount of water used on average by each person in the country.  This is the “Water footprint per person”  (which is the same as “water footprint per capita”) for each country. Compute this for each countrying, rounding using your best judgement, and give your answer as a complete sentence.
+          </statement>
+        </exercise>
+        <exercise xml:id="water-footprint-2" workspace="1in">
+          <statement>
+            Use complete sentences to answer the following questions:
+            <ul>
+              <li>Which country has the largest total water footprint?</li>
+              <li>Which country has the largest per person water footprint?</li>
+              <li>Which country has the smallest total water footprint?</li>
+              <li>Which country has the smallest per person water footprint?</li>
+            </ul>
+          </statement>
+        </exercise>
+        <exercise xml:id="water-footprint-3" workspace=".3in">
+          <statement>
+            Determine the ratio needed to complete this statement.  Give your answer as a number rounded to 1 decimal place.
+            <blockquote>
+              In 2011, the average person in the United States used <fillin characters="7"/> times more water than the average person in China.
+            </blockquote>
+          </statement>
+        </exercise>
+      </exercisegroup>
+    </page>
+  </worksheet>
+
+</section>

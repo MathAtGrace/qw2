@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="unit-conversion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Unit Conversion</title>
+  <objectives>
+    <ul>
+      <li>4. Use dimensional analysis to convert units, rates, and ratios from any given units to other units. Include conversions among and between U.S. and metric units using a variety of metric prefixes.</li>
+    </ul>
+  </objectives>
+
+  <introduction>
+    <title>Introduction to Dimensional Analysis</title>
+    <p>Most numbers used in the real world have units attached, which clarify what the number is referring to. Examples of units are gallons, dollars, meters, miles, and pounds. Some units are for geometric measurements such as area or volume. Many disciplines such as medicine or engineering have special units for use in their field.</p>
+    <p>This lesson will focus on a valuable strategy for converting from one set of units to another. <b>This skill is called dimensional analysis.</b>It is also known as unit analysis, unit-factor conversion, and the factor-label method.</p>
+    <p>The dimensional analysis strategy is based on three familiar ideas:</p>
+    <ul>
+      <li>
+        A fraction with equivalent expressions in the numerator and the denominator is equal to the number one. Examples:
+        <me>\frac{3a}{3a}=1 \hspace{1in} \frac{2+5}{7}=1 \hspace{1in} \frac{7\text{ ft}^3}{7\text{ ft}^3} = 1</me>
+      </li>
+      <li>
+        Multiplying something by the number 1 does not change its value.  Example: 
+        <me>\frac{\$4.99}{2 \text{ pounds}} \cdot 1 = \frac{\$4.99}{2 \text{ pounds}}</me>
+        However, multiplying by the number 1 can be used to change the way a something appears. Example: to rewrite fifths as tenths:
+        <me>\frac{4}{5} = \frac{4}{5} \cdot \frac{2}{2} = \frac{8}{10}</me>
+      </li>
+      <li>
+        When multiplying fractions, if a factor occurs in both the numerator and the denominator, it can be divided out. The common factor may be a number or a variable. Example:
+        <me>\frac{3\text{g}}{7\text{m}} \cdot \frac{1\text{m}}{2} = \frac{3\text{g}}{14}</me>
+      </li>
+    </ul>
+    <p>The key to unit conversions with dimensional analysis is multiplying by the number one in the form of a conversion fraction. Conversion fractions are fractions with different units in the numerator and denominator but in which the value of the numerator equals the value of the denominator. Examples:</p>
+    <ul>
+      <li>
+        Since 3 feet is equal to 1 yard, the fraction <m>\dfrac{3 \text{ feet}}{1 \text{ yard}}=1</m>.
+      </li>
+      <li>
+        Since 1 hour equals 60 minutes, the fraction <m>\dfrac{60 \text{ minutes}}{1 \text{ hour}}=1</m>.
+      </li>
+    </ul>
+    <p><b>To use the dimensional analysis method:</b></p>
+    <p>Start with the original quantity and multiply it by the number 1 written as a conversion fraction of two units so that the units you <em>don't</em> want can divide out of the numerator and denominator.</p>
+    <example xml:id="example-unit-conversion-1">
+      <title>Convert 300 feet to yards</title>
+      <ul>
+        <li>Start with 300 feet</li>
+        <li>
+          Multiply by a conversion fraction with feet in the denominator (so that the <q>feet</q> divides out of both numerator and denominator), and in the numerator you want to have yards
+          <me>300\text{ feet} \cdot \left( \frac{1\text{ yard}}{3 \text{ feet}}\right) = 300\cancel{\text{ feet}} \cdot \left( \frac{1\text{ yard}}{3 \cancel{\text{ feet}}}\right) = 100 \text{ yards}</me>
+        </li>
+      </ul>
+    </example>
+    <example xml:id="example-unit-conversion-2">
+      <title>Convert 30 ounces of weight to the metric unit of grams</title>
+      <p>Determine conversion factors from the Unit Equivalencies table below, in the part for weight and mass.</p>
+      <p>
+        If we start with 30 ounces and multiply by two versions of 1, one to convert pounds to ounces and the other to convert pounds to grams, we get
+      </p>
+      <p>
+        <md>
+          <mrow>
+            (30\text{ oz}) \cdot \frac{1\text{ lbs}}{16\text{ oz}} \cdot \frac{453.6\text{ g}}{1\text{ lbs}}
+            &amp;=(30\cancel{\text{ oz}}) \cdot \frac{1\cancel{\text{ lbs}}}{16\cancel{\text{ oz}}} \cdot \frac{453.6\text{ g}}{1\cancel{\text{ lbs}}}
+          </mrow>
+          <mrow>&amp;=\frac{30 \cdot 453.6 \text{ g}}{16}</mrow>
+          <mrow>&amp;=850.5 \text{ grams}</mrow>
+        </md>
+      </p>
+    </example>
+    <p>To create conversion fractions equal to 1, you must know which units are equivalent. The table on the below provides some unit equivalencies.</p>
+  </introduction>
+
+  <subsection>
+    <title>Equivalences Table</title>
+    <p>Notice the structure of the table:</p>
+    <ul>
+      <li>Units of the U.S. system are in the left column. Units of the Metric system are in the right column. The middle column shows some equivalencies between U.S. and metric units.</li>
+      <li>Different types of measurements are in different rows: Length, Area, Capacity or Volume, Weight or Mass.</li>
+      <li>When you want to find what a particular unit is equivalent to, you need to locate the unit in the correct row and column of the table.</li>
+    </ul>
+    <table>
+      <tabular top="medium" left="medium">
+        <col width="33%"/>
+        <col width="33%"/>
+        <col width="33%"/>
+        <row bottom="medium" header="yes">
+          <cell left="medium" right="medium">
+            <p>Unit Equivalencies:</p>
+            <p>USCS (US Customary System)</p>
+          </cell>
+          <cell right="medium">
+            <p>Unit Equivalencies:</p>
+            <p>USCS <m>\leftrightarrow</m> Metric</p>
+            <p><m>\hspace{2in}</m></p>
+          </cell>
+          <cell right="medium">
+            <p>Unit Equivalencies:</p>
+            <p>Metric or SI</p>
+            <p><m>\hspace{2in}</m></p>
+          </cell>
+        </row>
+      </tabular>
+      <tabular top="medium" left="medium">
+        <col width="33%"/>
+        <col width="33%"/>
+        <col width="33%"/>
+        <row bottom="medium" header="yes">
+          <cell colspan="3" left="medium" right="medium" halign="center">
+            Length
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            <p>12 inches (in) = 1 foot (ft)</p>
+            <p>3 feet (ft) = 1 yard (yd)</p>
+            <p>1760 yards (yd) = 1 mile (mi)</p>
+            <p>5280 feet (ft) = 1 mile (mi)</p>
+          </cell>
+          <cell right="medium">
+            <p>1 inch (in) = 2.54 centimeters (cm)</p>
+            <p>0.62 miles (mi) = 1 kilometer (km)</p>
+          </cell>
+          <cell right="medium">
+            <p>1000 millimeters (mm) = 1 meter (m)</p>
+            <p>1000 meters (m) = 1 kilometer (km)</p>
+            <p>100 centimeters (cm) = 1 meter (m)</p>
+          </cell>
+        </row>
+      </tabular>
+      <tabular top="medium" left="medium">
+        <col width="33%"/>
+        <col width="33%"/>
+        <col width="33%"/>
+        <row bottom="medium" header="yes">
+          <cell colspan="3" left="medium" right="medium" halign="center">
+            Area
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            <p>1 square mile (mi<m>^2</m>)= 640 acre (ac)</p>
+            <p>1 acre (ac) = 43,560 square feet (ft<m>^2</m>)</p>
+          </cell>
+          <cell right="medium">
+            <p>2.471 acre (ac) = 1 hectare (ha)</p>
+            <p>1 square mile (mi<m>^2</m>) = 2.59 square kilometers (km<m>^2</m>)</p>
+          </cell>
+          <cell right="medium">
+            <p>1 square kilometer (km<m>^2</m>) = 100 hectare (ha)</p>
+            <p>1 hectare (ha) = 10,000 square meters (m<m>^2</m>)</p>
+          </cell>
+        </row>
+      </tabular>
+      <tabular top="medium" left="medium">
+        <col width="33%"/>
+        <col width="33%"/>
+        <col width="33%"/>
+        <row bottom="medium" header="yes">
+          <cell colspan="3" left="medium" right="medium" halign="center">
+            Volume
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            <p>8 ounces (oz) = 1 cup (c)</p>
+            <p>2 cups (c) = 1 pint (pt)</p>
+            <p>2 pints (pt) = 1 quart (qt)</p>
+            <p>4 quarts (qt) = 1 gallon (gal)</p>
+            <p>1 cubic foot (ft<m>^3</m>)=7.481 gallons (gal)</p>
+          </cell>
+          <cell right="medium">
+            <p>1 quart (qt) = 0.946 liters (L)</p>
+          </cell>
+          <cell right="medium">
+            <p>1000 milliliters (ml) = 1 liter (L)</p>
+            <p>1000 liters (L) = 1 cubic meter (m<m>^3</m>)</p>
+          </cell>
+        </row>
+      </tabular>
+      <tabular top="medium" left="medium">
+        <col width="33%"/>
+        <col width="33%"/>
+        <col width="33%"/>
+        <row bottom="medium" header="yes">
+          <cell colspan="3" left="medium" right="medium" halign="center">
+            Weight or Mass
+          </cell>
+        </row>
+        <row bottom="medium">
+          <cell left="medium" right="medium">
+            <p>16 ounces (oz) = 1 pounds (lb)</p>
+            <p>2000 pounds (lb) = 1 ton</p>
+          </cell>
+          <cell right="medium">
+            <p>2.20 pounds (lb) = 1 kilogram (kg)</p>
+            <p>1 pound (lb) = 453.6 grams (g)</p>
+          </cell>
+          <cell right="medium">
+            <p>1000 milligrams (mg) = 1 gram (g)</p>
+            <p>1000 grams (g) = 1 kilogram (kg)</p>
+            <p>1000 kilograms = 1 metric ton</p>
+          </cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection>
+    <title>Metric Prefixes</title>
+    <p>In the conversion table above, you'll notice that many of the units include prefixes 
+      like <q>milli</q> and <q>kilo</q>. While in English we use <q>millions</q>, 
+      <q>billions</q>, and <q>trillions</q> to represent large numbers, the metric system uses 
+      prefixes to indicate the size of a measurement. Like place values, these are based on 
+      powers of 10.</p>
+    <p>For example, a meter is the standard measurement of length in metric, so 1000 meters would 
+      be 1 <b>kilo</b>meter. Likewise, 0.01 meters would be 1 <b>centi</b>meter 
+      (or, equivalently, 100 centimeters is 1 meter).</p>
+    <table>
+      <tabular>
+        <row header="yes" bottom="medium">
+          <cell>
+            Prefix
+          </cell>
+          <cell>
+            Symbol
+          </cell>
+          <cell>
+            Factor
+          </cell>
+          <cell>
+            <m>\hspace{.2in}</m>
+          </cell>
+          <cell>
+            Prefix
+          </cell>
+          <cell>
+            Symbol
+          </cell>
+          <cell>
+            Factor
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Tera
+          </cell>
+          <cell>
+            t
+          </cell>
+          <cell>
+            1,000,000,000,000
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Deci
+          </cell>
+          <cell>
+            d
+          </cell>
+          <cell>
+            0.1
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Giga
+          </cell>
+          <cell>
+            g
+          </cell>
+          <cell>
+            1,000,000,000
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Centi
+          </cell>
+          <cell>
+            c
+          </cell>
+          <cell>
+            0.01
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Mega
+          </cell>
+          <cell>
+            m
+          </cell>
+          <cell>
+            1,000,000
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Milli
+          </cell>
+          <cell>
+            m
+          </cell>
+          <cell>
+            0.001
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Kilo
+          </cell>
+          <cell>
+            k
+          </cell>
+          <cell>
+            1,000
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Micro
+          </cell>
+          <cell>
+            μ
+          </cell>
+          <cell>
+            0.000 001
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Hecto
+          </cell>
+          <cell>
+            h
+          </cell>
+          <cell>
+            100
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Nano
+          </cell>
+          <cell>
+            n
+          </cell>
+          <cell>
+            0.000 000 001
+          </cell>
+        </row>
+        <row>
+          <cell>
+            Deca
+          </cell>
+          <cell>
+            da
+          </cell>
+          <cell>
+            10
+          </cell>
+          <cell>
+            <line></line>
+          </cell>
+          <cell>
+            Pico
+          </cell>
+          <cell>
+            p
+          </cell>
+          <cell>
+            0.000 000 000 001
+          </cell>
+        </row>
+      </tabular>
+    </table>
+    <p>The most commonly used prefixes, and the ones you should try to remember, are kilo, centi, and milli.</p>
+    <activity>
+      <statement>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                In the US, we measure height in feet and inches.  In other parts of the world, height is measured in meters.
+                Use dimensional analysis to convert the height of a person who is 5 feet, 10 inches into meters.
+              </p>
+            </li>
+            <li>
+              <p>
+                In the US, we measure weight in pounds.  In other parts of the world, weight is measured in kilograms.
+                Use dimensional analysis to convert the weight of a person who is 180 pounds into kilograms.
+              </p>
+            </li>
+            <li>
+              <p>
+                A pesticide is supposed to be diluted in water at the rate of 2 pounds per gallon. Use dimensional
+                analysis to convert this to ounces per quart.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </activity>
+  </subsection>
+
+  <subsection>
+    <title>Rates</title>
+    <p>
+      A ratio (that is, a fraction) that includes a unit in the numerator that is different from the unit in its denominator is typically called a “rate”.  Rates show how one variable changes for each change in the second variable.  For example, a rate of speed is <m>\dfrac{35\text{ mi}}{\text{hr}}</m> which can be read as 35 miles per hour.
+    </p>
+    <p>
+      The word <q>per</q> is the fraction line, the division bar.  <q>Miles per hour</q> means miles divided by 1 hour.  Some common rates are abbreviated:
+    </p>
+    <p>
+      <q>miles per hour</q> is often written as <q>mph</q>, and <q>miles per gallon</q> is often written as <q>mpg</q>.
+    </p>
+    <p>
+      When doing calculations with a rate, it should be written as a fraction.
+    </p>
+    <example xml:id="example-miles-per-hour">
+      <title>Converting speed</title>
+      <statement>A bicycle is traveling at 12 miles per hour.  What is the speed in feet per second?</statement>
+      <solution>
+        <ul>
+          <li>Start by writing the initial number as a fraction: <m>\dfrac{12\text{ miles}}{1\text{ hour}}</m></li>
+          <li>
+            We'll use 5280 ft = 1 mile to convert miles to feet.  To make this conversion, since <q>miles</q> is in the numerator of the original fraction, we'll need to put it in the denominator of our conversion so the units will cancel:
+            <me>\frac{12\text{ miles}}{1 \text{ hour}} \cdot \frac{5280\text{ ft}}{1\text{ mile}} = \frac{63360\text{ ft}}{1\text{ hour}}</me>
+            Notice that the <q>miles</q> will cancel, and units left are ft/hour.
+          </li>
+          <li>
+            To convert the hours to seconds, we can use 1 hour = 60 minutes and 1 minute = 60 seconds.  Since our original fraction has hours in the denominator, we'll need to put hours in the numerator of our conversion so they'll cancel.  Likewise we'll set up the next conversion so the minutes units will cancel.  Then we multiply the numerators and multiply the denominators, canceling all the units that cancel, and we're left with ft/sec:
+            <me>
+              \frac{63360\text{ ft}}{1\text{ hour}} \cdot \frac{1\text{ hour}}{60\text{ min}} \cdot \frac{1\text{ min}}{60\text{ sec}}
+              =\frac{63360\text{ ft}}{3600\text{ sec}}
+              =\frac{17.6\text{ ft}}{1\text{ sec}}
+            </me>
+          </li>
+        </ul>
+      </solution>
+    </example>
+    <example xml:id="example-cubic-meters-per-hour">
+      <title>Converting flow</title>
+      <statement>Flow rate can be measured in cubic meters per hour.  If a river flows at 200 cubic meters per hour, what is the flow rate in gallons per second?</statement>
+      <solution>
+        <ul>
+          <li>
+            Start with 200 cubic meters per hour which can be written as<m>\dfrac{200\text{ m}^3}{1\text{ hour}}</m>
+          </li>
+          <li>
+            Then multiply by conversion fractions so that units you don’t want in the end will cancel. To form the conversion fractions find equivalent units for capacity or volume from the table.
+            <me>
+              \frac{200\text{ m}^3}{1 \text{ hour}} \cdot \frac{1000\text{ L}}{1\text{ m}^3} \cdot \frac{1\text{ qt}}{0.946\text{ L}} \cdot \frac{1\text{ gal}}{4\text{ qt}} \cdot \frac{1\text{ hr}}{60\text{ min}} \cdot \frac{1\text{ min}}{60\text{ sec}}
+              = 14.68\frac{\text{gal}}{\text{sec}}
+            </me>
+          </li>
+          <li>
+            <p>Multiply numbers in the numerator, divide by numbers in the denominator.  In your calculator enter 200 x 1000 / 0.946 / 4 / 60 / 60 enter.</p>
+            <p>Or, on a calculator that can display multiple operations at once, you could use parentheses and enter (200 * 1000) / (0.946 * 4 * 60 * 60)</p>
+          </li>
+          <li>
+            Notice the 200 is not cubed (it is the unit m that is cubed).
+          </li>
+        </ul>
+      </solution>
+    </example>
+    <activity>
+      <title>Texting While Driving</title>
+      <statement>
+        <p>
+          Indiana state law says:
+          <blockquote>
+            <p>Except as provided in subsections (b) and (c), a person may not hold or use a 
+              telecommunications device while operating a moving motor vehicle.</p>
+            <p>(b) A telecommunications device may be used in conjunction with hands free or voice 
+              operated technology.</p>
+            <p>(c) A telecommunications device may be used or held to call 911 to report a bona 
+              fide emergency.</p>
+          </blockquote>
+        </p>
+        <p>
+          Is texting while driving actually a problem?  A person might spend only 4 seconds to 
+          answer a text.  How far would the car go in that time?  It depends on the car's speed.
+        </p>
+        <p>
+          <ol marker = "a.">
+            <li>
+              <p>
+                Suppose a car is traveling at 35 miles per hour.  Before calculating, give an <em>educated guess</em> 
+                for the distance, in feet, the car will travel in 4 seconds.
+              </p>
+            </li>
+            <li>
+              <p>
+                Suppose a car is traveling at 35 miles per hour.  Use dimensional analysis to calculate the distance, 
+                in feet, the car will travel in 4 seconds.
+              </p>
+            </li>
+            <li>
+              <p>
+                If you are driving in Canada, following the posted speed limit of 80 km/hr, how many feet would you 
+                go during the 4 seconds spent texting?
+              </p>
+            </li>
+            <li>
+              <p>Suppose the typical texting response time is between 2 seconds and 6 seconds.  That could 
+                be written as a compound inequality for time t as:<m>2\leq t \leq6</m> seconds.</p>
+              <p>If a car is travelling at 35 mph, what is the typical distance a car would travel during 
+                a typical texting response?</p>
+            </li>
+          </ol>
+        </p>
+      </statement>    
+    </activity>  
+  </subsection>
+
+  <subsection>
+    <title>Using Dimensional Analysis for Area and Volume units</title>
+    <p>There are two methods of converting area and volume units:</p>
+    <ul>
+      <li>Use conversion factor of square units (or cubic units for volume).</li>
+      <li>Use conversion factor of linear units, and square the conversion factor (or cube it for volume).</li>
+    </ul>
+    <example xml:id="example-convert-4-square-feet">
+      <title>Convert 4 square feet to inches</title>
+      <ul>
+        <li>First write the question using symbols for the units:   Convert 4 ft<m>^2</m>  to  in<m>^2</m>.</li>
+        <li>As with other unit conversions, we want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft2  in the denominator and in2  in the numerator.  So we need to know how many ft<m>^2</m>  equal how many in<m>^2</m>.  You may not know this fact, which is fine because we can find it out from knowing the linear measurement equivalency that 1 ft = 12 in.  We will use that to find the area unit equivalency by squaring each side of the equation:
+          <md>
+            <mrow>1 \text{ ft}  \amp = 12 \text{ in}</mrow>
+            <mrow>(1 \text{ ft})^2  \amp = (12 \text{ in})^2</mrow>
+            <mrow>1 \text{ ft}^2  \amp = 144 \text{ in}^2</mrow>
+          </md>
+        </li>
+        <li>
+          <p>These diagrams giving the geometric view of the algebra.  Each of these is one square foot.  Find the area by taking length times width.</p>
+          <image source="square_feet_inches.jpg" width="80%">
+            <description>Picture of square foot measured two ways</description>
+          </image>
+        </li>
+        <li>
+          Now we know the area unit equivalency that 1 ft<m>^2</m> = 144 in<m>^2</m>.  We use that to create the conversion fraction and complete the unit conversion.
+          <me>
+            \left(4 \text{ ft}^2\right) \cdot \frac{144 \text{ in}^2}{1 \text{ ft}^2} = 576 \text{ in}^2
+          </me>
+        </li>
+      </ul>
+    </example>
+    <example>
+      <title>Convert 4 square feet to inches, again with the other method</title>
+      <ul>
+        <li>First re-write in symbols:  Convert 4 ft<m>^2</m>  to  in<m>^2</m>.</li>
+        <li>
+          <p>
+            We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we’d end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we’ll use square the fraction (12 in/1ft).
+          </p>
+          <me>
+            4\text{ ft}^2 = 4\text{ ft}^2 \cdot \left(\frac{12 \text{ in}}{1 \text{ ft}}\right) = \left(4 \cdot 12^2\right)\text{ in}^2 = 576\text{ in}^2
+          </me>
+        </li>
+      </ul>
+    </example>
+    <example>
+      <title>Convert 3,000,000 cubic centimeter to cubic meters. </title>
+      <ul>
+        <li>First write the question using symbols for the units:   Convert 4 ft<m>^2</m>  to  in<m>^2</m>.</li>
+        <li>
+          We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we’d end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we’ll use square the fraction (12 in/1ft).
+          <me>
+            4 \text{ ft}^2 \cdot \left(\frac{12 \text{ in}}{1 \text{ ft}}\right)^2 = 576 \text{ in}^2
+          </me>
+        </li>
+      </ul>
+    </example>
+    <example>
+      <title>Convert 3,000,000 cubic centimeter to cubic meters, again with the other method</title>
+      <ul>
+        <li>First re-write in symbols:   convert  3,000,000 cm<m>^3</m>  to m<m>^3</m>.</li>
+        <li>
+          Find a conversion fraction for cm in the denominator and m in the numerator, and then cube that fraction.  We know 1 m = 100 cm, so use the conversion fraction  (1m / 100 cm) and cube it.
+          <me>
+            \text{3,000,000 cm}^3 \cdot \left(\frac{1\text{ m}}{100 \text{ cm}}\right)^3 = \frac{\text{3,000,000} \cdot 1 \cdot 1 \cdot 1}{100 \cdot 100 \cdot 100}\text{m}^3 = 3\text{ m}^3
+          </me>
+        </li>
+      </ul>
+    </example>
+    <example>
+      <title>Convert 100 m<m>^2</m>  to square feet using linear equivalencies</title>
+      <md>
+        <mrow>100 \text{ m}^2  \amp = 100 \text{ m}^2 \cdot \left(\frac{1 \text{ km}}{1000 \text{ m}}\right) \left(\frac{0.62 \text{ mi}}{1 \text{ km}}\right)^2\left(\frac{5280 \text{ ft}}{1 \text{ mi}}\right)^2</mrow>
+        <mrow> \amp =\frac{100 \cdot 0.62^2 \cdot 5280^2}{1000^2}\text{mi}^2</mrow>
+        <mrow> \amp \approx 1071.65 \text{ ft}^2</mrow>
+      </md>
+    </example>
+    <activity>
+      <title>Length, Area, Volume</title>
+      <statement>
+        <p>
+          While helping a friend remodel their house in Canada, you realize you brought your American tape measure.  
+          You measure the living room to be 12 feet wide and 14 feet 6 inches long.
+        </p>
+        <p>
+          <ol marker="a">
+            <li>
+              <p>
+                To buy baseboard for the remodel, you need to know the length and width of the room in meters (since 
+                the local hardware store sells in meter lengths).  Convert the width and length of the room to meters.  
+                You measure the width as 12 feet and the length as 14 ft and 6 inches.
+              </p>
+            </li>
+            <li>
+              <p>
+                Flooring is priced by the square meter.  To determine how much carpet to buy for the living room, 
+                you need to know the area of the room.  Find the area in square meters.
+              </p>
+            </li>
+            <li>
+              <p>
+                To buy an appropriately sized fan for the bathroom, you need to estimate the volume of the room.  You 
+                measure the bathroom to be 8 ft wide, 10 ft long, with 8 ft tall ceilings. Determine the volume of the 
+                bathroom, in cubic meters.
+              </p>
+            </li>
+            <li>
+              <p>
+                We breathe about 10 liters of air each minute while being fairly still  How many cubic feet of air do we breathe each hour?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>      
+    </activity>
+  </subsection>
+  
+</section>

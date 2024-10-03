@@ -4,7 +4,7 @@
   <targets>
     <target name="web">
       <format>html</format>
-      <source>source/dmoi.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
       <stringparam key="html.css.extra" value="external/custom-styles.css" />
@@ -12,7 +12,7 @@
     </target>
     <target name="runestone">
       <format>html</format>
-      <source>source/dmoi.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/runestone.ptx</publication>
       <output-dir>published/dmoi-4</output-dir>
       <stringparam key="html.css.extra" value="external/custom-styles.css" />
@@ -20,21 +20,21 @@
     </target>
     <target name="latex">
       <format>latex</format>
-      <source> source/dmoi.ptx</source>
+      <source> source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/latex</output-dir>
       <xsl> xsl/dmoi-latex.xsl</xsl>
     </target>
     <target name="pdf" pdf-method="xelatex">
       <format>pdf</format>
-      <source>source/dmoi.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/pdf</output-dir>
       <xsl>xsl/dmoi-latex.xsl</xsl>
     </target>
     <target name="epub">
       <format>epub</format>
-      <source>source/dmoi.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/epub</output-dir>
     </target>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="time" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Time Management Lab</title>
+  <introduction>
+    <p>
+      This worksheet borrows heavily from Quantway, which used material from  <url href="https://students.dartmouth.edu/academic-skills/learning-resources/time-management-tips"><c>Dartmouth University</c></url>.
+    </p>
+    <p>
+        Students who make a decision to carefully schedule their time are <em>not</em> ones who have decided to spend all their time studying and doing nothing else.  Instead, they usually have decided to efficiently use the time they have to spend studying and to "de-sensitize" themselves to the many distractions that are commonly occurring.
+    </p>
+    <p>
+        What is <q>desensitizing?</q>  It means reducing the day-to-day and hour-to-hour decisions that you have to make about how to spend your time. Decisions such as whether or not you're going to spend the next hour studying, or whether you will or will not go to the math lab at the library to get work done today, or whether you will or will not go to a movie on impulse, or whether or not to use an hour between classes to get next week's homework assignment out of the way. If you have a plan for how to spend your time, then those decisions are already made for you!
+    </p>
+    <p>
+        Hence, a reasonable, well-thought-out time schedule can make decisions for you, thus desensitizing you to momentary distractions. And, an hour of study in one course is not disturbed by wondering when you will study for another course, or when you'll be able to get out and have some fun, because you've developed a plan, stuck to it, and can feel confident that you're doing what you need to in order to succeed in school.  Create a master schedule (see below) and try to stick to it. It may take time, practice, and persistence. However, you'll most likely be amazed at how efficient you can become and how much time for “fun” stuff you might actually find yourself creating for yourself.
+    </p>
+  </introduction>
+  
+  <subsection xml:id="subsec-Rule-of-60">
+    <title>Rule of 60</title>
+    <activity>
+      <title>Rule of 60</title>
+      <statement>
+        <p>
+          Before you do any detailed time management planning, it's useful to get a very general feeling of whether or not you've potentially overextended yourself when it comes to your time resources. One way to do this is by using the <q>Rule of 60.</q>
+        </p>
+        <p><ol marker="a.">
+          <li>
+            <p>
+              Multiply your session-credits by four and your semester-credits by two, and then add these two numbers together.  By session-credits, we mean how many credits are you taking right now in the form of courses that only run for a session (i.e. session A or B)?  By semester-credits, we mean how many credits are you taking right now in the form of classes that run the whole semester.
+            </p>
+            <p>
+              For example: Your answer should be something like <m> 4 \times (6\text{ credits}) + 2 \times (3\text{ credits}) = 30\text{ hours}</m> if you're currently in two session-length courses and one semester-length course.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many hours per week do you work, on average? How many hours per week do you participate in clubs or sports, on average?  Add these hours together.
+            </p>
+          </li>
+          <li>
+            <p>
+              Add together your answers from parts a, b, and c.
+            </p>
+          </li>
+        </ol></p>
+        <p>
+          A university study found that if this number is 60 or higher, you should NOT be surprised if you find yourself having academic difficulties. If you have a total higher than 60, this study found you are much more likely to struggle in school and become overwhelmed. This seems to be a general <q>magic number</q> for most students. It does not guarantee anything, but at least gives you an initial realistic idea of whether or not your schedule is manageable. Keep in mind that if you are taking math and/or science, 60 may be too large and you may have to aim for lower hours since math/science courses typically require more time. So, when you register for classes, take this into account. You're better off taking fewer credits now and being successful, as opposed to overloading yourself, failing, and slowing down your progress and momentum.
+        </p>
+      </statement>
+    </activity>
+  </subsection>
+  
+  <subsection xml:id="subsec-Master-Calendar">
+    <title>Master Calendar</title>
+    <activity>
+      <title>Ten Steps to Developing a Master Calendar</title>
+      <statement>
+        <p>
+          One very important aspect of effectively managing your time is to set specific short term and long-term goals. You need to know what your goals are on a daily, weekly, and quarterly basis if you are going to be able to prioritize how you spend your time.  It is important that you constantly review your goals, evaluate whether or not you are meeting them, and revise them accordingly.  If you don't do this, and if you don't do it with honesty to yourself, you will find it more difficult to make good use of your time and attain your educational goals.
+        </p>
+        <p>
+          Read all of these directions before you make up your weekly schedule.  Then make your schedule on paper or in a spreadsheet
+        </p>
+        <p>
+          <ol marker="a.">
+            <li>
+              Record Class Times in appropriate day/hour blocks.
+            </li>
+            <li>
+              Record Work hours, Clubs and Sports hours, and Commute times.
+            </li>
+            <li>
+              Record all Regular Personal Activities such as meals, family duties, volunteer work, etc.
+            </li>
+            <li>
+              Record any Special Activities you need to do or want to do on a regular basis.
+            </li>
+            <li>
+              Schedule a Preview Time (5-30 minutes) immediately before each class whenever possible. During the preview time, review all or some of your notes in preparation for the upcoming class. Finish any reading assignments, if necessary.  If you have two or three classes in a row, preview from last to first class. Use a P to indicate Preview. For example: P Math might mean you preview for your math class; P Math/English means you are previewing two back-to-back classes.
+            </li>
+            <li>
+              Schedule a Review Time immediately after your classes (5-30 minutes) whenever possible. Use this time to edit and rework your notes, especially if you're using the 3-column method. For the schedule described above, you might write R: Math. You could also look over any assignments that were given and begin to plan when and how you will do them. Sketch those new assignments into your calendar if necessary.
+            </li>
+            <li>
+              Schedule your Intensive Study Time for each class. Try to schedule some study time each day for each class. Learning is more effectively and efficiently accomplished in shorter, regular sessions than in longer irregular sessions. When you schedule study time, be task-oriented rather than time-oriented. In other words, focused on what needs to get done for your classes (homework, reading, labs, WAMAP, etc.)  Think in terms of "blocks of time" and what specifically needs to be accomplished, not hours of study time. Try to study the same subjects at the same time each study day. Although this seems to be a mechanical way of scheduling, you will find that such a routine can help you develop a pattern for efficient and effective learning.
+            </li>
+            <li>
+              Schedule a Weekly Review (WR) for each course at the end of the week. Look at all of the past week's notes and assignments to see what you have been learning in the past week. Review your goals as well. You can also look ahead to plan the next week and determine how much to adjust your schedule to get it all done.
+            </li>
+            <li>
+              Keep open some time for regular Physical Activity. Research shows regular exercise gives you a general sense of well-being, and can reduce tension and help you accomplish a tough class, study, and work schedule. Also, label some empty blocks of time as Open for academic or personal needs.
+            </li>
+            <li>
+              Schedule some time during Friday, Saturday, and Sunday for Free Time. Play, relax, or do whatever you want to do. This is your reward for sticking to your schedule. In addition, you'll enjoy your free time more.
+            </li>
+          </ol>
+        </p>
+      </statement>    
+    </activity>
+  </subsection>
+
+  <subsection xml:id="subsec-Schedule">
+    <title>Schedule</title>
+    <image source="week_cal.jpg" width="100%">
+      <description>
+        Weekly Schedule with room to fill in events.
+      </description>
+    </image>
+    <sidebyside widths="48% 48%" margins="auto">
+      <image source="goals.PNG" width="100%"/>
+      <image source="tasks.PNG" width="100%"/>
+    </sidebyside>
+    <p>
+      Alternatively, you can also do this on a computer by filling out <url href="https://docs.google.com/spreadsheets/d/19-HYBxHE73gsXpqHz_YCzyMPGshjSDR93isGk6z6EPk/edit?usp=sharing"><c>this spreadsheet</c></url>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-">
+    <title>20 Tips for Managing Your Time</title>
+    <p>
+      <ol marker="1.">
+        <li>Create and maintain a Master Time Schedule. Give it a prominent place (binder cover) where you can see it easily and often. Revise it weekly during your Weekly Review time (see above).</li>
+        <li>Put up reminders in your home or office about your goals. Always keep your short and long-term goals in mind. Let them help you prioritize how you use your time.</li>
+        <li>Examine and revise your goals on a regular basis. Be sure to record progress towards those goals when you make it.</li>
+        <li>Count all your time as time to be used and make every attempt to get satisfaction out of every moment.</li>
+        <li>Find something to enjoy in whatever you do.</li>
+        <li>Remind yourself, "There is always enough time for the important things." If it is important, you should be able to make time to do it.</li>
+        <li>Continually look at ways of freeing up your time.</li>
+        <li>Examine your old habits and search for ways to change or eliminate them.</li>
+        <li>Try to use waiting time¬¬ by review or reworking notes, reviewing flash cards, or doing practice problems.</li>
+        <li>Keep paper or a calendar with you to jot down the things you have to do or notes to yourself.</li>
+        <li>Plan your day each morning or the night before and set priorities for yourself.</li>
+        <li>Maintain and develop a list of specific things to be done each day, set your priorities and the get the most important ones done as soon in the day as you can. Evaluate your progress at the end of the day briefly.</li>
+        <li>Try rewarding yourself when you get things done as you had planned, especially the important ones.</li>
+        <li>When you catch yourself procrastinating-ask yourself, "What am I avoiding?" Deal with that head on.</li>
+        <li>Concentrate on one thing at a time.</li>
+        <li>Push yourself and be persistent, especially when you know you are doing well. In the end, you only have you to do this for you.</li>
+        <li>Be sure and set deadlines for yourself whenever possible.</li>
+        <li>Ask for advice when needed.</li>
+        <li>Try to find locations or environments where you can study effectively and therefore use your time efficiently. Experiment with different places to see what works best for you.</li>
+        <li>Stop regretting your failures and start learning from your mistakes. Mistakes are not an indication of personal failure but beginning points of understanding. Take time to reflect on them and think of ways to adopt new study strategies and habits that will avoid and reduce those mistakes over time. (Remember, this is a process!)</li>
+      </ol>
+    </p>
+  </subsection>
+</section>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Numbers</title>
+  <!-- If the chapter has sections, there may be an introduction -->
+  <!-- before those sections. Note the <p> tags around content.  -->
+  <introduction>
+    <p>This chapter will focus on numbers and how we use them and think of them.</p>
+  </introduction>
+
+  <xi:include href="./sec-2-1-qr.ptx"/>
+  <xi:include href="./sec-2-2-magnitude.ptx"/>
+  <xi:include href="./sec-2-3-prop-reasoning.ptx"/>
+  <xi:include href="./sec-2-4-units.ptx"/>
+  <xi:include href="./sec-2-5-cost-of-driving.ptx"/>
+  <xi:include href="./sec-2-6-home-improvement.ptx"/>
+  <xi:include href="./sec-2-7-percentages.ptx"/>
+</chapter>

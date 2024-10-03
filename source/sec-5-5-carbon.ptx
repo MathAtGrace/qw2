@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<!-- This file was originally part of the book     -->
+<!--   Modeling, Functions, and Graphs   -->
+<!--           4th                                     -->
+<!-- Copyright (C) Katherine Yoshiwara      -->
+
+<section xml:id="sec-5-5-carbon"  xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Carbon Dioxide Lab</title>
+
+<introduction>
+    <p>
+      The goal for this lab is to learn about mathematical models related to carbon dioxide in 
+      our atmosphere.  This lab deals specifically with linear, exponential, and periodic models.
+    </p>
+</introduction>
+
+<figure width="100%" xml:id="muana-loa-carbon">
+  <image source="models/co2_data_mlo.png" width="100%">
+    <description>Atmospheric <m>\chem{CO_2}</m> at Mauna Loa Observatory from 1958 to 2022</description>
+  </image>
+</figure>
+
+<exercises xml:id="sec-5-5-carbon-ex">
+  <title></title>
+
+  <exercise>
+    <introduction>
+      <p>
+        Imagine that three scientists look at the graph above and each scientist tries to fit a different model to the data.  The first scientist tries to fit a linear model to the data.  The second scientist tries to fit an exponential model to the data.  The third scientist tries to fit a periodic model to the data.  Follow this link: <url href="https://www.desmos.com/calculator/byz3z1gibq"/> and help them fit their models to the data to the best of your ability using the sliders.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Adjust the <q>a</q> and <q>b</q> to give the best linear model.  Tell me your values of a and b.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          See note on part d.
+        </p>
+        <p>
+          <m>a \approx 1.5</m>, <m>b \approx 297</m>
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Adjust the <q>c</q> and <q>d</q> to give the best exponential model.  Tell me your values of c and d.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          See note on part d.
+        </p>
+        <p>
+          <m>c \approx 29.7</m>, <m>d \approx 0.0216</m>
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Adjust the <q>f</q> and <q>g</q> to give the best periodic model.  Tell me your values of f and g.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          See note on part d.
+        </p>
+        <p>
+          <m>f \approx 86</m>, <m>g \approx 260</m>
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Copy and paste a picture of your three models below.  (Look for this button in the upper right hand side)
+        </p>
+        <image source="models/desmos-share.png" width="50%">
+          <description>highlihts what the <q>share</q> button looks like in Demos</description>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          I usually grade this problem by their graph, and I tend to grade by effort.  If you're unsure, approximate 
+          answers are given above. 15 points for all four parts.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        For each hypothetical scientist, what does each of their models predict the carbon dioxide levels will be in the year 2060?
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Linear
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Exponential
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Periodic
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Now in Desmos, in the equation pane on the left, type in the equation
+        </p>
+        <console>
+          <input>x = 2060</input>
+        </console>
+        <p>
+          This will create a vertical line in the year 2060.  Click on each of the three points where it intersects the 
+          scientists' three models.  This should display points whose y-coordinates match your answers to a. b. and c. above.
+          (If they don't match, then you have a mistake somewhere).  Copy and paste a picture of these three points below.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Their answers will depend on their graph, so check that they are roughly consistent (as best you can).  I 
+          usually just grade their graph, because their other answers are probably correct if their graph looks correct. 
+          The main goal is for them to see that fitting a model to data usually creates a prediction of the future, and 
+          different models can have wildly different predictions. 15 points.
+        </p>          
+        <image source="models/desmos-x-is-2060" width="%">
+          <description>(for accessibility)</description>
+        </image>
+      </solution>
+    </task>
+  </exercise>
+   
+  <exercise>
+    <introduction>
+      <p>
+        For each scientist's model, interpret each of the given coefficients with all necessary units.  Give each 
+        answer as a complete sentence.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Linear: the <q>a</q> coefficient.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The <m>\chem{CO_2}</m> increases by about 1.5 (or their <m>a</m>) ppm every year. (3 points)
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Exponential: the <q>d</q> coefficient.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The <m>\chem{CO_2}</m> ppm increases exponentially by about 2.2% (or their <m>d \times 100\%</m>) every year. (4 points)
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Periodic: the <q>g</q> coefficient. 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Remember that <q>t</q> is the years since 1950.  Zoom out enough so that you can see the year 1950 
+          as well as the year (1950 + g).  What does the periodic model predict about the amount of carbon 
+          dioxide in the year (1950 + g) compared with 1950?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          The <m>\chem{CO_2}</m> levels repeat periodically every 260 years. (3 points)
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        For each hypothetical scientist, use your best quantitative reasoning skills, your knowledge of the world, 
+        and your common sense to make educated guesses about each scientists' assumptions.  Specifically, what do 
+        you suppose each scientist is assuming about human causes of carbon dioxide versus natural causes of 
+        carbon dioxide?
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Linear
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Exponential
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Periodic
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <p>
+    Scientists have only been measuring <m>\chem{CO_2}</m> at Mauna Loa since 1960.  However, scientists are able to drill 
+    ice cores from glaciers to estimate the amount of <m>\chem{CO_2}</m> over the last 1000 years.  On the main graph below, 
+    the red, solid line is the Mauna Loa data, and the black line is the data from ice cores of a glacier in Antartica.
+  </p>
+
+  <figure width="100%" xml:id="fig-ice-cores">
+    <image source="models/ice-cores.png" width="%">
+      <description>CO2 measurements from ice cores from Law Dome since 1000 AD.</description>
+    </image>
+    <caption>D.M. Etheridge, L.P. Steele, R.L. Langenfelds, R.J. Francey, J.-M. Barnola and V.I. Morgan. 1998. 
+      Historical CO2 records from the Law Dome DE08, DE08-2, and DSS ice cores. In Trends: A Compendium of Data 
+      on Global Change. Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory, U.S. Department 
+      of Energy, Oak Ridge, Tenn., U.S.A.</caption>
+  </figure>
+
+  <exercise>
+    <introduction>
+      <sidebyside widths="60% 30%" valign="top">
+        <p>
+          Let's compare our three hypothetical scientists' models to this historical data. In Desmos zoom your window 
+          to be the same as the graph above.  Use the button circled in red and then change the highlighted numbers
+          to match the scale of the picture from <xref ref="fig-ice-cores"/>.
+        </p>
+        <image source="models/desmos-settings.png" width="100%">
+          <description>circles and then highlights where to click in Desmos to change the winsdow zoom</description>
+        </image>
+      </sidebyside>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Copy and paste your graph below.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Give 4 points for a plot that roughly matches the plot above.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Which of the hypothetical scientists' models most accurately reflects the historical data?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          4 points for answering <q>exponential model,</q> and if they answer incorrectly, then give partial credit 
+          up to 2 points if they justify their answer, but no points for unjustified incorrect answers.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The statistician George Box once said, <q>All models are wrong, but some are useful.</q>  Name one thing wrong 
+          with the model you chose above, and then name one way that it is useful.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          3 points for pointing out something wrong with the model they chose in part b, 4 points for pointing out something 
+          useful.  Take off up to 2 points each for bad or insufficient reasoning.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <p>
+    The following graphic is from a paper by
+    <url href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/1999GL900070">Mann, Bradley, and Huges</url>.
+      These scientists used information from tree rings, corals, ice cores, and historical records to reconstruct temperatures going back to 1000 A.D.  
+      The gray shaded area represents uncertainty.
+  </p>
+
+  <figure width="100%" xml:id="fig-hockey-stick">
+    <image source="models/hockey-stick.png" width="100%">
+      <description>The famouse (or infamous) hockey-stick temperature graph from Mann, Bradley, and Huges that was included 
+        in the 2001 IPCC report.</description>
+    </image>
+  </figure>
+
+  <exercise>
+    <introduction>
+      <p>
+        Answer the following questions with complete sentences.  You may need to use your common sense and knowledge of the world.
+        Considering the grey shaded area of uncertainty:
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why do you suppose that there is more uncertainty with the graph of temperature compared to the graph of carbon dioxide 
+          levels? 
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Think about how they are measured.  The main source for temperature is tree ring data.  Is it as easy to tell the
+          temperature from tree rings as it is to measure <m>\chem{CO_2}</m> trapped in layers of a glacier?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          Answers will vary.  The main goal is for them to realize the difficulty of determining global temperatures before the 
+          thermometer was invented.  Take off points for bad or insufficient reasoning. 5 points.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Why is the uncertainty so much less for the temperatures closer to present day?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          When were thermometers invented?  Since when have we been recording temperatures all around the globe?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          Answers will vary.  The main goal is for them to realize the difficulty of determining global temperatures before the 
+          thermometer was invented.  Take off points for bad or insufficient reasoning. 5 points.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <p>
+    The figure above has been described as the <q>hockey stick graph</q>, and there has been controversy around it.  An article in 
+    <url href="https://www.theguardian.com/environment/2010/feb/09/hockey-stick-graph-ipcc-report" >The Guardian</url>
+    described some of the controversy:
+  </p>
+  <blockquote>
+    <p>
+      Reconstructing past temperatures from proxy data is fraught with danger. Tree ring records, the biggest component of the 
+      hockey stick record, sometimes reflect rain or drought rather than temperature. When I investigated the continuing row 
+      surrounding the graph in 2006, Gordon Jacoby of Columbia University in New York, said: "Mann has a series from central 
+      China that we believe is more a moisture signal than a temperature signal... He included it because he had a gap. That 
+      was a mistake and it made tree-ring people angry." A large data set he used from bristlecone pines in the American west 
+      has attracted similar concern.
+    </p>
+    <p>
+      Deciding which data sets to include in such reconstructions was, if not arbitrary, then open to dispute. And dispute 
+      there was. In the late 1990s, the researchers in heated debate about what they could and could not reliably show about past 
+      temperatures, and how to represent their findings.
+    </p>
+  </blockquote>
+
+  <exercise>
+    <task>
+      <statement>
+        <p>
+          If some researchers dispute which tree ring data sets Mann, Bradley, and Hughes used, then why does it matter?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  I'm looking for the students to show that they understand that choosing which data 
+          to consider can affect the average of the data. 5 points.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Because of the controversy the scientists were investigated by the EPA, Pennsylvania University (where Mann was a professor), the Inspector General of the Department of Commerce, and the Office of the Inspector   General of the National Science Foundation. All of these institutions cleared them of any wrongdoing.
+        </p>
+        <p>
+          Why does it matter that these institutions cleared the scientists of any wrongdoing?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          There are many correct ways to answer this question.  We are looking for you to show good quantitative reasoning.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          Answers will vary.  Grade on how much their answer makes sense, but be lenient or at least make helpful commments if you take
+          off points because we do not want students to believe they are losing points for their opinions or political beliefs.
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Read: the two page summary of this internal memo from the Exxon company from 1982
+        <url href="https://mathatgrace.github.io/qw/external/1982-Exxon-Memo-to-Management-About-CO2.pdf">1982-Exxon-Memo-to-Management-About-CO2.pdf</url>
+      </p>
+      <p>
+        Then compare their math model of temperature (Figure 3 on page 7) with the actual global average temperature given at the top of this site
+        <url href="https://www.ncdc.noaa.gov/sotc/global/202013">ncdc.noaa.gov/sotc/global/202013</url>
+      </p>
+      <p>
+        Describe how the predictions from the 1982 memo compare to what actually happened.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Remember good quantitative writing principles from our class.  Use numbers when you can.  Be specific.
+      </p>
+    </hint>
+    <solution>
+      <p>
+        Answers will vary.  Give 6 points for sufficient detail.  Give 4 points for avoiding overconfident statements that lack supporting evidence.  10 points total.
+      </p>
+    </solution>
+  </exercise>
+
+</exercises>
+
+<p>
+  This lab was created for Grace College by Dr. Ryan Johnson.  If you have questions or comments please contact the author at <email>johnsor@grace.edu</email>.  
+</p>
+</section>

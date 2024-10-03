@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-math-theology" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>God and Math</title>
+  <objectives xml:id="god-math-objectives">
+    <ul>
+      <li>Interact with different philosophical and theological views of mathematics</li>
+      <li>Discuss philosophical and theological view of mathematics with peers</li>
+    </ul>
+  </objectives>
+  <introduction>
+    <p>
+      This section is based on a lesson created by the Kuyers Institute.
+    </p>
+    <commentary component="instructor">
+      <p>In class, ask students to pair up and tell each other their math autobiographies.</p>
+      <p>Then ask for students to summarize (i.e. bullet points) their partner's math autobiography in writing.</p>
+      <p>Then ask the partners to check with each other that their summaries are okay.  They may need to fix something.</p>
+      <p>Ask the class what Christian virtues were important during this activity.</p>
+    </commentary>
+    <p>
+      For this set of activities you must work in a group of three or four people.  
+      Find your group now.
+    </p>
+    <p>
+      In the first part, we will consider what people from history have said about math, 
+      and we try to consider math from our own Christian perspective.
+    </p>
+  </introduction>
+
+  <activity>
+    <statement>
+      <p>
+        Why did God give people the capacity to do mathematics?  Before reading any 
+        further, write a couple of sentences giving your answer to this question.
+        If all you can think of is <q>I have no idea!</q>, take your best guess, 
+        even if it seems silly to you.
+      </p>
+    </statement>
+  </activity>
+
+  <p>
+    The following statements have been made during the past 4,000 years.  They suggest 
+    possible answers to the question of why we should study math.  Most are by famous and 
+    influential people.  As you read each one, fill in the first column of the table linked 
+    below, <q>What reason for studying math does this suggest?</q>  These quotes are rich 
+    and many good things could be said about them, so aim for one good point for each.  
+    You will work in groups to fill in the rest of each row; we've done one as an example. 
+    Note the column <q>Is this a good reason?</q> Some quotes provide reasons that are 
+    partly good and partly bad.
+  </p>
+
+  <example>
+    <introduction>
+      <blockquote>
+        <p><q>Whatever way [the geometer] may go, through exercise will he be lifted from the 
+          physical to the divine teachings, which are little accessible because of the difficulty 
+          to understand their meaning…and because of the circumstance that not everybody is able 
+          to have a conception of them, especially not the one who turns away from the art of 
+          demonstration.
+        </q></p>
+        <attribution><p>Muhammad ibn Ahmad al-Biruni (al bee-ROO-nee), Uzbekistan, c. 1030 A.D.</p>
+        <p><cite>Preface to the Book on Finding the Chords in the Circle</cite></p></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>Why did al-Biruni think math was important?</p>
+      </statement>
+      <solution>
+        <p>
+          Al-Biruni seems to be saying that understanding math can help us understand our creator.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with al-Biruni?  Why or why not?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          On one hand, al-Biruni was Muslim, so his idea of <q>creator</q> was different from ours.
+        </p>
+        <p>
+          But on the other hand, if we interpret his words from a Christian perspective, 
+          we can agree that God wants us to know him. Understanding the order and beauty of God's 
+          world can also help us understand God's order and beauty.
+        </p>
+      </solution>
+    </task>
+  </example>
+
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>Accurate reckoning. The entrance into the knowledge of all existing things and all obscure secrets.</q></p>
+        <attribution>Introduction to the Rhind Mathematical Papyrus, written in Egypt around 1850 B.C.</attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Rhind Mathematical Papyrus think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what the Rhind Mathematical Papyrus is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>You [God] have arranged all things by measure and number and weight.</q></p>
+        <p><q>...Wherever you turn, Wisdom speaks to you through the imprint it has stamped upon its works.... Look at the sky, the earth, and the sea, and at whatever in them shines from above or crawls, flies, or swims below. These have form because they have number.</q></p>
+        <attribution>Augustine, North Africa, c. 400 AD <cite>De Genesi Contra Manichaeos, I</cite> (first line is quoting from the Wisdom of Solomon)</attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Augustine think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Augustine is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction><blockquote>
+      <p><q>In all those transactions which relate to worldly… (or)  religious affairs, calculation is of use.  In the science of love, in the science of wealth, in music and in the drama, in the art of cooking, and similarly in medicine and in things like the knowledge of architecture; in prose, in poetics and poetry, in logic and grammar and such other things,...the science of computation is held in high esteem.  In relation to the movements  of the sun and other heavenly bodies, in connection with eclipses and conjunction of the planets...it is utilized.  The number, the diameter, and the  perimeter of islands, oceans, and mountains; the extensive dimensions of the rows of habitations and halls belonging to the inhabitants of the world...all of these are made out by means of computation.</q></p>
+      <attribution> Mahavira's (mah-hah-VEE-rah) Ganitasarasangraha, India, 9th century A.D.</attribution>
+    </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Mahavira think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Mahavira is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <blockquote style="border: 1px; border-style: solid; color: gray;">
+        <p><q>Now the science of mathematics is very important.  This book ...therefore will be of great benefit to the people of the world.  The knowledge for investigation, the development of intellectual power, the way of controlling the kingdom and of ruling even  the whole world, can be obtained by those who are able to make good use of this book.  Ought not those who have great desire to be learned take this with them and study it with great care?</q></p>
+        <attribution>Zhu Shijie (JOO shoor-jieh), China, 1303.  <cite>The introduction to Precious Mirror of the Four Elements</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Zhu Shijie think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Zhu Shijie is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>Since geometry is co-eternal with the divine mind before the birth of things, God himself served as his own model in creating the world (for what is there in God which is not God?), and he with his own image reached down to humanity. </q></p>
+        <attribution>Johannes Kepler, 1619.  <cite>The Harmony of the World</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Kepler think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Kepler is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+  
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>Philosophy is written in this grand book, the universe, which  stands continually open to our gaze.  But the book cannot be understood unless one first learns to comprehend the language and read the letters in which it is composed. It is written in the language of mathematics, and its characters triangles, circles, and other geometric figures with out which it is humanly impossible to understand a single  word of it; without these, one wanders about in a dark labyrinth.</q></p>
+        <attribution>Galileo Galilei, 1623. <cite>II Saggiatore</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Galileo think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Galileo is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+  
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>The long chains of simple and easy reasonings by means of which geometers are accustomed to reach the conclusions of their most difficult demonstrations led me to imagine that all things, to the knowledge of which man is competent, are mutually connected in the same way, and that there is nothing so far removed from us as to be beyond our reach, or so hidden that we cannot discover it, providing only that we abstain from accepting the false for the true, and always preserve in our thoughts the order necessary for the deduction of one truth from another.</q></p>
+        <attribution>Rene Descartes (day-KART), France, 1637. <cite>Discourse on Method</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Descartes think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Descartes is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+  
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>Mathematics, rightly viewed, possesses not only truth, but supreme beauty—a beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of paintings or music, yet sublimely pure and capable of a stern perfection such as only the greatest art can show.  The true spirit of delight, the exaltation, the sense of being more than man, which is the touchstone of the highest excellence, is to be found in mathematics as surely as in poetry.</q></p>
+        <attribution>Bertrand Russell, England, 1967.  <cite>The Study of Mathematics: Philosophical Essays</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Russell think math was important?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Russell is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+  
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>...the most urgent social issue affecting poor people and people of color is economic access.  In today's world, economic access and full citizenship depend crucially on math and science literacy.  I believe that the absence of math literacy in urban and rural communities throughout this country is an issue as urgent as the lack of registered Black voters in Mississippi was in 1961.</q></p>
+        <attribution>Robert P Moses, United States, 2001. <cite>Radical Equations: Math Literacy and Civil Rights</cite></attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Why did Robert Moses think math was important?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          By <q>economic access</q> he means the ability to get a good job.  Some students' answers in 
+          the past have been distracted by the abstract economy and failed to mention the real
+          people Robert Moses was referring to.
+        </p>
+      </hint>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do you agree with what Robert Moses is saying?  Why or why not?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>So God created man in his own image, in the image of God he created him; male and 
+          female he created them.  And God blessed them and God said to them, “Be fruitful and multiply, 
+          and fill the earth and subdue it, and have dominion over the fish of the sea and over the 
+          birds of the air and over every living thing that moves upon the earth</q></p>
+        <attribution>Genesis 1:27-28</attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What are the main ideas of this passage?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What might this statement have to do with how we think about math?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          If you are focussing on the word <q>multiply,</q> then you missed the point.
+        </p>
+      </hint>
+    </task>
+  </activity>
+  
+  <activity>
+    <introduction>
+      <poem>
+        <author>Proverbs 3:13-20</author>
+        <stanza>
+          <line>Blessed are those who find wisdom,</line>
+          <line indent="1">those who gain understanding,</line>
+          <line>for she is more profitable than silver</line>
+          <line indent="1">and yields better returns than gold.</line>
+          <line>She is more precious than rubies;</line>
+          <line indent="1">nothing you desire can compare with her.</line>
+          <line>Long life is in her right hand;</line>
+          <line indent="1">in her left hand are riches and honor.</line>
+          <line>Her ways are pleasant ways,</line>
+          <line indent="1">and all her paths are peace.</line>
+          <line>She is a tree of life to those who take hold of her;</line>
+          <line indent="1">those who hold her fast will be blessed.</line>
+        </stanza>
+        <stanza>
+          <line>By wisdom the Lord laid the earth's foundations,</line>
+          <line indent="1">by understanding he set the heavens in place;</line>
+          <line>by his knowledge the watery depths were divided,</line>
+          <line indent="1">and the clouds let drop the dew.</line>
+        </stanza>
+      </poem>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What are the main ideas of this passage?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What might this statement have to do with how we think about math?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          If you are focussing on the word <q>divided</q>, then you missed the point.
+        </p>
+      </hint>
+    </task>
+  </activity>
+
+  <activity>
+    <introduction>
+      <blockquote>
+        <p><q>He [Christ] is the image of the invisible God, the first-born of all creation; 
+          for in him all things were created, in heaven and on earth, visible and invisible, 
+          whether thrones or dominions or principalities or authorities—all things were created 
+          through him and for him.  He is before all things, and in him all things hold together.</q></p>
+        <attribution>Colossians 1:15-17</attribution>
+      </blockquote>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          What are the main ideas of this passage?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What might this statement have to do with how we think about math?
+        </p>
+      </statement>
+    </task>
+  </activity>
+
+</section>

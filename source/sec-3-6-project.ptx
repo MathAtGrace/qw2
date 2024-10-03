@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="finance-final-project" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Planning and Budget Project</title>
+  <introduction>
+    <p>
+      This project is based on material from <url href="https://serc.carleton.edu/person/2501.html">Dr. Corri Taylor of Wellesley College.</url>
+      Dr. Taylor attributes material from the <url href="http://www.nnn-us.org/">National Numeracy Network</url> as part of collaboration with the <url href="https://serc.carleton.edu/sp/index.html">SERC Pedagogic Service.</url>
+    </p>
+  </introduction>
+  <objectives>
+    <ul>
+      <li>Make explicit assumptions that guide calculations for a loosely defined problem.</li>
+      <li>Use spreadsheets to perform unit conversions, budget costs, etc.</li>
+      <li>Use geometry (including volumes, surface areas, etc.) to solve a real world planning project.</li>
+      <li>Apply personal knowledge and skills related to personal finance. Specifically, work with regular payments and with lump sum payments.</li>
+      <li>Incorporate tables and graphs in a paper, with descriptive references to these materials in the body of the paper.</li>
+    </ul>
+  </objectives>
+  <subsection>
+    <title>Details</title>
+    <p>
+      Grace College was founded in 1948.  You have been elected to serve as chair of the planning committee for the upcoming Centennial (100th anniversary celebration).  The celebration is to be held on a Friday night, early in September of 2048.  The planning committee has three main responsibilities:
+    </p>
+    <ol>
+      <li>
+        <p>
+          Plan and budget for the <b>elaborate dinner party</b> for the entire Grace College Community (students, faculty, and staff).  Appetizers, main courses (regular, vegetarian, and allergen-free), dessert, and beverages are to be provided.  Before the College approaches specific catering services, you need to pull together and neatly present relevant details about the expected college community’s population (e.g., percent with food allergies, percent who will drink water vs more expensive drinks, total population size, etc.) to estimate the amount and types of food and drink needed.  You also need to provide fairly detailed estimates of expenses for the food and drink desired and for the hourly service fees for the servers and any other relevant expenses.
+        </p>
+      </li>
+      <li>
+        <p>
+          Plan and budget for the <b>giant Centennial cake</b> to be displayed on Beta field for the first two weeks of the school year.  The decorative (but non-edible) cake is to measure 15 feet in diameter.  The President of the College did not specify a particular height for the giant cake; he merely asked that it be of reasonable “cake proportions.” The specifics are up to you. The hollow, decorative cake is to be made of a wooden frame covered with plywood and is to be filled with red, black, and white helium balloons.  (The balloons will be released at the end of the dinner party.)  You need to provide the specific design instructions for making this cake and need to budget for its construction, decoration, and filling (with the appropriate number of balloons).  Students will make the cake, so there’s no need to budget for labor, only for materials.
+        </p>
+      </li>
+      <li>
+        <p>
+          Arrange for the <b>funding</b> of the Centennial celebration.  The total costs of the dinner party, the giant decorative cake, and the fireworks display (which is to follow the release of the balloons from the cake and is estimated to cost $25,000) are to be covered by the Centennial Fund.  Plan A is to get a donor to deposit enough money this year so that with interest payments, the accumulated balance in 2048 will fully cover all the costs.  (Note: You are NOT to actually contact any potential donors!  Just calculate how much money would need to be invested now to pay for the party and related expenses.)  If Plan A doesn’t work, there’s Plan B: set aside donations each month starting next September so that costs will be covered.  You need to describe <b>each</b> of these plans and explain the calculations.
+        </p>
+      </li>
+    </ol>
+  </subsection>
+
+  <subsection>
+    <title>Assignment</title>
+    <p>
+      As chair of Grace College’s Centennial Planning Committee, you are to prepare a professional-looking report detailing the plans, budgets, and funding arrangements described above.  The report should be typed (Times New Roman, 12 point font, one inch margins is the standard report style) and appropriate charts and graphs and diagrams should accompany the report.  These charts, graphs, and diagrams should be labeled (e.g., Table 3: Cost Estimates for Beverages, Figure 2: 3-D Illustration of the Giant Cake) and should be referred to in the content of the report.
+    </p>
+    <p>
+      The report should begin with a one to three paragraph executive summary.  (Busy people like college administrators want to know the “conclusions” up front.)   After the executive summary, use appropriate section headings to separate the other key parts of the detailed report.  In each section of the report, be sure to spell out key assumptions, explain how calculations are made, etc.  Please type out your equations (see help videos for <url href="https://support.microsoft.com/en-us/office/write-an-equation-or-formula-4f799df7-4ca4-4670-afd3-6135768b01d0">Microsoft Word</url>, <url href="https://youtu.be/pOtICjEo8Gs">Mac Pages</url>, or come ask me if you need help)
+    </p>
+    <p>
+      You may work on your own or in teams of two or three students.  (Three is the absolute maximum – no exceptions.)  If you work in a team, you will all get the same grade on the project.  You need to handle all team issues (division of labor, work effort, etc.) on your own.  However, if would like to break up your group or vote out a member, I am willing to act as your arbitrator.  If you have questions about this project, you can see me during my office hours.
+    </p>
+    <p>
+      I’m open to other project ideas.  If you have an idea for a different project involving estimation, planning, and budgeting, check with me so I can make sure it is equivalent.
+    </p>
+    <p>
+      If you have questions, please see me.  Have fun with this project and good luck!
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Grading Break Down</title>
+    <ul>
+      <li>Executive Summary (15 points)</li>
+      <li>Dinner Party Details (25)</li>
+      <li>Plan for Decorative Cake: Structure, Balloons (20)</li>
+      <li>Costs of Cake (10)</li>
+      <li>Funding (10 points for each plan)</li>
+      <li>Overall Layout/Professionalism: Graphs, Writing, Clarity, Coordination (10)</li>
+    </ul>
+  </subsection>
+</section>

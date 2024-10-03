@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- <mathbook><book> -->
+
+<section xml:id="sec-models-exponential"   xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Exponential Growth and Decay</title>
+
+
+<introduction>
+  <sidebyside width="60%" margins="0% 40%">
+    <image source="models/computer-chip.png">
+      <description>computer chip, Andre Kudyusov/Getty Images</description>
+    </image>
+  </sidebyside>
+  <p>
+    We next consider another important family of functions, called <term>exponential functions</term>. These functions describe growth by a constant factor in equal time periods. Exponential functions model many familiar processes, including the growth of populations, compound interest, and radioactive decay.  Here is an example.
+  </p>
+  <sidebyside widths="45% 45%"><p>
+    In 1965, Gordon Moore, the cofounder of Intel, observed that the number of transistors on a computer chip had doubled every year since the integrated circuit was invented. Moore predicted that the pace would slow down a bit, but the number of transistors would continue to double every 2 years. More recently, data density has doubled approximately every 18 months, and this is the current definition of Moore's law. Most experts, including Moore himself, expected Moore's law to hold for at least another two decades.
+  </p>
+    <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+      <row>
+        <cell>Year</cell>
+        <cell>Name of circuit</cell>
+        <cell>Transistors</cell>
+      </row>
+      <row>
+        <cell><m>1971</m></cell>
+        <cell><m>4004</m></cell>
+        <cell><m>2300</m></cell>
+      </row>
+      <row>
+        <cell><m>1972</m></cell>
+        <cell><m>8008</m></cell>
+        <cell><m>3300</m></cell>
+      </row>
+      <row>
+        <cell><m>1974</m></cell>
+        <cell><m>8080</m></cell>
+        <cell><m>6000</m></cell>
+      </row>
+      <row>
+        <cell><m>1978</m></cell>
+        <cell><m>8086</m></cell>
+        <cell><m>29,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1979</m></cell>
+        <cell><m>8088</m></cell>
+        <cell><m>30,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1982</m></cell>
+        <cell><m>80286</m></cell>
+        <cell><m>134,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1985</m></cell>
+        <cell><m>80386</m></cell>
+        <cell><m>275,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1989</m></cell>
+        <cell><m>90486</m></cell>
+        <cell><m>1,200,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1993</m></cell>
+        <cell>Pentium</cell>
+        <cell><m>3,000,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1995</m></cell>
+        <cell>Pentium Pro</cell>
+        <cell><m>5,500,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1997</m></cell>
+        <cell>Pentium II</cell>
+        <cell><m>7,500,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1998</m></cell>
+        <cell>Pentium II Xeon</cell>
+        <cell><m>7,500,000</m></cell>
+      </row>
+      <row>
+        <cell><m>1999</m></cell>
+        <cell>Pentium III</cell>
+        <cell><m>9,500,000</m></cell>
+      </row>
+    </tabular>
+  </sidebyside>
+
+  <sidebyside widths="45% 50%">
+    <p>   
+      The data shown are modeled by the exponential function <me>N(t) = 2200(1.356)^t</me>, where <m>t</m> is the number of years since <m>1970</m>.
+    </p>
+    <image source="models/fig-Moores-Law"><description>growth</description></image>
+  </sidebyside>
+
+  <activity xml:id="investigation-population-growth-A">
+    <title>Population Growth Part A</title>
+    <statement>
+      <p>
+        In a laboratory experiment, researchers establish a colony of <m>100</m> bacteria and monitor its growth. The colony triples in population every day.
+      </p>
+      <p><sidebyside widths="50% 40%">
+        <p>
+          <ol marker="1">
+            <li><p>Fill in the table showing the population P(t) of bacteria t days later.</p></li>
+            <li><p>Plot the data points from the table and connect them with a smooth curve.</p></li>
+            <li><p>Write a function that gives the population of the colony at any time <m>t</m>, in days.
+            <em>Hint:</em> Express the values you calculated in part (1) using powers of <m>3</m>. Do you see a connection between the value of <m>t</m> and the exponent on <m>3</m>?</p></li>
+            <li><p>Graph your function from part (3) using a calculator. (Use the table to choose an appropriate domain and range.) The graph should resemble your hand-drawn graph from part (2).</p></li>
+            <li><p>Evaluate your function to find the number of bacteria present after <m>8</m> days. How many bacteria are present after <m>36</m> hours?</p></li>
+          </ol>
+        </p>
+        <stack>
+            <tabular halign="center" right="minor" left="minor" bottom="minor">
+                <col top="minor" />
+                <col top="minor" />
+                <col top="none" />
+                <col halign="left"/>                        
+                <row bottom="minor">
+                    <cell><m>t</m></cell>
+                    <cell><m>P(t)</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"></cell>
+                </row>
+                <row> 
+                    <cell><m>0</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(0)=100</m></cell>
+                </row>
+                <row> 
+                    <cell><m>1</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(1)=100\cdot 3=</m></cell>
+                </row>
+                <row> 
+                    <cell><m>2</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(2)=[100\cdot 3]\cdot 3=</m></cell>
+                </row>
+                <row> 
+                    <cell><m>3</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(3)=</m></cell>
+                </row>
+                <row> 
+                    <cell><m>4</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(4)=</m></cell>
+                </row>
+                <row> 
+                    <cell><m>5</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(5)=</m></cell>
+                </row>
+            </tabular><p></p>
+            <image source="models/fig-grid-for-bacteria-population">
+                <description>
+                    grid for graph of bacteria population
+                </description>
+            </image>
+        </stack>
+      </sidebyside></p>
+    </statement>
+  </activity>
+    
+
+    <activity xml:id="investigation-population-growth-B">
+        <title>Population Growth Part B</title>
+        <statement>
+            <p>Under ideal conditions, the number of rabbits in a certain area can double every <m>3</m> months. A rancher estimates that <m>60</m> rabbits live on his land.</p>
+            <sidebyside widths="50% 40%">
+                <p><ol marker="1">
+                        <li><p>Fill in the table showing the population <m>P(t)</m> of rabbits <m>t</m> months later.</p></li>
+                        <li><p>Plot the data points and connect them with a smooth curve.</p></li>
+                        <li><p>Write a function that gives the population of rabbits at any time <m>t</m>, in months.
+                                <em>Hint:</em> Express the values you calculated in part (1) using powers of <m>2</m>. Note that the population of rabbits is multiplied by <m>2</m> every <m>3</m> months. If you know the value of <m>t</m>, how do you find the corresponding exponent in <m>P(t)</m>?</p></li>
+                        <li><p>Graph your function from part (3) using a calculator. (Use the table to choose an appropriate domain and range.) The graph should resemble your hand-drawn graph from part (2).
+                        </p></li>
+                        <li><p>Evaluate your function to find the number of rabbits present after <m>2</m> years. How many rabbits are present after <m>8</m> months?
+                        </p></li>
+                </ol></p>
+                <stack>
+                    <tabular halign="center" right="minor" left="minor" bottom="minor">
+                        <col top="minor" />
+                        <col top="minor" />
+                        <col top="none" />
+                        <col halign="left"/>
+                                
+                        <row bottom="minor">
+                            <cell><m>t</m></cell>
+                            <cell><m>P(t)</m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"></cell>
+                        </row>
+                        <row> 
+                            <cell><m>0</m></cell>
+                            <cell><m>60</m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(0)=60</m></cell>
+                        </row>
+                        <row> 
+                            <cell><m>3</m></cell>
+                            <cell><m></m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(3)=60\cdot 2=</m></cell>
+                        </row>
+                        <row> 
+                            <cell><m>6</m></cell>
+                            <cell><m></m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(6)=[60\cdot 3]\cdot 2=</m></cell>
+                        </row>
+                        <row> 
+                            <cell><m>9</m></cell>
+                            <cell><m></m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(9)=</m></cell>
+                        </row>
+                        <row> 
+                            <cell><m>12</m></cell>
+                            <cell><m></m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(12)=</m></cell>
+                        </row>
+                        <row> 
+                            <cell><m>15</m></cell>
+                            <cell><m></m></cell>
+                            <cell right="none" bottom="none"></cell>
+                            <cell right="none" bottom="none"><m>P(15)=</m></cell>
+                        </row>
+                    </tabular><p></p>   
+                    <image source="models/fig-grid-for-rabbit-population">
+                        <description>
+                            grid for graph of rabbit population
+                        </description>
+                    </image>
+                </stack>
+            </sidebyside>
+        </statement>
+    </activity>
+</introduction>
+
+<subsection><title>Exponential Growth</title>
+<p>The functions in <xref ref="investigation-population-growth-A" text="type-global"/> describe <term>exponential growth</term>. During each time interval of a fixed length, the population is multiplied by a certain constant amount. The bacteria population grows by a factor of <m>3</m> every day.</p>
+<sidebyside width="60%"><image source="models/fig-table-bacteria-population"><description>table of bacteria population</description></image></sidebyside>
+
+<p>For this reason, we say that <m>3</m> is the <term>growth factor</term><idx>growth factor</idx> for the function. Functions that describe exponential growth can be expressed in a standard form.</p>
+
+<assemblage><title>Exponential Growth</title>
+<p><idx>initial value</idx><idx>growth factor</idx>
+    <me>P(t) = P_0 b^t</me>
+</p>
+<p><m>
+    \begin{aligned}[t]
+     \amp \text{where } \amp  \amp P_0 = P(0) \amp  \amp\text{is the } \textbf{ initial value},\\
+     \amp \text{and}  \amp  \amp b \amp  \amp \text{is the }\textbf{ growth factor}.
+    \end{aligned}
+    </m></p>
+</assemblage>
+
+<p>For the bacteria population, we have
+    <me>P(t) = 100 \cdot 3^t</me>
+    so <m>P_0 = 100</m> and <m>b = 3</m>.</p>
+
+<example xml:id="example-bacteria">
+    <statement>
+        <p>A colony of bacteria starts with <m>300</m> organisms and doubles every week.
+            <ol marker="a">
+                <li><p>Write a formula for the population of the bacteria colony after <m>t</m> weeks.</p></li>
+                <li><p>How many bacteria will there be after <m>8</m> weeks? After <m>5</m> days?</p></li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a">
+                <li><p>The initial value of the population was <m>P_0 = 300</m>, and its weekly growth factor is <m>b = 2</m>. Thus, a formula for the population after <m>t</m> weeks is
+                <me>P(t) = 300 \cdot 2^t</me></p></li>
+                <li><p>After <m>8</m> weeks, the population will be
+                <me>P(8) = 300 \cdot 2^8 = 76,800 \text{ bacteria}</me>
+                Because <m>5</m> days is <m>\frac{5}{7}</m> of a week, after <m>5</m> days the population will be
+                <me>P\left(\frac{5}{7}\right)= 300 \cdot 2^{5/7} = 492.2</me>
+                We cannot have a fraction of a bacterium, so we round to the nearest whole number, <m>492</m>.</p></li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<warning><p>In <xref ref="example-bacteria" text="type-global"/> part 1, note that
+    <me>300 \cdot 2^8 \ne 600^8</me>
+    According to the order of operations, we compute the power <m>2^8</m> first, then multiply by <m>300</m>.</p>
+</warning>
+
+<activity>
+    <statement>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        How can you tell from a table of values that a function describes exponential growth?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A population of 24 fruit flies triples every month. Write a formula for the population of fruit flies after <m>t</m> months.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        How many fruit flies will there be after 6 months?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        After 3 weeks?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Is <m>5 \cdot 4^t</m> equivalent to <m>20^t</m>?
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        During each equal time interval, the output increases by the same factor.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>P(t) = 24 \cdot 3^t</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        17,496
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        55 (estimated using 4 weeks = 1 month)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        No, powers are performed before products.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</activity>
+</subsection>
+
+<subsection><title>Growth Factors</title>
+
+<p>In <xref ref="investigation-population-growth-B" text="type-global"/>, the rabbit population grew by a factor of <m>2</m> every <m>3</m> months.</p>
+<sidebyside width="60%"><image source="models/fig-table-rabbit-population"><description>table of rabbit population</description></image></sidebyside>
+
+<p>The variable <m>t</m> is given in months, so to write the growth formula for this population, we divide the value of <m>t</m> by <m>3.</m> The value of <m>t/3</m> gives us the number of doubling periods.
+    <me>P(t) = 60 \cdot 2^{t/3}</me>
+Now we need some algebra to see the growth factor for the function. We use the third law of exponents to write <m>2^{t/3}</m> in another form. Recall that to raise a power to a power, we multiply exponents, so
+    <me>\left(2^{1/3}\right)^t = 2^{t (1/3)} = 2^{t/3}</me>
+The growth law for the rabbit population is thus
+    <me>P(t) = 60 \cdot \left(2^{1/3}\right)^t</me>
+The initial value of the function is <m>P_0 = 60</m>, and the growth factor is <m>b = 2^{1/3}</m>, or approximately <m>1.26</m>. The rabbit population grows by a factor of about <m>1.26</m> every month.</p>
+
+<p>If the units are the same, a population with a larger growth factor grows faster than one with a smaller growth factor.</p>   
+
+<example xml:id="example-compare-growth-factors">
+  <statement>
+    <p>
+      A lab technician compares the growth of <m>2</m> species of bacteria. She starts <m>2</m> colonies of <m>50</m> bacteria each. Species A doubles in population every <m>2</m> days, and species B triples every <m>3</m> days. Find the growth factor for each species.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      A function describing the growth of species A is
+      <me>P(t) = 50 \cdot 2^{t/2} = 50 \cdot \left(2^{1/2}\right)^t</me>
+      so the growth factor for species A is <m>2^{1/2}</m>, or approximately <m>1.41</m>. For species B,
+      <me>P(t) = 50 \cdot 3^{t/3} = 50 \cdot \left(3^{1/3}\right)^t</me>
+      so the growth factor for species B is <m>3^{1/3}</m>, or approximately <m>1.44</m>. Species B grows faster than species A.
+    </p>
+  </solution>
+</example>
+
+<activity>
+    <statement>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        A population triples every four years. What is its annual growth factor?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In 1999, analysts expected the number of Internet service providers to double in five years.  What was the annual growth factor for the number of Internet service providers?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If there were <m>5078</m> Internet service providers in April 1999, estimate the number of providers in April 2000 and in April 2001.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Write a formula for <m>I (t)</m>, the number of Internet service providers <m>t</m> years after 1999.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker = "a.">
+                <li>
+                    <p>
+                        <m>3^{\frac{1}{4}}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>2^{1/5}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>5833</m> and <m>6700</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>I (t) = 5078\cdot 2^{t/5}</m>
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</activity>
+</subsection>
+
+<subsection><title>Percent Increase</title>
+
+<p>Exponential growth occurs in other circumstances, too. For example, if the interest on a savings account is compounded annually, the amount of money in the account grows exponentially.</p>
+
+<p>Consider a principal of $100 invested at 5% interest compounded annually. At the end of <m>1</m> year, the amount is
+    <!--*****--><me>\begin{aligned}[t]
+    \text{Amount}  \amp = \text{Principal}  + \text{Interest} \\
+    A  \amp = P  + Pr\\
+     \amp = 100 + 100(0.05) = 105
+    \end{aligned}</me><!--*****-->
+It will be more useful to write the formula for the amount after <m>1</m> year in factored form.
+    <!--*****--><me>\begin{aligned}[t]
+    A  \amp = P + Pr  \amp  \amp \text{Factor out P.} \\
+     \amp = P(1 + r)
+    \end{aligned}</me><!--*****-->
+With this version of the formula, the calculation for the amount at the end of <m>1</m> year looks like this:
+    <!--*****--><me>\begin{aligned}[t]
+    A  \amp = P(1 + r ) \\
+     \amp = 100(1 + 0.05) \\
+     \amp = 100(1.05) = 105
+    \end{aligned}</me><!--*****--></p>
+
+<p>The amount, $105, becomes the new principal for the second year. To find the amount at the end of the second year, we apply the formula again, with <m>P = 105</m>.
+    <!--*****--><me>\begin{aligned}[t]
+    A  \amp = P(1 + r ) \\
+     \amp = 105(1 + 0.05) \\
+     \amp = 105(1.05) = 110.25
+    \end{aligned}</me><!--*****-->
+Observe that to find the amount at the end of each year, we multiply the principal by a factor of <m>1 + r = 1.05</m>. Thus, we can express the amount at the end of the second year as
+    <!--*****--><me>\begin{aligned}[t]
+    A  \amp = [100(1.05)](1.05) \\
+     \amp = 100(1.05)^2
+    \end{aligned}</me><!--*****-->
+and at the end of the third year as
+    <!--*****--><me>\begin{aligned}[t]
+    A  \amp = \left[100(1.05)^2\right](1.05) \\
+     \amp = 100(1.05)^3
+    \end{aligned}</me><!--*****--></p>
+<sidebyside widths="60% 35%" valigns="middle middle">
+
+<p>At the end of each year, we multiply the old balance by another factor of <m>1.05</m> to get the new amount. We organize our results into a table, where <m>A(t)</m> represents the amount of money in the account after <m>t</m> years. For this example, a formula for the amount after <m>t</m> years is
+    <me>A(t) = 100(1.05)^t</me></p>
+<tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+    <row bottom="minor">
+        <cell><m>t</m></cell>
+        <cell><m>P(1 + r)^t</m></cell>
+        <cell><m>A(t)</m></cell></row>
+    <row>
+        <cell><m>0</m></cell>
+        <cell><m>100</m></cell>
+        <cell><m>100</m></cell></row>
+    <row>
+        <cell><m>1</m></cell>
+        <cell><m>100(1.05)</m></cell>
+        <cell><m>105</m></cell></row>
+    <row>
+        <cell><m>2</m></cell>
+        <cell><m>100(1.05)^2</m></cell>
+        <cell><m>110.25</m></cell></row>
+    <row>
+        <cell><m>3</m></cell>
+        <cell><m>100(1.05)^3</m></cell>
+        <cell><m>115.76</m></cell></row>
+</tabular></sidebyside>
+
+<p>In general, for an initial investment of <m>P</m> dollars at an interest rate <m>r</m> compounded annually, we have the following formula for the amount accumulated after <m>t</m> years.</p>
+
+<assemblage><title>Compound Interest</title><idx>compound interest</idx>
+<p>The <term>amount <m>A(t)</m></term> accumulated (principal plus interest) in an account bearing interest compounded annually is
+    <me>A(t) = P(1 + r)^t</me>
+where 
+    <!--*****--><me>\begin{aligned}[t]
+     \amp P  \amp  \amp \text{is the principal invested,} \\
+     \amp r  \amp  \amp \text{is the interest rate,} \\
+     \amp t  \amp  \amp \text{is the time period, in years.}
+    \end{aligned}</me><!--*****--></p></assemblage>
+
+<p>This function describes exponential growth with an initial value of <m>P</m> and a growth factor of <m>b = 1 + r</m>.</p> 
+
+<note><p>The notion of <term>percent increase</term><idx>percent increase</idx> is often used to describe the growth factor for quantities that grow exponentially. Note carefully the distinction between the percent increase, <m>r</m>, and the growth factor, 
+<m>b=1+r</m>.</p></note>
+
+
+
+<example xml:id="example-inflation"><statement>
+<p>During a period of rapid inflation, prices rose by <m>12</m>% over <m>6</m> months. At the beginning of the inflationary period, a pound of butter cost $<m>2</m>.<ol marker="a">
+        <li><p>Make a table of values showing the rise in the cost of butter over the next <m>2</m> years.</p></li>
+        <li><p>Write a function that gives the price of a pound of butter <m>t</m> years after inflation began.</p></li>
+        <li><p>How much did a pound of butter cost after <m>3</m> years? After <m>15</m> months?</p></li>
+        <li><p>Graph the function you found in part (b).</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a">
+    <li><p>The percent increase in the price of butter is <m>12</m>% every <m>6</m> months. Therefore, the growth factor for the price of butter is <m>1 + 0.12 = 1.12</m> every half-year. If <m>P(t)</m> represents the price of butter after <m>t</m> years, then <m>P(0) = 2</m>, and every half-year we multiply the price by <m>1.12</m>, as shown in the table.</p>
+        <sidebyside  width="60%"><image source="models/fig-table-inflation"><description>table for inflation</description></image></sidebyside></li>
+    <li><p>Look closely at the second column of the table. After <m>t</m> years of inflation, the original price of $<m>2</m> has been multiplied by <m>2t</m> factors of <m>1.12</m>. Thus,
+        <me>P = 2(1.12)^{2t}</me></p></li>
+    <li><p>To find the price of butter at any time after inflation began, we evaluate the function at the appropriate value of <m>t</m>.
+        <!--*****--><me>\begin{aligned}[t]
+        P(3)  \amp = 2(1.12)^{2(3)} \\
+         \amp = 2(1.12)^6 \approx 3.95
+        \end{aligned}</me><!--*****-->
+    After <m>3</m> years, the price was $<m>3.95</m>. Fifteen months is <m>1.25</m> years, so we evaluate <m>P(1.25)</m>.
+        <!--*****--><me>\begin{aligned}[t]
+        P(1.25)  \amp = 2(1.12)^{2(1.25)} \\
+         \amp = 2(1.12)^{2.5} \approx 2.66 
+        \end{aligned}</me><!--*****-->
+    After <m>15</m> months, the price of butter was $<m>2.66</m>.</p></li>
+    <li><p>Evaluate the function
+            <me>P(t) = 2(1.12)^{2t}</me>
+        for several values, as shown in the table below. We plot the points and connect them with a smooth curve to obtain the graph shown in the figure at right below.</p>            
+            <sidebyside widths="45% 35%" margins="0% 15%" valigns="middle middle">
+            <tabular top="minor" halign="center" right="minor" left="minor" bottom="minor">
+                <row>
+                    <cell><m>t</m></cell>
+                    <cell><m>P(t)</m></cell></row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>2.00</m></cell></row>
+                <row>
+                    <cell><m>1</m></cell>
+                    <cell><m>2.51</m></cell></row>
+                <row>
+                    <cell><m>2</m></cell>
+                    <cell><m>3.15</m></cell></row>
+                <row>
+                    <cell><m>3</m></cell>
+                    <cell><m>3.95</m></cell></row>
+                <row>
+                    <cell><m>4</m></cell>
+                    <cell><m>4.95</m></cell></row>
+            </tabular>
+            <image source="models/fig-inflation"><description>graph of inflation</description></image></sidebyside>
+        </li></ol></p></solution></example>
+
+<p>In <xref ref="example-inflation" text="type-global"/>, we can rewrite the formula for <m>P(t)</m> as follows:
+    <!--*****--><me>\begin{aligned}[t]
+    P(t) \amp = 2(1.12)^{2t} \\
+     \amp = 2\left[(1.12)^2\right]^t = 2(1.2544)^t
+    \end{aligned}</me><!--*****-->
+Thus, the annual growth factor for the price of butter is <m>1.2544</m>, and the annual percent growth rate is <m>25.44</m>%.</p>
+
+<activity>
+    <statement>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        A population grows by 4.5% per year. What is its annual growth factor?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In 2018, the average annual cost of attending a public college was $<m>21{,}370</m>, and costs were climbing by 6.5% per year. Write a formula for <m>C(t)</m>, the cost of one year of college <m>t</m> years after 2018.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Compute values of <m>C(t)</m> when <m>t = 0, 5, 10, 15, 20, 25</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sketch a graph of <m>C(t)</m> that includes all of your answers above.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If the percent growth rate continues to remain steady, how much will a year of college cost in 2040?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Describe carefully the meanings of <m>b</m> and <m>r</m> in the formulas for exponential growth.
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <image source="models/tuition-empty.PNG" width="90%">
+            <description>Empty grid for graphing function above.</description>
+        </image>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        1.045
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>C(t) = 21370 \cdot 1.065^t</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <md>
+                            <mrow>C(0)  \amp = 21370 </mrow>
+                            <mrow>C(5)  \amp = 29278.8</mrow>
+                            <mrow>C(10)  \amp = 40114.4</mrow>
+                            <mrow>C(15)  \amp = 54960.2</mrow>
+                            <mrow>C(20)  \amp = 75300.3</mrow>
+                            <mrow>C(25)  \amp = 103168</mrow>
+                        </md>
+                    </p>
+                </li>
+                <li>
+                    <image source="models/tuition.PNG" width="90%">
+                        <description>Exponential Graph of <m>C(t)</m> that includes the points from the previous part.</description>
+                    </image>
+                </li>
+                <li>
+                    <p>
+                        $<m>85{,}407</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Answers will vary.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</activity>
+</subsection>
+
+<subsection><title>Exponential Decay</title>
+
+<p>In the preceding examples, exponential growth was modeled by increasing functions of the form
+    <me>P(t) = P_0 b^t</me>
+ where <m>b \gt 1</m>. The function <m>P(t) = P_0b^t</m> is a <em>decreasing</em> function if <m>0 \lt b \lt 1</m>. In this case, we say that the function describes <term>exponential decay</term>, and the constant <m>b</m> is called the <term>decay factor</term><idx>decay factor</idx>. In <xref ref="investigation-exponential-decay" text="type-global"/>, we consider two examples of exponential decay.</p>
+
+<activity xml:id="investigation-exponential-decay">
+    <title>Exponential Decay Part A</title>
+    <statement>
+        <p>
+            A small coal-mining town has been losing population since 1940, when 5000 people lived there. At each census thereafter (taken at 10-year intervals), the population declined to approximately 0.90 of its earlier figure.
+        </p>
+        <sidebyside>
+            <tabular halign="center" right="minor" left="minor" bottom="minor"><col top="minor" />
+                <col top="minor" /><col top="none"/><col halign="left"/>                      
+                <row bottom="minor">
+                    <cell><m>t</m></cell>
+                    <cell><m>P(t)</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"></cell></row>
+                <row> 
+                    <cell><m>0</m></cell>
+                    <cell><m>5000</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(0)=5000</m></cell></row>
+                <row> 
+                    <cell><m>10</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(10)=5000\cdot 0.90=</m></cell></row>
+                <row> 
+                    <cell><m>20</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(20)=[5000\cdot 0.90]\cdot 0.90=</m></cell></row>
+                <row> 
+                    <cell><m>30</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(3)=</m></cell></row>
+                <row> 
+                    <cell><m>40</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(4)=</m></cell></row>
+                <row> 
+                    <cell><m>50</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(5)=</m></cell></row>
+            </tabular>
+        </sidebyside>
+        <sidebyside widths="62% 32%" valigns="middle middle"><p>
+        <ol marker="a."> 
+            <li><p>Fill in the table showing the population <m>P(t)</m> of the town <m>t</m> years after 1940.</p></li>
+            <li><p>Plot the data points and connect them with a smooth curve. </p></li>
+            <li><p>Write a function that gives the population of the town at any time <m>t</m> in years after 1940.</p>
+                <p>Hint: Express the values you calculated in part (1) using powers of <m>0.90</m>. Do you see a connection between the value of <m>t</m> and the exponent on <m>0.90</m>?</p></li>
+            <li><p>Graph your function from part (c) using technology. (Use the table to choose an appropriate domain and range.) The graph should resemble your hand-drawn graph from part (b).</p></li>
+            <li><p>Evaluate your function to find the population of the town in 1995. What was the population in 2000?</p></li>
+        </ol></p>      
+        <image source="models/fig-grid-for-population-decay"><description>grid </description></image>
+        </sidebyside>
+    </statement>
+</activity>
+
+<activity xml:id="investigation-exponential-decay-B">
+    <title>Exponential Decay Part B</title>
+    <statement>
+        <p>A plastic window coating <m>1</m> millimeter thick decreases the light coming through a window by <m>25</m>%. This means that <m>75</m>% of the original amount of light comes through <m>1</m> millimeter of the coating. Each additional millimeter of coating reduces the light by another <m>25</m>%.</p>
+        <p><ol marker="a.">
+            <li><p>Fill in the table showing the percent of the light, <m>P(x)</m>, that shines through <m>x</m> millimeters of the window coating.</p></li>
+            <li><p>Plot the data points and connect them with a smooth curve. </p>
+            <sidebyside widths="48% 40%" valigns="middle middle">
+                <tabular halign="center" right="minor" left="minor" bottom="minor"><col top="minor" /><col top="minor" /><col top="none"/><col halign="left"/>           
+                <row bottom="minor">
+                    <cell><m>x</m></cell>
+                    <cell><m>P(x)</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"></cell></row>
+                <row> 
+                    <cell><m>0</m></cell>
+                    <cell><m>100</m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(0)=100</m></cell></row>
+                <row> 
+                    <cell><m>1</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(1)=100\cdot 0.75=</m></cell></row>
+                <row> 
+                    <cell><m>2</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(2)=[100\cdot 0.75]\cdot 0.75=</m></cell></row>
+                <row> 
+                    <cell><m>3</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(3)=</m></cell></row>
+                <row> 
+                    <cell><m>4</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(4)=</m></cell></row>
+                <row> 
+                    <cell><m>5</m></cell>
+                    <cell><m></m></cell>
+                    <cell right="none" bottom="none"></cell>
+                    <cell right="none" bottom="none"><m>P(5)=</m></cell></row>
+            </tabular>
+            <image source="models/fig-grid-for-light-decay"><description>grid</description></image></sidebyside></li>
+            <li><p>Write a function that gives the percent of the light that shines through <m>x</m> millimeters of the coating. </p>
+                <p>Hint: Express the values you calculated in part (a.) using powers of <m>0.75</m>. Do you see a connection between the value of <m>x</m> and the exponent on <m>0.75</m>?</p></li>
+            <li><p>Graph your function from part (c.) using technology. (Use your table of values to choose an appropriate domain and range.) The graph should resemble your hand-drawn graph from part (b.).</p></li>
+            <li>Evaluate your function to find the percent of the light that comes through 6 millimeters of plastic coating.  What percent comes through <m>\dfrac{1}{2}</m> millimeter?</li>
+        </ol></p>
+    </statement>
+</activity>
+</subsection>
+
+<subsection><title>Decay Factors</title>
+
+<p>Before <xref ref="example-inflation" text="type-global"/>, we noted that a percent increase of <m>r</m> (in decimal form) corresponds to a growth factor of <m>b = 1 + r</m>. A percent <em>decrease</em> of <m>r</m> corresponds to a <em>decay</em> factor of <m>b = 1 - r</m>. In Part B of <xref ref="investigation-exponential-decay" text="type-global"/>, each millimeter of plastic reduced the amount of light by <m>25</m>%, so <m>r = 0.25</m>, and the decay factor for the function <m>P(x)</m> is
+    <!--*****--><me>\begin{aligned}[t]
+    b  \amp = 1 - r \\
+     \amp = 1 - 0.25 = 0.75
+    \end{aligned}</me><!--*****-->
+</p>
+
+<warning><p>Note the difference in the two expressions for <m>b</m>:<ul>
+        <li>A percent increase of <m>r</m> produces a growth factor of <m>b=1+r</m>.</li>
+        <li>A percent decrease of <m>r</m> produces a decay factor of <m>b=1-r</m>.</li>
+    </ul></p></warning>
+
+<example xml:id="example-computing-prices"><statement><p>David Reed writes in Context magazine: "Computing prices have been falling exponentially—50% every 18 months—for the past 30 years and will probably stay on that curve for another couple of decades." An accounting firm invests $50,000 in new computer equipment.
+    <ol marker="a">
+        <li><p>Write a formula for the value of the equipment <m>t</m> years from now.</p></li>
+        <li><p>By what percent does the equipment depreciate each year?</p></li>
+        <li><p>What will the equipment be worth in <m>5</m> years?</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a">
+    <li><p>The initial value of the equipment is <m>V_0 = 50,000</m>. Every <m>18</m> months, the value of the equipment is multiplied by
+        <me>b = 1 - r = 1 - 0.50 = 0.50</me>
+    However, because <m>18</m> months is <m>1.5</m> years, we must divide <m>t</m> by <m>1.5</m> in our formula, giving us
+        <me>V(t) = 50,000(0.50)^{t/1.5}</me></p></li>
+    <li><p>After <m>1</m> year, we have
+        <me>V(1) = 50,000(0.50)^{1/1.5} = 50,000(0.63)</me>
+    The equipment is worth <m>63</m>% of its original value, so it has depreciated by <m>1 - 0.63</m>, or <m>37</m>%.</p></li>
+    <li><p>After <m>5</m> years,
+        <me>V(5) = 50,000(0.50)^{5/1.5} = 4960.628</me>
+    To the nearest dollar, the equipment is worth $4961.</p></li>
+</ol></p></solution></example>
+
+<activity>
+    <statement>
+        <p>
+            The number of butterflies visiting a nature station is declining by 18% per year. In 2012, 3600 butterflies visited the nature station.
+        </p>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        What is the decay factor in the annual butterfly count?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Write a formula for <m>B(t)</m>, the number of butterflies <m>t</m> years after 2012.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Compute values of <m>B(t)</m> for <m>t = 0,2,4,6,8,10</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Graph the function below.
+                    </p>
+                    <image source="models/fig-ex-7-1-4" width="90%">
+                        <description>Grid for this function.</description>
+                    </image>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a.">
+                <li>
+                    <p>
+                        0.82
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>B(t)=3600 \cdot 0.82^t</m>
+                    </p>
+                </li>
+                <li>
+                    <p>                        
+                        <md>
+                            <mrow>C(0)  \amp = 3600 </mrow>
+                            <mrow>C(2)  \amp = 2421</mrow>
+                            <mrow>C(4)  \amp = 1628</mrow>
+                            <mrow>C(6)  \amp = 1094</mrow>
+                            <mrow>C(8)  \amp = 736</mrow>
+                            <mrow>C(10)  \amp = 495</mrow>
+                        </md>
+                    </p>
+                </li>
+                <li>
+                    <image source="models/fig-ex-7-1-4ans" width="90%">
+                        <description>Grid for this function.</description>
+                    </image>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</activity>
+
+<p>We summarize our observations about exponential growth and decay functions as follows.</p>
+
+<assemblage><title>Exponential Growth and Decay</title><idx>exponential growth and decay</idx>
+<p>The function
+<me>
+    P(t) = P_0 b^t
+</me>
+models exponential growth and decay.</p>
+<p><ul>
+    <li><m>P_0 =P(0)</m> is the <term>initial value</term><idx>initial value</idx> of <m>P</m>;</li>
+    <li><m>b</m> is the <term>growth</term> <idx>growth factor</idx> or <term>decay factor</term><idx>decay factor</idx>.</li></ul>
+<ol>
+    <li><p>If <m>b \gt 1</m>, then <m>P(t)</m> is increasing, and <m>b = 1 + r</m>, where <m>r</m> represents percent increase.
+    </p></li>
+    <li><p>If <m>0 \lt b \lt 1</m>, then <m>P(t)</m> is decreasing, and <m>b = 1 - r</m>, where <m>r</m> represents percent decrease.</p></li>
+</ol></p></assemblage>
+
+</subsection>
+
+<subsection><title>Comparing Linear Growth and Exponential Growth</title>
+
+<p>It may be helpful to compare linear growth <idx>linear growth</idx> and <idx>exponential growth</idx> exponential growth. Consider the two functions
+    <me>L(t) = 5 + 2t ~\text{ and } ~ E(t) = 5 \cdot 2^t ~~~ (t \ge 0)</me>
+whose graphs are shown below.</p>
+<sidebyside widths="20% 25% 25%">
+<stack><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>t</m></cell>
+            <cell><m>L(t)</m></cell></row>
+        <row>
+            <cell><m>0</m></cell>
+            <cell><m>5</m></cell></row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell><m>7</m></cell></row>
+        <row>
+            <cell><m>2</m></cell>
+            <cell><m>9</m></cell></row>
+        <row>
+            <cell><m>3</m></cell>
+            <cell><m>11</m></cell></row>
+        <row>
+            <cell><m>4</m></cell>
+            <cell><m>13</m></cell></row>
+    </tabular><p>Slope <m>m=2</m></p></stack>
+
+<stack><tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+        <row bottom="minor">
+            <cell><m>t</m></cell>
+            <cell><m>E(t)</m></cell></row>
+        <row>
+            <cell><m>0</m></cell>
+            <cell><m>5</m></cell></row>
+        <row>
+            <cell><m>1</m></cell>
+            <cell><m>10</m></cell></row>
+        <row>
+            <cell><m>2</m></cell>
+            <cell><m>20</m></cell></row>
+        <row>
+            <cell><m>3</m></cell>
+            <cell><m>40</m></cell></row>
+        <row>
+            <cell><m>4</m></cell>
+            <cell><m>80</m></cell></row>
+    </tabular><p>Growth factor <m>b=2</m></p></stack>
+
+<image source="models/fig-linear-vs-exponential"><description>graph of linear and exponential</description></image>
+</sidebyside>
+
+<p><m>L</m> is a linear function with initial value <m>5</m> and slope <m>2</m>; <m>E</m> is an exponential function with initial value <m>5</m> and growth factor <m>2</m>. In a way, the growth factor of an exponential function is analogous to the slope of a linear function: Each measures how quickly the function is increasing (or decreasing).</p>
+    
+<p> However, for each unit increase in <m>t</m>, <m>2</m> units are <em>added</em> to the value of <m>L(t)</m>, whereas the value of <m>E(t)</m> is <em>multiplied</em> by <m>2</m>. An exponential function with growth factor <m>2</m> eventually grows much more rapidly than a linear function with slope <m>2</m>, as you can see by comparing the graphs in the figure or the function values in the tables.</p>
+
+<example xml:id="example-compare-linear-vs-exponential"><statement>
+<p>A solar energy company sold $<m>80,000</m> worth of solar collectors last year, its first year of operation. This year its sales rose to $<m>88,000</m>, an increase of <m>10</m>%. The marketing department must estimate its projected sales for the next <m>3</m> years.
+    <ol marker="a">
+        <li><p>If the marketing department predicts that sales will grow linearly, what should it expect the sales total to be next year? Graph the projected sales figures over the next <m>3</m> years, assuming that sales will grow linearly.</p></li>
+        <li><p>If the marketing department predicts that sales will grow exponentially, what should it expect the sales total to be next year? Graph the projected sales figures over the next <m>3</m> years, assuming that sales will grow exponentially.</p></li>
+    </ol></p></statement>
+
+<solution><p><ol marker="a">
+        <li><p>Let <m>L(t)</m> represent the company's total sales <m>t</m> years after starting business, where <m>t = 0</m> is the first year of operation. If sales grow linearly, then <m>L(t)</m> has the form <m>L(t) = b + mt.</m> Now <m>L(0) = 80,000</m>, so the intercept <m>b</m> is <m>80,000</m>. The slope <m>m</m> of the graph is
+            <me>
+                \frac{\Delta S}{\Delta t}= 
+                \frac{8000 \text{ dollars}}{1\text{ year}}= 
+                8000 \text{ dollars/year}
+            </me>
+        where <m>\Delta S = 8000</m> is the increase in sales during the first year. Thus, <m>L(t) = 80,000 + 8000t,</m> and sales grow by adding $<m>8000</m> each year. The expected sales total for the next year is
+            <me>
+                L(2) =  80,000 + 8000(2) = 96,000
+            </me></p></li>
+        <li><p>Let <m>E(t)</m> represent the company's sales assuming that sales will grow exponentially. Then <m>E(t)</m> has the form <m>E(t) = E_0b^t</m> . The percent increase in sales over the first year was <m>r = 0.10</m>, so the growth rate is
+            <me>b = 1 + r = 1.10</me>
+        The initial value, <m>E_0</m>, is <m>80,000</m>. Thus, <m>E(t) = 80,000(1.10)^t</m>, and sales grow by being multiplied each year by <m>1.10</m>. The expected sales total for the next year is
+            <me>
+                E(2) = 80,000(1.10)^2= 96,800
+            </me></p></li>
+    </ol></p>
+        <p>We evaluate each function at several points to obtain the graphs shown in the figure.</p>    
+        <sidebyside widths="45% 45%">
+            <tabular top="major" halign="center" right="minor" left="minor" bottom="minor">
+                <row bottom="minor">
+                    <cell><m>t</m></cell>
+                    <cell><m>L(t)</m></cell>
+                    <cell><m>E(t)</m></cell></row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>80,000</m></cell>
+                    <cell><m>80,000</m></cell></row>
+                <row>
+                    <cell><m>1</m></cell>
+                    <cell><m>88,000</m></cell>
+                    <cell><m>88,000</m></cell></row>
+                <row>
+                    <cell><m>2</m></cell>
+                    <cell><m>96,000</m></cell>
+                    <cell><m>96,800</m></cell></row>
+                <row>
+                    <cell><m>3</m></cell>
+                    <cell><m>104,000</m></cell>
+                    <cell><m>106,480</m></cell></row>
+                <row>
+                    <cell><m>4</m></cell>
+                    <cell><m>112,000</m></cell>
+                    <cell><m>117,128</m></cell></row>
+            </tabular>
+            <image source="models/fig-linear-vs-exponential2"><description>linear and exponential growth</description></image>
+        </sidebyside>
+    </solution>
+</example>
+
+<activity>
+    <statement>
+        <p>A new car begins to depreciate in value as soon as you drive it off the lot. Some models depreciate linearly, and others depreciate exponentially. Suppose you buy a new car for $20,000, and <m>1</m> year later its value has decreased to $17,000.</p>
+        <p>
+            <ol marker="a">
+                <li>
+                    <p>
+                        If the value decreased linearly, what was its annual rate of decrease?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        If the value decreased exponentially, what was its annual decay factor? What was its annual percent depreciation?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Calculate the value of your car when it is <m>5</m> years old under each assumption, linear or exponential depreciation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Explain the difference between constant slope and constant growth factor.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="a">
+                <li>
+                    <p>
+                        <m>\$3000</m> per year
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>0.85</m>; <m>15\%</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Linear: <m>\$5000</m>; Exponential: <m>\$8874</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Answers will vary.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</activity>
+</subsection>
+
+<!--<xi:include href="./summary-4-1.xml" />  --><!-- summary  -->
+<xi:include href="./sec-5-2-exponential-exercises.ptx" /> <!-- exercises  -->
+</section>

@@ -5,7 +5,7 @@
     <target 
       name="web" 
       format="html"
-      source="dmoi.ptx" 
+      source="main.ptx" 
       publication="publication.ptx"
       xsl="dmoi-html.xsl"
     >
@@ -16,7 +16,7 @@
       name="runestone" 
       format="html" 
       platform="runestone"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="runestone.ptx"
       xsl="dmoi-html.xsl"
     >
@@ -27,14 +27,14 @@
       name="print" 
       format="pdf"
       latex-engine="pdflatex"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="print.ptx"
       xsl="dmoi-latex.xsl" 
     />
     <target 
       name="latex"
       format="latex"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="publication.ptx"
       xsl="dmoi-latex.xsl"
     />
@@ -42,7 +42,7 @@
       name="crc-print" 
       format="pdf"
       latex-engine="pdflatex"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="crc.ptx"
       xsl="dmoi-latex-crc.xsl"
     />
@@ -57,17 +57,17 @@
     <target 
       name="crc-latex"
       format="latex"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="crc.ptx"
       xsl="dmoi-latex-crc.xsl"
     />
     <target 
       name="epub"
       format="epub"
-      source="dmoi.ptx"
+      source="main.ptx"
       publication="publication.ptx"
       xsl="dmoi-latex.xsl"
     />
-    <target name="ww-sets" format="webwork" source="dmoi.ptx" />
+    <target name="ww-sets" format="webwork" source="main.ptx" />
   </targets>
 </project>

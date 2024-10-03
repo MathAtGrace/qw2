@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="home-improvements" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Home Improvements</title>
+  <objectives>
+    <ul>
+      <li>Demonstrate operation sense by communicating in words and symbols the effects of operations on 
+        numbers. Apply the correct order of operations in evaluating expressions and formulas.</li>
+      <li>Demonstrate measurement sense by determining the sizes of objects and angles using measurements and 
+        estimation. Determine perimeter, area, surface area, and volume using appropriate units in both the 
+        U.S. and metric systems.</li>
+      <li>Evaluate formulas with multiple variables in a variety of contexts, including science, statistics, 
+        geometry, and financial math. Solve simple formulas for a specified variable.</li>
+      <li>Extract relevant information from complex scenarios. Obtain any necessary additional information 
+        from outside sources. Synthesize the information in order to solve problems and make decisions.</li>
+    </ul>
+  </objectives>
+  
+  <activity>
+    <title>Bob and Carol's House</title>
+    <statement>
+      <p>
+        Bob and Carol Mazursky have purchased a home and they want to make some improvements to it. In the 
+        following problems, you will calculate the costs of those improvements. You will use scale drawing 
+        of the house and lot to assist you.
+      </p>
+      <image source="floor-plan.jpg" width="100%"/>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              Refer to the scale on the diagram.  What is the width of each box?  What is the area of each box?
+            </p>
+          </li>
+          <li>
+            <p>
+              Estimate the total area of their lot.  Give you answer in acres.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              The boxes are 10 feet wide and 100 square feet each.
+            </p>
+          </li>
+          <li>
+            <p>
+              Their property is area is 235 ft <m>\times</m> 115 ft = 27025 square feet.  Thus, it is <m> \frac{27025}{43560} = 0.62</m>acres.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </activity>
+
+  <activity>
+    <title>Patio</title>
+    <statement>
+      <p>
+        There is a brick grill in the backyard. Bob and Carol are going to make a concrete patio in the shape 
+        of a semicircle next to the grill.  (The patio is the shaded area marked in the figure below)
+      </p>
+      <image source="floor-plan-patio.jpg" width="40%"/>
+      <p>
+        The patio's concrete slab needs to be at least 2 inches thick. They will use 40-pound bags of premixed 
+        concrete. Each 40-pound bag makes 0.30 cubic feet of concrete and costs $6.50.
+      </p>
+      <p>
+        How much will the materials cost, including the 9.4% tax? Assume you can only buy whole bags of concrete?
+      </p>
+    </statement>
+      <solution>
+        <p>The radius of the patio semicircle is 3 feet. The thickness of the patio in feet is <m>\frac{2}{12}</m>. The volume will be</p>
+        <me>V = \frac{1}{2}\pi \cdot 3^2 \cdot \frac{2}{12} \approx 2.36 \text{ cubic feet.}</me>
+        <p>Each bag makes 0.30 cubic feet, so you will need  <m>\dfrac{2.36}{0.30} = 7.87</m> bags. Since we can't buy a partial bag, you will need to buy 8 bags.</p>
+        <p>8 bags at $6.50 each is $52. After tax, the final cost will be $52+0.094(52) = $56.89</p>
+      </solution>
+  </activity>
+
+  <activity>
+    <title>Fertilizer</title>
+    <statement>
+      <image source="floor-plan.jpg" width="100%"/>
+      <p>
+        The Mazurskys are expecting their first child in several months and want to get the backyard fertilized and 
+        reseeded before little Ted or Alice comes along. They found an ad for Gerry's Green Team lawn service (see below).
+      </p>
+      <table xml:id="table-home-improvement-1">
+        <title>Gary's Green Team</title>
+        <tabular>
+          <row>
+            <cell>
+              Itemized Costs: <nbsp /> <nbsp />
+            </cell>
+            <cell>
+              Grass seed <nbsp /><nbsp />
+            </cell>
+            <cell>
+              $3.50 per pound. <nbsp />1 pound covers 250 sq. ft.
+            </cell>
+            <cell>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              <nbsp />
+            </cell>
+            <cell>
+              Fertilizer
+            </cell>
+            <cell>
+              $1.25 per pound. <nbsp />1 pound covers 350 sq. ft.
+            </cell>
+            <cell>
+            </cell>
+          </row>
+          <row>
+            <cell>
+              <nbsp />
+            </cell>
+            <cell>
+              Labor
+            </cell>
+            <cell>
+              4 hours @ $45 per hour
+            </cell>
+            <cell>
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <p>
+        Gerry came to their house and said that the job would take about four hours and would cost about $600.
+      </p>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              Using the area of the backyard, determine how much the job should cost, based on the advertised 
+              prices. Assume you have to buy full pounds of grass seed and fertilizer.
+            </p>
+          </li>
+          <li>
+            <p>
+              Is Gerry's estimate of $600 consistent with the prices in his advertisement?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              The backyard is 130*115 + 10*55 = 15500 square feet.
+              <me>15500\text{ sq ft} \cdot \frac{1\text{ pound}}{250\text{ sq ft}} = 62 \text{ pounds of grass seed}</me>
+              62 pounds of grass seed at $3.50 each is $217.
+              <me>15500\text{ sq ft} \cdot \frac{1\text{ pound}}{350\text{ sq ft}} = 44.286 \xrightarrow{\text{round up}} 45 \text{ pounds of fertilizer}</me>
+              45 pounds of fertilizer at $1.25 each is $56.25.  For labor, 4 hours at $45 per hour = $180.  Total cost is $217+$56.25+$180=$453.25.
+            </p>
+          </li>
+          <li>
+            <p>
+              No, Gary's estimate is more than $140 too high.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>  
+  </activity>
+
+  <activity>
+    <title>A Fence</title>
+    <statement>
+      <p>
+        The Mazurskys want to build a chain link fence around the backyard (the fence is already shown in the 
+        diagram above). The fence would have two gates on either side of the house. They decide to do the work 
+        themselves. They need an inline post at least every 8 feet along the fence, a corner post at each 
+        corner, and a corner post on each side of the gates. The cost for the materials is shown below. The 
+        total cost will include 9.4% sales tax.
+      </p>
+      <image source="floor-plan.jpg" width="80%"/>
+      <table xml:id="table-home-improvement-2">
+        <tabular>
+          <row header="yes">
+            <cell>
+              Chain-link fence
+            </cell>
+            <cell>
+              48-inch wide gate
+            </cell>
+            <cell>
+              Inline posts
+            </cell>
+            <cell>
+              Corner/gate posts
+            </cell>
+          </row>
+          <row>
+            <cell>
+              $7 per linear foot
+            </cell>
+            <cell>
+              $75 each
+            </cell>
+            <cell>
+              $12.50 each
+            </cell>
+            <cell>
+              $20 each
+            </cell>
+          </row>
+          <row>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+          </row>
+          <row>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+            <cell>
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              Are the gates in the diagram drawn to scale?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many corner/gate posts and how many inline posts do they need?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many feet of fence will they need?
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the cost of the materials required to fence in the backyard, after tax.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="a">
+          <li>
+            <p>
+              No, in the diagram they are too big.
+            </p>
+          </li>
+          <li>
+            <p>
+              There are four corners, plus 2 posts on each side of the two gates, for a total of 8 corner posts.
+            </p>
+            <p>
+              The top is 140 feet, and 140/8 = 17.5, so 17 inline posts will be needed. The right-hand side is 
+              115 feet, and 115/8 = 14.375, so 14 posts will be needed. The bottom side is 130 feet, and 
+              130/8 = 16.25, so 16 posts will be needed. The left side above the house is 25-4 = 21 feet, and 
+              21/8 = 2.625, so 2 posts will be needed. The left side below the house is 40-4=36 feet, and 
+              36/8 = 4.5, so 4 posts are needed. Altogether, 17+14+16+2+4 = 53 inline posts will be needed.
+            </p>
+          </li>
+          <li>
+            <p>
+              The top requires 140 feet of fence, the right side 115 feet, the bottom 130 feet. The left side 
+              above the house will need 25-4 = 21 feet, and the left side below the house 40-4 = 36 feet. 
+              Altogether, 140+115+130+21+36 = 442 feet of fencing.
+            </p>
+          </li>
+          <li>
+            <p>8 posts at $20 each = $160.</p>
+            <p>53 posts at $12.50 each is $662.50</p>
+            <p> 442 feet at $7 per foot = $3094</p>
+            <p>2 gates at $75 each = $150. The total cost is $160 + $662.50 + $3094 + $150 = $4066.50 before tax, and $4066.50 + 0.094(4066.50) = 4448.75 after tax</p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </activity>
+</section>

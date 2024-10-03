@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="democracy">
+
+<title>Democracy</title>
+
+
+<xi:include href="sec-6-1-apportionment.ptx" />
+<xi:include href="sec-6-2-voting-methods.ptx" />
+<xi:include href="sec-6-3-popular-vote.ptx" />
+<xi:include href="sec-6-4-gerrymandering.ptx" />
+<!--
+<xi:include href="sec-6-5-review.ptx" />
+<xi:include href="sec-6-6-budget-deficit-debt.ptx" />
+-->
+
+</chapter>

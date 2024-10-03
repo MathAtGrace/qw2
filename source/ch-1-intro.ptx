@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch-introduction" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction</title>
+  <introduction>
+    <p>This chapter will focus on learning strategies and how our Christian theology relates to mathematics.</p>
+  </introduction>
+
+  <xi:include href="./sec-1-1-time.ptx"/>
+  <xi:include href="./sec-1-2-mindset.ptx"/>
+  <xi:include href="./sec-1-3-math-theology.ptx"/>
+</chapter>

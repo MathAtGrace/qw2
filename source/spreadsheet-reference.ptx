@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appendix xml:id="app-spreadsheet-reference"
+	  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>
+    Spreadsheet Reference
+  </title>
+
+  <objectives>
+    <introduction>
+      <p>
+        Students will be able to:
+      </p>
+    </introduction>
+      <ul>
+        <li>
+          <p>
+            Perform basic calculations on a spreadsheet
+          </p>
+        </li>
+        <li>
+          <p>
+            Use cell references and the fill-down feature
+          </p>
+        </li>
+      </ul>
+  </objectives>
+
+  <introduction>
+    <p>
+      A spreadsheet such as Google Sheets or Microsoft Excel, is a very useful tool for doing calculations and making complex tables. You can type in your own custom calculations or use the built-in formulas.
+    </p>
+    <p>
+      The rectangles within a spreadsheet are called <em>cells</em>, and they can be referenced by their column letter and row number. The first cell in the upper left side highlighted below is A1. If we wanted to talk about the third column and the fifth row, that cell would be C5.
+    </p>
+      <sidebyside width="40%">
+      <image source="financial_math/2_1/intro1.png">
+      <description>A blank spreadsheet with the cell A1 highlighted</description>
+      </image>
+      </sidebyside>
+    <p>
+      A spreadsheet file can contain many sheets. Look along the bottom to see if there is more than one sheet and make sure you are on the right sheet.
+    </p>
+      <sidebyside width="40%">
+      <image source="financial_math/2_1/intro2.png">
+      <description>A blank spreadsheet showing the sheet tabs at the bottom of the screen.</description>
+      </image>
+      </sidebyside>
+  </introduction>
+  
+  <subsection>
+    <title>Basic Calculations</title>
+  
+    <p>
+      To do a calculation on a spreadsheet, type an equal sign before the operation. This lets the program know that you want it to calculate the result. When you press enter, you will see the result.
+    </p>
+    <example>
+      <sidebyside valign="middle" widths="55% 25%">
+        <p>
+          <ol>
+            <li>
+              <p>
+                To add 3 + 4, enter <c>=3+4</c>
+              </p>
+            </li>
+            <li>
+              <p>
+                To subtract 100-76, enter <c>=100-76</c>
+              </p>
+            </li>
+            <li>
+              <p>
+                To multiply 4 times 18, enter <c>=4*18</c>
+              </p>
+            </li>
+            <li>
+              <p>
+                To divide 0.05 by 12, enter <c>=0.05/12</c>
+              </p>
+            </li>
+            <li>
+              <p>
+                To calculate <m>5^{25}</m>, enter <c>=5^25</c>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image source="financial_math/2_1/basic_calc.png">
+        <description>A spreadsheet showing the examples entered in the spreadsheet. cell A1 has =3+4, cell A2 has =100-76, cell A3 has =4*18, cell A4 has =0.05/12 and cell A5 has =5^25.</description>
+        </image>
+      </sidebyside>
+    </example>
+    <p>
+      Note that the asterisk (*) is used for multiplication. Spreadsheets don't recognize parentheses as indicators of multiplication like calculators do, so even if you have parentheses for the order of operations, the asterisk is also needed. 
+    </p>
+    <p>
+      You can make more complicated mathematical expressions using parentheses and other operations. To <em>edit a cell</em> click on the editing box at the top, or double click on the cell to edit it directly. 
+    </p>
+    <example>
+      <statement>
+      <p>
+        Your bill at a restaurant is $35.75 and you want to leave an 18% tip. How much would you add to the bill? 
+      </p>
+      </statement>
+      <solution>
+      <p>
+        To work with a percentage, we need to convert it into a decimal first, and then multiply it by the base amount.
+      </p>
+      <p>
+        In a spreadsheet we would type <cd>=0.18*35.75</cd>
+      </p>
+      <p>
+        and get a result of $6.44, <em>rounded to the nearest cent</em>. You would leave a tip of $6.44.
+      </p>
+    </solution>
+    </example> 
+  </subsection>
+  
+  <subsection>
+    <title>Cell References</title>
+      <p>
+        One of the powerful things about spreadsheets is using a cell reference, such as C5 in a calculation. When you use a <em>cell reference</em>, the values will automatically update if any of the referenced values change.
+      </p>
+      <p>
+        Let's make a spreadsheet for the percentage tip example above. We calculated an 18% tip on a bill of $35.75. We might want to tip 18% in general, but our bill will change values. We labeled the first column Bill Amount and the second column Tip. The amount of $35.75 is entered in cell A2. Then when we write our formula in B2, we want to calculate 18% of A2. That way if the number in A2 changes, our tip will automatically update.
+      </p>
+  
+    <sidebyside width="50%">
+      <image source="financial_math/2_1/cell_ref1.png">
+      <description>A spreadsheet showing a formula with a cell reference, =0.18*A2</description>
+      </image>
+    </sidebyside>
+    <p>
+      The formula <cd>=0.18*A2</cd> is entered in B2 which gives a result of $6.44 when you hit enter.
+    </p>
+  
+    <sidebyside width="50%">
+      <image source="financial_math/2_1/cell_ref2.png">
+      <description>The same spreadsheet showing when the input in A1 is changed to $45, the answer to the formula changes to $8.10.</description>
+      </image>
+    </sidebyside>
+    <p>
+      When the bill amount is changed, the tip is recalculated.
+    </p>
+  
+  </subsection>
+  
+  <subsection>
+    <title>Cell Formatting</title>
+    <p>
+      We can also format cells A1 and B1 to show dollar signs by clicking on the dollar sign in the number formatting menu.
+    </p>
+  </subsection>
+  
+  <subsection>
+    <title>Fill-Down Feature</title>
+    <p>
+      The <em>fill-down feature</em> is very useful for making tables. This allows us to copy values or formulas to save time. Let's make a tipping reference table with values from $10, to$100, in increments of $10. First, we will enter two values in column A to establish the pattern. Then select those two cells and you will see a small square in the lower right corner. Drag that square down until you get to $100.
+    </p>
+    <sidebyside width="45%">
+      <image source="financial_math/2_1/drag_down1.png">
+      <description>A spreadsheet showing the fill-down feature; cells A2 and  A3 are highligted for the pattern and there is a down arrow by the small square to drag down.</description>
+      </image>
+    </sidebyside>
+    <sidebyside width="45%">
+      <image source="financial_math/2_1/drag_down2.png">
+      <description>This spreadsheet shows the completed bill amount column from $10 to $100 and shows the fill-down feature for the formula; cell B2 has the equation =0.18*A2 and there is a down arrow by the small square to drag down.</description>
+      </image>
+    </sidebyside>
+  
+    <p>
+      Next, we can drag our formula down and the cell reference will change to each row number automatically.
+    </p>
+    <p>
+      Here are the formulas with the row numbers updated:
+    </p>
+    <sidebyside width="40%">
+      <image source="financial_math/2_1/drag_down3.png">
+      <description>This spreadsheet shows the result of filling down the formula. The cell reference changes for each new row.</description>
+      </image>
+    </sidebyside>
+    <p>
+      Here is our completed table with the calculations:
+    </p>
+    <sidebyside width="40%">
+      <image source="financial_math/2_1/drag_down4.png">
+      <description>This spreadsheet shows the calculated values for tips from $10-100.</description>
+      </image>
+    </sidebyside>
+  </subsection>
+  
+  <subsection>
+    <title>Formulas</title>
+    <p>
+      Spreadsheets have many useful built-in formulas. We will introduce some of the financial formulas in this chapter. Here are some of the formulas we will use:
+      <ol>
+        <li>
+          <p>
+            <c>=FV</c> to calculate the future values of an investment
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>=PV</c> to calculate the deposit needed for a desired future balance
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>=PMT</c> to calculate a loan or savings plan payment
+          </p>
+        </li>
+        <li>
+          <p>
+            <c>=EFFECT</c> to calculate the effective rate of an account and compare accounts
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+</appendix>
+
+  
