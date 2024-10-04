@@ -4,8 +4,8 @@
   <xi:include href="bookinfo.ptx" />
   
   <book xml:id="qw">
-    <title> Quantitative Wisdom </title>
-    <subtitle> Numerical literacy from the perspective of Biblical wisdom </subtitle>
+    <title> Quantitative Wisdom 2nd Edition </title>
+    <subtitle> Numerical literacy and quantitative reasoning from a wisdom perspective, seeking to engage the whole person. </subtitle>
 
     <xi:include href="./frontmatter.ptx" />
 
