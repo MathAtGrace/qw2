@@ -87,9 +87,9 @@
         <css colors="red_blue" style="oscarlevin"/>
         <!-- Magic IDs identify HTML pages to analytics services   -->
         <!-- Presence implies relevant Javascript will be added    -->
-        <analytics google-gst="UA-66485406-1"/>
+        <!--<analytics google-gst="UA-66485406-1"/>-->
         <tableofcontents focused="yes" preexpanded-levels="2"/>
         <search variant="default"/>
-        <feedback href="mailto:oscar.levin@unco.edu" />
+        <feedback href="mailto:johnsor@grace.edu" />
     </html>
 </publication>
