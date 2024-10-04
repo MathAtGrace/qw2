@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " 1st Edition     copyright  "
+  "body": " 2nd Edition     copyright  "
 },
 {
   "id": "time",
@@ -64,265 +64,40 @@ var ptx_lunr_docs = [
   "body": " Ten Steps to Developing a Master Calendar   One very important aspect of effectively managing your time is to set specific short term and long-term goals. You need to know what your goals are on a daily, weekly, and quarterly basis if you are going to be able to prioritize how you spend your time. It is important that you constantly review your goals, evaluate whether or not you are meeting them, and revise them accordingly. If you don't do this, and if you don't do it with honesty to yourself, you will find it more difficult to make good use of your time and attain your educational goals.  Read all of these directions before you make up your weekly schedule. Then make your schedule on paper or in a spreadsheet    Record Class Times in appropriate day\/hour blocks.  Record Work hours, Clubs and Sports hours, and Commute times.  Record all Regular Personal Activities such as meals, family duties, volunteer work, etc.  Record any Special Activities you need to do or want to do on a regular basis.  Schedule a Preview Time (5-30 minutes) immediately before each class whenever possible. During the preview time, review all or some of your notes in preparation for the upcoming class. Finish any reading assignments, if necessary. If you have two or three classes in a row, preview from last to first class. Use a P to indicate Preview. For example: P Math might mean you preview for your math class; P Math\/English means you are previewing two back-to-back classes.  Schedule a Review Time immediately after your classes (5-30 minutes) whenever possible. Use this time to edit and rework your notes, especially if you're using the 3-column method. For the schedule described above, you might write R: Math. You could also look over any assignments that were given and begin to plan when and how you will do them. Sketch those new assignments into your calendar if necessary.  Schedule your Intensive Study Time for each class. Try to schedule some study time each day for each class. Learning is more effectively and efficiently accomplished in shorter, regular sessions than in longer irregular sessions. When you schedule study time, be task-oriented rather than time-oriented. In other words, focused on what needs to get done for your classes (homework, reading, labs, WAMAP, etc.) Think in terms of \"blocks of time\" and what specifically needs to be accomplished, not hours of study time. Try to study the same subjects at the same time each study day. Although this seems to be a mechanical way of scheduling, you will find that such a routine can help you develop a pattern for efficient and effective learning.  Schedule a Weekly Review (WR) for each course at the end of the week. Look at all of the past week's notes and assignments to see what you have been learning in the past week. Review your goals as well. You can also look ahead to plan the next week and determine how much to adjust your schedule to get it all done.  Keep open some time for regular Physical Activity. Research shows regular exercise gives you a general sense of well-being, and can reduce tension and help you accomplish a tough class, study, and work schedule. Also, label some empty blocks of time as Open for academic or personal needs.  Schedule some time during Friday, Saturday, and Sunday for Free Time. Play, relax, or do whatever you want to do. This is your reward for sticking to your schedule. In addition, you'll enjoy your free time more.     "
 },
 {
-  "id": "sec-mindset",
+  "id": "mindset",
   "level": "1",
-  "url": "sec-mindset.html",
+  "url": "mindset.html",
   "type": "Section",
   "number": "0.2",
-  "title": "God and Math",
-  "body": " God and Math    Interact with different philosophical and theological views of mathematics  Discuss philosophical and theological view of mathematics with peers    This section is based on a lesson created by the Kuyers Institute. For this worksheet you must work in a group of three or four people. Find your group now.  In the first part of this worksheet, we will consider what people from history have said about math, and we try to consider math from our own Christian perspective.    God and Math Worksheet   Warm-up. Why did God give people the capacity to do mathematics? Before reading any further, write a couple of sentences giving your answer to this question. If all you can think of is I have no idea! , take your best guess, even if it seems silly to you.  The following statements have been made during the past 4,000 years. They suggest possible answers to the question of why we should study math. Most are by famous and influential people. As you read each one, fill in the first column of the table linked below, What reason for studying math does this suggest? These quotes are rich and many good things could be said about them, so aim for one good point for each. You will work in groups to fill in the rest of each row; we’ve done one as an example. Note the column Is this a good reason? Some quotes provide reasons that are partly good and partly bad.   Whatever way [the geometer] may go, through exercise will he be lifted from the physical to the divine teachings, which are little accessible because of the difficulty to understand their meaning…and because of the circumstance that not everybody is able to have a conception of them, especially not the one who turns away from the art of demonstration.  Muhammad ibn Ahmad al-Biruni (al bee-ROO-nee), Uzbekistan, c. 1030 A.D. Preface to the Book on Finding the Chords in the Circle    Why did al-Biruni think math was important?  Example Answer: Al-Biruni seems to be saying that understanding math can help us understand our creator.    Do you agree with al-Biruni? Why or why not?  Example Answer: Even though al-Biruni was Muslim, if we interpret his words from a Christian perspective, we can agree that God wants us to know him. Understanding the order and beauty of God’s world can also help us understand God’s order and beauty.    Accurate reckoning. The entrance into the knowledge of all existing things and all obscure secrets.  Introduction to the Rhind Mathematical Papyrus, written in Egypt around 1850 B.C.   Why did Rhind Mathematical Papyrus think math was important?  Do you agree with what the Rhind Mathematical Papyrus is saying? Why or why not?     You [God] have arranged all things by measure and number and weight.  ...Wherever you turn, Wisdom speaks to you through the imprint it has stamped upon its works.... Look at the sky, the earth, and the sea, and at whatever in them shines from above or crawls, flies, or swims below. These have form because they have number.  Augustine, North Africa, c. 400 AD De Genesi Contra Manichaeos, I (first line is quoting from the Wisdom of Solomon)   Why did Augustine think math was important?  Do you agree with what Augustine is saying? Why or why not?   In all those transactions which relate to worldly… (or) religious affairs, calculation is of use. In the science of love, in the science of wealth, in music and in the drama, in the art of cooking, and similarly in medicine and in things like the knowledge of architecture; in prose, in poetics and poetry, in logic and grammar and such other things,...the science of computation is held in high esteem. In relation to the movements of the sun and other heavenly bodies, in connection with eclipses and conjunction of the planets...it is utilized. The number, the diameter, and the perimeter of islands, oceans, and mountains; the extensive dimensions of the rows of habitations and halls belonging to the inhabitants of the world...all of these are made out by means of computation.  Mahavira’s (mah-hah-VEE-rah) Ganitasarasangraha, India, 9th century A.D.   Why did Mahavira think math was important?  Do you agree with what Mahavira is saying? Why or why not?   Now the science of mathematics is very important. This book ...therefore will be of great benefit to the people of the world. The knowledge for investigation, the development of intellectual power, the way of controlling the kingdom and of ruling even the whole world, can be obtained by those who are able to make good use of this book. Ought not those who have great desire to be learned take this with them and study it with great care?  Zhu Shijie (JOO shoor-jieh), China, 1303. The introduction to Precious Mirror of the Four Elements   Why did Zhu Shijie think math was important?  Do you agree with what Zhu Shijie is saying? Why or why not?     Since geometry is co-eternal with the divine mind before the birth of things, God himself served as his own model in creating the world (for what is there in God which is not God?), and he with his own image reached down to humanity.  Johannes Kepler, 1619. The Harmony of the World   Why did Kepler think math was important?  Do you agree with what Kepler is saying? Why or why not?   Philosophy is written in this grand book, the universe, which stands continually open to our gaze. But the book cannot be understood unless one first learns to comprehend the language and read the letters in which it is composed. It is written in the language of mathematics, and its characters triangles, circles, and other geometric figures with out which it is humanly impossible to understand a single word of it; without these, one wanders about in a dark labyrinth.  Galileo Galilei, 1623. II Saggiatore   Why did Galileo think math was important?  Do you agree with what Galileo is saying? Why or why not?   The long chains of simple and easy reasonings by means of which geometers are accustomed to reach the conclusions of their most difficult demonstrations led me to imagine that all things, to the knowledge of which man is competent, are mutually connected in the same way, and that there is nothing so far removed from us as to be beyond our reach, or so hidden that we cannot discover it, providing only that we abstain from accepting the false for the true, and always preserve in our thoughts the order necessary for the deduction of one truth from another.  Rene Descartes (day-KART), France, 1637. Discourse on Method   Why did Descartes think math was important?  Do you agree with what Descartes is saying? Why or why not?     Mathematics, rightly viewed, possesses not only truth, but supreme beauty—a beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of paintings or music, yet sublimely pure and capable of a stern perfection such as only the greatest art can show. The true spirit of delight, the exaltation, the sense of being more than man, which is the touchstone of the highest excellence, is to be found in mathematics as surely as in poetry.  Bertrand Russell, England, 1967. The Study of Mathematics: Philosophical Essays   Why did Russell think math was important?  Do you agree with what Russell is saying? Why or why not?   ...the most urgent social issue affecting poor people and people of color is economic access. In today's world, economic access and full citizenship depend crucially on math and science literacy. I believe that the absence of math literacy in urban and rural communities throughout this country is an issue as urgent as the lack of registered Black voters in Mississippi was in 1961.  Robert P Moses, United States, 2001. Radical Equations: Math Literacy and Civil Rights   Why did Robert Moses think math was important?  Do you agree with what Robert Moses is saying? Why or why not?   So God created man in his own image, in the image of God he created him; male and female he created them. And God blessed them and God said to them, “Be fruitful and multiply, and fill the earth and subdue it, and have dominion over the fish of the sea and over the birds of the air and over every living thing that moves upon the earth  Genesis 1:27–28   Genesis 1:27-28 What are the main ideas of this passage?  Genesis 1:27-28 What might this statement have to do with how we think about math?     Blessed are those who find wisdom, those who gain understanding, for she is more profitable than silver and yields better returns than gold. She is more precious than rubies; nothing you desire can compare with her. Long life is in her right hand; in her left hand are riches and honor. Her ways are pleasant ways, and all her paths are peace. She is a tree of life to those who take hold of her; those who hold her fast will be blessed.  By wisdom the Lord laid the earth’s foundations, by understanding he set the heavens in place; by his knowledge the watery depths were divided, and the clouds let drop the dew.  Proverbs 3:13–20   Proverbs 3:13–20 What are the main ideas of this passage?  Proverbs 3:13–20 What might this statement have to do with how we think about math?   He [Christ] is the image of the invisible God, the first-born of all creation; for in him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or principalities or authorities—all things were created through him and for him. He is before all things, and in him all things hold together.  Colossians 1:15–17   Colossians 1:15–17 What are the main ideas of this passage?  Colossians 1:15–17 What might this statement have to do with how we think about math?    "
+  "title": "Mindset Lab",
+  "body": " Mindset Lab   This lab is based on a worksheet created by Quantway and the Carnegie Foundation for the Advancement of Teaching.  The questions refer to the article you_can_grow_your_brain.pdf      Summarize in your own words the reasons why scientists say that people's math ability can grow and get better with effort and practice.      In the article, you learned 3 things:   When you work hard and learn new things, your brain grows new connections and you get smarter.  The more you challenge yourself, the smarter you will become.  Smart kids are the kids who have practiced more—they have built up their reading and math \"muscles.\"   Think about an example from your own life. What is something you weren't good at at first? Then you practiced it using a good strategy and became really good at it. Write about it and explain how you became good at it.      Not all math students know that their brain can get smarter, even though it may help them have success. And we want to get your help, so we can learn more about how to explain it to them. We're hoping you can explain--in your own words that the brain gets smarter when people use good strategies and try hard.  Imagine a friend who is struggling in school. This friend used to do pretty well in school but now is having a hard time and is starting to feel dumb. Write a letter to your friend to encourage him or her tell them about what you just learned about the brain and why they shouldn't be discouraged.  For example, you can tell them:   How they can get smarter if they work hard and use a good strategy.  How they should work hard to build their reading and math muscles.  How they are not dumb, they just need to practice using a good strategy.  How they can ask the teacher or other students to help them learn better ways to study. Or any other tips you have for learning in school and getting smarter.   (Don't worry about writing a perfect final draft. We just want to know how you would say this to another student in your own words.)    "
 },
 {
-  "id": "mindset-objectives",
+  "id": "mindset-3",
   "level": "2",
-  "url": "sec-mindset.html#mindset-objectives",
-  "type": "Objectives",
-  "number": "0.2",
+  "url": "mindset.html#mindset-3",
+  "type": "Activity",
+  "number": "0.3",
   "title": "",
-  "body": "  Interact with different philosophical and theological views of mathematics  Discuss philosophical and theological view of mathematics with peers   "
+  "body": "  Summarize in your own words the reasons why scientists say that people's math ability can grow and get better with effort and practice.   "
 },
 {
-  "id": "god-math-warm-up",
+  "id": "mindset-4",
   "level": "2",
-  "url": "sec-mindset.html#god-math-warm-up",
-  "type": "Worksheet Exercise",
-  "number": "0.2.1",
-  "title": "Warm-up..",
-  "body": "Warm-up. Why did God give people the capacity to do mathematics? Before reading any further, write a couple of sentences giving your answer to this question. If all you can think of is I have no idea! , take your best guess, even if it seems silly to you. "
-},
-{
-  "id": "exercise-god-math-1",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-1",
-  "type": "Worksheet Exercise",
-  "number": "0.2.2",
+  "url": "mindset.html#mindset-4",
+  "type": "Activity",
+  "number": "0.4",
   "title": "",
-  "body": " Why did al-Biruni think math was important?  Example Answer: Al-Biruni seems to be saying that understanding math can help us understand our creator.  "
+  "body": "  In the article, you learned 3 things:   When you work hard and learn new things, your brain grows new connections and you get smarter.  The more you challenge yourself, the smarter you will become.  Smart kids are the kids who have practiced more—they have built up their reading and math \"muscles.\"   Think about an example from your own life. What is something you weren't good at at first? Then you practiced it using a good strategy and became really good at it. Write about it and explain how you became good at it.   "
 },
 {
-  "id": "exercise-god-math-2",
+  "id": "mindset-5",
   "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-2",
-  "type": "Worksheet Exercise",
-  "number": "0.2.3",
+  "url": "mindset.html#mindset-5",
+  "type": "Activity",
+  "number": "0.5",
   "title": "",
-  "body": " Do you agree with al-Biruni? Why or why not?  Example Answer: Even though al-Biruni was Muslim, if we interpret his words from a Christian perspective, we can agree that God wants us to know him. Understanding the order and beauty of God’s world can also help us understand God’s order and beauty.  "
-},
-{
-  "id": "exercise-god-math-3",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-3",
-  "type": "Worksheet Exercise",
-  "number": "0.2.4",
-  "title": "",
-  "body": "Why did Rhind Mathematical Papyrus think math was important? "
-},
-{
-  "id": "exercise-god-math-4",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-4",
-  "type": "Worksheet Exercise",
-  "number": "0.2.5",
-  "title": "",
-  "body": "Do you agree with what the Rhind Mathematical Papyrus is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-5",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-5",
-  "type": "Worksheet Exercise",
-  "number": "0.2.6",
-  "title": "",
-  "body": "Why did Augustine think math was important? "
-},
-{
-  "id": "exercise-god-math-6",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-6",
-  "type": "Worksheet Exercise",
-  "number": "0.2.7",
-  "title": "",
-  "body": "Do you agree with what Augustine is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-7",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-7",
-  "type": "Worksheet Exercise",
-  "number": "0.2.8",
-  "title": "",
-  "body": "Why did Mahavira think math was important? "
-},
-{
-  "id": "exercise-god-math-8",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-8",
-  "type": "Worksheet Exercise",
-  "number": "0.2.9",
-  "title": "",
-  "body": "Do you agree with what Mahavira is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-9",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-9",
-  "type": "Worksheet Exercise",
-  "number": "0.2.10",
-  "title": "",
-  "body": "Why did Zhu Shijie think math was important? "
-},
-{
-  "id": "exercise-god-math-10",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-10",
-  "type": "Worksheet Exercise",
-  "number": "0.2.11",
-  "title": "",
-  "body": "Do you agree with what Zhu Shijie is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-11",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-11",
-  "type": "Worksheet Exercise",
-  "number": "0.2.12",
-  "title": "",
-  "body": "Why did Kepler think math was important? "
-},
-{
-  "id": "exercise-god-math-12",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-12",
-  "type": "Worksheet Exercise",
-  "number": "0.2.13",
-  "title": "",
-  "body": "Do you agree with what Kepler is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-13",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-13",
-  "type": "Worksheet Exercise",
-  "number": "0.2.14",
-  "title": "",
-  "body": "Why did Galileo think math was important? "
-},
-{
-  "id": "exercise-god-math-14",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-14",
-  "type": "Worksheet Exercise",
-  "number": "0.2.15",
-  "title": "",
-  "body": "Do you agree with what Galileo is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-15",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-15",
-  "type": "Worksheet Exercise",
-  "number": "0.2.16",
-  "title": "",
-  "body": "Why did Descartes think math was important? "
-},
-{
-  "id": "exercise-god-math-16",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-16",
-  "type": "Worksheet Exercise",
-  "number": "0.2.17",
-  "title": "",
-  "body": "Do you agree with what Descartes is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-17",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-17",
-  "type": "Worksheet Exercise",
-  "number": "0.2.18",
-  "title": "",
-  "body": "Why did Russell think math was important? "
-},
-{
-  "id": "exercise-god-math-18",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-18",
-  "type": "Worksheet Exercise",
-  "number": "0.2.19",
-  "title": "",
-  "body": "Do you agree with what Russell is saying? Why or why not? "
-},
-{
-  "id": "exercise-god-math-19",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-19",
-  "type": "Worksheet Exercise",
-  "number": "0.2.20",
-  "title": "",
-  "body": "Why did Robert Moses think math was important? "
-},
-{
-  "id": "exercise-god-math-20",
-  "level": "2",
-  "url": "sec-mindset.html#exercise-god-math-20",
-  "type": "Worksheet Exercise",
-  "number": "0.2.21",
-  "title": "",
-  "body": "Do you agree with what Robert Moses is saying? Why or why not? "
-},
-{
-  "id": "proverbs-ideas",
-  "level": "2",
-  "url": "sec-mindset.html#proverbs-ideas",
-  "type": "Worksheet Exercise",
-  "number": "0.2.22",
-  "title": "Genesis 1:27-28.",
-  "body": "Genesis 1:27-28 What are the main ideas of this passage? "
-},
-{
-  "id": "proverbs-math",
-  "level": "2",
-  "url": "sec-mindset.html#proverbs-math",
-  "type": "Worksheet Exercise",
-  "number": "0.2.23",
-  "title": "Genesis 1:27-28.",
-  "body": "Genesis 1:27-28 What might this statement have to do with how we think about math? "
-},
-{
-  "id": "genesis-ideas",
-  "level": "2",
-  "url": "sec-mindset.html#genesis-ideas",
-  "type": "Worksheet Exercise",
-  "number": "0.2.24",
-  "title": "Proverbs 3:13–20.",
-  "body": "Proverbs 3:13–20 What are the main ideas of this passage? "
-},
-{
-  "id": "genesis-math",
-  "level": "2",
-  "url": "sec-mindset.html#genesis-math",
-  "type": "Worksheet Exercise",
-  "number": "0.2.25",
-  "title": "Proverbs 3:13–20.",
-  "body": "Proverbs 3:13–20 What might this statement have to do with how we think about math? "
-},
-{
-  "id": "colosians-ideas",
-  "level": "2",
-  "url": "sec-mindset.html#colosians-ideas",
-  "type": "Worksheet Exercise",
-  "number": "0.2.26",
-  "title": "Colossians 1:15–17.",
-  "body": "Colossians 1:15–17 What are the main ideas of this passage? "
-},
-{
-  "id": "colosians-math",
-  "level": "2",
-  "url": "sec-mindset.html#colosians-math",
-  "type": "Worksheet Exercise",
-  "number": "0.2.27",
-  "title": "Colossians 1:15–17.",
-  "body": "Colossians 1:15–17 What might this statement have to do with how we think about math? "
+  "body": "  Not all math students know that their brain can get smarter, even though it may help them have success. And we want to get your help, so we can learn more about how to explain it to them. We're hoping you can explain--in your own words that the brain gets smarter when people use good strategies and try hard.  Imagine a friend who is struggling in school. This friend used to do pretty well in school but now is having a hard time and is starting to feel dumb. Write a letter to your friend to encourage him or her tell them about what you just learned about the brain and why they shouldn't be discouraged.  For example, you can tell them:   How they can get smarter if they work hard and use a good strategy.  How they should work hard to build their reading and math muscles.  How they are not dumb, they just need to practice using a good strategy.  How they can ask the teacher or other students to help them learn better ways to study. Or any other tips you have for learning in school and getting smarter.   (Don't worry about writing a perfect final draft. We just want to know how you would say this to another student in your own words.)   "
 },
 {
   "id": "sec-math-theology",
@@ -347,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-4",
   "type": "Activity",
-  "number": "0.3",
+  "number": "0.6",
   "title": "",
   "body": "  Why did God give people the capacity to do mathematics? Before reading any further, write a couple of sentences giving your answer to this question. If all you can think of is I have no idea! , take your best guess, even if it seems silly to you.   "
 },
@@ -365,7 +140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-7",
   "type": "Activity",
-  "number": "0.4",
+  "number": "0.7",
   "title": "",
   "body": "   Accurate reckoning. The entrance into the knowledge of all existing things and all obscure secrets.  Introduction to the Rhind Mathematical Papyrus, written in Egypt around 1850 B.C.     Why did Rhind Mathematical Papyrus think math was important?    Do you agree with what the Rhind Mathematical Papyrus is saying? Why or why not?   "
 },
@@ -374,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-8",
   "type": "Activity",
-  "number": "0.5",
+  "number": "0.8",
   "title": "",
   "body": "   You [God] have arranged all things by measure and number and weight.  ...Wherever you turn, Wisdom speaks to you through the imprint it has stamped upon its works.... Look at the sky, the earth, and the sea, and at whatever in them shines from above or crawls, flies, or swims below. These have form because they have number.  Augustine, North Africa, c. 400 AD De Genesi Contra Manichaeos, I (first line is quoting from the Wisdom of Solomon)     Why did Augustine think math was important?    Do you agree with what Augustine is saying? Why or why not?   "
 },
@@ -383,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-9",
   "type": "Activity",
-  "number": "0.6",
+  "number": "0.9",
   "title": "",
   "body": "  In all those transactions which relate to worldly… (or) religious affairs, calculation is of use. In the science of love, in the science of wealth, in music and in the drama, in the art of cooking, and similarly in medicine and in things like the knowledge of architecture; in prose, in poetics and poetry, in logic and grammar and such other things,...the science of computation is held in high esteem. In relation to the movements of the sun and other heavenly bodies, in connection with eclipses and conjunction of the planets...it is utilized. The number, the diameter, and the perimeter of islands, oceans, and mountains; the extensive dimensions of the rows of habitations and halls belonging to the inhabitants of the world...all of these are made out by means of computation.  Mahavira's (mah-hah-VEE-rah) Ganitasarasangraha, India, 9th century A.D.     Why did Mahavira think math was important?    Do you agree with what Mahavira is saying? Why or why not?   "
 },
@@ -392,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-10",
   "type": "Activity",
-  "number": "0.7",
+  "number": "0.10",
   "title": "",
   "body": "   Now the science of mathematics is very important. This book ...therefore will be of great benefit to the people of the world. The knowledge for investigation, the development of intellectual power, the way of controlling the kingdom and of ruling even the whole world, can be obtained by those who are able to make good use of this book. Ought not those who have great desire to be learned take this with them and study it with great care?  Zhu Shijie (JOO shoor-jieh), China, 1303. The introduction to Precious Mirror of the Four Elements     Why did Zhu Shijie think math was important?    Do you agree with what Zhu Shijie is saying? Why or why not?   "
 },
@@ -401,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-11",
   "type": "Activity",
-  "number": "0.8",
+  "number": "0.11",
   "title": "",
   "body": "   Since geometry is co-eternal with the divine mind before the birth of things, God himself served as his own model in creating the world (for what is there in God which is not God?), and he with his own image reached down to humanity.  Johannes Kepler, 1619. The Harmony of the World     Why did Kepler think math was important?    Do you agree with what Kepler is saying? Why or why not?   "
 },
@@ -410,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-12",
   "type": "Activity",
-  "number": "0.9",
+  "number": "0.12",
   "title": "",
   "body": "   Philosophy is written in this grand book, the universe, which stands continually open to our gaze. But the book cannot be understood unless one first learns to comprehend the language and read the letters in which it is composed. It is written in the language of mathematics, and its characters triangles, circles, and other geometric figures with out which it is humanly impossible to understand a single word of it; without these, one wanders about in a dark labyrinth.  Galileo Galilei, 1623. II Saggiatore     Why did Galileo think math was important?    Do you agree with what Galileo is saying? Why or why not?   "
 },
@@ -419,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-13",
   "type": "Activity",
-  "number": "0.10",
+  "number": "0.13",
   "title": "",
   "body": "   The long chains of simple and easy reasonings by means of which geometers are accustomed to reach the conclusions of their most difficult demonstrations led me to imagine that all things, to the knowledge of which man is competent, are mutually connected in the same way, and that there is nothing so far removed from us as to be beyond our reach, or so hidden that we cannot discover it, providing only that we abstain from accepting the false for the true, and always preserve in our thoughts the order necessary for the deduction of one truth from another.  Rene Descartes (day-KART), France, 1637. Discourse on Method     Why did Descartes think math was important?    Do you agree with what Descartes is saying? Why or why not?   "
 },
@@ -428,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-14",
   "type": "Activity",
-  "number": "0.11",
+  "number": "0.14",
   "title": "",
   "body": "   Mathematics, rightly viewed, possesses not only truth, but supreme beauty—a beauty cold and austere, like that of sculpture, without appeal to any part of our weaker nature, without the gorgeous trappings of paintings or music, yet sublimely pure and capable of a stern perfection such as only the greatest art can show. The true spirit of delight, the exaltation, the sense of being more than man, which is the touchstone of the highest excellence, is to be found in mathematics as surely as in poetry.  Bertrand Russell, England, 1967. The Study of Mathematics: Philosophical Essays     Why did Russell think math was important?    Do you agree with what Russell is saying? Why or why not?   "
 },
@@ -437,7 +212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-15",
   "type": "Activity",
-  "number": "0.12",
+  "number": "0.15",
   "title": "",
   "body": "   ...the most urgent social issue affecting poor people and people of color is economic access. In today's world, economic access and full citizenship depend crucially on math and science literacy. I believe that the absence of math literacy in urban and rural communities throughout this country is an issue as urgent as the lack of registered Black voters in Mississippi was in 1961.  Robert P Moses, United States, 2001. Radical Equations: Math Literacy and Civil Rights     Why did Robert Moses think math was important?   By economic access he means the ability to get a good job. Some students' answers in the past have been distracted by the abstract economy and failed to mention the real people Robert Moses was referring to.    Do you agree with what Robert Moses is saying? Why or why not?   "
 },
@@ -446,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-16",
   "type": "Activity",
-  "number": "0.13",
+  "number": "0.16",
   "title": "",
   "body": "   So God created man in his own image, in the image of God he created him; male and female he created them. And God blessed them and God said to them, “Be fruitful and multiply, and fill the earth and subdue it, and have dominion over the fish of the sea and over the birds of the air and over every living thing that moves upon the earth  Genesis 1:27-28     What are the main ideas of this passage?    What might this statement have to do with how we think about math?   If you are focussing on the word multiply, then you missed the point.   "
 },
@@ -455,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-17",
   "type": "Activity",
-  "number": "0.14",
+  "number": "0.17",
   "title": "",
   "body": "   Proverbs 3:13-20   Blessed are those who find wisdom,  those who gain understanding,  for she is more profitable than silver  and yields better returns than gold.  She is more precious than rubies;  nothing you desire can compare with her.  Long life is in her right hand;  in her left hand are riches and honor.  Her ways are pleasant ways,  and all her paths are peace.  She is a tree of life to those who take hold of her;  those who hold her fast will be blessed.    By wisdom the Lord laid the earth's foundations,  by understanding he set the heavens in place;  by his knowledge the watery depths were divided,  and the clouds let drop the dew.      What are the main ideas of this passage?    What might this statement have to do with how we think about math?   If you are focussing on the word divided , then you missed the point.   "
 },
@@ -464,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-math-theology.html#sec-math-theology-18",
   "type": "Activity",
-  "number": "0.15",
+  "number": "0.18",
   "title": "",
   "body": "   He [Christ] is the image of the invisible God, the first-born of all creation; for in him all things were created, in heaven and on earth, visible and invisible, whether thrones or dominions or principalities or authorities—all things were created through him and for him. He is before all things, and in him all things hold together.  Colossians 1:15-17     What are the main ideas of this passage?    What might this statement have to do with how we think about math?   "
 },
