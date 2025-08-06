@@ -376,11 +376,11 @@
     <p>
       Videos showing how to export spreadsheets to PDF from Google Sheets, Microsoft Excel, and Apple Numbers, respectively.
     </p>
-    <!--<sidebyside widths="30% 30% 30%" margins="auto" valign="middle">
+    <sidebyside widths="30% 30% 30%" margins="auto" valign="middle">
       <video youtube="xqvyKxHZDgA?t" start="9"/>
       <video youtube="qCV7j12KIF4"/>
       <video youtube="40pQhIspxOA"/>        
-    </sidebyside>-->
+    </sidebyside>
   </introduction>
 
   <exercise>
