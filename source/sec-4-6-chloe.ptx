@@ -13,29 +13,1780 @@
     <ul>
       <li>
         <p>
-          Objective 1
+          Define, calculate, and interpret measures of variation, including range, interquartile range, and standard deviation.
         </p>
       </li>
       <li>
         <p>
-          Objective 2
+          Identify the strengths and limitations of each measure of variation.
+        </p>
+      </li>
+      <li>
+        <p>
+          Compare distributions using side-by-side boxplots and percentiles.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate and use Z-scores to determine how typical or unusual data values are.
         </p>
       </li>
     </ul>
 </objectives>
 
-<introduction>
-    <title>You can</title>
-    <p>
-        put an introduction here
-    </p>
-</introduction>
+<subsection>
+    <title>Measures of Variation</title>
+      <p>
+        There is an old saying, “Don't wade across a stream with an average depth of two feet.” Averages and other measures of center are important, but equally important is information about the spread or <alert>variability</alert> in sets of numbers. 
+      </p>
+      <example>
+        <statement>
+          <p>
+            Nutrients stored in snags (dead trees still standing) and logs (dead trees that have fallen) are vital to the health of forest ecosystems. In 1991, scientists from the H.J. Andrews Long-Term Ecological Research Center measured the amount of nutrients in snags and logs in a sample forest. In one plot of the forest, the lengths of ten ponderosa pine snags and logs were measured.<fn>H.J. Andrews Long Term Ecological Research Center, Log and Snag Dimensions, by Mark Harmon (PI), TD12, plot 1, 1991, http://www.fsl.orst.edu/lter/.</fn> The mean length was found to be 13.61 meters.
+          </p>
+          <p>
+            Consider the lengths of the ten trees from the studied plot. Which values seem unusual given the mean? What information does this data set provide that the mean does not capture?
+          </p>
+          <table>
+            <tabular>
+              <row>
+                <cell>
+                  Tree Lengths (Meters)
+                </cell>
+                <cell>
+                  17.1
+                </cell>
+                <cell>
+                  20.8
+                </cell>
+                <cell>
+                  3.0
+                </cell>
+                <cell>
+                  18.0
+                </cell>
+                <cell>
+                  31.0
+                </cell>
+                <cell>
+                  13.0
+                </cell>
+                <cell>
+                  9.1
+                </cell>
+                <cell>
+                  5.0
+                </cell>
+                <cell>
+                  10.0
+                </cell>
+                <cell>
+                  9.1
+                </cell>
+              </row>
+            </tabular>
+          </table>
+          <image width="75%" source="statistics/3_6/Tree Snag.png">
+          </image> 
+        </statement>
+        <solution>
+          <p>
+            The trees with lengths of 3.0 and 31.0 meters are the most unexpected values given the mean of 13.61 meters. Without seeing the actual data set, we would not know that only one of the data values is relatively close to the mean. In general, the spread of the data is quite large.
+          </p>
+        </solution>
+      </example>
+</subsection>
 
-<subsection xml:id="subsec-4-6-1">
-    <title>You can</title>
+<subsection>
+    <title>Range</title>
+      <p>
+        You may already be familiar with the first measure of variation we will discuss in this section: range. The <alert>range</alert> is the difference between the maximum and minimum values in a data set. While the range provides insight into the scope of the data, it has some significant limitations.
+      </p>
+      <assemblage>
+      <title>Range</title>
+        <p>
+          <me>Range = Max - Min</me>
+        </p>
+      </assemblage>
+      <example>
+        <statement>
+          <p>
+            Dungeness crabs are one of the most important commercial species of crab harvested in the eastern Pacific Ocean. Due to their popularity, size limits are used as the primary conservation measure to sustain the crab population in British Columbia, Canada. For example, only Dungeness males with shell widths exceeding 165 mm can be kept. 
+          </p>
+          <image width="75%" source="statistics/3_6/Dungeness Crab.png">
+          </image> 
+          <p>  
+            The following table lists crab boat and harvest data in British Columbia for the years 1980 to 1999.<fn>Fisheries and Oceans Canada, Pacific Region, “Stats on 2000 Crab Fishery,” http://www.pac.dfo-mpo.gc.ca/ops/fm/shellfish/crab/default_e.htm.</fn>
+          </p>
+          <image width="100%" source="statistics/3_6/Dungeness Crab Data.png">
+          </image>
+          <p>
+            <ol>
+              <li>
+                What is the range of the harvest data?
+              </li>
+              <li>
+                What information about the spread of the harvest data is not captured by the range?
+              </li>
+              <li>
+                Make a generalization about the effect of outliers on the range of a data set.
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <ol>
+              <li>
+                The range is <m>6,289 - 957 = 5,332</m> metric tons.
+              </li>
+              <li>
+                Unfortunately, the range does not provide any information about how the data is distributed. We are unable to tell, for example, that over half of the harvest data falls below 2,000 metric tons. Looking at the data in a histogram, it is evident that the distribution is right-skewed.
+              </li>
+              <li>
+                Outliers significantly impact the range of a data set, as they are often the minimum and maximum values. The presence of outliers can lead us to believe that the data is more “spread out” than it actually is.
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </example>
+</subsection>
+
+<subsection>
+  <title>Interquartile Range</title>
     <p>
-        put a subsection here
+      Perhaps a more insightful measure of variation is the <alert>interquartile range (IQR)</alert>. The IQR describes the spread of the middle 50% of data values.  
+    </p>
+    <p>
+      The IQR is calculated as the difference between the third quartile and the first quartile. As the name implies, <alert>quartiles</alert> are values that divide the data into quarters. The <alert>first quartile (Q1)</alert> is the value that 25% of the data lie below. The <alert>third quartile (Q3)</alert> is the value that 75% of the data lie below. 
+    </p>
+    <assemblage>
+      <title>Interquartile Range (IQR)</title>
+        <p>
+          <me>IQR = Q3 - Q1</me>
+        </p>
+    </assemblage>
+    <p>
+      Here is another way of thinking about it: Q1 is the median of the lower half of the data (all values less than the median), and Q3 is the median of the upper half of the data (all values greater than the median). Similar to the median, the numbers Q1 and Q3 may or may not be actual numbers from the data set. In many cases, these values are calculated using technology.  
     </p>
 </subsection>
+
+<subsection>
+  <title>The Five-Number Summary and Boxplots</title>
+    <p>
+      The first and third quartiles are part of a set of values called the <alert>five-number summary</alert>. The five-number summary includes the minimum, Q1, median, Q3, and the maximum. 
+    </p>
+    <p>
+      A quick way to graphically display the 5-number summary is with a boxplot, also known as a box-and-whisker plot. Each region of a boxplot contains approximately the same number of data values, allowing us to visualize the spread for each region. 
+    </p>
+    <example>
+      <statement>
+        <p>
+          There is growing concern about the amount of electronic products disposed of in landfills. These discarded products are collectively referred to as “e-waste”. Not only does e-waste occupy scarce landfill space, but it often contains toxic substances. For example, e-waste consisting of cathode ray tubes (CRTs) from computer monitors and televisions contains lead and other heavy metals that can leach into groundwater.
+        </p>
+        <image width="50%" source="statistics/3_6/E-Waste.png">
+        </image>
+        <p>
+          In a University of Florida hazardous waste study, 36 models of CRTs were tested for the presence of leachable lead.<fn>State University System of Florida, Florida Center For Solid And Hazardous Waste Management, Characterization of Lead Leachability from Cathode Ray Tubes Using the Toxicity Characteristic Leaching Procedure, by Timothy G. Townsend et al., Report #99-5 (1999).</fn> The results are given in the table below.
+        </p>
+        <image width="100%" source="statistics/3_6/E-Waste Data.png">
+        </image>
+        <p>
+          From this data, we can calculate the following 5-number summary:
+        </p>
+        <p>  
+          <ul>
+            <li>
+              <alert>Minimum:</alert> <m>1</m> mg/L
+            </li>
+            <li>
+              <alert>Q1:</alert> <m>\frac{1.6 + 2.2}{2} = 1.9</m> mg/L
+            </li>
+            <li>
+              <alert>Median:</alert> <m>\frac{9.1 + 9.4}{2} = 9.25</m> mg/L
+            </li>
+            <li>
+              <alert>Q3:</alert> <m>\frac{26.6 + 33.1}{2} = 29.85</m> mg/L
+            </li>
+            <li>
+              <alert>Maximum:</alert> <m>85.6</m> mg/L
+            </li>
+          </ul>
+        </p>
+        <p>
+          Note that the IQR is <m>29.85 - 1.9 = 27.95</m> mg/L.
+        </p>
+        <p>
+          These values can be used to construct the boxplot below. The boxplot consists of a box drawn from Q1 to Q3, with a vertical line through the box at the median. From the left and right sides of the box, “whiskers” are drawn out to the minimum and maximum values. In the boxplot, it is easy to see the small spread of the lowest 25% of the data, and the large spread of the highest 25%. Thus, the data is right-skewed. 
+        </p>
+        <image width="100%" source="statistics/3_6/E-Waste Boxplot.png">
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Boxplots are great visual aids for comparing the relative positions and spread of several data sets. The figure below shows boxplots illustrating the percentage of forested land for all counties in Wisconsin.<fn>Wisconsin Forest Statistics 1996.</fn> The data is divided into five forestry sectors.  
+        </p>
+        <image width="100%" source="statistics/3_6/Wisconsin Forestry Sector Boxplot.png">
+        </image>
+        <p>
+          <ol>
+            <li>
+              Which region has the greatest median percentage of forested land? Which has the least?  
+            </li>
+            <li>
+              Which region has the smallest overall spread?
+            </li>
+            <li>
+              Calculate the IQR of the Southwest region. How does this region's IQR compare to the IQRs of the other regions?
+            </li>
+            <li>
+              Compare the spread and skew of two regions.
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              The Northeast region has the greatest median percentage of forested land, while the Southwest region has the least.  
+            </li>
+            <li>
+              The Central region has the smallest overall spread with a range of 61.0 - 31.9 = 29.1%.
+            </li>
+            <li>
+              The IQR of the Southwest region is 17.9 - 8.6 = 9.3%. This region has the lowest IQR; therefore, the middle 50% of this region’s data is far more concentrated than that of the other regions. 
+            </li>
+            <li>
+              Answers will vary. Compared to the Southwest region, the Northwest region has more variability, as it has a larger range and IQR. Additionally, the Norwest region distribution is left-skewed, while the Southwest region distribution is right-skewed.
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</subsection>
+
+<subsection>
+  <title>Standard Deviation</title>
+    <p>
+      The final measure of variation we will cover in this section is standard deviation. The <alert>sample standard deviation</alert> measures the average distance of all data values from the mean. 
+    </p>
+    <assemblage>
+      <title>Sample Standard Deviation</title>
+        <p>
+          <me>s = \sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}</me>
+        </p>
+        <p>
+          <m>x:</m> data value
+        </p>
+        <p>
+          <m>\bar{x}:</m> mean
+        </p>
+        <p>
+          <m>n:</m> number of data values
+        </p>
+    </assemblage>
+    <p>
+      There are a few important characteristics that should be kept in mind when finding and interpreting the standard deviation.
+    </p>
+    <ul>
+      <li>
+        <p>
+          The standard deviation is never negative. It will be zero if all the data values are equal, and it will become larger as the data spreads out.
+        </p>
+      </li>
+      <li>
+        <p>
+          The standard deviation has the same units as the original data.
+        </p>
+      </li>
+      <li>
+        <p>
+          The standard deviation, like the mean, can be highly influenced by outliers.
+        </p>
+      </li>
+    </ul>
+    <example>
+      <statement>
+        <p>
+          The table below displays average July temperatures (°F) in New York City each year from 1991 to 2000.<fn>https://www.weather.gov/okx/CentralParkHistorical</fn>
+        </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor" >
+            <cell>
+              Year
+            </cell>
+            <cell>
+              Temperature (°F)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1991
+            </cell>
+            <cell>
+              77.7
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1992
+            </cell>
+            <cell>
+              74.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1993
+            </cell>
+            <cell>
+              80.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1994
+            </cell>
+            <cell>
+              79.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1995
+            </cell>
+            <cell>
+              79.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1996
+            </cell>
+            <cell>
+              73.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1997
+            </cell>
+            <cell>
+              75.8
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1998
+            </cell>
+            <cell>
+              76.5
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1999
+            </cell>
+            <cell>
+              81.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              2000
+            </cell>
+            <cell>
+              72.3
+            </cell>
+          </row>
+        </tabular>
+      </table>
+        <p>
+          <ol>
+            <li>
+              Use the table below or an Excel equivalent to calculate the sum of the squared deviations. 
+            </li>
+            <li>
+              Use the value you found above to calculate the sample standard deviation.
+            </li>
+            <li>
+              Interpret the standard deviation in the context of this situation.
+            </li>
+            <li>
+              Which average temperature is the most unusual in this distribution? Explain.
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              The sum of the squared deviations is 85.269. 
+            </li>
+            <li>
+              The sample standard deviation is approximately 3.08℉.
+            </li>
+            <li>
+              The average July temperatures in New York City from 1991 to 2000 were, on average, 3.08℉ away from the mean of 77.01℉.
+            </li>
+            <li>
+              72.3℉, the average July temperature for the year 2000, is the most unusual in this distribution. It is the value that has the greatest deviation from the mean (-4.71℉).
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</subsection>
+
+<subsection>
+  <title>Z-Scores</title>
+    <p>
+      Have you ever heard the saying that you can't compare apples and oranges? It turns out that you can - provided we standardize their measures first!
+    </p>
+    <p>
+      We introduced standard deviation as an overall measure of the spread of a data set away from its mean. We now use standard deviation to help describe the position of a single data point. The position is given by the <alert>z-score</alert>, which measures the number of standard deviations a data point lies above or below the mean. The convention in statistics is to say that a data value is <alert>unusual</alert> if it is more than 2 standard deviations from the mean, or in other words, if its Z-score is less than -2 or greater than +2.
+    </p>
+    <assemblage>
+      <title>Z-Score</title>
+        <p>
+          <me>z = \frac{x-\bar{x}}{s}</me>
+        </p>
+        <p>
+          <m>x:</m> data value
+        </p>
+        <p>
+          <m>\bar{x}:</m> mean
+        </p>
+        <p>
+          <m>s:</m> standard deviation
+        </p>
+    </assemblage>
+    <p>
+      Z-scores may be used with any data, but they are most commonly used with unimodal or symmetric distributions, also known as <alert>normal distributions</alert>. Note that if a distribution is skewed, then the distribution of the z-scores will also be skewed.
+    </p>
+    <example>
+      <statement>
+        <p>
+          The tables below contain average July temperatures (°F) from 2017 to 2020 for three climate divisions in the U.S.<fn>https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/statewide/time-series</fn> The tables also show the mean (30-year average) and standard deviation for each climate division. Find the z-score of each average temperature. Round each z-score to one decimal place.
+        </p>
+        <image width="100%" source="statistics/3_6/Temperature Anomalies 2.0.png">
+        </image>
+        <p>
+          <ol>
+            <li>
+              Based on the climate division that you examined, in which year was the average temperature in July the most unusual? Explain. 
+            </li>
+            <li>
+              What does it mean if a temperature anomaly (z-score) is positive? What does it mean if it is negative? What does it mean if it is zero?
+            </li>
+            <li>
+              Create a dotplot by combining the twelve z-scores from the three climate divisions.
+            </li>
+            <image width="100%" source="statistics/3_6/Z-Score Dot Plot (Blank).png">
+            </image>
+            <li>
+              What can we conclude about the July average temperatures in these three climate divisions from 2017 to 2020? Do these temperature anomalies suggest an increase in temperature in these regions compared to the respective 30-year averages?
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              Answers will vary. In Central Ohio, the July 2017 average temperature of 73℉ is the most unusual because it lies approximately 0.92 standard deviations below the mean (z-score of -0.92).  
+            </li>
+            <li>
+              If a temperature anomaly is positive, it is greater than the mean. If it is negative, it is less than the mean. If it is zero, it is equivalent to the mean.
+            </li>
+            <li>
+              <image width="100%" source="statistics/3_6/Climate Data Dot Plot.png">
+              </image>
+            </li>
+            <li>
+              The average July temperatures in these climate divisions from 2017 to 2020 are normally distributed, and none of them fall outside of two standard deviations from their respective means. Thus, there is no indication of an unusual temperature increase in any of these regions.
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</subsection>
+
+<exercises>
+<title>Exercises</title>
+  <exercise>
+    <statement>
+      <p>
+        Most glaciers around the world have been shrinking due to global warming. The table below lists the decrease in length of a sample of 12 glaciers from the North Cascade Mountains in Washington State between 1980 and 2003.<fn>The North Cascade Glacier Climate Project, “Glacier Changes Through Time Photographic Series,” http://www.nichols.edu/departments/glacier/.</fn>
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Glacier
+            </cell>
+            <cell>
+              Decrease in Length (Meters)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Boulder
+            </cell>
+            <cell>
+              430
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Columbia
+            </cell>
+            <cell>
+              85
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Easton
+            </cell>
+            <cell>
+              225
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Hinman
+            </cell>
+            <cell>
+              243
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Honeycomb
+            </cell>
+            <cell>
+              150
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ice Worm
+            </cell>
+            <cell>
+              38
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Lynch
+            </cell>
+            <cell>
+              115
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Mazama
+            </cell>
+            <cell>
+              210
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Quien Sabe
+            </cell>
+            <cell>
+              156
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Cascade
+            </cell>
+            <cell>
+              160
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Squak
+            </cell>
+            <cell>
+              250
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Sulphide
+            </cell>
+            <cell>
+              95
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <ol marker="a.">
+        <li>
+          <p>
+            Find the 5-number summary and sketch a boxplot.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the range and IQR of the data set.
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose the glaciers shrink even further. How would the boxplot that you drew in part (a) change?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Soil density samples were taken randomly before and after a mature conifer forest was logged. Density is mass per volume and is a measure of soil compaction. The table below lists the density measurements in grams per cubic centimeter.<fn>Michael D. Purser, “The Impact of Clearcut Logging with High-Lead Yarding on Spatial Distribution and Variability of Infiltration Capacities on a Forest Hillslope” (Master’s Thesis, Univ. of Washington, 1988), 92–93.</fn> Note that there were more samples taken after the logging operation.
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Before Logging
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.15
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.14
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.34
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.64
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.50
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.81
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.10
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.46
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.19
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.21
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.19
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              After Logging
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.61
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.38
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.77
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.65
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.60
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.34
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.15
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.87
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.56
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.78
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.73
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.85
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.96
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.09
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.90
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.10
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.20
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.04
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <ol marker="a.">
+        <li>
+          <p>
+            For each data set, find the 5-number summary and draw a boxplot.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is soil more compact (more dense) before or after logging? How can you tell? Which number(s) best support your answer?
+          </p>
+        </li>
+        <li>
+          <p>
+            In which data set is variation in soil density greatest? How do you know?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Boxplots of residential fresh water use for all counties in Maryland, Louisiana, and Ohio are displayed below. Values are expressed in gallons per person per day. 
+      </p>
+      <image width="100%" source="statistics/3_6/Residential Water Boxplots.png">
+      </image>
+      <ol marker="a.">
+        <li>
+          <p>
+            Suppose that you live in Louisiana, and your county ranks at the 1st quartile in water use. How much water, on average, does each person in your county use each day? 
+          </p>
+        </li>
+        <li>
+          <p>
+            In which state does the median county use the least water, on a per capita basis?
+          </p>
+        </li>
+        <li>
+          <p>
+            In which state is the spread in county water use the least, on a per capita basis?
+          </p>
+        </li>
+        <li>
+          <p>
+            For these three states, is county per capita water use left-skewed or right-skewed?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The follow graphs compare the number of hurricanes in three regions: Atlantic, Eastern Pacific, and Central Pacific. The data is from the years 1991 to 2024. What characteristics of the distribution are apparent in the histogram, but not in the boxplot? What characteristics are apparent in the box plot, but not in the histogram?
+      </p>
+      <image width="100%" source="statistics/3_6/histogram_by_year.png">
+      </image>
+      <image width="100%" source="statistics/3_6/boxplot_by_year.png">
+      </image>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Answer the following questions about standard deviation:
+      </p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Do outliers affect the standard deviation?
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose a data set has a point that is much lower than the rest. What type of effect (if any) would this have on the value of the standard deviation? 
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose a data set has a point that is much higher than the rest. What type of effect (if any) would this have on the value of the standard deviation?
+          </p>
+        </li>
+        <li>
+          <p>
+            Which of the following graphs has the smallest standard deviation?
+          </p>
+          <image width="50%" source="statistics/3_6/Histogram A.png">
+          </image>
+          <image width="50%" source="statistics/3_6/Histogram B.png">
+          </image>
+          <image width="50%" source="statistics/3_6/Histogram C.png">
+          </image>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Arkshell clams (also known as blood clams) are harvested commercially off the coast of Virginia. A sample of two species of these clams (Noetia ponderosa and Anadara ovalis) had shell heights normally distributed with a mean of 20.3 mm and a standard deviation of 1.4 mm.<fn>U.S. Dept of Commerce, “Population Structure of the Arkshell Clam,” by Katherine McGraw, Sally Dennis, and Michael Castagna, NOAA technical report (1996). As cited in J. Susan Milton, Statistical Methods in the Biological and Health Sciences, 3rd ed. (Boston: McGraw Hill, 1999), 189.</fn>
+      </p>
+      <ol marker="a.">
+        <li>
+          <p>
+            For the Arkshell sample, find the seven numbers <m>\bar{x}-3s</m>, <m>\bar{x}-2s</m>, <m>\bar{x}-s</m>, <m>\bar{x}</m>, <m>\bar{x}+s</m>, <m>\bar{x}+2s</m>, and <m>\bar{x}+3s</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write a compound inequality expressing the shell heights that would be considered unusual.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The U.S. Weather Service has tracked the number of reported tornadoes in Oklahoma since 1950.<fn>https://www.weather.gov/oun/tornadodata-ok-1950</fn> Download the following spreadsheet to view the annual and monthly breakdowns for the years 1950 to 2018. 
+      </p>
+      <p>
+        <alert>Link:</alert> <url>https://1drv.ms/x/c/a1600d824c56be4e/IQDqJVdbShdCTK2DbbNnCmp0AfcIM0ealaB7Ce2XliGsoes?e=0m7yNM</url>
+      </p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Calculate the mean number of tornadoes per year and the standard deviation. Interpret the standard deviation in the context of the problem.
+          </p>
+        </li>
+        <li>
+          <p>
+            In 1974, there were 45 tornadoes in Oklahoma. Is this value unusual? Why or why not? 
+          </p>
+        </li>
+        <li>
+          <p>
+            In 1999, there were 145 tornadoes in Oklahoma. Is this value unusual? Why or why not? 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A monthly temperature normal is a 30-year average of monthly temperature data collected during a specific month at a specific geographic location. The table below presents the monthly temperature normals (°F) in July for six climate divisions in the U.S.<fn>https://www.ncei.noaa.gov/access</fn>
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Climate Location
+            </cell>
+            <cell colspan="2">
+              July Monthly Normal (°F) 1991-2020
+            </cell>
+          </row>
+          <row header="yes" bottom="minor">
+            <cell>
+            </cell>
+            <cell>
+              Mean
+            </cell>
+            <cell>
+              Standard Deviation
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Central Massachusetts
+            </cell>
+            <cell>
+              72.6
+            </cell>
+            <cell>
+              2.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Central Ohio
+            </cell>
+            <cell>
+              75.4
+            </cell>
+            <cell>
+              2.6
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Northeast Arizona
+            </cell>
+            <cell>
+              73.8
+            </cell>
+            <cell>
+              1.7
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Central Florida
+            </cell>
+            <cell>
+              83.3
+            </cell>
+            <cell>
+              1.3
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Southeast Desert Basins California
+            </cell>
+            <cell>
+              85.6
+            </cell>
+            <cell>
+              2.1
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Southwest North Dakota
+            </cell>
+            <cell>
+              68.7
+            </cell>
+            <cell>
+              3.3
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <ol marker="a.">
+        <li>
+          <p>
+            Compare South Central Florida’s July monthly normal to Southwest North Dakota’s July monthly normal. Which climate division has July temperatures that vary more from the 30-year average? Why?
+          </p>
+        </li>
+        <li>
+          <p>
+            Is a temperature of 79.7℉ more unusual for Northeast Arizona or for Southeast Desert Basins California? Explain. 
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        In 1990, 32 states in the United States produced nuclear energy. State-by-state annual values are listed in the table below.<fn>U.S. Dept of Energy, Energy Information Administration, http://www.eia.doe.gov/.</fn>
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              State
+            </cell>
+            <cell>
+              Production (GWh)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alabama
+            </cell>
+            <cell>
+              13,050
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arizona
+            </cell>
+            <cell>
+              20,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arkansas
+            </cell>
+            <cell>
+              11,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              California
+            </cell>
+            <cell>
+              32,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Connecticut
+            </cell>
+            <cell>
+              19,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Florida
+            </cell>
+            <cell>
+              21,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Georgia
+            </cell>
+            <cell>
+              24,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Illinois
+            </cell>
+            <cell>
+              71,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Iowa
+            </cell>
+            <cell>
+              3,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kansas
+            </cell>
+            <cell>
+              7,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Louisiana
+            </cell>
+            <cell>
+              14,200
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maine
+            </cell>
+            <cell>
+              4,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maryland
+            </cell>
+            <cell>
+              1,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Massachusetts
+            </cell>
+            <cell>
+              5,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Michigan
+            </cell>
+            <cell>
+              21,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Minnesota
+            </cell>
+            <cell>
+              12,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Missouri
+            </cell>
+            <cell>
+              8,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nebraska
+            </cell>
+            <cell>
+              7,500
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Hampshire
+            </cell>
+            <cell>
+              4,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Jersey
+            </cell>
+            <cell>
+              23,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New York
+            </cell>
+            <cell>
+              23,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Carolina
+            </cell>
+            <cell>
+              25,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ohio
+            </cell>
+            <cell>
+              10,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oregon
+            </cell>
+            <cell>
+              6,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Pennsylvania
+            </cell>
+            <cell>
+              57,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Carolina
+            </cell>
+            <cell>
+              42,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Tennessee
+            </cell>
+            <cell>
+              14,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Texas
+            </cell>
+            <cell>
+              15,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Vermont
+            </cell>
+            <cell>
+              3,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Virginia
+            </cell>
+            <cell>
+              23,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Washington
+            </cell>
+            <cell>
+              5,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wisconsin
+            </cell>
+            <cell>
+              11,200
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <p>
+        In 1990, 48 states in the United States produced hydroenergy. State-by-state annual values are listed in the table below.<fn>U.S. Dept of the Interior, Estimated Use of Water in the United States in 1990, USGS National Circular 1081, Table 28, http://water.usgs.gov/watuse/tables/hytab.st.html.</fn>
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              State
+            </cell>
+            <cell>
+              Production (GWh)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alabama
+            </cell>
+            <cell>
+              10,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alaska
+            </cell>
+            <cell>
+              980
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arizona
+            </cell>
+            <cell>
+              8,180
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arkansas
+            </cell>
+            <cell>
+              4,890
+            </cell>
+          </row>
+          <row>
+            <cell>
+              California
+            </cell>
+            <cell>
+              23,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Colorado
+            </cell>
+            <cell>
+              1,320
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Connecticut
+            </cell>
+            <cell>
+              452
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Florida
+            </cell>
+            <cell>
+              173
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Georgia
+            </cell>
+            <cell>
+              4,710
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Hawaii
+            </cell>
+            <cell>
+              89
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Idaho
+            </cell>
+            <cell>
+              7,450
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Illinois
+            </cell>
+            <cell>
+              771
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Indiana
+            </cell>
+            <cell>
+              441
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Iowa
+            </cell>
+            <cell>
+              13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kansas
+            </cell>
+            <cell>
+              12
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kentucky
+            </cell>
+            <cell>
+              2,880
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Louisiana
+            </cell>
+            <cell>
+              697
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maine
+            </cell>
+            <cell>
+              3,960
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maryland
+            </cell>
+            <cell>
+              2,310
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Massachusetts
+            </cell>
+            <cell>
+              1,090
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Michigan
+            </cell>
+            <cell>
+              3,040
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Minnesota
+            </cell>
+            <cell>
+              843
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Missouri
+            </cell>
+            <cell>
+              2,190
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Montana
+            </cell>
+            <cell>
+              10,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nebraska
+            </cell>
+            <cell>
+              833
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nevada
+            </cell>
+            <cell>
+              1,620
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Hampshire
+            </cell>
+            <cell>
+              1,980
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Jersey
+            </cell>
+            <cell>
+              17
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Mexico
+            </cell>
+            <cell>
+              215
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New York
+            </cell>
+            <cell>
+              29,400
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Carolina
+            </cell>
+            <cell>
+              7,070
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Dakota
+            </cell>
+            <cell>
+              1,720
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ohio
+            </cell>
+            <cell>
+              173
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oklahoma
+            </cell>
+            <cell>
+              2,870
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oregon
+            </cell>
+            <cell>
+              40,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Pennsylvania
+            </cell>
+            <cell>
+              3,190
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Rhode Island
+            </cell>
+            <cell>
+              6
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Carolina
+            </cell>
+            <cell>
+              3,880
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Dakota
+            </cell>
+            <cell>
+              4,270
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Tennessee
+            </cell>
+            <cell>
+              11,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Texas
+            </cell>
+            <cell>
+              1,570
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Utah
+            </cell>
+            <cell>
+              481
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Vermont
+            </cell>
+            <cell>
+              1,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Virginia
+            </cell>
+            <cell>
+              4,050
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Washington
+            </cell>
+            <cell>
+              87,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              West Virginia
+            </cell>
+            <cell>
+              1,330
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wisconsin
+            </cell>
+            <cell>
+              1,150
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wyoming
+            </cell>
+            <cell>
+              611
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <ol marker="a.">
+        <li>
+          <p>
+            Use an Excel spreadsheet to calculate the mean and standard deviation of each data set. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Evidently, Illinois produced the most nuclear energy, and Washington produced the most hydroelectric energy. Which state, Illinois or Washington, had a more extreme production level? Explain.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The data you analyzed in this section focused on environmental topics and issues. Consider the following passage from Scripture:
+      </p>
+      <blockquote>
+        <p><q>The earth is the LORD's, and everything in it, the world, and all who live in it; for he founded it on the seas and established it on the waters.</q></p>
+        <attribution>Psalm 24:1-2</attribution>
+      </blockquote>
+      <p>
+        How should these verses shape the way we intereact with our natural environment?
+      </p>
+    </statement>
+  </exercise>
+</exercises>
 
 </section>
