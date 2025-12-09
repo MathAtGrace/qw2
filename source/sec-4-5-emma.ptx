@@ -8,7 +8,6 @@
   <introduction>
     <p>
       Students will be able to: 
-
     </p>
   </introduction>
     <ul>
@@ -22,21 +21,589 @@
           Analyze the relationship of the mean and median to the shape of the data. 
         </p>
       </li>
+      <li>
+        <p>
+          Determine whether the mean or median is a more accurate measure of centrality in various contexts.
+        </p>
+      </li>
+      <li>
+        <p>
+          Identify the strenghts and limitations of the mean and median as measures of centrality. 
+        </p>
+      </li>
     </ul>
 </objectives>
 
-<introduction>
-    <title>You can</title>
+<subsection>
+    <title>Calculating Summary Statistics</title>
     <p>
-        put an introduction here
-    </p>
-</introduction>
-
-<subsection xml:id="subsec-4-5-1">
-    <title>You can</title>
-    <p>
-        put a subsection here
+        In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an “average” value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.
     </p>
 </subsection>
 
+<subsection>
+  <title>Measures of Center</title>
+  <p>
+    There are a few different types of “averages” that measure the center, and the one we use will depend on the shape of the distribution. We will focus on the two most common “averages”: the <alert>mean</alert> and the <alert>median</alert>.
+  </p>
+</subsection>
+
+<subsection>
+  <title>Mean</title>
+  <p>
+    The <alert>mean</alert>, or more formally the arithmetic mean, is what probably comes to mind when you hear the word average. The mean is a single number which represents a “typical” value of a data set. The calculation of the mean uses every data value in the distribution and is therefore strongly affected by skew and outliers.
+  </p>
+  <p>
+    To calculate the mean of a distribution, we divide the sum of the data values by the number of data values we have. 
+  </p>
+  <example>
+      <statement>
+        <p>
+          In 2025-26, the mean published (sticker) tuition and fees for full-time undergraduate students are:<fn>Source: Ma, Jennifer, Matea Pender, and Xiaowen Hu (2025). Trends in College Pricing and Student Aid 2025, New York: College Board. © 2025 College Board. (<url href="www.collegeboard.org research.collegeboard.org/trends">www.collegeboard.org research.collegeboard.org/trends</url>)</fn>
+        </p> 
+          <ul>
+            <li>
+              <p>
+                Public four-year in-state: $11,950
+              </p>
+            </li>
+            <li>
+              <p>
+                Public four-year out-of-state: $31,880
+              </p>
+            </li>
+            <li>
+              <p>
+                Public two-year in-district: $4,150
+              </p>
+            </li>
+            <li>
+              <p>
+                Private nonprofit four-year: $45,000
+              </p>
+            </li>
+          </ul>
+        <p>
+          Identify and interpret the mean published tuition and fees for full-time undergraduate students at a public four-year in-state college and a private nonprofit four-year college. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The typical tuition and fees for a full-time student attending a public four-year in-state college is $11,950. For a private nonprofit four-year, the typical price of tuition and fees is $45,000. 
+        </p>
+      </solution>
+    </example>
+</subsection>
+
+<subsection>
+  <title>Median</title>
+  <example>
+      <statement>
+        <p>
+          In 2024, the median household income in the United States was calculated to be $83,730. <fn>Source: Source: U.S. Census Bureau, Current Population Survey, 2024 and 2025 Annual Social and Economic Supplements (CPS ASEC; DMS number P-7534374, DRB approval number CBDRB-FY25-0384).</fn> 
+        </p>
+      </statement>
+    </example>
+    <p>
+    In order to properly interpret the meaning of the example above, we want to be sure to understand what the median is. The <alert>median</alert> of a data set is the “middle” value, when the data are listed in order from smallest to largest. We can also think of the median as the value that has 50% of the data below it and 50% of data above it. As we will discover later, the median is also the 50th percentile.
+   </p>
+   <p>
+    In the context of our example, then, $83,730 is the center of median household incomes in the United States. Around 50% of households in the United States have an income below $83,730 and the other 50% have an income above $83,730. 
+   </p>
+   <p>
+    For both mean and median, it is important to not overgeneralize the findings. If the mean or median is found from a small sample size, the value might not apply to the larger population. Consider if you were to survey ten households in your neighborhood about their income. This median might provide a good estimate for what the typical household income in your neighborhood is; however, this would not necessarily be a good estimate for the typical income in the United States. You would likely find a median quite different from the $83,730 reported in the example above.
+   </p>
+   <example>
+      <statement>
+        <p>
+        A study was conducted on a random group of 25 students from a single high school. The researchers found the students to have an average daily screen time of 7 hours. Is it reasonable to say that typical people have a daily screen time of around 7 hours? What population can this average be generalized to? 
+        </p> 
+      </statement>
+      <solution>
+        <p>
+        Solely based on the study conducted, we cannot say the amount of time a typical person spends on a screen is 7 hours. This study was conducted on students aged 14-18. We do not have data on other age ranges. Additionally, this study took place at one high school. The average could only be generalized to students at that specific high school. 
+        </p>
+      </solution>
+    </example>
+</subsection>
+
+<subsection>
+  <title>How Outliers Affect the Mean</title>
+  <activity>
+    <statement>
+      <p>
+        In 1984, the University of North Carolina estimated the incomes of students who graduated after majoring in geography. The college reported the mean income as about $260,741. In 2019, the average wages for geographers was $81,970. 
+      </p>
+      <p>
+        <ol marker = "a.">
+          <li>
+            <p>
+              Why might the average income have been so high for University of North Carolina geography majors in 1984?
+            </p>
+          </li>
+          <li>
+            <p>
+              Below are the estimated incomes from the geography majors. What do you notice?
+            </p>
+            <p>
+              17,466 18,085 17,875 19,339 19,682 19,610 18,259 16,354 2,200,000
+            </p>
+          </li>
+          <li>
+            <p>
+            The 2,200,000 income represents the income of Michael Jordan, a UNC grad who studied geography. Does his income realistically reflect the earnings of geography majors? Why or why not?
+            </p>
+          </li>
+          <li>
+            <p>
+              How did Michael Jordan’s income affect the mean? How do his earnings compare to everyone else’s? 
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider that the median of the 9 geography majors was $19,682. Did Michael Jordan’s earnings impact the median as it did the mean? 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>    
+  </activity>
+  <p>
+    Michael Jordan’s income in the activity above is what we call an outlier. The mean is easily impacted by outliers because we use each of the data points to calculate the mean. Extremely high or low values will greatly affect the mean. The median, however, is relatively unchanged by outliers because it is the “middle” data point in a data set. It will generally give a more accurate measure of the center of the data. 
+  </p>
+  <p>
+    For this reason, when working with data that is has outliers, it is common to use the median.
+  </p>
+</subsection>
+
+<subsection>
+  <title>The Relationship Between the Mean and Median</title>
+  <example>
+    <p>
+      Fifty people from the Portland Metro area who are employed full time were sampled and their annual salaries were recorded (to the nearest thousand dollars). The histogram and summary statistics from GeoGebra are shown below.
+    </p>
+    <p>
+      From the histogram we can see that the shape of the distribution is unimodal and skewed to the right. We can see from the statistics output on the left that the mean is greater than the median. This is because the few people with higher incomes bring the average up.
+    </p>
+    <figure>
+      <caption>Mean <m>=\$67,160</m>, Median <m>=\$53,500</m>, Mean <m>\gt</m> Median</caption>
+      <image width="50%" source="statistics/3_3/mean_vs_median1.png">
+      <description>A screenshot of GeoGebra showing the histogram is skewed to the right. The statistics output shows the mean is $67,160 and the Median is $53,500.</description>
+      </image>
+    </figure>
+  </example>
+
+   <example>
+    <p>
+      A random selection of 30 math 105 exams at PCC were sampled and their scores were recorded. The histogram of the resulting distribution is shown below. 
+    </p>
+    <p>
+      The shape of the distribution is unimodal and skewed to the left. There also appears to be an outlier between 20 and 30. We can see from the statistics output that the mean is less than the median. This is because the low test score brought the average down. points points
+    </p>
+
+    <figure>
+      <caption>Mean <m>=81.7</m> points, Median <m>=87.5</m> points, Mean <m>\lt</m> Median</caption>
+      <image width="50%" source="statistics/3_3/mean_vs_median2.png">
+      <description>A screenshot of GeoGebra showing the histogram is skewed to the left. The statistics output shows the mean is 81.7 points and the Median is 87.5 points.</description>
+      </image>
+    </figure>
+    
+  </example>
+
+  <example>
+    <p>
+      Nineteen people identifying as female were sampled and their heights (in inches) were recorded. The histogram of the resulting distribution is shown below. 
+    </p>
+    <p>
+      The shape of the distribution is unimodal and roughly symmetric. We can also see from the statistics output that the mean and the median are approximately equal. inches inches
+    </p>
+    <figure>
+      <caption>Mean <m>=62.6</m> inches, Median <m>=62</m> inches Mean <m>\approx</m> Median</caption>
+      <image width="50%" source="statistics/3_3/mean_vs_median3.png">
+      <description>A screenshot of GeoGebra showing the histogram is approximately symmetric. The statistics output shows the mean is 62.6 inches and the Median is 62 inches.</description>
+      </image>
+    </figure>
+  </example>
+  <p>
+    As shown in the three examples shown above, If a distribution is skewed, the mean is pulled in the direction of the skew. In a right skewed distribution, the mean is greater than the median, while in a left skewed distribution, the mean is less than the median. If the distribution is symmetric, the mean and the median will be approximately equal.
+  </p>
+  <p>
+    We can use these observations in reverse as well. If we know the mean is greater than the median, then we can expect the distribution to be skewed to the right. If the mean is less than the median, then we can expect the distribution to be skewed to the left. When the mean and the median are approximately equal, the distribution is likely to be symmetric.
+  </p>
+
+  <example>
+  <statement>
+  <p>
+    Recent college graduates were asked how much student loan debt they have. The data has a mean of $46,265 and a median of $33,652. Just based on this information, do you expect the distribution to be symmetric, skewed to the left, or skewed to the right?
+  </p>
+  </statement>
+  <solution>
+  <p>
+    Since the mean is greater than the median, we can expect the distribution to be skewed to the right.     
+  </p>
+  </solution>
+</example>
+
+<p>
+As mentioned earlier, when dealing with data that is skewed or has outliers, it is common to use the median instead of the mean. In these instances, the median will give a better measure of what is "typical." When the data is roughly symmetric, the mean and median will be approximately equal, and either measure could be used. 
+</p>
+<activity>
+    <statement>
+      <p>
+         For the following four situations, determine whether or not the mean or the median is a better representation of the center of the data. Explain your answer. 
+      </p>
+      <p>
+        <ol marker = "a.">
+          <li>
+            <p>
+              You found a used car that you like, and you want to know if the price is too high or too low. You find a list of sale prices for that make and model, and you see that the distribution of those prices is skewed to the right. Some of the prices at the high end are close to the original sale price of the car, so you guess that those cars might have really low mileage, or have other enhancements added on that increased the value (but which don’t apply to the car you found).
+            </p>
+          </li>
+          <li>
+            <p>
+              You are asked to find the average height of a large population of people. The distribution of heights follows a symmetric, normal distribution.
+            </p>
+          </li>
+          <li>
+            <p>
+            You are trying to determine how much a “typical” house costs in an area. There are a small number of houses which are incredibly valuable in the area.
+            </p>
+          </li>
+          <li>
+            <p>
+          Customers are asked to take a satisfaction survey on their experiences in a store. The rating follows a 1-5 scale with 1 being extremely dissatisfied and 5 being extremely satisfied. You want to find the typical level of customer satisfaction.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+</activity>
+</subsection>
+
+<subsection>
+  <title>Limitations of Measures of Center</title>
+  <p>
+    While measures of center are useful in identifying a typical value, relying on only measures of centrality can often hide important characteristics of the data. The following example is one such example of this. 
+  </p>
+  <activity>
+    <statement>
+      <p>
+        In 1950, the Air Force attempted to measure particular bodily dimensions of a group of pilots. The goal was to find an average pilot size and use these average dimensions in the design of cockpits. Lieutenant Gilbert S. Daniels measured over 4,000 pilots and challenged the idea of finding an "average man." Use the link to read about Daniel's findings and argument to answer the following questions. <url href="https://apps.dtic.mil/sti/tr/pdf/AD0010203.pdf">The "Average Man"?</url>
+      </p>
+      <p>
+        <ol marker = "a.">
+          <li>
+            <p>
+              Looking at the first two pages of Daniels' argument, what are some issues associated with trying to find the "average man"?
+            </p>
+          </li>
+          <li>
+            <p>
+              Of the 4,063 pilots that were measured, how many were approximately average for all 10 of the physical dimensions measured?
+            </p>
+          </li>
+          <li>
+            <p>
+              Lieutenant Daniels suggests looking at a range of "average" for more accurate data. Looking at Table I in the document, how did the use of a range of "average" affect the data? 
+            </p>
+          </li>
+          <li>
+            <p>
+              How did Lieutenant Daniels use math to make a well formed argument? 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </activity>
+  <p>
+    To understand a dataset as a whole, there is value in considering both the average and the variability of the data. With our example of the "Average Man" for instance, a range of common body dimensions would allow for better generalizations and design decisions. Indeed, Lieutenant Daniels' discovery led to the use of adjustable seating and straps to fit the majority of pilots rather than a "one size fits all" approach. 
+  </p>
+  <p>
+    The mean or median of a dataset can be valuable information, but it does not necessarily provide us information about how spread out the data is. Consider, for instance, our earlier example on household income in the United States. The median was $83,730. Is it reasonable for us to say that most households will have an income close to $83,730? We cannot necessarily jump to that conclusion without taking a closer look at the distribution of the data. Measures of variation will be covered in the next section, and they can help shed some light on the spread and consistency of a dataset. 
+  </p>
+</subsection>
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise><!--  #1 -->
+  <statement>
+    <p>
+      A random sample of 33 respondents was asked to number how many people they share a residence with. From the results, the mean was determined to be 1.88. Explain this mean with context. 
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Among the respondents, the average number of people they shared a residence with was 1.88. In other words, a typical respondent shared their residence with around 2 people. 
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      A survey was conducted in which participants were asked the number of siblings they had. The median was found to be 1. Interpret the median with context.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Among the participants of the survey, the typical number of siblings was found to be 1. Around 50% of the participants had less than 1 sibling, while the other 50% had more than 1 sibling. 
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="diners_example">
+  <statement>
+  <p>
+    A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $25.00, $10.00, $10.00, $7.50, $8.25, $9.00, $5.00, $15.00, $8.00, $7.25, $7.50, $8.00, $7.00. $12.00. The mean was found to be $9.80 and the median was found to be $8.00. Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.
+  </p>
+  </statement>
+  <solution>
+    <p>
+    Since the mean is greater than the median, we would expect the distribution will be skewed right.
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="commercials_example">
+  <statement>
+  <p>
+    The amount of commercials in an hour of television varies by channel. The total length (in minutes) of all commercials from 8 pm to 9 pm in for some selected broadcast and cable channels on a weekday evening were: 10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2. The mean was found to be 9.85 minutes and the median is 9.88 minutes. Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.
+  </p>
+  </statement>
+  <solution>
+    <p>
+    Because the mean and median are approximately equal, we would expect that the distribution is symmetric.
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment. Suppose that a new cancer drug is currently under study. Of interest is the average length of time in months patients live once starting the treatment. A researcher studies a random group of 40 male patients aged 40-55 throughout their treatment.
+  </p>
+  <p>
+  <ol marker="a.">
+    <li>
+      <p>
+       The mean was found to be 23.6 months and the median was 24 months. What population could these findings be generalized to? 
+      </p>
+    </li>
+    <li>
+      <p>
+        Suggest a change to the study group so the findings can be generalized to a larger group of people. 
+      </p>
+    </li>
+  </ol>
+  </p>
+  </statement>
+  <solution>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            The findings could be generalized to male cancer patients who are taking the treatment aged 40-55.
+          </p> 
+        </li>
+        <li>
+          <p>
+            In order to generalize the findings to a larger group of people, both male and female patients could be studied. Additionally, the researcher can study patients of a wider age range as well. 
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    The US Census Bureau, in addition to counting the population of the US every 10 years, conducts yearly informational surveys, such as the American Community Survey (ACS). For the 2012 ACS, a randomly chosen group of 20 respondents (10 males, 10 females) answered a question about their incomes.<fn>Data from Advanced High School Statistics, 2nd Ed. Section 2.1 Exercise #1. (<url href="https://www.openintro.org/stat/textbook.php?stat_book=aps">https://www.openintro.org/stat/textbook.php?stat_book=aps</url>).</fn> The mean for males is $43,930, and the median for males if $45,000. The mean for females is $20,727, and the median for females is $22,500. Compare and contrast the two groups. 
+  </p>
+</statement>
+<solution>
+Both the mean income and median income for the males in the sample were twice as large as the mean income and median income for the females in the sample. The difference between the mean and median income for the females was slightly larger than the mean and median income for the males, so the distribution of incomes for the females is possibly more skewed than the distribution for the males.
+</solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    At the end of the term, 400 students take a final exam, and their scores (as percentages) are plotted in a histogram.<fn>Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<url href="https://www.openintro.org/stat/textbook.php?stat_book=aps">https://www.openintro.org/stat/textbook.php?stat_book=aps</url>)</fn>
+  </p>
+  <sidebyside width="50%">
+    <image source="statistics/3_3/400_exams.png">
+    </image>
+    <description>The bars gradually increase going to the right with the tallest bars near the right side of the graph, then they decrease sharply.</description>
+  </sidebyside>
+  <p>
+    <ol marker="a.">
+      <li>
+        <p>
+          Is the graph shown above skewed right, skewed left, or symmetric? Explain why you chose your answer.
+        </p>
+      </li>
+      <li>
+        <p>
+          Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?
+        </p>
+      </li>
+    </ol>
+  </p>
+  </statement>
+  <solution>
+  <p>
+    <ol marker="a.">
+      <li>
+        <p>
+          This graph is skewed left.
+        </p>
+      </li>
+      <li>
+        <p>
+          I expect that the mean is less than the median because the graph is skewed left.
+        </p>
+      </li>
+    </ol>
+  </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    The following graph shows the distribution of yearly incomes of 40 patrons at a college coffee shop.<fn>Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<url href="https://www.openintro.org/stat/textbook.php?stat_book=aps">https://www.openintro.org/stat/textbook.php?stat_book=aps</url>)</fn>
+  </p>
+  <sidebyside width="50%">
+  <image source="statistics/3_3/40_coffee.png">
+  </image>
+  <description>The bars on the histogram increase gradually with the tallest bars in the center, then decrease gradually.</description>
+  </sidebyside>
+  <p>
+    <ol marker="a.">
+      <li>
+        <p>
+          Is the graph shown above skewed right, skewed right, or symmetric? Explain why you chose your answer.
+        </p>
+      </li>
+      <li>
+        <p>
+          Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?
+        </p>
+      </li>
+    </ol>
+  </p>
+  </statement>
+  <solution>
+  <p>
+    <ol marker="a.">
+      <li>
+        <p>
+          This graph is symmetric. The graph has a single peak between $65,000 an $66,000, and there are approximately an equal number of data values on either side of this peak.
+        </p>
+      </li>
+      <li>
+        <p>
+          I expect that the mean and median are equal because the graph is symmetric.
+        </p>
+      </li>
+    </ol>
+  </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    For each of the following distributions, would you expect that the mean is less than the median, less than the median, or equal to the median? Explain your reasoning.
+  </p>
+  <p>
+    <ol marker="a.">
+      <li>
+        <p>
+          Household incomes in the US
+        </p>
+      </li>
+      <li>
+        <p>
+          Weights of newborn babies
+        </p>
+      </li>
+      <li>
+        <p>
+          The number of children in a household in the US
+        </p>
+      </li>
+      <li>
+        <p>
+          Medical costs for all adults
+        </p>
+      </li>
+      <li>
+        <p>
+          Medical costs for adults in the US older than 65
+        </p>
+      </li>
+    </ol>
+  </p>
+  </statement>
+  <solution>
+  <p>
+    Answers will vary.
+  </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+  <p>
+    According to the Bureau of Labor Statistics, the mean annual wage for accountants is $90,780 while the median annual wage is $79,880. 
+  </p>
+  <p>
+  <ol marker="a.">
+    <li>
+      <p>
+       Explain why this might be the case.
+      </p>
+    </li>
+    <li>
+      <p>
+        If you were considering becoming an accountant, do you think the mean or the median would be most useful to consider?
+      </p>
+    </li>
+    <li>
+      <p>
+        A school is attempting to get more students to join their accounting program. They want to share data about the wages accountants make. Would the school be more likely to advertise the mean or median salary? Explain. 
+      </p>
+    </li>
+  </ol>
+  </p>
+  </statement>
+  <solution>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Since the mean is greater than the median, the data is likely skewed right. There could be some outliers in which a few accountants are making a lot more money than is typical for accountants. This would cause the mean to increase and the median to remain relatively unchanged. 
+          </p> 
+        </li>
+        <li>
+          <p>
+            If I were attempting to become an accountant, the median would likely be a more accurate measure of what the typical salary of an accountant is. Since the data is likely skewed, the mean might be higher than what a typical accountant makes. 
+          </p>
+        </li>
+        <li>
+          <p>
+            The school would be more likely to use the mean as the salary for typical accountants. Since they are attempting to attract more students to the accounting program, they would want to advertise the higher wage as a typical salary. 
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+</exercises>
 </section>
