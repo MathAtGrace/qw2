@@ -354,7 +354,7 @@ As mentioned earlier, when dealing with data that is skewed or has outliers, it 
   </solution>
 </exercise>
 
-<exercise xml:id="diners_example">
+<exercise xml:id="diners_example-emma">
   <statement>
   <p>
     A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $25.00, $10.00, $10.00, $7.50, $8.25, $9.00, $5.00, $15.00, $8.00, $7.25, $7.50, $8.00, $7.00. $12.00. The mean was found to be $9.80 and the median was found to be $8.00. Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.
@@ -367,7 +367,7 @@ As mentioned earlier, when dealing with data that is skewed or has outliers, it 
   </solution>
 </exercise>
 
-<exercise xml:id="commercials_example">
+<exercise xml:id="commercials_example-emma">
   <statement>
   <p>
     The amount of commercials in an hour of television varies by channel. The total length (in minutes) of all commercials from 8 pm to 9 pm in for some selected broadcast and cable channels on a weekday evening were: 10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2. The mean was found to be 9.85 minutes and the median is 9.88 minutes. Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.
