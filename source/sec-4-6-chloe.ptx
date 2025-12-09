@@ -47,9 +47,45 @@
           <p>
             Consider the lengths of the ten trees from the studied plot. Which values seem unusual given the mean? What information does this data set provide that the mean does not capture?
           </p>
-          <p>
-            Tree Lengths (Meters): 17.1, 20.8, 3.0, 18.0, 31.0, 13.0, 9.1, 5.0, 10.0, 9.1
-          </p>
+          <table>
+            <tabular>
+              <row>
+                <cell>
+                  Tree Lengths (Meters)
+                </cell>
+                <cell>
+                  17.1
+                </cell>
+                <cell>
+                  20.8
+                </cell>
+                <cell>
+                  3.0
+                </cell>
+                <cell>
+                  18.0
+                </cell>
+                <cell>
+                  31.0
+                </cell>
+                <cell>
+                  13.0
+                </cell>
+                <cell>
+                  9.1
+                </cell>
+                <cell>
+                  5.0
+                </cell>
+                <cell>
+                  10.0
+                </cell>
+                <cell>
+                  9.1
+                </cell>
+              </row>
+            </tabular>
+          </table>
           <image width="75%" source="statistics/3_6/Tree Snag.png">
           </image> 
         </statement>
@@ -277,8 +313,98 @@
         <p>
           The table below displays average July temperatures (°F) in New York City each year from 1991 to 2000.<fn>https://www.weather.gov/okx/CentralParkHistorical</fn>
         </p>
-        <image width="100%" source="statistics/3_6/New York Average Temperatures (1991-2000).png">
-        </image>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor" >
+            <cell>
+              Year
+            </cell>
+            <cell>
+              Temperature (°F)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1991
+            </cell>
+            <cell>
+              77.7
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1992
+            </cell>
+            <cell>
+              74.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1993
+            </cell>
+            <cell>
+              80.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1994
+            </cell>
+            <cell>
+              79.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1995
+            </cell>
+            <cell>
+              79.2
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1996
+            </cell>
+            <cell>
+              73.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1997
+            </cell>
+            <cell>
+              75.8
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1998
+            </cell>
+            <cell>
+              76.5
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1999
+            </cell>
+            <cell>
+              81.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              2000
+            </cell>
+            <cell>
+              72.3
+            </cell>
+          </row>
+        </tabular>
+      </table>
         <p>
           <ol>
             <li>
@@ -398,8 +524,114 @@
       <p>
         Most glaciers around the world have been shrinking due to global warming. The table below lists the decrease in length of a sample of 12 glaciers from the North Cascade Mountains in Washington State between 1980 and 2003.<fn>The North Cascade Glacier Climate Project, “Glacier Changes Through Time Photographic Series,” http://www.nichols.edu/departments/glacier/.</fn>
       </p>
-      <image width="100%" source="statistics/3_6/Glacier Data.png">
-      </image>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Glacier
+            </cell>
+            <cell>
+              Decrease in Length (Meters)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Boulder
+            </cell>
+            <cell>
+              430
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Columbia
+            </cell>
+            <cell>
+              85
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Easton
+            </cell>
+            <cell>
+              225
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Hinman
+            </cell>
+            <cell>
+              243
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Honeycomb
+            </cell>
+            <cell>
+              150
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ice Worm
+            </cell>
+            <cell>
+              38
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Lynch
+            </cell>
+            <cell>
+              115
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Mazama
+            </cell>
+            <cell>
+              210
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Quien Sabe
+            </cell>
+            <cell>
+              156
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Cascade
+            </cell>
+            <cell>
+              160
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Squak
+            </cell>
+            <cell>
+              250
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Sulphide
+            </cell>
+            <cell>
+              95
+            </cell>
+          </row>
+        </tabular>
+      </table>
       <ol marker="a.">
         <li>
           <p>
@@ -414,6 +646,204 @@
         <li>
           <p>
             Suppose the glaciers shrink even further. How would the boxplot that you drew in part (a) change?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Soil density samples were taken randomly before and after a mature conifer forest was logged. Density is mass per volume and is a measure of soil compaction. The table below lists the density measurements in grams per cubic centimeter.<fn>Michael D. Purser, “The Impact of Clearcut Logging with High-Lead Yarding on Spatial Distribution and Variability of Infiltration Capacities on a Forest Hillslope” (Master’s Thesis, Univ. of Washington, 1988), 92–93.</fn> Note that there were more samples taken after the logging operation.
+      </p>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Before Logging
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.15
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.14
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.34
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.64
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.50
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.81
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.10
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.46
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.19
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.21
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.19
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              After Logging
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.61
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.38
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.77
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.65
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.60
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.34
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.15
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.87
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.56
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.78
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.73
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.85
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.96
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.09
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.90
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.10
+            </cell>
+          </row>
+          <row>
+            <cell>
+              0.20
+            </cell>
+          </row>
+          <row>
+            <cell>
+              1.04
+            </cell>
+          </row>
+        </tabular>
+      </table>
+      <ol marker="a.">
+        <li>
+          <p>
+            For each data set, find the 5-number summary and draw a boxplot.
+          </p>
+        </li>
+        <li>
+          <p>
+            Is soil more compact (more dense) before or after logging? How can you tell? Which number(s) best support your answer?
+          </p>
+        </li>
+        <li>
+          <p>
+            In which data set is variation in soil density greatest? How do you know?
           </p>
         </li>
       </ol>
@@ -455,11 +885,11 @@
   <exercise>
     <statement>
       <p>
-        The follow graphs compare the number of hurricanes in four regions: North Atlantic, East Pacific, West Pacific, Indian Ocean. The data is from the years 1970 to 2010. What characteristics of the distribution are apparent in the histogram, but not in the boxplot? What characteristics are apparent in the box plot, but not in the histogram?
+        The follow graphs compare the number of hurricanes in three regions: Atlantic, Eastern Pacific, and Central Pacific. The data is from the years 1991 to 2024. What characteristics of the distribution are apparent in the histogram, but not in the boxplot? What characteristics are apparent in the box plot, but not in the histogram?
       </p>
-      <image width="75%" source="statistics/3_6/Hurricane Histogram.png">
+      <image width="100%" source="statistics/3_6/histogram_by_year.png">
       </image>
-      <image width="75%" source="statistics/3_6/Hurricane Boxplot.png">
+      <image width="100%" source="statistics/3_6/boxplot_by_year.png">
       </image>
     </statement>
   </exercise>
@@ -503,10 +933,30 @@
   <exercise>
     <statement>
       <p>
+        Arkshell clams (also known as blood clams) are harvested commercially off the coast of Virginia. A sample of two species of these clams (Noetia ponderosa and Anadara ovalis) had shell heights normally distributed with a mean of 20.3 mm and a standard deviation of 1.4 mm.<fn>U.S. Dept of Commerce, “Population Structure of the Arkshell Clam,” by Katherine McGraw, Sally Dennis, and Michael Castagna, NOAA technical report (1996). As cited in J. Susan Milton, Statistical Methods in the Biological and Health Sciences, 3rd ed. (Boston: McGraw Hill, 1999), 189.</fn>
+      </p>
+      <ol marker="a.">
+        <li>
+          <p>
+            For the Arkshell sample, find the seven numbers <m>\bar{x}-3s</m>, <m>\bar{x}-2s</m>, <m>\bar{x}-s</m>, <m>\bar{x}</m>, <m>\bar{x}+s</m>, <m>\bar{x}+2s</m>, and <m>\bar{x}+3s</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write a compound inequality expressing the shell heights that would be considered unusual.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
         The U.S. Weather Service has tracked the number of reported tornadoes in Oklahoma since 1950.<fn>https://www.weather.gov/oun/tornadodata-ok-1950</fn> Download the following spreadsheet to view the annual and monthly breakdowns for the years 1950 to 2018. 
       </p>
       <p>
-        <alert>Link:</alert> https://1drv.ms/x/c/a1600d824c56be4e/IQDqJVdbShdCTK2DbbNnCmp0AfcIM0ealaB7Ce2XliGsoes?e=0m7yNM
+        <alert>Link:</alert> <url>https://1drv.ms/x/c/a1600d824c56be4e/IQDqJVdbShdCTK2DbbNnCmp0AfcIM0ealaB7Ce2XliGsoes?e=0m7yNM</url>
       </p>
       <ol marker="a.">
         <li>
@@ -533,8 +983,94 @@
       <p>
         A monthly temperature normal is a 30-year average of monthly temperature data collected during a specific month at a specific geographic location. The table below presents the monthly temperature normals (°F) in July for six climate divisions in the U.S.<fn>https://www.ncei.noaa.gov/access</fn>
       </p>
-      <image width="100%" source="statistics/3_6/Climate Data Homework.png">
-      </image>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              Climate Location
+            </cell>
+            <cell colspan="2">
+              July Monthly Normal (°F) 1991-2020
+            </cell>
+          </row>
+          <row header="yes" bottom="minor">
+            <cell>
+            </cell>
+            <cell>
+              Mean
+            </cell>
+            <cell>
+              Standard Deviation
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Central Massachusetts
+            </cell>
+            <cell>
+              72.6
+            </cell>
+            <cell>
+              2.4
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Central Ohio
+            </cell>
+            <cell>
+              75.4
+            </cell>
+            <cell>
+              2.6
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Northeast Arizona
+            </cell>
+            <cell>
+              73.8
+            </cell>
+            <cell>
+              1.7
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Central Florida
+            </cell>
+            <cell>
+              83.3
+            </cell>
+            <cell>
+              1.3
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Southeast Desert Basins California
+            </cell>
+            <cell>
+              85.6
+            </cell>
+            <cell>
+              2.1
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Southwest North Dakota
+            </cell>
+            <cell>
+              68.7
+            </cell>
+            <cell>
+              3.3
+            </cell>
+          </row>
+        </tabular>
+      </table>
       <ol marker="a.">
         <li>
           <p>
@@ -555,13 +1091,673 @@
       <p>
         In 1990, 32 states in the United States produced nuclear energy. State-by-state annual values are listed in the table below.<fn>U.S. Dept of Energy, Energy Information Administration, http://www.eia.doe.gov/.</fn>
       </p>
-      <image width="100%" source="statistics/3_6/Nuclear Energy Data.png">
-      </image>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              State
+            </cell>
+            <cell>
+              Production (GWh)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alabama
+            </cell>
+            <cell>
+              13,050
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arizona
+            </cell>
+            <cell>
+              20,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arkansas
+            </cell>
+            <cell>
+              11,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              California
+            </cell>
+            <cell>
+              32,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Connecticut
+            </cell>
+            <cell>
+              19,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Florida
+            </cell>
+            <cell>
+              21,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Georgia
+            </cell>
+            <cell>
+              24,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Illinois
+            </cell>
+            <cell>
+              71,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Iowa
+            </cell>
+            <cell>
+              3,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kansas
+            </cell>
+            <cell>
+              7,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Louisiana
+            </cell>
+            <cell>
+              14,200
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maine
+            </cell>
+            <cell>
+              4,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maryland
+            </cell>
+            <cell>
+              1,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Massachusetts
+            </cell>
+            <cell>
+              5,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Michigan
+            </cell>
+            <cell>
+              21,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Minnesota
+            </cell>
+            <cell>
+              12,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Missouri
+            </cell>
+            <cell>
+              8,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nebraska
+            </cell>
+            <cell>
+              7,500
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Hampshire
+            </cell>
+            <cell>
+              4,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Jersey
+            </cell>
+            <cell>
+              23,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New York
+            </cell>
+            <cell>
+              23,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Carolina
+            </cell>
+            <cell>
+              25,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ohio
+            </cell>
+            <cell>
+              10,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oregon
+            </cell>
+            <cell>
+              6,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Pennsylvania
+            </cell>
+            <cell>
+              57,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Carolina
+            </cell>
+            <cell>
+              42,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Tennessee
+            </cell>
+            <cell>
+              14,000
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Texas
+            </cell>
+            <cell>
+              15,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Vermont
+            </cell>
+            <cell>
+              3,600
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Virginia
+            </cell>
+            <cell>
+              23,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Washington
+            </cell>
+            <cell>
+              5,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wisconsin
+            </cell>
+            <cell>
+              11,200
+            </cell>
+          </row>
+        </tabular>
+      </table>
       <p>
         In 1990, 48 states in the United States produced hydroenergy. State-by-state annual values are listed in the table below.<fn>U.S. Dept of the Interior, Estimated Use of Water in the United States in 1990, USGS National Circular 1081, Table 28, http://water.usgs.gov/watuse/tables/hytab.st.html.</fn>
       </p>
-      <image width="100%" source="statistics/3_6/Hydroenergy Data.png">
-      </image>
+      <table>
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>
+              State
+            </cell>
+            <cell>
+              Production (GWh)
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alabama
+            </cell>
+            <cell>
+              10,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Alaska
+            </cell>
+            <cell>
+              980
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arizona
+            </cell>
+            <cell>
+              8,180
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Arkansas
+            </cell>
+            <cell>
+              4,890
+            </cell>
+          </row>
+          <row>
+            <cell>
+              California
+            </cell>
+            <cell>
+              23,900
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Colorado
+            </cell>
+            <cell>
+              1,320
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Connecticut
+            </cell>
+            <cell>
+              452
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Florida
+            </cell>
+            <cell>
+              173
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Georgia
+            </cell>
+            <cell>
+              4,710
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Hawaii
+            </cell>
+            <cell>
+              89
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Idaho
+            </cell>
+            <cell>
+              7,450
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Illinois
+            </cell>
+            <cell>
+              771
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Indiana
+            </cell>
+            <cell>
+              441
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Iowa
+            </cell>
+            <cell>
+              13
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kansas
+            </cell>
+            <cell>
+              12
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Kentucky
+            </cell>
+            <cell>
+              2,880
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Louisiana
+            </cell>
+            <cell>
+              697
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maine
+            </cell>
+            <cell>
+              3,960
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Maryland
+            </cell>
+            <cell>
+              2,310
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Massachusetts
+            </cell>
+            <cell>
+              1,090
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Michigan
+            </cell>
+            <cell>
+              3,040
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Minnesota
+            </cell>
+            <cell>
+              843
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Missouri
+            </cell>
+            <cell>
+              2,190
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Montana
+            </cell>
+            <cell>
+              10,700
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nebraska
+            </cell>
+            <cell>
+              833
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Nevada
+            </cell>
+            <cell>
+              1,620
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Hampshire
+            </cell>
+            <cell>
+              1,980
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Jersey
+            </cell>
+            <cell>
+              17
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New Mexico
+            </cell>
+            <cell>
+              215
+            </cell>
+          </row>
+          <row>
+            <cell>
+              New York
+            </cell>
+            <cell>
+              29,400
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Carolina
+            </cell>
+            <cell>
+              7,070
+            </cell>
+          </row>
+          <row>
+            <cell>
+              North Dakota
+            </cell>
+            <cell>
+              1,720
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Ohio
+            </cell>
+            <cell>
+              173
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oklahoma
+            </cell>
+            <cell>
+              2,870
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Oregon
+            </cell>
+            <cell>
+              40,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Pennsylvania
+            </cell>
+            <cell>
+              3,190
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Rhode Island
+            </cell>
+            <cell>
+              6
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Carolina
+            </cell>
+            <cell>
+              3,880
+            </cell>
+          </row>
+          <row>
+            <cell>
+              South Dakota
+            </cell>
+            <cell>
+              4,270
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Tennessee
+            </cell>
+            <cell>
+              11,800
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Texas
+            </cell>
+            <cell>
+              1,570
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Utah
+            </cell>
+            <cell>
+              481
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Vermont
+            </cell>
+            <cell>
+              1,100
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Virginia
+            </cell>
+            <cell>
+              4,050
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Washington
+            </cell>
+            <cell>
+              87,300
+            </cell>
+          </row>
+          <row>
+            <cell>
+              West Virginia
+            </cell>
+            <cell>
+              1,330
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wisconsin
+            </cell>
+            <cell>
+              1,150
+            </cell>
+          </row>
+          <row>
+            <cell>
+              Wyoming
+            </cell>
+            <cell>
+              611
+            </cell>
+          </row>
+        </tabular>
+      </table>
       <ol marker="a.">
         <li>
           <p>
@@ -574,6 +1770,21 @@
           </p>
         </li>
       </ol>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The data you analyzed in this section focused on environmental topics and issues. Consider the following passage from Scripture:
+      </p>
+      <blockquote>
+        <p><q>The earth is the LORD's, and everything in it, the world, and all who live in it; for he founded it on the seas and established it on the waters.</q></p>
+        <attribution>Psalm 24:1-2</attribution>
+      </blockquote>
+      <p>
+        How should these verses shape the way we intereact with our natural environment?
+      </p>
     </statement>
   </exercise>
 </exercises>
